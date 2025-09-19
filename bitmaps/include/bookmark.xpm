@@ -1,0 +1,28 @@
+/* XPM */
+static const char * bookmark_xpm[] = {
+"16 16 8 1",
+"  s None c None",
+". c #e8b585",
+"# c #646464",
+"a c #b48550",
+"b c #808080",
+"c c #ffcc99",
+"d c #ddaa7b",
+"e c #cb986c",
+"ba ## ab        ",
+"#a aa a#        ",
+"#a#aa#a#        ",
+"#aaaaaa#        ",
+"#aaaaaa#        ",
+"#d...dd#        ",
+"#d..ccd#        ",
+"#d....d#        ",
+"#dceccd#        ",
+"#d....d#        ",
+"#dc.ecd#        ",
+"#de...d#        ",
+"#d...cd#        ",
+"#aaaaaa#        ",
+"bb##b##b        ",
+"                "};
+

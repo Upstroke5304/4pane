@@ -1,0 +1,26 @@
+/* XPM */
+static const char * bm3_xpm[] = {
+"16 16 6 1",
+"  s None c None",
+". c #646464",
+"# c #a0a0a0",
+"a c #c8c8c8",
+"b c #323232",
+"c c #969696",
+"                ",
+" bb.a    ..bba  ",
+" b  .   cb#c#ba ",
+" bbbb   ..  a.c ",
+" b  b   #ca  .# ",
+" b  b       abc ",
+" bbba      aaba ",
+"         abbbb  ",
+"         cccc.a ",
+" bb bb      a.. ",
+" babab       aba",
+" b a b  #.a  cba",
+" b   b  c.# aaba",
+" b   b  ab#a#.b ",
+" a   a   abbbb  ",
+"                "};
+

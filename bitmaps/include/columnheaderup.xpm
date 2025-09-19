@@ -1,0 +1,17 @@
+/* XPM */
+static const char * columnheaderup_xpm[] = {
+"16 10 3 1",
+"  s None c None",
+". c #c8c8c8",
+"# c #aaaaaa",
+"                ",
+"                ",
+"                ",
+"      .##.      ",
+"     .####.     ",
+"    .##..##.    ",
+"   .##.  .##.   ",
+"  ###      ###  ",
+"                ",
+"                "};
+
