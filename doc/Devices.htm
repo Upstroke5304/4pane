@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <title>Devices</title>
+</head>
+
+<body style="background-color: rgb(255, 255, 255); direction: ltr;">
+
+<center>
+<table style="margin-left: auto; margin-right: auto; width: 100%; text-align: center;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+	<td style="width: 20%; text-align: center;"><a href="Editors.htm"><img src="back.gif" alt="Editors" align="top" border="0"></a>&nbsp;&nbsp;<a href="Editors.htm">Editors</a></td>
+	<td style="width: 20%; text-align: center;">&nbsp;&nbsp;<a href="Using4Pane.htm"><img src="up.gif" alt="Using 4Pane" align="top" border="0"></a>&nbsp;&nbsp;<a href="Using4Pane.htm">Using 4Pane</a></td>
+	<td style="width: 20%; text-align: center;">&nbsp;&nbsp;<a align="middle" href="KeyboardNavigation.htm">Keyboard navigation</a>&nbsp;&nbsp;<a href="KeyboardNavigation.htm"><img src="forward.gif" alt="Keyboard navigation" align="top" border="0"></a></td>
+</tr>
+</tbody>
+</table>
+</center>
+<hr>
+
+<h2><u>Devices</u></h2>
+<p>
+On the right of your <a href="Toolbar.htm">toolbar</a> should be some icons. Each of these represents a Device that 4Pane has detected on your system.<br><br>
+
+A Device is a thing like a dvdrom drive or a usbpen. When 4Pane is first run, it does its best to detect which fixed drives are present: dvdrom drives, 
+dvdrw and dvdram drives, floppy drives. Each of these gets an icon. 4Pane also detects removable devices whenever they are plugged in: usbpens, usb card-readers etc. 
+If it hasn't seen that particular device before and can't guess what it is, 4Pane asks if you want to configure it; if so you're asked what type of device it is, 
+and what label you want to give it. A Device icon for it is then added to the toolbar. When the removable device is removed, the icon disappears.<br><br>
+
+Different distros differ considerably in how they deal with devices. Older ones notice that they exist, but don't do much about it (very old ones didn't detect usb devices at all). 
+More recent distros not only detect them, they also automatically mount any relevant dvdrom disc and any removable device, though the way they do so varies. 
+4Pane will usually be able to detect which distro you're using, and alter its settings accordingly. For distros that don't automount, it will 
+take over mounting when you click an icon, and unmounting when you tell it to. For well-behaved automounting distros 4Pane will know where 
+a device is mounted, and just display it there.<br>
+A few automounting distros are not so 4Pane-friendly. When a device is detected, or a dvdrom inserted, they don't just mount it, they open 
+it with their default file manager. If this is what you want, that's fine: tell 4Pane (in the <i>Devices and Managers</i> page of <i>Options > Configure 4Pane</i>) 
+that the distro automounts; you'll still be able to use the icon. However if you don't want your desktop spammed with multiple file managers, 
+it's usually possible to tell the distro not to open devices, or even to open them with 4Pane (you'll probably enter <b>4Pane %u</b>). 
+If so, the distro will usually take umbrage and refuse to mount them at all; if that happens, tell 4Pane to do the mounting, making sure that 
+/etc/fstab has the correct entries.<br><br>
+
+Clicking a Device's icon mounts the device if it's not already, and displays its contents in the currently-selected pane. Dragging or 
+Pasting files onto the icon will Move/Copy them to the device (assuming it's read-write e.g. a usbpen), after first mounting it.<br><br>
+
+Right-clicking a Device icon will open its context menu (well, it will unless the drive is empty). This will have entries for mounting/displaying 
+its contents (one for each partition of multipartitioned usbdrives) and unmounting/undisplaying. For a device with removable media, there will 
+be an "Eject" option; whether this works depends on the device and your distro.<br>
+4Pane is not a dvd burner, and dvdrw devices are considered read-only. However it can mount, read from and write to a dvdram disc, so a 
+dvdram drive context menu will also have a "Mount a DVD-RAM" item.<br><br>
+
+Since 4Pane 7.0 another sort of device may also be displayed: cameras, audio CDs and MTP devices such as smartphones, that are gvfs mounts.
+If so, clicking on the icon will let you examine the contents of the device and copy files to your computer. If it's mounted read-write you can also copy files to it.<br>
+Note that 4Pane only displays those devices that are already mounted. Some distros (debian, ubuntu) do that automatically; others (fedora, openSUSE) don't and you'll need to persuade them to do so.<br><br>
+
+A mention about floppy drives. Once every computer had one, but they are now rare. Perhaps as a result, in recent distro versions they no longer work. So from 4Pane 2.0, although floppies are still searched for, if one is found the icon isn't shown. Instead the device is marked as 'ignored'; you can always 'unignore' it if you get the floppy drive to work.<br><br>
+
+Devices are the part of 4Pane that are most likely to need configuring. This can be done on <i>Devices</i> pages of <i>Options > Configure 4Pane</i>.
+</p>
+</body></html>

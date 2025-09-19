@@ -1,0 +1,7 @@
+Thank you for translating 4Pane :)
+
+In MyDirs.cpp near line 709 and MyFiles.cpp near 1050:
+  'D' is the initial of Directory
+  'F' is the initial of File
+  'H' is the initial of Hidden
+  'R' is the initial of Recursive

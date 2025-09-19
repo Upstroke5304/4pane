@@ -1,0 +1,8605 @@
+# 4Pane pot file
+# Copyright (C) 2022 David Hart
+# This file is distributed under the same license as the 4Pane package.
+# David Hart <david@4Pane.co.uk>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 4Pane-8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-01 14:03+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+# Translators: You should probably not translate 'ctrl' etc
+# in menu shortcuts, as apparently it stops them working
+# e.g. in "Cut\tCtrl+X" just translate the "Cut"
+#
+# In MyDirs.cpp near line 717 and MyFiles.cpp near 1050:
+#  'D' is the initial of Directory
+#  'F' is the initial of File
+#  'H' is the initial of Hidden
+#  'R' is the initial of Recursive
+
+#: Accelerators.cpp:123 configuredialogs.xrc:7614
+msgid "Ctrl"
+msgstr ""
+
+#: Accelerators.cpp:124 configuredialogs.xrc:7621
+msgid "Alt"
+msgstr ""
+
+#: Accelerators.cpp:125 configuredialogs.xrc:7607
+msgid "Shift"
+msgstr ""
+
+#: Accelerators.cpp:213
+msgid "C&ut"
+msgstr ""
+
+#: Accelerators.cpp:213
+msgid "&Copy"
+msgstr ""
+
+#: Accelerators.cpp:213
+msgid "Send to &Trash-can"
+msgstr ""
+
+#: Accelerators.cpp:213
+msgid "De&lete"
+msgstr ""
+
+#: Accelerators.cpp:213
+msgid "Permanently Delete"
+msgstr ""
+
+#: Accelerators.cpp:213
+msgid "Rena&me"
+msgstr ""
+
+#: Accelerators.cpp:213
+msgid "&Duplicate"
+msgstr ""
+
+#: Accelerators.cpp:214
+msgid "Prop&erties"
+msgstr ""
+
+#: Accelerators.cpp:214
+msgid "&Open"
+msgstr ""
+
+#: Accelerators.cpp:214
+msgid "Open &with..."
+msgstr ""
+
+#: Accelerators.cpp:214
+msgid "&Paste"
+msgstr ""
+
+#: Accelerators.cpp:214
+msgid "Make a &Hard-Link"
+msgstr ""
+
+#: Accelerators.cpp:214
+msgid "Make a &Symlink"
+msgstr ""
+
+#: Accelerators.cpp:215
+msgid "&Delete Tab"
+msgstr ""
+
+#: Accelerators.cpp:215
+msgid "&Rename Tab"
+msgstr ""
+
+#: Accelerators.cpp:215
+msgid "Und&o"
+msgstr ""
+
+#: Accelerators.cpp:215
+msgid "&Redo"
+msgstr ""
+
+#: Accelerators.cpp:215
+msgid "Select &All"
+msgstr ""
+
+#: Accelerators.cpp:215
+msgid "&New File or Dir"
+msgstr ""
+
+#: Accelerators.cpp:215
+msgid "&New Tab"
+msgstr ""
+
+#: Accelerators.cpp:215
+msgid "&Insert Tab"
+msgstr ""
+
+#: Accelerators.cpp:216
+msgid "D&uplicate this Tab"
+msgstr ""
+
+#: Accelerators.cpp:216
+msgid "Show even single Tab &Head"
+msgstr ""
+
+#: Accelerators.cpp:216
+msgid "Give all Tab Heads equal &Width"
+msgstr ""
+
+#: Accelerators.cpp:216
+msgid "&Replicate in Opposite Pane"
+msgstr ""
+
+#: Accelerators.cpp:216
+msgid "&Swap the Panes"
+msgstr ""
+
+#: Accelerators.cpp:216
+msgid "Split Panes &Vertically"
+msgstr ""
+
+#: Accelerators.cpp:217
+msgid "Split Panes &Horizontally"
+msgstr ""
+
+#: Accelerators.cpp:217
+msgid "&Unsplit Panes"
+msgstr ""
+
+#: Accelerators.cpp:217
+msgid "&Extension"
+msgstr ""
+
+#: Accelerators.cpp:217
+msgid "&Size"
+msgstr ""
+
+#: Accelerators.cpp:217
+msgid "&Time"
+msgstr ""
+
+#: Accelerators.cpp:217
+msgid "&Permissions"
+msgstr ""
+
+#: Accelerators.cpp:218
+msgid "&Owner"
+msgstr ""
+
+#: Accelerators.cpp:218
+msgid "&Group"
+msgstr ""
+
+#: Accelerators.cpp:218
+msgid "&Link"
+msgstr ""
+
+#: Accelerators.cpp:218
+msgid "Show &all columns"
+msgstr ""
+
+#: Accelerators.cpp:218
+msgid "&Unshow all columns"
+msgstr ""
+
+#: Accelerators.cpp:218
+msgid "Save &Pane Settings"
+msgstr ""
+
+#: Accelerators.cpp:219
+msgid "Save Pane Settings on &Exit"
+msgstr ""
+
+#: Accelerators.cpp:219
+msgid "&Save Layout as Template"
+msgstr ""
+
+#: Accelerators.cpp:219
+msgid "D&elete a Template"
+msgstr ""
+
+#: Accelerators.cpp:220
+msgid "&Refresh the Display"
+msgstr ""
+
+#: Accelerators.cpp:220
+msgid "Launch &Terminal"
+msgstr ""
+
+#: Accelerators.cpp:220
+msgid "&Filter Display"
+msgstr ""
+
+#: Accelerators.cpp:220
+msgid "Show/Hide Hidden dirs and files"
+msgstr ""
+
+#: Accelerators.cpp:220
+msgid "&Add To Bookmarks"
+msgstr ""
+
+#: Accelerators.cpp:220
+msgid "&Manage Bookmarks"
+msgstr ""
+
+#: Accelerators.cpp:222 Accelerators.cpp:224
+msgid "&Mount a Partition"
+msgstr ""
+
+#: Accelerators.cpp:222
+msgid "&Unmount a Partition"
+msgstr ""
+
+#: Accelerators.cpp:222 Accelerators.cpp:224
+msgid "Mount an &ISO image"
+msgstr ""
+
+#: Accelerators.cpp:222 Accelerators.cpp:224
+msgid "Mount an &NFS export"
+msgstr ""
+
+#: Accelerators.cpp:222
+msgid "Mount a &Samba share"
+msgstr ""
+
+#: Accelerators.cpp:222
+msgid "U&nmount a Network mount"
+msgstr ""
+
+#: Accelerators.cpp:224
+msgid "&Unmount"
+msgstr ""
+
+#: Accelerators.cpp:224
+msgid "Unused"
+msgstr ""
+
+#: Accelerators.cpp:226
+msgid "Show &Terminal Emulator"
+msgstr ""
+
+#: Accelerators.cpp:226
+msgid "Show Command-&line"
+msgstr ""
+
+#: Accelerators.cpp:226
+msgid "&GoTo selected file"
+msgstr ""
+
+#: Accelerators.cpp:226
+msgid "Empty the &Trash-can"
+msgstr ""
+
+#: Accelerators.cpp:226
+msgid "Permanently &delete 'Deleted' files"
+msgstr ""
+
+#: Accelerators.cpp:227
+msgid "E&xtract Archive or Compressed File(s)"
+msgstr ""
+
+#: Accelerators.cpp:227
+msgid "Create a &New Archive"
+msgstr ""
+
+#: Accelerators.cpp:227
+msgid "&Add to an Existing Archive"
+msgstr ""
+
+#: Accelerators.cpp:227
+msgid "&Test integrity of Archive or Compressed Files"
+msgstr ""
+
+#: Accelerators.cpp:227
+msgid "&Compress Files"
+msgstr ""
+
+#: Accelerators.cpp:228
+msgid "&Show Recursive dir sizes"
+msgstr ""
+
+#: Accelerators.cpp:228
+msgid "&Retain relative Symlink Targets"
+msgstr ""
+
+#: Accelerators.cpp:228
+msgid "&Configure 4Pane"
+msgstr ""
+
+#: Accelerators.cpp:228
+msgid "E&xit"
+msgstr ""
+
+#: Accelerators.cpp:228
+msgid "Context-sensitive Help"
+msgstr ""
+
+#: Accelerators.cpp:228
+msgid "&Help Contents"
+msgstr ""
+
+#: Accelerators.cpp:228
+msgid "&FAQ"
+msgstr ""
+
+#: Accelerators.cpp:228
+msgid "&About 4Pane"
+msgstr ""
+
+#: Accelerators.cpp:228 Accelerators.cpp:604 Configure.cpp:2828
+msgid "Configure Shortcuts"
+msgstr ""
+
+#: Accelerators.cpp:229
+msgid "Go to Symlink Target"
+msgstr ""
+
+#: Accelerators.cpp:229
+msgid "Go to Symlink Ultimate Target"
+msgstr ""
+
+#: Accelerators.cpp:229 Accelerators.cpp:699
+msgid "Edit"
+msgstr ""
+
+#: Accelerators.cpp:229 Accelerators.cpp:699
+msgid "New Separator"
+msgstr ""
+
+#: Accelerators.cpp:229 Tools.cpp:3000
+msgid "Repeat Previous Program"
+msgstr ""
+
+#: Accelerators.cpp:229
+msgid "Navigate to opposite pane"
+msgstr ""
+
+#: Accelerators.cpp:229
+msgid "Navigate to adjacent pane"
+msgstr ""
+
+#: Accelerators.cpp:230
+msgid "Switch to the Panes"
+msgstr ""
+
+#: Accelerators.cpp:230
+msgid "Switch to the Terminal Emulator"
+msgstr ""
+
+#: Accelerators.cpp:230
+msgid "Switch to the Command-line"
+msgstr ""
+
+#: Accelerators.cpp:230
+msgid "Switch to the toolbar Textcontrol"
+msgstr ""
+
+#: Accelerators.cpp:230
+msgid "Switch to the previous window"
+msgstr ""
+
+#: Accelerators.cpp:231
+msgid "Go to Previous Tab"
+msgstr ""
+
+#: Accelerators.cpp:231
+msgid "Go to Next Tab"
+msgstr ""
+
+#: Accelerators.cpp:231
+msgid "Paste as Director&y Template"
+msgstr ""
+
+#: Accelerators.cpp:231
+msgid "&First dot"
+msgstr ""
+
+#: Accelerators.cpp:231
+msgid "&Penultimate dot"
+msgstr ""
+
+#: Accelerators.cpp:231
+msgid "&Last dot"
+msgstr ""
+
+#: Accelerators.cpp:232
+msgid "Mount over Ssh using ssh&fs"
+msgstr ""
+
+#: Accelerators.cpp:232
+msgid "Show &Previews"
+msgstr ""
+
+#: Accelerators.cpp:232
+msgid "C&ancel Paste"
+msgstr ""
+
+#: Accelerators.cpp:232
+msgid "Decimal-aware filename sort"
+msgstr ""
+
+#: Accelerators.cpp:232
+msgid "&Keep Modification-time when pasting files"
+msgstr ""
+
+#: Accelerators.cpp:233
+msgid "Navigate up to higher directory"
+msgstr ""
+
+#: Accelerators.cpp:233
+msgid "Navigate back to previously visited directory"
+msgstr ""
+
+#: Accelerators.cpp:233
+msgid "Navigate forward to next visited directory"
+msgstr ""
+
+#: Accelerators.cpp:270
+msgid "Cuts the current selection"
+msgstr ""
+
+#: Accelerators.cpp:270
+msgid "Copies the current selection"
+msgstr ""
+
+#: Accelerators.cpp:270
+msgid "Send to the Trashcan"
+msgstr ""
+
+#: Accelerators.cpp:270
+msgid "Kill, but may be resuscitatable"
+msgstr ""
+
+#: Accelerators.cpp:270
+msgid "Delete with extreme prejudice"
+msgstr ""
+
+#: Accelerators.cpp:271
+msgid "Paste the contents of the Clipboard"
+msgstr ""
+
+#: Accelerators.cpp:271
+msgid "Hardlink the contents of the Clipboard to here"
+msgstr ""
+
+#: Accelerators.cpp:271
+msgid "Softlink the contents of the Clipboard to here"
+msgstr ""
+
+#: Accelerators.cpp:272
+msgid "Delete the currently-selected Tab"
+msgstr ""
+
+#: Accelerators.cpp:272
+msgid "Rename the currently-selected Tab"
+msgstr ""
+
+#: Accelerators.cpp:272
+msgid "Append a new Tab"
+msgstr ""
+
+#: Accelerators.cpp:272
+msgid "Insert a new Tab after the currently selected one"
+msgstr ""
+
+#: Accelerators.cpp:273
+msgid "Hide the head of a solitary tab"
+msgstr ""
+
+#: Accelerators.cpp:273
+msgid "Copy this side's path to the opposite pane"
+msgstr ""
+
+#: Accelerators.cpp:273
+msgid "Swap one side's path with the other"
+msgstr ""
+
+#: Accelerators.cpp:275
+msgid "Save the layout of panes within each tab"
+msgstr ""
+
+#: Accelerators.cpp:276
+msgid "Always save the layout of panes on exit"
+msgstr ""
+
+#: Accelerators.cpp:276
+msgid "Save these tabs as a reloadable template"
+msgstr ""
+
+#: Accelerators.cpp:277
+msgid "Add the currently-selected item to your bookmarks"
+msgstr ""
+
+#: Accelerators.cpp:277
+msgid "Rearrange, Rename or Delete bookmarks"
+msgstr ""
+
+#: Accelerators.cpp:279
+msgid "Locate matching files.  Much faster than 'find'"
+msgstr ""
+
+#: Accelerators.cpp:279
+msgid "Find matching file(s)"
+msgstr ""
+
+#: Accelerators.cpp:279
+msgid "Search Within Files"
+msgstr ""
+
+#: Accelerators.cpp:279
+msgid "Show/Hide the Terminal Emulator"
+msgstr ""
+
+#: Accelerators.cpp:279
+msgid "Show/Hide the Command-line"
+msgstr ""
+
+#: Accelerators.cpp:279
+msgid "Empty 4Pane's in-house trash-can"
+msgstr ""
+
+#: Accelerators.cpp:279
+msgid "Delete 4Pane's 'Deleted' folder"
+msgstr ""
+
+#: Accelerators.cpp:281
+msgid "Whether to calculate dir sizes recursively in fileviews"
+msgstr ""
+
+#: Accelerators.cpp:281
+msgid "On moving a relative symlink, keep its target the same"
+msgstr ""
+
+#: Accelerators.cpp:281
+msgid "Close this program"
+msgstr ""
+
+#: Accelerators.cpp:284
+msgid "Paste only the directory structure from the clipboard"
+msgstr ""
+
+#: Accelerators.cpp:284
+msgid "An ext starts at first . in the filename"
+msgstr ""
+
+#: Accelerators.cpp:284
+msgid "An ext starts at last or last-but-one . in the filename"
+msgstr ""
+
+#: Accelerators.cpp:284
+msgid "An ext starts at last . in the filename"
+msgstr ""
+
+#: Accelerators.cpp:285
+msgid "Show previews of image and text files"
+msgstr ""
+
+#: Accelerators.cpp:285
+msgid "Cancel the current process"
+msgstr ""
+
+#: Accelerators.cpp:285
+msgid "Should files like foo1, foo2 be in Decimal order"
+msgstr ""
+
+#: Accelerators.cpp:285
+msgid ""
+"Should a Moved or Pasted file keep its original modification time (as in 'cp "
+"-a')"
+msgstr ""
+
+#: Accelerators.cpp:291
+msgid ""
+"\n"
+"The arrays in ImplementDefaultShortcuts() aren't of equal size!"
+msgstr ""
+
+#: Accelerators.cpp:307
+msgid "Toggle Fulltree mode"
+msgstr ""
+
+#: Accelerators.cpp:321 Archive.cpp:1429 Archive.cpp:1452 Archive.cpp:1479
+#: Archive.cpp:1500 Bookmarks.cpp:432 Configure.cpp:1940 Devices.cpp:199
+#: Filetypes.cpp:1126 MyFrame.cpp:1161 MyFrame.cpp:2518 MyFrame.cpp:2589
+#: MyNotebook.cpp:140 MyNotebook.cpp:157 Tools.cpp:358 Tools.cpp:426
+#: Tools.cpp:2295 Tools.cpp:2318 Tools.cpp:3017
+msgid "Couldn't load configuration!?"
+msgstr ""
+
+#: Accelerators.cpp:505
+msgid "&File"
+msgstr ""
+
+#: Accelerators.cpp:505
+msgid "&Edit"
+msgstr ""
+
+#: Accelerators.cpp:505
+msgid "&View"
+msgstr ""
+
+#: Accelerators.cpp:505
+msgid "&Tabs"
+msgstr ""
+
+#: Accelerators.cpp:505
+msgid "&Bookmarks"
+msgstr ""
+
+#: Accelerators.cpp:505
+msgid "&Archive"
+msgstr ""
+
+#: Accelerators.cpp:505
+msgid "&Mount"
+msgstr ""
+
+#: Accelerators.cpp:505
+msgid "Too&ls"
+msgstr ""
+
+#: Accelerators.cpp:505
+msgid "&Options"
+msgstr ""
+
+#: Accelerators.cpp:505
+msgid "&Help"
+msgstr ""
+
+#: Accelerators.cpp:509
+msgid "&Columns to Display"
+msgstr ""
+
+#: Accelerators.cpp:509
+msgid "&Load a Tab Template"
+msgstr ""
+
+#: Accelerators.cpp:675
+msgid "Action"
+msgstr ""
+
+#: Accelerators.cpp:676
+msgid "Shortcut"
+msgstr ""
+
+#: Accelerators.cpp:677
+msgid "Default"
+msgstr ""
+
+#: Accelerators.cpp:696
+msgid "Extension"
+msgstr ""
+
+#: Accelerators.cpp:696
+msgid "(Un)Show fileview Extension column"
+msgstr ""
+
+#: Accelerators.cpp:696
+msgid "Size"
+msgstr ""
+
+#: Accelerators.cpp:696
+msgid "(Un)Show fileview Size column"
+msgstr ""
+
+#: Accelerators.cpp:696 moredialogs.xrc:923
+msgid "Time"
+msgstr ""
+
+#: Accelerators.cpp:696
+msgid "(Un)Show fileview Time column"
+msgstr ""
+
+#: Accelerators.cpp:697 moredialogs.xrc:1831
+msgid "Permissions"
+msgstr ""
+
+#: Accelerators.cpp:697
+msgid "(Un)Show fileview Permissions column"
+msgstr ""
+
+#: Accelerators.cpp:697 moredialogs.xrc:1613
+msgid "Owner"
+msgstr ""
+
+#: Accelerators.cpp:697
+msgid "(Un)Show fileview Owner column"
+msgstr ""
+
+#: Accelerators.cpp:697 moredialogs.xrc:1636 moredialogs.xrc:1859
+#: moredialogs.xrc:6551 moredialogs.xrc:7680 moredialogs.xrc:8872
+msgid "Group"
+msgstr ""
+
+#: Accelerators.cpp:697
+msgid "(Un)Show fileview Group column"
+msgstr ""
+
+#: Accelerators.cpp:698 Redo.h:173
+msgid "Link"
+msgstr ""
+
+#: Accelerators.cpp:698
+msgid "(Un)Show fileview Link column"
+msgstr ""
+
+#: Accelerators.cpp:698
+msgid "Show all columns"
+msgstr ""
+
+#: Accelerators.cpp:698
+msgid "Fileview: Show all columns"
+msgstr ""
+
+#: Accelerators.cpp:698
+msgid "Unshow all columns"
+msgstr ""
+
+#: Accelerators.cpp:698
+msgid "Fileview: Unshow all columns"
+msgstr ""
+
+#: Accelerators.cpp:699
+msgid "Bookmarks: Edit"
+msgstr ""
+
+#: Accelerators.cpp:699
+msgid "Bookmarks: New Separator"
+msgstr ""
+
+#: Accelerators.cpp:699
+msgid "First dot"
+msgstr ""
+
+#: Accelerators.cpp:699
+msgid "Extensions start at the First dot"
+msgstr ""
+
+#: Accelerators.cpp:700
+msgid "Penultimate dot"
+msgstr ""
+
+#: Accelerators.cpp:700
+msgid "Extensions start at the Penultimate dot"
+msgstr ""
+
+#: Accelerators.cpp:700
+msgid "Last dot"
+msgstr ""
+
+#: Accelerators.cpp:700
+msgid "Extensions start at the Last dot"
+msgstr ""
+
+#: Accelerators.cpp:875
+msgid "Lose changes?"
+msgstr ""
+
+#: Accelerators.cpp:875 Bookmarks.cpp:645 Bookmarks.cpp:1042 Bookmarks.cpp:1113
+#: Configure.cpp:2483 Configure.cpp:2537 Configure.cpp:2600 Configure.cpp:2855
+#: Configure.cpp:3651 Configure.cpp:4901 Devices.cpp:3415 Filetypes.cpp:1231
+#: Filetypes.cpp:1273 Filetypes.cpp:1478 Filetypes.cpp:1623 Filetypes.cpp:1902
+#: Filetypes.cpp:2216 Tools.cpp:1212 Tools.cpp:1722
+msgid "Are you sure?"
+msgstr ""
+
+#: Accelerators.cpp:929 Accelerators.cpp:930
+msgid "None"
+msgstr ""
+
+#: Accelerators.cpp:930
+msgid "Same"
+msgstr ""
+
+#: Accelerators.cpp:949
+msgid "Type in the new Label to show for this menu item"
+msgstr ""
+
+#: Accelerators.cpp:949
+msgid "Change label"
+msgstr ""
+
+#: Accelerators.cpp:956
+msgid ""
+"Type in the Help string to show for this menu item\n"
+"Cancel will Clear the string"
+msgstr ""
+
+#: Accelerators.cpp:956
+msgid "Change Help String"
+msgstr ""
+
+#: Archive.cpp:123
+msgid ""
+"I can't seem to find this file or directory.\n"
+"Try using the Browse button."
+msgstr ""
+
+#: Archive.cpp:123 ArchiveStream.cpp:458 ArchiveStream.cpp:727
+#: ArchiveStream.cpp:732 Bookmarks.cpp:678 Configure.cpp:2449
+#: Configure.cpp:2477 MyDirs.cpp:1284 MyDirs.cpp:1394 MyDirs.cpp:1463
+#: MyDirs.cpp:1541 MyFiles.cpp:635 MyFiles.cpp:772 MyFiles.cpp:854
+#: MyFiles.cpp:866 MyFiles.cpp:879 MyFiles.cpp:893 MyFiles.cpp:905
+#: MyFiles.cpp:931
+msgid "Oops!"
+msgstr ""
+
+#: Archive.cpp:136
+msgid "Choose file(s) and/or directories"
+msgstr ""
+
+#: Archive.cpp:262
+msgid "Choose the Directory in which to store the Archive"
+msgstr ""
+
+#: Archive.cpp:267
+msgid "Browse for the Archive to which to Append"
+msgstr ""
+
+#: Archive.cpp:322
+msgid ""
+"The directory in which you want to create the archive doesn't seem to "
+"exist.\n"
+"Use the current directory?"
+msgstr ""
+
+#: Archive.cpp:357
+msgid ""
+"The archive to which you want to append doesn't seem to exist.\n"
+"Try again?"
+msgstr ""
+
+#: Archive.cpp:398 Archive.cpp:408 Archive.cpp:1159 Archive.cpp:1165
+msgid "Can't find a 7z binary on your system"
+msgstr ""
+
+#: Archive.cpp:398 Archive.cpp:408 Archive.cpp:411 Archive.cpp:1016
+#: Archive.cpp:1022 Archive.cpp:1025 Archive.cpp:1034 Archive.cpp:1159
+#: Archive.cpp:1165 Archive.cpp:1175 Archive.cpp:1185 Bookmarks.cpp:867
+#: Configure.cpp:4359 MyFiles.cpp:700
+msgid "Oops"
+msgstr ""
+
+#: Archive.cpp:411
+msgid "Can't find a valid archive to which to append"
+msgstr ""
+
+#: Archive.cpp:710 Archive.cpp:1084
+msgid ""
+"No relevant compressed files were selected.\n"
+"Try again?"
+msgstr ""
+
+#: Archive.cpp:825
+msgid "Browse for the Archive to Verify"
+msgstr ""
+
+#: Archive.cpp:841
+msgid "Choose the Directory in which to Extract the archive"
+msgstr ""
+
+#: Archive.cpp:946
+msgid ""
+"Failed to create the desired destination directory.\n"
+"Try again?"
+msgstr ""
+
+#: Archive.cpp:1016 Archive.cpp:1175
+msgid "Can't find rpm2cpio on your system..."
+msgstr ""
+
+#: Archive.cpp:1022 Archive.cpp:1025
+msgid "Can't find ar on your system..."
+msgstr ""
+
+#: Archive.cpp:1034
+msgid "Can't find unar either or unrar on your system..."
+msgstr ""
+
+#: Archive.cpp:1037
+msgid ""
+"Can't find a valid archive to extract.\n"
+"Try again?"
+msgstr ""
+
+#: Archive.cpp:1185
+msgid "Can't find either lsar or unrar on your system..."
+msgstr ""
+
+#: Archive.cpp:1192
+msgid ""
+"Can't find a valid archive to verify.\n"
+"Try again?"
+msgstr ""
+
+#: Archive.cpp:1256
+msgid "File(s) compressed"
+msgstr ""
+
+#: Archive.cpp:1256
+msgid "Compression failed"
+msgstr ""
+
+#: Archive.cpp:1260
+msgid "File(s) decompressed"
+msgstr ""
+
+#: Archive.cpp:1260
+msgid "Decompression failed"
+msgstr ""
+
+#: Archive.cpp:1264
+msgid "File(s) verified"
+msgstr ""
+
+#: Archive.cpp:1264 Archive.cpp:1284 Archive.cpp:1326
+msgid "Verification failed"
+msgstr ""
+
+#: Archive.cpp:1270
+msgid "Archive created"
+msgstr ""
+
+#: Archive.cpp:1270
+msgid "Archive creation failed"
+msgstr ""
+
+#: Archive.cpp:1275
+msgid "File(s) added to Archive"
+msgstr ""
+
+#: Archive.cpp:1275
+msgid "Archive addition failed"
+msgstr ""
+
+#: Archive.cpp:1280
+msgid "Archive extracted"
+msgstr ""
+
+#: Archive.cpp:1280
+msgid "Extraction failed"
+msgstr ""
+
+#: Archive.cpp:1284
+msgid "Archive verified"
+msgstr ""
+
+#: ArchiveStream.cpp:440
+msgid "To which directory would you like these files extracted?"
+msgstr ""
+
+#: ArchiveStream.cpp:441
+msgid "To which directory would you like this extracted?"
+msgstr ""
+
+#: ArchiveStream.cpp:442
+msgid "Extracting from archive"
+msgstr ""
+
+#: ArchiveStream.cpp:449
+msgid ""
+"I'm afraid you don't have permission to Create in this directory\n"
+"                       Try again?"
+msgstr ""
+
+#: ArchiveStream.cpp:449 ArchiveStream.cpp:614 MyDirs.cpp:779 MyDirs.cpp:943
+#: MyDirs.cpp:1096 MyDirs.cpp:1433 MyDirs.cpp:1964 MyFiles.cpp:559
+#: MyFiles.cpp:652 MyFiles.cpp:760
+msgid "No Entry!"
+msgstr ""
+
+#: ArchiveStream.cpp:457
+#, c-format
+msgid ""
+"Sorry, %s already exists\n"
+"            Try again?"
+msgstr ""
+
+#: ArchiveStream.cpp:614 MyDirs.cpp:943 MyDirs.cpp:1964
+msgid "I'm afraid you don't have Permission to write to this Directory"
+msgstr ""
+
+#: ArchiveStream.cpp:663 MyDirs.cpp:1972
+msgid ""
+"I'm afraid you don't have permission to access files from this Directory"
+msgstr ""
+
+#: ArchiveStream.cpp:663 Configure.cpp:179 MyDirs.cpp:956 MyDirs.cpp:962
+#: MyDirs.cpp:1972
+msgid "No Exit!"
+msgstr ""
+
+#: ArchiveStream.cpp:723
+msgid ""
+"For some reason, trying to create a dir to receive the backup failed.  Sorry!"
+msgstr ""
+
+#: ArchiveStream.cpp:727
+msgid "Sorry, backing up failed"
+msgstr ""
+
+#: ArchiveStream.cpp:732
+msgid "Sorry, removing items failed"
+msgstr ""
+
+#: ArchiveStream.cpp:766 ArchiveStream.cpp:902 MyFrame.cpp:746 Tools.cpp:2513
+#: Redo.h:150 Redo.h:316
+msgid "Paste"
+msgstr ""
+
+#: ArchiveStream.cpp:896 ArchiveStream.cpp:902 Redo.h:124 Redo.h:352 Redo.h:373
+msgid "Move"
+msgstr ""
+
+#: ArchiveStream.cpp:1331
+msgid "Sorry, you need to be root to extract character or block devices"
+msgstr ""
+
+#: ArchiveStream.cpp:1528
+msgid "I'm afraid your zlib is too old to be able to do this :("
+msgstr ""
+
+#: ArchiveStream.cpp:1682 ArchiveStream.cpp:1693 ArchiveStream.cpp:1704
+#: ArchiveStream.cpp:1715 ArchiveStream.cpp:1730
+msgid "For some reason, the archive failed to open  :("
+msgstr ""
+
+#: ArchiveStream.cpp:1722
+msgid "I can't peek inside that sort of archive unless you install liblzma."
+msgstr ""
+
+#: ArchiveStream.cpp:1722
+msgid "Missing library"
+msgstr ""
+
+#: ArchiveStream.cpp:1736 MyGenericDirCtrl.cpp:1779
+msgid ""
+"This file is compressed, but it's not an archive so you can't peek inside."
+msgstr ""
+
+#: ArchiveStream.cpp:1736 ArchiveStream.cpp:1737 MyGenericDirCtrl.cpp:1779
+#: MyGenericDirCtrl.cpp:1780
+msgid "Sorry"
+msgstr ""
+
+#: ArchiveStream.cpp:1737 MyGenericDirCtrl.cpp:1780
+msgid "I'm afraid I can't peek inside that sort of archive."
+msgstr ""
+
+#: Bookmarks.cpp:113
+msgid "Bookmark Folders"
+msgstr ""
+
+#: Bookmarks.cpp:143 Bookmarks.cpp:231 Bookmarks.cpp:269 Bookmarks.cpp:730
+#: Bookmarks.cpp:935 Bookmarks.cpp:940 Bookmarks.cpp:1019
+msgid "Separator"
+msgstr ""
+
+#: Bookmarks.cpp:200 Bookmarks.cpp:950
+msgid "Duplicated"
+msgstr ""
+
+#: Bookmarks.cpp:204
+msgid "Moved"
+msgstr ""
+
+#: Bookmarks.cpp:215
+msgid "Copied"
+msgstr ""
+
+#: Bookmarks.cpp:233
+msgid "Rename Folder"
+msgstr ""
+
+#: Bookmarks.cpp:234
+msgid "Edit Bookmark"
+msgstr ""
+
+#: Bookmarks.cpp:236
+msgid "NewSeparator"
+msgstr ""
+
+#: Bookmarks.cpp:237
+msgid "NewFolder"
+msgstr ""
+
+#: Bookmarks.cpp:335 Bookmarks.cpp:440
+msgid "Couldn't load Menubar!?"
+msgstr ""
+
+#: Bookmarks.cpp:343 Bookmarks.cpp:444
+msgid "Couldn't find menu!?"
+msgstr ""
+
+#: Bookmarks.cpp:360
+msgid "This Section doesn't exist in ini file!?"
+msgstr ""
+
+#: Bookmarks.cpp:367 Bookmarks.cpp:481 Bookmarks.cpp:494
+msgid "Bookmarks"
+msgstr ""
+
+#: Bookmarks.cpp:518
+msgid "Sorry, couldn't locate that folder"
+msgstr ""
+
+#: Bookmarks.cpp:529
+msgid "Bookmark added"
+msgstr ""
+
+#: Bookmarks.cpp:645 Filetypes.cpp:1902
+msgid "Lose all changes?"
+msgstr ""
+
+#: Bookmarks.cpp:668 Filetypes.cpp:1221
+msgid "What Label would you like for the new Folder?"
+msgstr ""
+
+#: Bookmarks.cpp:677 Bookmarks.cpp:1041 Filetypes.cpp:1230
+#, c-format
+msgid ""
+"Sorry, there is already a folder called %s\n"
+"                     Try again?"
+msgstr ""
+
+#: Bookmarks.cpp:713
+msgid "Folder added"
+msgstr ""
+
+#: Bookmarks.cpp:751
+msgid "Separator added"
+msgstr ""
+
+#: Bookmarks.cpp:849 Bookmarks.cpp:866
+#, c-format
+msgid ""
+"Sorry, there is already a folder called %s\n"
+"                  Change the name?"
+msgstr ""
+
+#: Bookmarks.cpp:850
+msgid "Oops?"
+msgstr ""
+
+#: Bookmarks.cpp:855
+msgid "What would you like to call the Folder?"
+msgstr ""
+
+#: Bookmarks.cpp:855
+msgid "What Label would you like for the Folder?"
+msgstr ""
+
+#: Bookmarks.cpp:951
+msgid "Pasted"
+msgstr ""
+
+#: Bookmarks.cpp:1029
+msgid "Alter the Folder Label below"
+msgstr ""
+
+#: Bookmarks.cpp:1104
+msgid "Sorry, you're not allowed to move the main folder"
+msgstr ""
+
+#: Bookmarks.cpp:1105
+msgid "Sorry, you're not allowed to delete the main folder"
+msgstr ""
+
+#: Bookmarks.cpp:1106
+msgid "Tsk tsk!"
+msgstr ""
+
+#: Bookmarks.cpp:1112 Filetypes.cpp:1271
+#, c-format
+msgid "Delete folder %s and all its contents?"
+msgstr ""
+
+#: Bookmarks.cpp:1123
+msgid "Folder deleted"
+msgstr ""
+
+#: Bookmarks.cpp:1134
+msgid "Bookmark deleted"
+msgstr ""
+
+#: Configure.cpp:54 Configure.cpp:56
+msgid "Welcome to 4Pane."
+msgstr ""
+
+#: Configure.cpp:63
+msgid ""
+"4Pane is a File Manager that aims to be fast and full-featured without bloat."
+msgstr ""
+
+#: Configure.cpp:66
+msgid "Please click Next to configure 4Pane for your system."
+msgstr ""
+
+#: Configure.cpp:69
+msgid ""
+"Or if there's already a configuration file that you'd like to copy, click"
+msgstr ""
+
+#: Configure.cpp:71
+msgid "Here"
+msgstr ""
+
+#: Configure.cpp:90
+msgid "Resources successfully located. Please press Next"
+msgstr ""
+
+#: Configure.cpp:110
+msgid ""
+"I've had a look around your system, and created a configuration that should "
+"work."
+msgstr ""
+
+#: Configure.cpp:113
+msgid ""
+"You can do much fuller configuration at any time from Options > Configure "
+"4Pane."
+msgstr ""
+
+#: Configure.cpp:169
+msgid "Browse for the Configuration file to copy"
+msgstr ""
+
+#: Configure.cpp:178
+msgid ""
+"I'm afraid you don't have permission to Copy this file.\n"
+"Do you want to try again?"
+msgstr ""
+
+#: Configure.cpp:188
+msgid ""
+"This file doesn't seem to be a valid 4Pane configuration file.\n"
+"Are you absolutely sure you want to use it?"
+msgstr ""
+
+#: Configure.cpp:189
+msgid "Fake config file!"
+msgstr ""
+
+#: Configure.cpp:415
+msgid ""
+"Can't find 4Pane's resource files. There must be something wrong with your "
+"installation. :(\n"
+"Do you want to try to locate them manually?"
+msgstr ""
+
+#: Configure.cpp:416
+msgid "Eek! Can't find resources."
+msgstr ""
+
+#: Configure.cpp:424
+msgid "Browse for  ..../4Pane/rc/"
+msgstr ""
+
+#: Configure.cpp:432
+msgid ""
+"Can't find 4Pane's bitmaps. There must be something wrong with your "
+"installation. :(\n"
+"Do you want to try to locate them manually?"
+msgstr ""
+
+#: Configure.cpp:433
+msgid "Eek! Can't find bitmaps."
+msgstr ""
+
+#: Configure.cpp:441
+msgid "Browse for ..../4Pane/bitmaps/"
+msgstr ""
+
+#: Configure.cpp:449
+msgid ""
+"Can't find 4Pane's Help files. There must be something wrong with your "
+"installation. :(\n"
+"Do you want to try to locate them manually?"
+msgstr ""
+
+#: Configure.cpp:450
+msgid "Eek! Can't find Help files."
+msgstr ""
+
+#: Configure.cpp:458
+msgid "Browse for ..../4Pane/doc/"
+msgstr ""
+
+#: Configure.cpp:1195
+msgid "&Run a Program"
+msgstr ""
+
+#: Configure.cpp:1222
+msgid "Install .deb(s) as root:"
+msgstr ""
+
+#: Configure.cpp:1226
+msgid "Remove the named.deb as root:"
+msgstr ""
+
+#: Configure.cpp:1230
+msgid "List files provided by a particular .deb"
+msgstr ""
+
+#: Configure.cpp:1235
+msgid "List installed .debs matching the name:"
+msgstr ""
+
+#: Configure.cpp:1240
+msgid "Show if the named .deb is installed:"
+msgstr ""
+
+#: Configure.cpp:1245
+msgid "Show which package installed the selected file"
+msgstr ""
+
+#: Configure.cpp:1254
+msgid "Install rpm(s) as root:"
+msgstr ""
+
+#: Configure.cpp:1258
+msgid "Remove an rpm as root:"
+msgstr ""
+
+#: Configure.cpp:1262
+msgid "Query the selected rpm"
+msgstr ""
+
+#: Configure.cpp:1267
+msgid "List files provided by the selected rpm"
+msgstr ""
+
+#: Configure.cpp:1272
+msgid "Query the named rpm"
+msgstr ""
+
+#: Configure.cpp:1277
+msgid "List files provided by the named rpm"
+msgstr ""
+
+#: Configure.cpp:1286
+msgid "Create a directory as root:"
+msgstr ""
+
+#: Configure.cpp:1731
+msgid "Go to Home directory"
+msgstr ""
+
+#: Configure.cpp:1742
+msgid "Go to Documents directory"
+msgstr ""
+
+#: Configure.cpp:1798
+msgid ""
+"If you are seeing this message (and you shouldn't!), it's because the "
+"configuration file couldn't be saved.\n"
+"The least-unlikely reasons would be incorrect permissions or a Read Only "
+"partition."
+msgstr ""
+
+#: Configure.cpp:2133 moredialogs.xrc:292 moredialogs.xrc:3889
+#: moredialogs.xrc:12289 moredialogs.xrc:12597
+msgid "Shortcuts"
+msgstr ""
+
+#: Configure.cpp:2136
+msgid "Tools"
+msgstr ""
+
+#: Configure.cpp:2138
+msgid "Add a tool"
+msgstr ""
+
+#: Configure.cpp:2140
+msgid "Edit a tool"
+msgstr ""
+
+#: Configure.cpp:2142
+msgid "Delete a tool"
+msgstr ""
+
+#: Configure.cpp:2145 Configure.cpp:2829
+msgid "Devices"
+msgstr ""
+
+#: Configure.cpp:2147
+msgid "Automount"
+msgstr ""
+
+#: Configure.cpp:2149
+msgid "Mounting"
+msgstr ""
+
+#: Configure.cpp:2151
+msgid "Usb"
+msgstr ""
+
+#: Configure.cpp:2153
+msgid "Removable"
+msgstr ""
+
+#: Configure.cpp:2155
+msgid "Fixed"
+msgstr ""
+
+#: Configure.cpp:2157
+msgid "Advanced"
+msgstr ""
+
+#: Configure.cpp:2159
+msgid "Advanced fixed"
+msgstr ""
+
+#: Configure.cpp:2161
+msgid "Advanced removable"
+msgstr ""
+
+#: Configure.cpp:2163
+msgid "Advanced lvm"
+msgstr ""
+
+#: Configure.cpp:2167
+msgid "The Display"
+msgstr ""
+
+#: Configure.cpp:2169
+msgid "Trees"
+msgstr ""
+
+#: Configure.cpp:2171
+msgid "Tree font"
+msgstr ""
+
+#: Configure.cpp:2173 Configure.cpp:2833
+msgid "Misc"
+msgstr ""
+
+#: Configure.cpp:2176 Configure.cpp:2832
+msgid "Terminals"
+msgstr ""
+
+#: Configure.cpp:2178
+msgid "Real"
+msgstr ""
+
+#: Configure.cpp:2180
+msgid "Emulator"
+msgstr ""
+
+#: Configure.cpp:2183
+msgid "The Network"
+msgstr ""
+
+#: Configure.cpp:2186
+msgid "Miscellaneous"
+msgstr ""
+
+#: Configure.cpp:2188
+msgid "Numbers"
+msgstr ""
+
+#: Configure.cpp:2190
+msgid "Times"
+msgstr ""
+
+#: Configure.cpp:2192
+msgid "Superuser"
+msgstr ""
+
+#: Configure.cpp:2194
+msgid "Other"
+msgstr ""
+
+#: Configure.cpp:2435
+msgid ""
+"Sorry, there's no room for another submenu here\n"
+"I suggest you try putting it elsewhere"
+msgstr ""
+
+#: Configure.cpp:2439
+msgid "Enter the name of the new submenu to add to "
+msgstr ""
+
+#: Configure.cpp:2449
+msgid ""
+"Sorry, a menu with this name already exists\n"
+"                Try again?"
+msgstr ""
+
+#: Configure.cpp:2477
+msgid "Sorry, you're not allowed to delete the root menu"
+msgstr ""
+
+#: Configure.cpp:2482
+#, c-format
+msgid "Delete menu \"%s\" and all its contents?"
+msgstr ""
+
+#: Configure.cpp:2535
+#, c-format
+msgid ""
+"I can't find an executable command \"%s\".\n"
+"Continue anyway?"
+msgstr ""
+
+#: Configure.cpp:2536
+#, c-format
+msgid ""
+"I can't find an executable command \"%s\" in your PATH.\n"
+"Continue anyway?"
+msgstr ""
+
+#: Configure.cpp:2565
+msgid " Click when Finished "
+msgstr ""
+
+#: Configure.cpp:2571
+msgid "  Edit this Command  "
+msgstr ""
+
+#: Configure.cpp:2599
+#, c-format
+msgid "Delete command \"%s\"?"
+msgstr ""
+
+#: Configure.cpp:2615 Filetypes.cpp:1805
+msgid "Choose a file"
+msgstr ""
+
+#: Configure.cpp:2828
+msgid "User-defined tools"
+msgstr ""
+
+#: Configure.cpp:2829
+msgid "Devices Automounting"
+msgstr ""
+
+#: Configure.cpp:2829
+msgid "Devices Mount"
+msgstr ""
+
+#: Configure.cpp:2829
+msgid "Devices Usb"
+msgstr ""
+
+#: Configure.cpp:2829
+msgid "Removable Devices"
+msgstr ""
+
+#: Configure.cpp:2829
+msgid "Fixed Devices"
+msgstr ""
+
+#: Configure.cpp:2830
+msgid "Advanced Devices"
+msgstr ""
+
+#: Configure.cpp:2830
+msgid "Advanced Devices Fixed"
+msgstr ""
+
+#: Configure.cpp:2830
+msgid "Advanced Devices Removable"
+msgstr ""
+
+#: Configure.cpp:2830
+msgid "Advanced Devices LVM"
+msgstr ""
+
+#: Configure.cpp:2831
+msgid "Display"
+msgstr ""
+
+#: Configure.cpp:2831
+msgid "Display Trees"
+msgstr ""
+
+#: Configure.cpp:2831
+msgid "Display Tree Font"
+msgstr ""
+
+#: Configure.cpp:2831
+msgid "Display Misc"
+msgstr ""
+
+#: Configure.cpp:2832
+msgid "Real Terminals"
+msgstr ""
+
+#: Configure.cpp:2832
+msgid "Terminal Emulator"
+msgstr ""
+
+#: Configure.cpp:2832
+msgid "Networks"
+msgstr ""
+
+#: Configure.cpp:2833
+msgid "Misc Undo"
+msgstr ""
+
+#: Configure.cpp:2833
+msgid "Misc Times"
+msgstr ""
+
+#: Configure.cpp:2833
+msgid "Misc Superuser"
+msgstr ""
+
+#: Configure.cpp:2833
+msgid "Misc Other"
+msgstr ""
+
+#: Configure.cpp:2854
+#, c-format
+msgid ""
+"There are unsaved changes on the \"%s\" page.\n"
+"                           Really close?"
+msgstr ""
+
+#: Configure.cpp:3011
+msgid "Selected tree Font"
+msgstr ""
+
+#: Configure.cpp:3013
+msgid "Default tree Font"
+msgstr ""
+
+#: Configure.cpp:3590
+msgid " (Ignored)"
+msgstr ""
+
+#: Configure.cpp:3651
+msgid "Delete this Device?"
+msgstr ""
+
+#: Configure.cpp:3916
+msgid "Selected terminal emulator Font"
+msgstr ""
+
+#: Configure.cpp:3918
+msgid "Default Font"
+msgstr ""
+
+#: Configure.cpp:4125
+msgid "Delete "
+msgstr ""
+
+#: Configure.cpp:4125 MyDirs.cpp:1273 Redo.cpp:1365 Redo.cpp:1376
+msgid "Are you SURE?"
+msgstr ""
+
+#: Configure.cpp:4136
+msgid "That doesn't seem to be a valid ip address"
+msgstr ""
+
+#: Configure.cpp:4139
+msgid "That server is already on the list"
+msgstr ""
+
+#: Configure.cpp:4306
+msgid "Please enter the command to use, including any required options"
+msgstr ""
+
+#: Configure.cpp:4307
+msgid "Command for a different gui su program"
+msgstr ""
+
+#: Configure.cpp:4359
+msgid "Each metakey pattern must be unique. Try again?"
+msgstr ""
+
+#: Configure.cpp:4404
+msgid "You chose not to export any data type! Aborting."
+msgstr ""
+
+#: Configure.cpp:4901
+msgid "Delete this toolbar button?"
+msgstr ""
+
+#: Configure.cpp:4991
+msgid "Browse for the Filepath to Add"
+msgstr ""
+
+#: Devices.cpp:225
+msgid "Hard drive"
+msgstr ""
+
+#: Devices.cpp:225
+msgid "Floppy disc"
+msgstr ""
+
+#: Devices.cpp:225
+msgid "CD or DVDRom"
+msgstr ""
+
+#: Devices.cpp:225
+msgid "CD or DVD writer"
+msgstr ""
+
+#: Devices.cpp:225
+msgid "USB Pen"
+msgstr ""
+
+#: Devices.cpp:225
+msgid "USB memory card"
+msgstr ""
+
+#: Devices.cpp:225
+msgid "USB card-reader"
+msgstr ""
+
+#: Devices.cpp:225
+msgid "USB hard drive"
+msgstr ""
+
+#: Devices.cpp:225
+msgid "Unknown device"
+msgstr ""
+
+#: Devices.cpp:305 Devices.cpp:686
+msgid " menu"
+msgstr ""
+
+#: Devices.cpp:309
+msgid "&Display    "
+msgstr ""
+
+#: Devices.cpp:310
+msgid "&Undisplay   "
+msgstr ""
+
+#: Devices.cpp:312
+msgid "&Mount    "
+msgstr ""
+
+#: Devices.cpp:312
+msgid "&UnMount   "
+msgstr ""
+
+#: Devices.cpp:348
+msgid "Mount a DVD-&RAM"
+msgstr ""
+
+#: Devices.cpp:351 Devices.cpp:687
+msgid "Display "
+msgstr ""
+
+#: Devices.cpp:352
+msgid "UnMount DVD-&RAM"
+msgstr ""
+
+#: Devices.cpp:358
+msgid "&Eject"
+msgstr ""
+
+#: Devices.cpp:455
+msgid "Which mount do you wish to remove?"
+msgstr ""
+
+#: Devices.cpp:455
+msgid "Unmount a DVD-RAM disc"
+msgstr ""
+
+#: Devices.cpp:533
+msgid "Click or Drag here to invoke "
+msgstr ""
+
+#: Devices.cpp:585
+msgid "I'm afraid you don't have permission to Read this file"
+msgstr ""
+
+#: Devices.cpp:585
+msgid "Failed"
+msgstr ""
+
+#: Devices.cpp:595
+msgid "file(s) couldn't be opened due to lack of Read permission"
+msgstr ""
+
+#: Devices.cpp:596
+msgid "Warning"
+msgstr ""
+
+#: Devices.cpp:688
+msgid "Undisplay "
+msgstr ""
+
+#: Devices.cpp:922
+msgid "Floppy"
+msgstr ""
+
+#: Devices.cpp:1463
+msgid ""
+"Oops, that drive doesn't seem to be available.\n"
+"\n"
+"            Have a nice day!"
+msgstr ""
+
+#: Devices.cpp:1475
+msgid ""
+"Oops, that partition doesn't seem to be available.\n"
+"\n"
+"            Have a nice day!"
+msgstr ""
+
+#: Devices.cpp:1495
+msgid "Sorry, you need to be root to unmount non-fstab partitions"
+msgstr ""
+
+#: Devices.cpp:1500
+msgid "Sorry, failed to unmount"
+msgstr ""
+
+#: Devices.cpp:1515
+msgid ""
+"\n"
+"(You'll need to su to root)"
+msgstr ""
+
+#: Devices.cpp:1516
+msgid "The partition "
+msgstr ""
+
+#: Devices.cpp:1516
+msgid ""
+" doesn't have an fstab entry.\n"
+"Where would you like to mount it?"
+msgstr ""
+
+#: Devices.cpp:1520
+msgid "Mount a non-fstab partition"
+msgstr ""
+
+#: Devices.cpp:1527
+msgid "The mount-point for this device doesn't exist.  Create it?"
+msgstr ""
+
+#: Devices.cpp:1571 Mounts.cpp:142 Mounts.cpp:364
+msgid "Sorry, you need to be root to mount non-fstab partitions"
+msgstr ""
+
+#: Devices.cpp:1578 Devices.cpp:1585 Mounts.cpp:373
+msgid ""
+"Oops, failed to mount successfully\n"
+"There was a problem with /etc/mtab"
+msgstr ""
+
+#: Devices.cpp:1579 Devices.cpp:1586
+msgid ""
+"Oops, failed to mount successfully\n"
+"  Try inserting a functioning disc"
+msgstr ""
+
+#: Devices.cpp:1580 Devices.cpp:1587 Mounts.cpp:375 Mounts.cpp:476
+#: Mounts.cpp:707
+msgid "Oops, failed to mount successfully due to error "
+msgstr ""
+
+#: Devices.cpp:1583 Mounts.cpp:372 Mounts.cpp:474
+msgid ""
+"Oops, failed to mount successfully\n"
+"Do you have permission to do this?"
+msgstr ""
+
+#: Devices.cpp:1725
+msgid "I can't find the file with the list of partitions,  "
+msgstr ""
+
+#: Devices.cpp:1725 Devices.cpp:2276
+msgid ""
+"\n"
+"\n"
+"You need to use Configure to sort things out"
+msgstr ""
+
+#: Devices.cpp:1743
+msgid "File "
+msgstr ""
+
+#: Devices.cpp:2276
+msgid "I can't find the file with the list of scsi entries,  "
+msgstr ""
+
+#: Devices.cpp:3358 Devices.cpp:3390
+msgid "You must enter a valid command. Try again?"
+msgstr ""
+
+#: Devices.cpp:3358 Devices.cpp:3390
+msgid "No app entered"
+msgstr ""
+
+#: Devices.cpp:3364 Devices.cpp:3396
+msgid ""
+"That filepath doesn't seem currently to exist.\n"
+"                Use it anyway?"
+msgstr ""
+
+#: Devices.cpp:3364 Devices.cpp:3396
+msgid "App not found"
+msgstr ""
+
+#: Devices.cpp:3415
+msgid "Delete this Editor?"
+msgstr ""
+
+#: Devices.cpp:3631
+msgid "png"
+msgstr ""
+
+#: Devices.cpp:3631
+msgid "xpm"
+msgstr ""
+
+#: Devices.cpp:3631
+msgid "bmp"
+msgstr ""
+
+#: Devices.cpp:3631 Devices.cpp:3633 dialogs.xrc:3763
+msgid "Cancel"
+msgstr ""
+
+#: Devices.cpp:3632
+msgid "Please select the correct icon-type"
+msgstr ""
+
+#: Dup.cpp:46
+msgid "I'm afraid you don't have Read permission for the file"
+msgstr ""
+
+#: Dup.cpp:134
+msgid ""
+"There seems to be a problem:  the destination directory doesn't exist!  "
+"Sorry."
+msgstr ""
+
+#: Dup.cpp:147 Dup.cpp:220
+msgid ""
+"There seems to be a problem:  the incoming directory doesn't exist!  Sorry."
+msgstr ""
+
+#: Dup.cpp:251
+msgid "There's already a directory in the archive with the name "
+msgstr ""
+
+#: Dup.cpp:252
+msgid ""
+"\n"
+"I suggest you rename either it, or the incoming directory"
+msgstr ""
+
+#: Dup.cpp:328
+msgid ""
+"For some reason, trying to create a dir to temporarily-save the overwritten "
+"file failed.  Sorry!"
+msgstr ""
+
+#: Dup.cpp:423
+msgid "Both files have the same Modification time"
+msgstr ""
+
+#: Dup.cpp:429
+msgid "The current file was modified on "
+msgstr ""
+
+#: Dup.cpp:430
+msgid "The incoming file was modified on "
+msgstr ""
+
+#: Dup.cpp:457
+msgid "You seem to want to overwrite this directory with itself"
+msgstr ""
+
+#: Dup.cpp:499
+msgid "Sorry, that name is already taken.  Please try again."
+msgstr ""
+
+#: Dup.cpp:502 MyFiles.cpp:678
+msgid "No, the idea is that you CHANGE the name"
+msgstr ""
+
+#: Dup.cpp:526
+msgid "Sorry, I couldn't duplicate the file.  A permissions problem maybe?"
+msgstr ""
+
+#: Dup.cpp:558
+msgid ""
+"Sorry, I couldn't make room for the incoming directory.  A permissions "
+"problem maybe?"
+msgstr ""
+
+#: Dup.cpp:561
+msgid "Sorry, an implausible filesystem error occurred :-("
+msgstr ""
+
+#: Dup.cpp:609
+msgid "Symlink Deletion Failed!?!"
+msgstr ""
+
+#: Dup.cpp:624
+msgid "Multiple Duplicate"
+msgstr ""
+
+#: Dup.cpp:674
+msgid "Confirm Duplication"
+msgstr ""
+
+#: Dup.cpp:928 Tools.cpp:1840 Tools.cpp:2167
+msgid "RegEx Help"
+msgstr ""
+
+#: ExecuteInDialog.cpp:70
+msgid "Success\n"
+msgstr ""
+
+#: ExecuteInDialog.cpp:72
+msgid "Process failed\n"
+msgstr ""
+
+#: ExecuteInDialog.cpp:90 Tools.cpp:213
+msgid "Process successfully aborted\n"
+msgstr ""
+
+#: ExecuteInDialog.cpp:95 Tools.cpp:216
+msgid ""
+"SIGTERM failed\n"
+"Trying SIGKILL\n"
+msgstr ""
+
+#: ExecuteInDialog.cpp:98 Tools.cpp:220
+msgid "Process successfully killed\n"
+msgstr ""
+
+#: ExecuteInDialog.cpp:103 Tools.cpp:223
+msgid "Sorry, Cancel failed\n"
+msgstr ""
+
+#: ExecuteInDialog.cpp:130
+#, c-format
+msgid "Execution of '%s' failed."
+msgstr ""
+
+#: ExecuteInDialog.cpp:188
+msgid "Close"
+msgstr ""
+
+#: Filetypes.cpp:347
+msgid "Regular File"
+msgstr ""
+
+#: Filetypes.cpp:348
+msgid "Symbolic Link"
+msgstr ""
+
+#: Filetypes.cpp:349
+msgid "Broken Symbolic Link"
+msgstr ""
+
+#: Filetypes.cpp:351
+msgid "Character Device"
+msgstr ""
+
+#: Filetypes.cpp:352
+msgid "Block Device"
+msgstr ""
+
+#: Filetypes.cpp:353 moredialogs.xrc:1530
+msgid "Directory"
+msgstr ""
+
+#: Filetypes.cpp:354
+msgid "FIFO"
+msgstr ""
+
+#: Filetypes.cpp:355 moredialogs.xrc:1534
+msgid "Socket"
+msgstr ""
+
+#: Filetypes.cpp:356
+msgid "Unknown Type?!"
+msgstr ""
+
+#: Filetypes.cpp:1003
+msgid "Applications"
+msgstr ""
+
+#: Filetypes.cpp:1264
+msgid "Sorry, you're not allowed to delete the root folder"
+msgstr ""
+
+#: Filetypes.cpp:1265
+msgid "Sigh!"
+msgstr ""
+
+#: Filetypes.cpp:1272
+#, c-format
+msgid "Delete folder %s?"
+msgstr ""
+
+#: Filetypes.cpp:1284
+msgid "Sorry, I couldn't find that folder!?"
+msgstr ""
+
+#: Filetypes.cpp:1337
+#, c-format
+msgid ""
+"I can't find an executable program \"%s\".\n"
+"Continue anyway?"
+msgstr ""
+
+#: Filetypes.cpp:1338
+#, c-format
+msgid ""
+"I can't find an executable program \"%s\" in your PATH.\n"
+"Continue anyway?"
+msgstr ""
+
+#: Filetypes.cpp:1345 Filetypes.cpp:1731
+#, c-format
+msgid ""
+"Sorry, there is already an application called %s\n"
+"                     Try again?"
+msgstr ""
+
+#: Filetypes.cpp:1376
+msgid "Please confirm"
+msgstr ""
+
+#: Filetypes.cpp:1378
+msgid "You didn't enter an Extension!"
+msgstr ""
+
+#: Filetypes.cpp:1379
+msgid "For which extension(s) do you wish this application to be the default?"
+msgstr ""
+
+#: Filetypes.cpp:1427
+#, c-format
+msgid "For which Extensions do you want %s to be default"
+msgstr ""
+
+#: Filetypes.cpp:1459
+#, c-format
+msgid ""
+"Replace %s\n"
+"with %s\n"
+"as the default command for files of type %s?"
+msgstr ""
+
+#: Filetypes.cpp:1620 Filetypes.cpp:1669
+msgid "Sorry, I couldn't find the application!?"
+msgstr ""
+
+#: Filetypes.cpp:1622
+#, c-format
+msgid "Delete %s?"
+msgstr ""
+
+#: Filetypes.cpp:1680
+msgid "Edit the Application data"
+msgstr ""
+
+#: Filetypes.cpp:1998
+msgid "Sorry, you don't have permission to execute this file."
+msgstr ""
+
+#: Filetypes.cpp:2000
+msgid ""
+"Sorry, you don't have permission to execute this file.\n"
+"Would you like to try to Read it?"
+msgstr ""
+
+#: Filetypes.cpp:2215
+#, c-format
+msgid "No longer use %s as the default command for files of type %s?"
+msgstr ""
+
+#: Misc.cpp:262
+msgid "Failed to create a temporary directory"
+msgstr ""
+
+#: Misc.cpp:571
+msgid "Show Hidden"
+msgstr ""
+
+#: Misc.cpp:1391 MyDirs.cpp:1192 MyDirs.cpp:1367
+msgid "cut"
+msgstr ""
+
+#: Misc.cpp:1396 Misc.cpp:1398
+#, c-format
+msgid "%zu items "
+msgstr ""
+
+#: Mounts.cpp:74
+msgid ""
+"You haven't entered a mount-point.\n"
+"Try again?"
+msgstr ""
+
+#: Mounts.cpp:115
+msgid "The mount-point for this partition doesn't exist.  Create it?"
+msgstr ""
+
+#: Mounts.cpp:167
+msgid "Oops, failed to mount the partition."
+msgstr ""
+
+#: Mounts.cpp:170 Mounts.cpp:218 Mounts.cpp:279
+msgid " The error message was:"
+msgstr ""
+
+#: Mounts.cpp:180 Mounts.cpp:395 Mounts.cpp:504 Mounts.cpp:571 Mounts.cpp:595
+#: Mounts.cpp:698
+msgid "Mounted successfully on "
+msgstr ""
+
+#: Mounts.cpp:187
+msgid "Impossible to create directory "
+msgstr ""
+
+#: Mounts.cpp:198
+msgid "Oops, failed to create the directory"
+msgstr ""
+
+#: Mounts.cpp:212
+msgid "Oops, I don't have enough permission to create the directory"
+msgstr ""
+
+#: Mounts.cpp:215
+msgid "Oops, failed to create the directory."
+msgstr ""
+
+#: Mounts.cpp:245 Mounts.cpp:748
+msgid "Unmounting root is a SERIOUSLY bad idea!"
+msgstr ""
+
+#: Mounts.cpp:276
+msgid "Oops, failed to unmount the partition."
+msgstr ""
+
+#: Mounts.cpp:287 Mounts.cpp:299
+msgid "Failed to unmount "
+msgstr ""
+
+#: Mounts.cpp:290 Mounts.cpp:314 Mounts.cpp:755 Mounts.cpp:806
+msgid " unmounted successfully"
+msgstr ""
+
+#: Mounts.cpp:293 Mounts.cpp:310
+msgid "Oops, failed to unmount successfully due to error "
+msgstr ""
+
+#: Mounts.cpp:295 Mounts.cpp:798
+msgid "Oops, failed to unmount"
+msgstr ""
+
+#: Mounts.cpp:336
+msgid "The requested mount-point doesn't exist.  Create it?"
+msgstr ""
+
+#: Mounts.cpp:374
+msgid ""
+"Oops, failed to mount successfully\n"
+"Are you sure the file is a valid Image?"
+msgstr ""
+
+#: Mounts.cpp:387 Mounts.cpp:495 Mounts.cpp:496
+msgid "Failed to mount successfully due to error "
+msgstr ""
+
+#: Mounts.cpp:388
+msgid "Failed to mount successfully"
+msgstr ""
+
+#: Mounts.cpp:415 Mounts.cpp:417
+msgid "This export is already mounted at "
+msgstr ""
+
+#: Mounts.cpp:438
+msgid "The mount-point for this Export doesn't exist.  Create it?"
+msgstr ""
+
+#: Mounts.cpp:450 Mounts.cpp:652 Mounts.cpp:665
+msgid "The mount-point for this share doesn't exist.  Create it?"
+msgstr ""
+
+#: Mounts.cpp:466
+msgid "Sorry, you need to be root to mount non-fstab exports"
+msgstr ""
+
+#: Mounts.cpp:475
+msgid ""
+"Oops, failed to mount successfully\n"
+"Is NFS running?"
+msgstr ""
+
+#: Mounts.cpp:524
+msgid "The selected mount-point doesn't exist.  Create it?"
+msgstr ""
+
+#: Mounts.cpp:535
+msgid "The selected mount-point isn't a directory"
+msgstr ""
+
+#: Mounts.cpp:536
+msgid "The selected mount-point can't be accessed"
+msgstr ""
+
+#: Mounts.cpp:538
+msgid "The selected mount-point is not empty.  Try to mount there anyway?"
+msgstr ""
+
+#: Mounts.cpp:577
+msgid "Failed to mount over ssh. The error message was:"
+msgstr ""
+
+#: Mounts.cpp:580
+msgid "Failed to mount over ssh due to error "
+msgstr ""
+
+#: Mounts.cpp:602
+#, c-format
+msgid "Failed to mount over ssh on %s"
+msgstr ""
+
+#: Mounts.cpp:624
+msgid "This share is already mounted at "
+msgstr ""
+
+#: Mounts.cpp:626
+#, c-format
+msgid ""
+"This share is already mounted at %s\n"
+"Do you want to mount it at %s too?"
+msgstr ""
+
+#: Mounts.cpp:688
+msgid "Sorry, you need to be root to mount non-fstab shares"
+msgstr ""
+
+#: Mounts.cpp:704
+msgid "Oops, failed to mount successfully. The error message was:"
+msgstr ""
+
+#: Mounts.cpp:734
+msgid "No Mounts of this type found"
+msgstr ""
+
+#: Mounts.cpp:738
+msgid "Unmount a Network mount"
+msgstr ""
+
+#: Mounts.cpp:739
+msgid "Share or Export to Unmount"
+msgstr ""
+
+#: Mounts.cpp:740 moredialogs.xrc:10489 moredialogs.xrc:11024
+#: moredialogs.xrc:11543
+msgid "Mount-Point"
+msgstr ""
+
+#: Mounts.cpp:767
+msgid " Unmounted successfully"
+msgstr ""
+
+#: Mounts.cpp:795
+msgid "Unmount failed with the message:"
+msgstr ""
+
+#: Mounts.cpp:881
+msgid "Choose a Directory to use as a Mount-point"
+msgstr ""
+
+#: Mounts.cpp:952
+msgid "Choose an Image to Mount"
+msgstr ""
+
+#: Mounts.cpp:1267
+msgid ""
+"I can't find the utility \"smbclient\". This probably means that Samba isn't "
+"properly installed.\n"
+"Alternatively there may be a PATH or permissions problem"
+msgstr ""
+
+#: Mounts.cpp:1288
+msgid ""
+"I can't get the utility \"nmblookup\" to work. This probably means that "
+"Samba isn't properly installed.\n"
+"Alternatively there may be a PATH or permissions problem"
+msgstr ""
+
+#: Mounts.cpp:1297
+msgid ""
+"I can't find the utility \"nmblookup\". This probably means that Samba isn't "
+"properly installed.\n"
+"Alternatively there may be a PATH or permissions problem"
+msgstr ""
+
+#: Mounts.cpp:1301
+msgid "Searching for samba shares..."
+msgstr ""
+
+#: Mounts.cpp:1325
+msgid ""
+"I can't find an active samba server.\n"
+"If you know of one, please tell me its address e.g. 192.168.0.3"
+msgstr ""
+
+#: Mounts.cpp:1326
+msgid "No server found"
+msgstr ""
+
+#: Mounts.cpp:1455
+msgid ""
+"I'm afraid I can't find the showmount utility. Please use Configure > "
+"Network to enter its filepath"
+msgstr ""
+
+#: Mounts.cpp:1524
+msgid ""
+"I can't find the utility \"showmount\".  This probably means that NFS isn't "
+"properly installed.\n"
+"Alternatively there may be a PATH or permissions problem"
+msgstr ""
+
+#: Mounts.cpp:1565
+msgid ""
+"I don't know of any NFS servers on your network.\n"
+"Do you want to continue, and write some in yourself?"
+msgstr ""
+
+#: Mounts.cpp:1566
+msgid "No current mounts found"
+msgstr ""
+
+#: MyDirs.cpp:118
+msgid "You can't link within a directory unless you alter the link's name."
+msgstr ""
+
+#: MyDirs.cpp:118
+msgid "Not possible"
+msgstr ""
+
+#: MyDirs.cpp:492
+msgid "Back to previous directory"
+msgstr ""
+
+#: MyDirs.cpp:495
+msgid "Re-enter directory"
+msgstr ""
+
+#: MyDirs.cpp:499 MyDirs.cpp:500
+msgid "Select previously-visited directory"
+msgstr ""
+
+#: MyDirs.cpp:505
+msgid "Show Full Tree"
+msgstr ""
+
+#: MyDirs.cpp:506
+msgid "Up to Higher Directory"
+msgstr ""
+
+#: MyDirs.cpp:520 moredialogs.xrc:319 moredialogs.xrc:3905
+#: moredialogs.xrc:12310 moredialogs.xrc:12618
+msgid "Home"
+msgstr ""
+
+#: MyDirs.cpp:525 MyDirs.cpp:531
+msgid "Documents"
+msgstr ""
+
+#: MyDirs.cpp:684
+msgid "Hmm.  It seems that directory no longer exists!"
+msgstr ""
+
+#: MyDirs.cpp:717
+msgid " D H     "
+msgstr ""
+
+#: MyDirs.cpp:717
+msgid " D     "
+msgstr ""
+
+#: MyDirs.cpp:730
+msgid "Dir: "
+msgstr ""
+
+#: MyDirs.cpp:731
+msgid "Files, total size"
+msgstr ""
+
+#: MyDirs.cpp:732
+msgid "Subdirectories"
+msgstr ""
+
+#: MyDirs.cpp:744
+#, c-format
+msgid "%s in %zu directories"
+msgstr ""
+
+#: MyDirs.cpp:753 MyDirs.cpp:880 MyDirs.cpp:891 MyDirs.cpp:1857
+#: MyFrame.cpp:1192 MyFrame.cpp:1200 MyFrame.cpp:1208 MyFrame.cpp:1216
+#: MyFrame.cpp:1224 MyFrame.cpp:1239 MyFrame.cpp:1296
+msgid "Please try again in a moment"
+msgstr ""
+
+#: MyDirs.cpp:753 MyDirs.cpp:880 MyDirs.cpp:891 MyDirs.cpp:1857
+#: MyFrame.cpp:1192 MyFrame.cpp:1200 MyFrame.cpp:1208 MyFrame.cpp:1216
+#: MyFrame.cpp:1224 MyFrame.cpp:1239 MyFrame.cpp:1296
+msgid "I'm busy right now"
+msgstr ""
+
+#: MyDirs.cpp:777
+msgid ""
+"I'm afraid you can't Create inside an archive.\n"
+"However you could create the new element outside, then Move it in."
+msgstr ""
+
+#: MyDirs.cpp:778 MyFiles.cpp:558
+msgid "I'm afraid you don't have permission to Create in this directory"
+msgstr ""
+
+#: MyDirs.cpp:836
+msgid "&Hide hidden dirs and files\tCtrl+H"
+msgstr ""
+
+#: MyDirs.cpp:836
+msgid "&Show hidden dirs and files\tCtrl+H"
+msgstr ""
+
+#: MyDirs.cpp:920 MyDirs.cpp:926 MyDirs.cpp:1010
+msgid "moved"
+msgstr ""
+
+#: MyDirs.cpp:955
+msgid ""
+"I'm afraid you don't have the right permissions to make this Move.\n"
+"Do you want to try to Copy instead?"
+msgstr ""
+
+#: MyDirs.cpp:962
+msgid "I'm afraid you don't have the right permissions to make this Move"
+msgstr ""
+
+#: MyDirs.cpp:1094
+msgid ""
+"I'm afraid you can't create links inside an archive.\n"
+"However you could create the new link outside, then Move it in."
+msgstr ""
+
+#: MyDirs.cpp:1095
+msgid "I'm afraid you don't have permission to create links in this directory"
+msgstr ""
+
+#: MyDirs.cpp:1111
+#, c-format
+msgid "Create a new %s Link from:"
+msgstr ""
+
+#: MyDirs.cpp:1111
+msgid "Hard"
+msgstr ""
+
+#: MyDirs.cpp:1111
+msgid "Soft"
+msgstr ""
+
+#: MyDirs.cpp:1136
+msgid "Please provide an extension to append"
+msgstr ""
+
+#: MyDirs.cpp:1142
+msgid "Please provide a name to call the link"
+msgstr ""
+
+#: MyDirs.cpp:1146
+msgid "Please provide a different name for the link"
+msgstr ""
+
+#: MyDirs.cpp:1183
+msgid "linked"
+msgstr ""
+
+#: MyDirs.cpp:1193
+msgid "trashed"
+msgstr ""
+
+#: MyDirs.cpp:1193 MyDirs.cpp:1367
+msgid "deleted"
+msgstr ""
+
+#: MyDirs.cpp:1206 MyDirs.cpp:1433
+msgid "I'm afraid you don't have permission to Delete from this directory"
+msgstr ""
+
+#: MyDirs.cpp:1220 MyDirs.cpp:1423
+msgid "At least one of the items to be deleted seems not to exist"
+msgstr ""
+
+#: MyDirs.cpp:1220 MyDirs.cpp:1423
+msgid "The item to be deleted seems not to exist"
+msgstr ""
+
+#: MyDirs.cpp:1221 MyDirs.cpp:1424
+msgid "Item not found"
+msgstr ""
+
+#: MyDirs.cpp:1233
+msgid "I'm afraid you don't have permission to move these items to a 'can'."
+msgstr ""
+
+#: MyDirs.cpp:1233 MyDirs.cpp:1241
+msgid ""
+"\n"
+"However you could 'Permanently delete' them."
+msgstr ""
+
+#: MyDirs.cpp:1234 MyDirs.cpp:1242
+#, c-format
+msgid "I'm afraid you don't have permission to move %s to a 'can'."
+msgstr ""
+
+#: MyDirs.cpp:1235 MyDirs.cpp:1243
+msgid ""
+"\n"
+"However you could 'Permanently delete' it."
+msgstr ""
+
+#: MyDirs.cpp:1240
+#, c-format
+msgid ""
+"I'm afraid you don't have permission to move %u of these %u items to a 'can'."
+msgstr ""
+
+#: MyDirs.cpp:1244
+msgid ""
+"\n"
+"\n"
+"Do you wish to delete the other item(s)?"
+msgstr ""
+
+#: MyDirs.cpp:1257
+msgid "Discard to Trash: "
+msgstr ""
+
+#: MyDirs.cpp:1258
+msgid "Delete: "
+msgstr ""
+
+#: MyDirs.cpp:1266 MyDirs.cpp:1448
+#, c-format
+msgid "%zu items, from: "
+msgstr ""
+
+#: MyDirs.cpp:1269 MyDirs.cpp:1451
+msgid ""
+"\n"
+"\n"
+"          To:\n"
+msgstr ""
+
+#: MyDirs.cpp:1279
+msgid ""
+"For some reason, trying to create a dir to receive the deletion failed.  "
+"Sorry!"
+msgstr ""
+
+#: MyDirs.cpp:1284 MyDirs.cpp:1463
+msgid "Sorry, Deletion failed"
+msgstr ""
+
+#: MyDirs.cpp:1376 MyDirs.cpp:1523
+msgid ""
+" You don't have permission to Delete from this directory.\n"
+"You could try deleting piecemeal."
+msgstr ""
+
+#: MyDirs.cpp:1377 MyDirs.cpp:1524
+msgid ""
+" You don't have permission to Delete from a subdirectory of this directory.\n"
+"You could try deleting piecemeal."
+msgstr ""
+
+#: MyDirs.cpp:1378 MyDirs.cpp:1525
+msgid " The filepath was invalid."
+msgstr ""
+
+#: MyDirs.cpp:1381 MyDirs.cpp:1382 MyDirs.cpp:1383 MyDirs.cpp:1528
+#: MyDirs.cpp:1529 MyDirs.cpp:1530
+msgid "For "
+msgstr ""
+
+#: MyDirs.cpp:1381 MyDirs.cpp:1528
+msgid " of the items, you don't have permission to Delete from this directory."
+msgstr ""
+
+#: MyDirs.cpp:1382 MyDirs.cpp:1529
+msgid ""
+" of the items, you don't have permission to Delete from a subdirectory of "
+"this directory."
+msgstr ""
+
+#: MyDirs.cpp:1383 MyDirs.cpp:1530
+msgid " of the items,  the filepath was invalid."
+msgstr ""
+
+#: MyDirs.cpp:1385 MyDirs.cpp:1532
+msgid ""
+" \n"
+"You could try deleting piecemeal."
+msgstr ""
+
+#: MyDirs.cpp:1388 MyDirs.cpp:1535
+msgid "I'm afraid the item couldn't be deleted."
+msgstr ""
+
+#: MyDirs.cpp:1389 MyDirs.cpp:1536
+msgid "I'm afraid "
+msgstr ""
+
+#: MyDirs.cpp:1389 MyDirs.cpp:1536
+msgid " items could not be deleted."
+msgstr ""
+
+#: MyDirs.cpp:1392 MyDirs.cpp:1539
+msgid "I'm afraid only "
+msgstr ""
+
+#: MyDirs.cpp:1392 MyDirs.cpp:1539
+msgid " of the "
+msgstr ""
+
+#: MyDirs.cpp:1392 MyDirs.cpp:1539
+msgid " items could be deleted."
+msgstr ""
+
+#: MyDirs.cpp:1397
+msgid "Cut failed"
+msgstr ""
+
+#: MyDirs.cpp:1397 MyDirs.cpp:1544
+msgid "Deletion failed"
+msgstr ""
+
+#: MyDirs.cpp:1455
+msgid "Permanently delete (you can't undo this!): "
+msgstr ""
+
+#: MyDirs.cpp:1456
+msgid "Are you ABSOLUTELY sure?"
+msgstr ""
+
+#: MyDirs.cpp:1469 MyDirs.cpp:1546
+msgid "irrevocably deleted"
+msgstr ""
+
+#: MyDirs.cpp:1565 MyDirs.cpp:1571
+msgid "Deletion Failed!?!"
+msgstr ""
+
+#: MyDirs.cpp:1569
+msgid "? Never heard of it!"
+msgstr ""
+
+#: MyDirs.cpp:1588
+msgid "Directory deletion Failed!?!"
+msgstr ""
+
+#: MyDirs.cpp:1601
+msgid "The File seems not to exist!?!"
+msgstr ""
+
+#: MyDirs.cpp:1851
+msgid "copied"
+msgstr ""
+
+#: MyDirs.cpp:1937 MyDirs.cpp:1945 MyDirs.cpp:2029
+msgid "Directory skeleton pasted"
+msgstr ""
+
+#: MyDirs.cpp:1938 MyDirs.cpp:1946 MyDirs.cpp:2020
+msgid "pasted"
+msgstr ""
+
+#: MyFiles.cpp:371
+msgid "Make a S&ymlink"
+msgstr ""
+
+#: MyFiles.cpp:371
+msgid "Make a Hard-Lin&k"
+msgstr ""
+
+#: MyFiles.cpp:379
+msgid "Extract from archive"
+msgstr ""
+
+#: MyFiles.cpp:380
+msgid "De&lete from archive"
+msgstr ""
+
+#: MyFiles.cpp:382
+msgid "Rena&me Dir within archive"
+msgstr ""
+
+#: MyFiles.cpp:383
+msgid "Duplicate Dir within archive"
+msgstr ""
+
+#: MyFiles.cpp:386
+msgid "Rena&me File within archive"
+msgstr ""
+
+#: MyFiles.cpp:387
+msgid "Duplicate File within archive"
+msgstr ""
+
+#: MyFiles.cpp:395
+msgid "De&lete Dir"
+msgstr ""
+
+#: MyFiles.cpp:395
+msgid "Send Dir to &Trashcan"
+msgstr ""
+
+#: MyFiles.cpp:396
+msgid "De&lete Symlink"
+msgstr ""
+
+#: MyFiles.cpp:396
+msgid "Send Symlink to &Trashcan"
+msgstr ""
+
+#: MyFiles.cpp:397
+msgid "De&lete File"
+msgstr ""
+
+#: MyFiles.cpp:397
+msgid "Send File to &Trashcan"
+msgstr ""
+
+#: MyFiles.cpp:419 MyFiles.cpp:433
+msgid "Other . . ."
+msgstr ""
+
+#: MyFiles.cpp:420
+msgid "Open using root privile&ges with . . . . "
+msgstr ""
+
+#: MyFiles.cpp:423
+msgid "Open using root privile&ges"
+msgstr ""
+
+#: MyFiles.cpp:434
+msgid "Open &with . . . . "
+msgstr ""
+
+#: MyFiles.cpp:445
+msgid "Rena&me Dir"
+msgstr ""
+
+#: MyFiles.cpp:446
+msgid "&Duplicate Dir"
+msgstr ""
+
+#: MyFiles.cpp:449
+msgid "Rena&me File"
+msgstr ""
+
+#: MyFiles.cpp:450
+msgid "&Duplicate File"
+msgstr ""
+
+#: MyFiles.cpp:466
+msgid "Create a New Archive"
+msgstr ""
+
+#: MyFiles.cpp:467
+msgid "Add to an Existing Archive"
+msgstr ""
+
+#: MyFiles.cpp:468
+msgid "Test integrity of Archive or Compressed Files"
+msgstr ""
+
+#: MyFiles.cpp:469
+msgid "Compress Files"
+msgstr ""
+
+#: MyFiles.cpp:475
+msgid "&Hide hidden dirs and files"
+msgstr ""
+
+#: MyFiles.cpp:477
+msgid "&Show hidden dirs and files"
+msgstr ""
+
+#: MyFiles.cpp:480
+msgid "&Sort filenames ending in digits normally"
+msgstr ""
+
+#: MyFiles.cpp:482
+msgid "&Sort filenames ending in digits in Decimal order"
+msgstr ""
+
+#: MyFiles.cpp:498 MyTreeCtrl.cpp:867
+msgid "An extension starts at the filename's..."
+msgstr ""
+
+#: MyFiles.cpp:504 MyTreeCtrl.cpp:872
+msgid "Extension definition..."
+msgstr ""
+
+#: MyFiles.cpp:506
+msgid "Columns to Display"
+msgstr ""
+
+#: MyFiles.cpp:510
+msgid "Unsplit Panes"
+msgstr ""
+
+#: MyFiles.cpp:510
+msgid "Repl&icate in Opposite Pane"
+msgstr ""
+
+#: MyFiles.cpp:510
+msgid "Swap the Panes"
+msgstr ""
+
+#: MyFiles.cpp:557
+msgid ""
+"I'm afraid you can't Create inside an archive.\n"
+"However you can create the new element outside, then Move it in."
+msgstr ""
+
+#: MyFiles.cpp:588
+msgid "New directory created"
+msgstr ""
+
+#: MyFiles.cpp:588
+msgid "New file created"
+msgstr ""
+
+#: MyFiles.cpp:633 MyFiles.cpp:770
+msgid "I don't think you really want to duplicate root, do you"
+msgstr ""
+
+#: MyFiles.cpp:634 MyFiles.cpp:771
+msgid "I don't think you really want to rename root, do you"
+msgstr ""
+
+#: MyFiles.cpp:650 MyFiles.cpp:758
+msgid "I'm afraid you don't have permission to Duplicate in this directory"
+msgstr ""
+
+#: MyFiles.cpp:651 MyFiles.cpp:759
+msgid "I'm afraid you don't have permission to Rename in this directory"
+msgstr ""
+
+#: MyFiles.cpp:664
+msgid "Duplicate   "
+msgstr ""
+
+#: MyFiles.cpp:665
+msgid "Rename   "
+msgstr ""
+
+#: MyFiles.cpp:677
+msgid "No, the idea is that you supply a NEW name"
+msgstr ""
+
+#: MyFiles.cpp:697 MyFiles.cpp:723 MyFiles.cpp:792 MyFiles.cpp:848
+msgid "duplicated"
+msgstr ""
+
+#: MyFiles.cpp:697 MyFiles.cpp:741 MyFiles.cpp:792 MyFiles.cpp:848
+msgid "renamed"
+msgstr ""
+
+#: MyFiles.cpp:700
+msgid "Sorry, that didn't work. Try again?"
+msgstr ""
+
+#: MyFiles.cpp:854 MyFiles.cpp:893
+msgid ""
+"Sorry, this name is Illegal\n"
+"        Try again?"
+msgstr ""
+
+#: MyFiles.cpp:866
+msgid ""
+"Sorry, One of these already exists\n"
+"            Try again?"
+msgstr ""
+
+#: MyFiles.cpp:879 MyFiles.cpp:931
+msgid ""
+"Sorry, for some reason this operation failed\n"
+"Try again?"
+msgstr ""
+
+#: MyFiles.cpp:905
+msgid ""
+"Sorry, that name is already taken.\n"
+"            Try again?"
+msgstr ""
+
+#: MyFiles.cpp:1020
+msgid "Open with "
+msgstr ""
+
+#: MyFiles.cpp:1051
+msgid " D F"
+msgstr ""
+
+#: MyFiles.cpp:1052
+msgid " R"
+msgstr ""
+
+#: MyFiles.cpp:1053
+msgid " H     "
+msgstr ""
+
+#: MyFiles.cpp:1090
+msgid "  of files and subdirectories"
+msgstr ""
+
+#: MyFiles.cpp:1090
+msgid " of files"
+msgstr ""
+
+#: MyFiles.cpp:1140
+#, c-format
+msgid "%s in %zu %s"
+msgstr ""
+
+#: MyFiles.cpp:1140
+msgid "files and directories"
+msgstr ""
+
+#: MyFiles.cpp:1143
+msgid "directories"
+msgstr ""
+
+#: MyFiles.cpp:1143
+msgid "directory"
+msgstr ""
+
+#: MyFiles.cpp:1144
+msgid "files"
+msgstr ""
+
+#: MyFiles.cpp:1144
+msgid "file"
+msgstr ""
+
+#: MyFiles.cpp:1145
+#, c-format
+msgid " in %zu %s and %zu %s"
+msgstr ""
+
+#: MyFiles.cpp:1147 MyFiles.cpp:1148
+#, c-format
+msgid " in %zu %s"
+msgstr ""
+
+#: MyFiles.cpp:1692
+msgid ""
+"The new target for the link doesn't seem to exist.\n"
+"Try again?"
+msgstr ""
+
+#: MyFiles.cpp:1698
+msgid ""
+"For some reason, changing the symlink's target seems to have failed.  Sorry!"
+msgstr ""
+
+#: MyFiles.cpp:1762
+msgid " alterations successfully made, "
+msgstr ""
+
+#: MyFiles.cpp:1762
+msgid " failures"
+msgstr ""
+
+#: MyFiles.cpp:1831
+msgid "Choose a different file or dir to be the new target"
+msgstr ""
+
+#: MyFrame.cpp:156 MyFrame.cpp:161 MyFrame.cpp:171 MyFrame.cpp:182
+msgid "Warning!"
+msgstr ""
+
+#: MyFrame.cpp:309
+msgid ""
+"Sorry, failed to create the directory for your chosen configuration-file; "
+"aborting."
+msgstr ""
+
+#: MyFrame.cpp:312
+msgid ""
+"Sorry, you don't have permission to write to the directory containing your "
+"chosen configuration-file; aborting."
+msgstr ""
+
+#: MyFrame.cpp:594
+msgid "Cannot initialize the help system; aborting."
+msgstr ""
+
+#: MyFrame.cpp:741
+msgid "Undo several actions at once"
+msgstr ""
+
+#: MyFrame.cpp:742
+msgid "Redo several actions at once"
+msgstr ""
+
+#: MyFrame.cpp:744
+msgid "Cut"
+msgstr ""
+
+#: MyFrame.cpp:744
+msgid "Click to Cut Selection"
+msgstr ""
+
+#: MyFrame.cpp:745 Tools.cpp:2512
+msgid "Copy"
+msgstr ""
+
+#: MyFrame.cpp:745
+msgid "Click to Copy Selection"
+msgstr ""
+
+#: MyFrame.cpp:746
+msgid "Click to Paste Selection"
+msgstr ""
+
+#: MyFrame.cpp:750
+msgid "UnDo"
+msgstr ""
+
+#: MyFrame.cpp:750
+msgid "Undo an action"
+msgstr ""
+
+#: MyFrame.cpp:752
+msgid "ReDo"
+msgstr ""
+
+#: MyFrame.cpp:752
+msgid "Redo a previously-Undone action"
+msgstr ""
+
+#: MyFrame.cpp:756
+msgid "New Tab"
+msgstr ""
+
+#: MyFrame.cpp:756
+msgid "Create a new Tab"
+msgstr ""
+
+#: MyFrame.cpp:757
+msgid "Delete Tab"
+msgstr ""
+
+#: MyFrame.cpp:757
+msgid "Deletes the currently-selected Tab"
+msgstr ""
+
+#: MyFrame.cpp:758
+msgid "Preview tooltips"
+msgstr ""
+
+#: MyFrame.cpp:758
+msgid "Shows previews of images and text files in a 'tooltip'"
+msgstr ""
+
+#: MyFrame.cpp:1047 dialogs.xrc:91
+msgid "About"
+msgstr ""
+
+#: MyFrame.cpp:1925 MyGenericDirCtrl.cpp:848 MyGenericDirCtrl.cpp:866
+#: MyGenericDirCtrl.cpp:877
+msgid "Error"
+msgstr ""
+
+#: MyFrame.cpp:1929 MyNotebook.cpp:190 MyNotebook.cpp:225 MyNotebook.cpp:239
+#: Tools.cpp:3158
+msgid "Success"
+msgstr ""
+
+#: MyGenericDirCtrl.cpp:658
+msgid "Computer"
+msgstr ""
+
+#: MyGenericDirCtrl.cpp:660
+msgid "Sections"
+msgstr ""
+
+#: MyGenericDirCtrl.cpp:848
+msgid "Illegal directory name."
+msgstr ""
+
+#: MyGenericDirCtrl.cpp:866
+msgid "File name exists already."
+msgstr ""
+
+#: MyGenericDirCtrl.cpp:877
+msgid "Operation not permitted."
+msgstr ""
+
+#: MyNotebook.cpp:168
+msgid "Which Template do you wish to Delete?"
+msgstr ""
+
+#: MyNotebook.cpp:168
+msgid "Delete Template"
+msgstr ""
+
+#: MyNotebook.cpp:222
+msgid "Template Save cancelled"
+msgstr ""
+
+#: MyNotebook.cpp:222 MyNotebook.cpp:232
+msgid "Cancelled"
+msgstr ""
+
+#: MyNotebook.cpp:231
+msgid "What would you like to call this template?"
+msgstr ""
+
+#: MyNotebook.cpp:231
+msgid "Choose a template label"
+msgstr ""
+
+#: MyNotebook.cpp:232
+msgid "Save Template cancelled"
+msgstr ""
+
+#: MyNotebook.cpp:287 MyNotebook.cpp:346
+msgid "Sorry, the maximum number of tabs are already open."
+msgstr ""
+
+#: MyNotebook.cpp:349
+msgid " again"
+msgstr ""
+
+#: MyNotebook.cpp:404
+msgid "&Append Tab"
+msgstr ""
+
+#: MyNotebook.cpp:420
+msgid "What would you like to call this tab?"
+msgstr ""
+
+#: MyNotebook.cpp:420
+msgid "Change tab title"
+msgstr ""
+
+#: MyTreeCtrl.cpp:716
+msgid "Invalid column index"
+msgstr ""
+
+#: MyTreeCtrl.cpp:730 MyTreeCtrl.cpp:744
+msgid "Invalid column"
+msgstr ""
+
+#: MyTreeCtrl.cpp:1580
+msgid " *** Broken symlink ***"
+msgstr ""
+
+#: Otherstreams.cpp:121
+msgid "Decompressing a lzma stream failed"
+msgstr ""
+
+#: Otherstreams.cpp:214 Otherstreams.cpp:255
+msgid "xz compression failure"
+msgstr ""
+
+#: Redo.cpp:258
+msgid "  Redo:  "
+msgstr ""
+
+#: Redo.cpp:258
+msgid "  Undo:  "
+msgstr ""
+
+#: Redo.cpp:276
+#, c-format
+msgid "  (%zu Items)  "
+msgstr ""
+
+#: Redo.cpp:297 Redo.cpp:383
+msgid "  ---- MORE ----  "
+msgstr ""
+
+#: Redo.cpp:297 Redo.cpp:383
+msgid "  -- PREVIOUS --  "
+msgstr ""
+
+#: Redo.cpp:539 Redo.cpp:591
+msgid "undone"
+msgstr ""
+
+#: Redo.cpp:539 Redo.cpp:591
+msgid "redone"
+msgstr ""
+
+#: Redo.cpp:590
+msgid " actions "
+msgstr ""
+
+#: Redo.cpp:590
+msgid " action "
+msgstr ""
+
+#: Redo.cpp:758 Redo.cpp:773 Redo.cpp:786 Redo.cpp:799 Redo.cpp:813
+#: Redo.cpp:827 Redo.cpp:855 Redo.cpp:870 Redo.cpp:887 Redo.cpp:906
+#: Redo.cpp:929 Redo.cpp:952 Redo.cpp:979 Redo.cpp:1005 Redo.cpp:1042
+#: Redo.cpp:1066 Redo.cpp:1078 Redo.cpp:1091 Redo.cpp:1104 Redo.cpp:1117
+#: Redo.cpp:1149 Redo.cpp:1190 Redo.cpp:1236 Redo.cpp:1279
+msgid "action"
+msgstr ""
+
+#: Redo.cpp:758 Redo.cpp:786 Redo.cpp:813 Redo.cpp:855 Redo.cpp:887
+#: Redo.cpp:929 Redo.cpp:979 Redo.cpp:1042 Redo.cpp:1078 Redo.cpp:1104
+#: Redo.cpp:1149 Redo.cpp:1236
+msgid " undone"
+msgstr ""
+
+#: Redo.cpp:773 Redo.cpp:799 Redo.cpp:827 Redo.cpp:870 Redo.cpp:906
+#: Redo.cpp:952 Redo.cpp:1005 Redo.cpp:1066 Redo.cpp:1091 Redo.cpp:1117
+#: Redo.cpp:1190 Redo.cpp:1279
+msgid " redone"
+msgstr ""
+
+#: Redo.cpp:1296
+msgid "Failed to create a directory to store deletions"
+msgstr ""
+
+#: Redo.cpp:1336
+msgid ""
+"Sorry, can't create your selected Trashed subdirectory.  A permissions "
+"problem perhaps?\n"
+"I suggest you use Configure to choose another location"
+msgstr ""
+
+#: Redo.cpp:1345
+msgid ""
+"Sorry, can't create your selected Deleted subdirectory.  A permissions "
+"problem perhaps?\n"
+"I suggest you use Configure to choose another location."
+msgstr ""
+
+#: Redo.cpp:1354
+msgid ""
+"Sorry, can't create your selected temporary file subdirectory.  A "
+"permissions problem perhaps?\n"
+"I suggest you use Configure to choose another location."
+msgstr ""
+
+#: Redo.cpp:1364
+msgid ""
+"Emptying 4Pane's Trash-can will permanently delete any files that have been "
+"saved there!\n"
+"\n"
+"                                              Continue?"
+msgstr ""
+
+#: Redo.cpp:1371
+msgid "Trashcan emptied"
+msgstr ""
+
+#: Redo.cpp:1375
+msgid ""
+"Emptying 4Pane's Deleted-can happens automatically when 4Pane is closed\n"
+"Doing it prematurely will delete any files stored there.  All Undo-Redo data "
+"will be lost!\n"
+"\n"
+"                                              Continue?"
+msgstr ""
+
+#: Redo.cpp:1384
+msgid "Stored files permanently deleted"
+msgstr ""
+
+#: Tools.cpp:47
+msgid "There is already a file with this name in the destination path.  Sorry"
+msgstr ""
+
+#: Tools.cpp:53
+msgid ""
+"I'm afraid you lack permission to write to the destination directory.  Sorry"
+msgstr ""
+
+#: Tools.cpp:58
+msgid "You cannot make a hardlink to a directory."
+msgstr ""
+
+#: Tools.cpp:59
+msgid "You cannot make a hardlink to a different device or partition."
+msgstr ""
+
+#: Tools.cpp:61
+msgid ""
+"\n"
+"Would you like to make a symlink instead?"
+msgstr ""
+
+#: Tools.cpp:61
+msgid "No can do"
+msgstr ""
+
+#: Tools.cpp:196
+msgid "Sorry, no match found."
+msgstr ""
+
+#: Tools.cpp:198
+msgid "  Have a nice day!\n"
+msgstr ""
+
+#: Tools.cpp:280
+msgid "Run the 'locate' dialog"
+msgstr ""
+
+#: Tools.cpp:282
+msgid "Run the 'find' dialog"
+msgstr ""
+
+#: Tools.cpp:284
+msgid "Run the 'grep' dialog"
+msgstr ""
+
+#: Tools.cpp:322 Tools.cpp:484 Tools.cpp:490 Tools.cpp:664
+msgid "Show"
+msgstr ""
+
+#: Tools.cpp:322 Tools.cpp:484 Tools.cpp:490 Tools.cpp:664
+msgid "Hide"
+msgstr ""
+
+#: Tools.cpp:1211
+msgid ""
+"You haven't added this page's choices to the 'find' command. If the page "
+"changes, they'll be ignored.\n"
+"Ignore the choices?"
+msgstr ""
+
+#: Tools.cpp:1721
+msgid ""
+"You haven't added this page's choices to the 'grep' command. If the page "
+"changes, they'll be ignored.\n"
+"Ignore the choices?"
+msgstr ""
+
+#: Tools.cpp:2507
+msgid "GoTo selected filepath"
+msgstr ""
+
+#: Tools.cpp:2508
+msgid "Open selected file"
+msgstr ""
+
+#: Tools.cpp:2754
+msgid "Sorry, becoming superuser like this isn't possible here.\n"
+msgstr ""
+
+#: Tools.cpp:2755
+msgid "You need to start each command with 'sudo'"
+msgstr ""
+
+#: Tools.cpp:2756
+msgid "You can instead do: su -c \"<command>\""
+msgstr ""
+
+#: Tools.cpp:2961
+msgid " items "
+msgstr ""
+
+#: Tools.cpp:2961
+msgid " item "
+msgstr ""
+
+#: Tools.cpp:2994 Tools.cpp:3278
+msgid "Repeat:  "
+msgstr ""
+
+#: Tools.cpp:3140
+msgid ""
+"Sorry, there's no room for another command here\n"
+"I suggest you try putting it in a different submenu"
+msgstr ""
+
+#: Tools.cpp:3158
+msgid "Command added"
+msgstr ""
+
+#: Tools.cpp:3354
+msgid "first"
+msgstr ""
+
+#: Tools.cpp:3354
+msgid "other"
+msgstr ""
+
+#: Tools.cpp:3354
+msgid "next"
+msgstr ""
+
+#: Tools.cpp:3354
+msgid "last"
+msgstr ""
+
+#: Tools.cpp:3370
+#, c-format
+msgid ""
+"Malformed user-defined command: using the modifier '%c' with 'b' doesn't "
+"make sense. Aborting"
+msgstr ""
+
+#: Tools.cpp:3374
+msgid ""
+"Malformed user-defined command: you can use only one modifier per parameter. "
+"Aborting"
+msgstr ""
+
+#: Tools.cpp:3378
+#, c-format
+msgid ""
+"Malformed user-defined command: the modifier '%c' must be followed by "
+"'s','f','d' or'a'. Aborting"
+msgstr ""
+
+#: Tools.cpp:3424
+msgid "Please type in the"
+msgstr ""
+
+#: Tools.cpp:3429
+msgid "parameter"
+msgstr ""
+
+#: Tools.cpp:3442
+msgid "ran successfully"
+msgstr ""
+
+#: Tools.cpp:3445
+msgid "User-defined tool"
+msgstr ""
+
+#: Tools.cpp:3446
+msgid "returned with exit code"
+msgstr ""
+
+#: Devices.h:488
+msgid "Browse for new Icons"
+msgstr ""
+
+#: Misc.h:66
+msgid "File and Dir Select Dialog"
+msgstr ""
+
+#: Misc.h:271
+msgid "completed"
+msgstr ""
+
+#: Redo.h:124 Redo.h:334 configuredialogs.xrc:2661
+msgid "Delete"
+msgstr ""
+
+#: Redo.h:150
+msgid "Paste dirs"
+msgstr ""
+
+#: Redo.h:190
+msgid "Change Link Target"
+msgstr ""
+
+#: Redo.h:207
+msgid "Change Attributes"
+msgstr ""
+
+#: Redo.h:226 dialogs.xrc:2275
+msgid "New Directory"
+msgstr ""
+
+#: Redo.h:226
+msgid "New File"
+msgstr ""
+
+#: Redo.h:242
+msgid "Duplicate Directory"
+msgstr ""
+
+#: Redo.h:242
+msgid "Duplicate File"
+msgstr ""
+
+#: Redo.h:261
+msgid "Rename Directory"
+msgstr ""
+
+#: Redo.h:261
+msgid "Rename File"
+msgstr ""
+
+#: Redo.h:281
+msgid "Duplicate"
+msgstr ""
+
+#: Redo.h:281 dialogs.xrc:299
+msgid "Rename"
+msgstr ""
+
+#: Redo.h:301
+msgid "Extract"
+msgstr ""
+
+#: Redo.h:317
+msgid " dirs"
+msgstr ""
+
+#: configuredialogs.xrc:4
+msgid "Enter Tooltip Delay"
+msgstr ""
+
+#: configuredialogs.xrc:35
+msgid "Set desired Tooltip delay, in seconds"
+msgstr ""
+
+#: configuredialogs.xrc:62
+msgid "Turn off Tooltips"
+msgstr ""
+
+#: configuredialogs.xrc:86 configuredialogs.xrc:456 configuredialogs.xrc:694
+#: configuredialogs.xrc:893 configuredialogs.xrc:1071 configuredialogs.xrc:2147
+#: configuredialogs.xrc:2243 configuredialogs.xrc:2339
+#: configuredialogs.xrc:4416 configuredialogs.xrc:4570
+#: configuredialogs.xrc:4771 configuredialogs.xrc:4954
+#: configuredialogs.xrc:6947 configuredialogs.xrc:7078
+#: configuredialogs.xrc:7173 configuredialogs.xrc:7536
+#: configuredialogs.xrc:7865 configuredialogs.xrc:8095
+#: configuredialogs.xrc:8419 configuredialogs.xrc:8547 dialogs.xrc:354
+#: dialogs.xrc:2132 dialogs.xrc:2238 dialogs.xrc:2322 dialogs.xrc:2496
+#: dialogs.xrc:2630 dialogs.xrc:2798 dialogs.xrc:3095 dialogs.xrc:3466
+#: dialogs.xrc:3579 dialogs.xrc:3873 dialogs.xrc:4399 dialogs.xrc:4516
+#: moredialogs.xrc:121 moredialogs.xrc:4516 moredialogs.xrc:4858
+#: moredialogs.xrc:5141 moredialogs.xrc:5382 moredialogs.xrc:5635
+#: moredialogs.xrc:5947 moredialogs.xrc:6460 moredialogs.xrc:6868
+#: moredialogs.xrc:7181 moredialogs.xrc:7579 moredialogs.xrc:7995
+#: moredialogs.xrc:8318 moredialogs.xrc:8771 moredialogs.xrc:9195
+#: moredialogs.xrc:9518 moredialogs.xrc:9747 moredialogs.xrc:10081
+#: moredialogs.xrc:10385 moredialogs.xrc:10532 moredialogs.xrc:10786
+#: moredialogs.xrc:11151 moredialogs.xrc:11287 moredialogs.xrc:11730
+#: moredialogs.xrc:11920 moredialogs.xrc:12091
+msgid "OK"
+msgstr ""
+
+#: configuredialogs.xrc:89 configuredialogs.xrc:459 configuredialogs.xrc:697
+#: configuredialogs.xrc:896 configuredialogs.xrc:1074 configuredialogs.xrc:1660
+#: configuredialogs.xrc:1810 configuredialogs.xrc:2022
+#: configuredialogs.xrc:2376 configuredialogs.xrc:2571
+#: configuredialogs.xrc:2775 configuredialogs.xrc:2921
+#: configuredialogs.xrc:3098 configuredialogs.xrc:3346
+#: configuredialogs.xrc:3485 configuredialogs.xrc:3779
+#: configuredialogs.xrc:4008 configuredialogs.xrc:4168
+#: configuredialogs.xrc:4275 configuredialogs.xrc:4419
+#: configuredialogs.xrc:4573 configuredialogs.xrc:4774
+#: configuredialogs.xrc:4957 configuredialogs.xrc:5244
+#: configuredialogs.xrc:5487 configuredialogs.xrc:5659
+#: configuredialogs.xrc:5858 configuredialogs.xrc:6056
+#: configuredialogs.xrc:6209 configuredialogs.xrc:6364
+#: configuredialogs.xrc:6534 configuredialogs.xrc:6700
+#: configuredialogs.xrc:6950 configuredialogs.xrc:7081
+#: configuredialogs.xrc:7176 configuredialogs.xrc:7342
+#: configuredialogs.xrc:7539 configuredialogs.xrc:7868
+#: configuredialogs.xrc:8098 configuredialogs.xrc:8242
+#: configuredialogs.xrc:8422 configuredialogs.xrc:8550 dialogs.xrc:357
+#: dialogs.xrc:2135 dialogs.xrc:2241 dialogs.xrc:2325 dialogs.xrc:2499
+#: dialogs.xrc:2633 dialogs.xrc:2801 dialogs.xrc:3098 dialogs.xrc:3469
+#: dialogs.xrc:3582 dialogs.xrc:3661 dialogs.xrc:3876 dialogs.xrc:4402
+#: dialogs.xrc:4519 dialogs.xrc:4536 moredialogs.xrc:124 moredialogs.xrc:2633
+#: moredialogs.xrc:4013 moredialogs.xrc:4519 moredialogs.xrc:4861
+#: moredialogs.xrc:5144 moredialogs.xrc:5385 moredialogs.xrc:5638
+#: moredialogs.xrc:5817 moredialogs.xrc:5950 moredialogs.xrc:6463
+#: moredialogs.xrc:6871 moredialogs.xrc:7184 moredialogs.xrc:7582
+#: moredialogs.xrc:7998 moredialogs.xrc:8321 moredialogs.xrc:8774
+#: moredialogs.xrc:9198 moredialogs.xrc:9521 moredialogs.xrc:9750
+#: moredialogs.xrc:10084 moredialogs.xrc:10388 moredialogs.xrc:10535
+#: moredialogs.xrc:10789 moredialogs.xrc:11154 moredialogs.xrc:11290
+#: moredialogs.xrc:11733 moredialogs.xrc:11923 moredialogs.xrc:12094
+#: moredialogs.xrc:12454 moredialogs.xrc:12806
+msgid "Click when finished"
+msgstr ""
+
+#: configuredialogs.xrc:104 configuredialogs.xrc:1674 configuredialogs.xrc:1824
+#: configuredialogs.xrc:2036 configuredialogs.xrc:2390
+#: configuredialogs.xrc:2585 configuredialogs.xrc:2789
+#: configuredialogs.xrc:2935 configuredialogs.xrc:3112
+#: configuredialogs.xrc:3360 configuredialogs.xrc:3499
+#: configuredialogs.xrc:3792 configuredialogs.xrc:4021
+#: configuredialogs.xrc:4181 configuredialogs.xrc:4289
+#: configuredialogs.xrc:5258 configuredialogs.xrc:5500
+#: configuredialogs.xrc:5672 configuredialogs.xrc:5872
+#: configuredialogs.xrc:6070 configuredialogs.xrc:6223
+#: configuredialogs.xrc:6378 configuredialogs.xrc:6548 dialogs.xrc:52
+#: dialogs.xrc:498 dialogs.xrc:721 dialogs.xrc:804 dialogs.xrc:952
+#: dialogs.xrc:1024 dialogs.xrc:1100 dialogs.xrc:1255 dialogs.xrc:1479
+#: dialogs.xrc:1645 dialogs.xrc:1749 dialogs.xrc:4416
+msgid "&Cancel"
+msgstr ""
+
+#: configuredialogs.xrc:107 configuredialogs.xrc:477 configuredialogs.xrc:715
+#: configuredialogs.xrc:914 configuredialogs.xrc:1092 configuredialogs.xrc:1677
+#: configuredialogs.xrc:1827 configuredialogs.xrc:2039
+#: configuredialogs.xrc:2393 configuredialogs.xrc:2588
+#: configuredialogs.xrc:2792 configuredialogs.xrc:2938
+#: configuredialogs.xrc:3115 configuredialogs.xrc:3363
+#: configuredialogs.xrc:3502 configuredialogs.xrc:3795
+#: configuredialogs.xrc:4024 configuredialogs.xrc:4184
+#: configuredialogs.xrc:4292 configuredialogs.xrc:4436
+#: configuredialogs.xrc:4590 configuredialogs.xrc:4791
+#: configuredialogs.xrc:4980 configuredialogs.xrc:5261
+#: configuredialogs.xrc:5503 configuredialogs.xrc:5675
+#: configuredialogs.xrc:5875 configuredialogs.xrc:6073
+#: configuredialogs.xrc:6226 configuredialogs.xrc:6381
+#: configuredialogs.xrc:6551 configuredialogs.xrc:6968
+#: configuredialogs.xrc:7099 configuredialogs.xrc:7194
+#: configuredialogs.xrc:7557 configuredialogs.xrc:7886
+#: configuredialogs.xrc:8116 configuredialogs.xrc:8255
+#: configuredialogs.xrc:8440 configuredialogs.xrc:8568 dialogs.xrc:375
+#: dialogs.xrc:501 dialogs.xrc:724 dialogs.xrc:807 dialogs.xrc:955
+#: dialogs.xrc:1027 dialogs.xrc:1103 dialogs.xrc:1258 dialogs.xrc:1482
+#: dialogs.xrc:1648 dialogs.xrc:1852 dialogs.xrc:2152 dialogs.xrc:2170
+#: dialogs.xrc:2259 dialogs.xrc:2343 dialogs.xrc:2517 dialogs.xrc:2651
+#: dialogs.xrc:2820 dialogs.xrc:3116 dialogs.xrc:3487 dialogs.xrc:3600
+#: dialogs.xrc:3674 dialogs.xrc:3766 dialogs.xrc:3894 dialogs.xrc:4419
+#: dialogs.xrc:4554 moredialogs.xrc:142 moredialogs.xrc:2649
+#: moredialogs.xrc:4029 moredialogs.xrc:4100 moredialogs.xrc:4536
+#: moredialogs.xrc:4877 moredialogs.xrc:5162 moredialogs.xrc:5404
+#: moredialogs.xrc:5656 moredialogs.xrc:5835 moredialogs.xrc:5968
+#: moredialogs.xrc:6059 moredialogs.xrc:6145 moredialogs.xrc:6476
+#: moredialogs.xrc:6884 moredialogs.xrc:7197 moredialogs.xrc:7600
+#: moredialogs.xrc:8016 moredialogs.xrc:8334 moredialogs.xrc:8792
+#: moredialogs.xrc:9216 moredialogs.xrc:9534 moredialogs.xrc:9768
+#: moredialogs.xrc:10102 moredialogs.xrc:10406 moredialogs.xrc:10553
+#: moredialogs.xrc:10808 moredialogs.xrc:11167 moredialogs.xrc:11308
+#: moredialogs.xrc:11746 moredialogs.xrc:11941 moredialogs.xrc:12110
+#: moredialogs.xrc:12471 moredialogs.xrc:12823
+msgid "Click to abort"
+msgstr ""
+
+#: configuredialogs.xrc:125
+msgid "New device detected"
+msgstr ""
+
+#: configuredialogs.xrc:147
+msgid "A device has been attached that I've not yet met."
+msgstr ""
+
+#: configuredialogs.xrc:154
+msgid "Would you like to configure it?"
+msgstr ""
+
+#: configuredialogs.xrc:174
+msgid "&Yes"
+msgstr ""
+
+#: configuredialogs.xrc:188
+msgid " N&ot now"
+msgstr ""
+
+#: configuredialogs.xrc:191
+msgid "Don't configure it right now, but ask again each time it appears"
+msgstr ""
+
+#: configuredialogs.xrc:205
+msgid "&Never"
+msgstr ""
+
+#: configuredialogs.xrc:208
+msgid ""
+"\"I don't want to be nagged about this device\".  If you change your mind, "
+"it can be configured from Configure."
+msgstr ""
+
+#: configuredialogs.xrc:226 configuredialogs.xrc:495 configuredialogs.xrc:733
+msgid "Configure new device"
+msgstr ""
+
+#: configuredialogs.xrc:268
+msgid "Devicenode"
+msgstr ""
+
+#: configuredialogs.xrc:305
+msgid "Mount-point for the device"
+msgstr ""
+
+#: configuredialogs.xrc:341 dialogs.xrc:2405
+msgid "What would you like to call it?"
+msgstr ""
+
+#: configuredialogs.xrc:377 configuredialogs.xrc:615 configuredialogs.xrc:814
+msgid "Device type"
+msgstr ""
+
+#: configuredialogs.xrc:418 configuredialogs.xrc:656 configuredialogs.xrc:855
+msgid "Device is read-only"
+msgstr ""
+
+#: configuredialogs.xrc:427 configuredialogs.xrc:665 configuredialogs.xrc:864
+msgid "Neither prompt about the device nor load it"
+msgstr ""
+
+#: configuredialogs.xrc:430 configuredialogs.xrc:668 configuredialogs.xrc:867
+msgid "Ignore this device"
+msgstr ""
+
+#: configuredialogs.xrc:474 configuredialogs.xrc:712 configuredialogs.xrc:911
+#: configuredialogs.xrc:1089 configuredialogs.xrc:4433
+#: configuredialogs.xrc:4587 configuredialogs.xrc:4788
+#: configuredialogs.xrc:4977 configuredialogs.xrc:5140
+#: configuredialogs.xrc:6965 configuredialogs.xrc:7096
+#: configuredialogs.xrc:7191 configuredialogs.xrc:7554
+#: configuredialogs.xrc:7883 configuredialogs.xrc:8113
+#: configuredialogs.xrc:8252 configuredialogs.xrc:8437
+#: configuredialogs.xrc:8565 dialogs.xrc:372 dialogs.xrc:2167 dialogs.xrc:2256
+#: dialogs.xrc:2340 dialogs.xrc:2514 dialogs.xrc:2648 dialogs.xrc:2817
+#: dialogs.xrc:3113 dialogs.xrc:3484 dialogs.xrc:3597 dialogs.xrc:3891
+#: dialogs.xrc:4551 moredialogs.xrc:139 moredialogs.xrc:2646
+#: moredialogs.xrc:4026 moredialogs.xrc:4097 moredialogs.xrc:4533
+#: moredialogs.xrc:4874 moredialogs.xrc:5159 moredialogs.xrc:5401
+#: moredialogs.xrc:5653 moredialogs.xrc:5832 moredialogs.xrc:5965
+#: moredialogs.xrc:6056 moredialogs.xrc:6142 moredialogs.xrc:6473
+#: moredialogs.xrc:6881 moredialogs.xrc:7194 moredialogs.xrc:7597
+#: moredialogs.xrc:8013 moredialogs.xrc:8331 moredialogs.xrc:8789
+#: moredialogs.xrc:9213 moredialogs.xrc:9531 moredialogs.xrc:9765
+#: moredialogs.xrc:10099 moredialogs.xrc:10403 moredialogs.xrc:10550
+#: moredialogs.xrc:10805 moredialogs.xrc:11164 moredialogs.xrc:11305
+#: moredialogs.xrc:11743 moredialogs.xrc:11938 moredialogs.xrc:12107
+#: moredialogs.xrc:12468 moredialogs.xrc:12820
+msgid "&CANCEL"
+msgstr ""
+
+#: configuredialogs.xrc:537
+msgid "Manufacturer's name"
+msgstr ""
+
+#: configuredialogs.xrc:555 configuredialogs.xrc:595
+msgid ""
+"This is the name (or, if none, the ID) supplied by the device. You can "
+"change it to something more memorable if you wish"
+msgstr ""
+
+#: configuredialogs.xrc:577
+msgid "Model name"
+msgstr ""
+
+#: configuredialogs.xrc:775
+msgid "Mount-point for this device"
+msgstr ""
+
+#: configuredialogs.xrc:793
+msgid ""
+"What is the name of the directory onto which this device is auto-mounted?  "
+"It will probably look something like /mnt/usb-[MyPenName]-FlashDisk:0:0:0p1"
+msgstr ""
+
+#: configuredialogs.xrc:932
+msgid "Configure new device type"
+msgstr ""
+
+#: configuredialogs.xrc:973
+msgid "Label to give this device"
+msgstr ""
+
+#: configuredialogs.xrc:991
+msgid ""
+"If this is an unusual type of device that's not on the standard list, type "
+"the name that best describes it"
+msgstr ""
+
+#: configuredialogs.xrc:1012
+msgid "Which is the best-matching description?"
+msgstr ""
+
+#: configuredialogs.xrc:1030
+msgid ""
+"Select the nearest equivalent to the new type. This determines which icon "
+"appears on the toolbar"
+msgstr ""
+
+#: configuredialogs.xrc:1112
+msgid "Configure 4Pane"
+msgstr ""
+
+#: configuredialogs.xrc:1140 configuredialogs.xrc:6697
+#: configuredialogs.xrc:7339 dialogs.xrc:104
+msgid "&Finished"
+msgstr ""
+
+#: configuredialogs.xrc:1143
+msgid "Click when finished configuring"
+msgstr ""
+
+#: configuredialogs.xrc:1170
+#, c-format
+msgid ""
+"User-defined commands are external programs that you can\n"
+"launch from 4Pane. They may be utilities like 'df', or any other\n"
+"available program or executable script.\n"
+"e.g. 'gedit %f' launches the currently-selected file in gedit."
+msgstr ""
+
+#: configuredialogs.xrc:1181
+msgid ""
+"The following frequently-used parameters are available:\n"
+"%s will pass the selected file or folder to the application\n"
+"%f (%d) will pass the selected file (directory) only\n"
+"%a passes all of the active pane's selected items\n"
+"%b will pass one selection from both fileview panes.\n"
+"%p will prompt for a parameter to pass to the application.\n"
+"For more options see the manual.\n"
+"\n"
+"To try to run a command as superuser, prefix e.g. gksu or sudo"
+msgstr ""
+
+#: configuredialogs.xrc:1197
+msgid "On the following sub-pages you can Add, Edit or Delete tools."
+msgstr ""
+
+#: configuredialogs.xrc:1226
+msgid ""
+"This section deals with devices. These may be either\n"
+"fixed e.g. dvdrw drives, or removable e.g. usb pens.\n"
+"\n"
+"4Pane can usually deduce a distro's behaviour and\n"
+"configure itself to match. If this fails, or you want to make\n"
+"changes, you can do so on the following sub-pages."
+msgstr ""
+
+#: configuredialogs.xrc:1260
+msgid ""
+"This is where you can try to make things work\n"
+"if something fails because you have a very old,\n"
+"or a very modern, setup.\n"
+"\n"
+"You are unlikely to need to use this section\n"
+"but, if you do, read the tooltips."
+msgstr ""
+
+#: configuredialogs.xrc:1294
+msgid ""
+"This is where you can configure 4Pane's appearance.\n"
+"\n"
+"The first sub-page deals with the directory and file trees,\n"
+" the second the font,  and the third miscellaneous things."
+msgstr ""
+
+#: configuredialogs.xrc:1326
+msgid ""
+"These two sub-pages deal with terminals. The first is\n"
+"for real terminals, the second the terminal emulator."
+msgstr ""
+
+#: configuredialogs.xrc:1356
+msgid "Finally, four pages of miscellany."
+msgstr ""
+
+#: configuredialogs.xrc:1385
+msgid "These items deal with the directory and file trees"
+msgstr ""
+
+#: configuredialogs.xrc:1402
+msgid "Pixels between the parent"
+msgstr ""
+
+#: configuredialogs.xrc:1409
+msgid "dir and the Expand box"
+msgstr ""
+
+#: configuredialogs.xrc:1418
+msgid ""
+"There is an 'expand box' (in gtk2 actually a triangle) between the parent "
+"directory and the filename. This spincontrol sets the number of pixels "
+"between the parent directory and the triangle."
+msgstr ""
+
+#: configuredialogs.xrc:1441
+msgid "Pixels between the"
+msgstr ""
+
+#: configuredialogs.xrc:1448
+msgid "Expand box and name"
+msgstr ""
+
+#: configuredialogs.xrc:1457
+msgid ""
+"There is an 'expand box' (in gtk2 actually a triangle) between the parent "
+"directory and the filename. This spincontrol sets the number of pixels "
+"between the triangle and the filename"
+msgstr ""
+
+#: configuredialogs.xrc:1477
+msgid ""
+"Show hidden files and dirs in the panes of a newly-created tab view.  You "
+"can change this for individual panes from the context menu, or Ctrl-H"
+msgstr ""
+
+#: configuredialogs.xrc:1480
+msgid "  By default, show hidden files and directories"
+msgstr ""
+
+#: configuredialogs.xrc:1488
+msgid ""
+"If ticked, displayed files/dirs are sorted in a way appropriate for the "
+"language to which your locale is set. However, this may result in hidden "
+"files (when displayed) not being shown separately"
+msgstr ""
+
+#: configuredialogs.xrc:1491
+msgid "  Sort files in a locale-aware way"
+msgstr ""
+
+#: configuredialogs.xrc:1499
+msgid ""
+"Show a symlink-to-a-directory with the ordinary directories in the file-"
+"view, not beneath with the files"
+msgstr ""
+
+#: configuredialogs.xrc:1502
+msgid "  Treat a symlink-to-directory as a normal directory"
+msgstr ""
+
+#: configuredialogs.xrc:1510
+msgid ""
+"Do you want visible lines between each directory and its subdirectories?  "
+"Choose whichever you prefer, but the normal style is 'Yes' in gtk1, but 'No' "
+"in some versions of gtk2"
+msgstr ""
+
+#: configuredialogs.xrc:1513
+msgid "  Show lines in the directory tree"
+msgstr ""
+
+#: configuredialogs.xrc:1529
+msgid ""
+"Choose colours to use as a pane's background. You can have different colours "
+"for dir-views and file-views"
+msgstr ""
+
+#: configuredialogs.xrc:1532
+msgid "  Colour the background of a pane"
+msgstr ""
+
+#: configuredialogs.xrc:1544
+msgid "&Select Colours"
+msgstr ""
+
+#: configuredialogs.xrc:1547
+msgid "Click to select the background colours to use"
+msgstr ""
+
+#: configuredialogs.xrc:1565
+msgid ""
+"In a fileview, give alternate lines different background colours, resulting "
+"in a striped appearance"
+msgstr ""
+
+#: configuredialogs.xrc:1568
+msgid "  Colour alternate lines in a fileview"
+msgstr ""
+
+#: configuredialogs.xrc:1580
+msgid "Se&lect Colours"
+msgstr ""
+
+#: configuredialogs.xrc:1583
+msgid "Click to select the colours in which to paint alternate lines"
+msgstr ""
+
+#: configuredialogs.xrc:1600
+msgid ""
+"Slightly highlight the column header of a file-view, or above the toolbar of "
+"a dir-view, to flag which pane currently has focus. Click the 'Configure' "
+"button to alter the amount of highlighting"
+msgstr ""
+
+#: configuredialogs.xrc:1603
+msgid "  Highlight the focused pane"
+msgstr ""
+
+#: configuredialogs.xrc:1614
+msgid "C&onfigure"
+msgstr ""
+
+#: configuredialogs.xrc:1617
+msgid "Click to alter the amount of any highlighting for each pane type"
+msgstr ""
+
+#: configuredialogs.xrc:1630
+msgid ""
+"Before version 1.1, 4Pane used to update its display when it itself altered "
+"files/directories, but didn't react to any alterations made outside it.\n"
+"Now 4Pane can use inotify to inform it of both internal and external "
+"changes. Untick the box if you prefer the old method."
+msgstr ""
+
+#: configuredialogs.xrc:1633
+msgid " Use inotify to watch the filesystem"
+msgstr ""
+
+#: configuredialogs.xrc:1657 configuredialogs.xrc:1807
+#: configuredialogs.xrc:2019 configuredialogs.xrc:2373
+#: configuredialogs.xrc:2568 configuredialogs.xrc:2772
+#: configuredialogs.xrc:2918 configuredialogs.xrc:3095
+#: configuredialogs.xrc:3343 configuredialogs.xrc:3482
+#: configuredialogs.xrc:3776 configuredialogs.xrc:4005
+#: configuredialogs.xrc:4165 configuredialogs.xrc:4272
+#: configuredialogs.xrc:5241 configuredialogs.xrc:5484
+#: configuredialogs.xrc:5656 configuredialogs.xrc:5855
+#: configuredialogs.xrc:6053 configuredialogs.xrc:6206
+#: configuredialogs.xrc:6361 configuredialogs.xrc:6531
+msgid "&Apply"
+msgstr ""
+
+#: configuredialogs.xrc:1714
+msgid "Here you can configure the font used by the tree"
+msgstr ""
+
+#: configuredialogs.xrc:1722
+msgid "Click the 'Change' button to select a different font or size"
+msgstr ""
+
+#: configuredialogs.xrc:1729
+msgid "The 'Use Default' button will reset it to the system default"
+msgstr ""
+
+#: configuredialogs.xrc:1748 configuredialogs.xrc:2487
+msgid "This is how the terminal emulator font looks"
+msgstr ""
+
+#: configuredialogs.xrc:1755
+msgid "C&hange"
+msgstr ""
+
+#: configuredialogs.xrc:1758 configuredialogs.xrc:2498
+msgid "Change to a font of your choice"
+msgstr ""
+
+#: configuredialogs.xrc:1769 configuredialogs.xrc:2525
+msgid "The appearance using the default  font"
+msgstr ""
+
+#: configuredialogs.xrc:1776
+msgid "Use &Default"
+msgstr ""
+
+#: configuredialogs.xrc:1779 configuredialogs.xrc:2536
+msgid "Revert to the system default font"
+msgstr ""
+
+#: configuredialogs.xrc:1868
+msgid ""
+"If the currently-selected path in the active dirview is /home/david/"
+"Documents, make the titlebar show '4Pane [Documents]' instead of just '4Pane'"
+msgstr ""
+
+#: configuredialogs.xrc:1871
+msgid "  Show the currently-selected filepath in the titlebar"
+msgstr ""
+
+#: configuredialogs.xrc:1879
+msgid ""
+"This is where you can see which file or directory is selected. You can also "
+"use Ctrl-C to copy it for use in external applications. Changes to this "
+"option won't take effect until 4Pane is restarted"
+msgstr ""
+
+#: configuredialogs.xrc:1882
+msgid "  Show the currently-selected filepath in the toolbar"
+msgstr ""
+
+#: configuredialogs.xrc:1890
+msgid ""
+"4Pane supplies default icons for things like 'Copy' and 'Undo'. Tick this "
+"box to use your theme's icons instead"
+msgstr ""
+
+#: configuredialogs.xrc:1893
+msgid "  Whenever possible, use stock icons"
+msgstr ""
+
+#: configuredialogs.xrc:1901
+msgid ""
+"4Pane stores 'trashed' files and directories, rather than deleting them. "
+"Even so, you may wish to be asked each time you try to do this; in which "
+"case, tick this box"
+msgstr ""
+
+#: configuredialogs.xrc:1904
+msgid "  Ask for confirmation before 'Trashcan'-ing files"
+msgstr ""
+
+#: configuredialogs.xrc:1912
+msgid "4Pane stores 'deleted' files and directories in its own delete-bin"
+msgstr ""
+
+#: configuredialogs.xrc:1915
+msgid "  Ask for confirmation before Deleting files"
+msgstr ""
+
+#: configuredialogs.xrc:1927
+msgid "Make the cans for trashed/deleted files in this directory"
+msgstr ""
+
+#: configuredialogs.xrc:1952
+msgid "Configure &toolbar editors"
+msgstr ""
+
+#: configuredialogs.xrc:1955
+msgid ""
+"This is where you can add/remove the icons on the toolbar that represent "
+"editors and similar apps. These open when clicked, or you can drag file(s) "
+"onto one to open them in that app."
+msgstr ""
+
+#: configuredialogs.xrc:1964
+msgid "Configure &Previews"
+msgstr ""
+
+#: configuredialogs.xrc:1967
+msgid ""
+"Here you can configure the dimensions of the image and text previews, and "
+"their trigger time"
+msgstr ""
+
+#: configuredialogs.xrc:1976
+msgid "Configure &small-toolbar Tools"
+msgstr ""
+
+#: configuredialogs.xrc:1979
+msgid ""
+"This is where you can add/remove buttons from the small toolbar at the top "
+"of each dir-view"
+msgstr ""
+
+#: configuredialogs.xrc:1988
+msgid "Configure Too&ltips"
+msgstr ""
+
+#: configuredialogs.xrc:1991
+msgid ""
+"Configures whether and for how long tooltips are displayed.  This is only "
+"partly effective: it currently doesn't work for toolbar tooltips."
+msgstr ""
+
+#: configuredialogs.xrc:2080
+msgid "Select the Terminal application to be launched by Ctrl-T"
+msgstr ""
+
+#: configuredialogs.xrc:2095 configuredialogs.xrc:2191
+#: configuredialogs.xrc:2287
+msgid "Either one of the following"
+msgstr ""
+
+#: configuredialogs.xrc:2124 configuredialogs.xrc:2220
+#: configuredialogs.xrc:2316
+msgid "Or enter your own choice"
+msgstr ""
+
+#: configuredialogs.xrc:2139
+msgid ""
+"Type in the exact command that will launch a terminal.\n"
+"Choose one that exists on your system ;)"
+msgstr ""
+
+#: configuredialogs.xrc:2176
+msgid "Which Terminal application should launch other programs?"
+msgstr ""
+
+#: configuredialogs.xrc:2235
+msgid ""
+"Type in the exact command that will launch another program inside a "
+"terminal.\n"
+"Choose a terminal that exists on your system ;)"
+msgstr ""
+
+#: configuredialogs.xrc:2272
+msgid "Which Terminal program should launch a User-Defined Tool?"
+msgstr ""
+
+#: configuredialogs.xrc:2331
+msgid ""
+"Type in the exact command that will launch another program inside a "
+"terminal, keeping the terminal open when the program exits.\n"
+"Choose a terminal that exists on your system ;)"
+msgstr ""
+
+#: configuredialogs.xrc:2434
+msgid "Configure the Prompt and Font for the terminal emulator"
+msgstr ""
+
+#: configuredialogs.xrc:2442
+msgid "Prompt. See the tooltip for details"
+msgstr ""
+
+#: configuredialogs.xrc:2460
+msgid ""
+"This is the prompt for the in-house 'terminal' accessed by Ctrl-M or Ctrl-"
+"F6. You can use normal characters, but there are also the following "
+"options:\n"
+"%H = hostname    %h = hostname up to the dot\n"
+"%u = username\n"
+"%w = cwd    %W = the last segment only of cwd\n"
+"%$ gives either $, or # if root"
+msgstr ""
+
+#: configuredialogs.xrc:2495 configuredialogs.xrc:4357
+#: configuredialogs.xrc:4395 configuredialogs.xrc:4502
+#: configuredialogs.xrc:4540
+msgid "Change"
+msgstr ""
+
+#: configuredialogs.xrc:2533 configuredialogs.xrc:4919
+msgid "Use Default"
+msgstr ""
+
+#: configuredialogs.xrc:2638
+msgid "Currently-known possible nfs servers"
+msgstr ""
+
+#: configuredialogs.xrc:2648
+msgid ""
+"These are ip addresses of servers that are known to be, or have been, on "
+"your network"
+msgstr ""
+
+#: configuredialogs.xrc:2664
+msgid "Delete the highlit server"
+msgstr ""
+
+#: configuredialogs.xrc:2679
+msgid "Enter another server address"
+msgstr ""
+
+#: configuredialogs.xrc:2688
+msgid ""
+"Write in the address of another server here (e.g. 192.168.0.2), then click "
+"'Add'"
+msgstr ""
+
+#: configuredialogs.xrc:2699
+msgid "Add"
+msgstr ""
+
+#: configuredialogs.xrc:2715
+msgid "Filepath for showmount"
+msgstr ""
+
+#: configuredialogs.xrc:2724
+msgid ""
+"What is the filepath to the nfs helper showmount?  Probably  /usr/sbin/"
+"showmount"
+msgstr ""
+
+#: configuredialogs.xrc:2745
+msgid "Path to samba dir"
+msgstr ""
+
+#: configuredialogs.xrc:2754
+msgid ""
+"Where are files like smbclient and findsmb stored? Probably in /usr/bin/ (or "
+"symlinked from there)"
+msgstr ""
+
+#: configuredialogs.xrc:2833
+msgid "4Pane allows you undo (and redo) most operations."
+msgstr ""
+
+#: configuredialogs.xrc:2840
+msgid "What is the maximum number that can be undone?"
+msgstr ""
+
+#: configuredialogs.xrc:2847
+msgid "(NB. See the tooltip)"
+msgstr ""
+
+#: configuredialogs.xrc:2856
+msgid ""
+"Whenever you Paste/Move/Rename/Delete/etc files, the process is stored so "
+"that it can later be undone, and then redone if desired. This is the maximum "
+"number of such Undo's\n"
+"Note that if you delete the contents of a dir containing 100 files, this "
+"counts as 100 procedures! So I suggest that the number here should be fairly "
+"large: at least 10000"
+msgstr ""
+
+#: configuredialogs.xrc:2873
+msgid "The number of items at a time on a drop-down menu."
+msgstr ""
+
+#: configuredialogs.xrc:2880
+msgid "(See the tooltip)"
+msgstr ""
+
+#: configuredialogs.xrc:2889
+msgid ""
+"This refers to the Undo and Redo drop-down buttons, and the dir-view toolbar "
+"ones for navigating to recently visited directories.\n"
+"What is the maximum number items to display per menu page? I suggest 15. You "
+"can get to earlier items a page-worth at a time."
+msgstr ""
+
+#: configuredialogs.xrc:2977
+msgid "Some messages are shown briefly, then disappear."
+msgstr ""
+
+#: configuredialogs.xrc:2984
+msgid "For how many seconds should they last?"
+msgstr ""
+
+#: configuredialogs.xrc:3003
+msgid "'Success' message dialogs"
+msgstr ""
+
+#: configuredialogs.xrc:3012
+msgid ""
+"There are some dialogs that provide a message, such as \"Success\" or "
+"\"Oops, that didn't work\", and close themselves automatically after a few "
+"seconds. This figure is the number of seconds to show a \"Success\" message"
+msgstr ""
+
+#: configuredialogs.xrc:3028
+msgid "'Failed because...' dialogs"
+msgstr ""
+
+#: configuredialogs.xrc:3037
+msgid ""
+"There are some dialogs that provide a message, such as \"Success\" or "
+"\"Oops, that didn't work\", and close themselves automatically after a few "
+"seconds. This figure is the number of seconds to show a Failure message, "
+"which needs to be longer than a Success one to give you a chance to read it"
+msgstr ""
+
+#: configuredialogs.xrc:3053
+msgid "Statusbar messages"
+msgstr ""
+
+#: configuredialogs.xrc:3062
+msgid ""
+"Some procedures e.g. mounting a partition, give a success message in the "
+"statusbar. This determines how long such a message persists"
+msgstr ""
+
+#: configuredialogs.xrc:3156
+msgid "Which front-end do you wish to use to perform tasks as root?"
+msgstr ""
+
+#: configuredialogs.xrc:3178
+msgid ""
+"Tick this box to have 4Pane manage running commands as root, either by "
+"calling su or sudo (depending on your distro or setup)"
+msgstr ""
+
+#: configuredialogs.xrc:3181
+msgid " 4Pane's own one"
+msgstr ""
+
+#: configuredialogs.xrc:3189
+msgid "It should call:"
+msgstr ""
+
+#: configuredialogs.xrc:3192
+msgid ""
+"Some distros (ubuntu and similar) use sudo to become superuser; most others "
+"use su. Select which is appropriate for you."
+msgstr ""
+
+#: configuredialogs.xrc:3197
+msgid "su"
+msgstr ""
+
+#: configuredialogs.xrc:3198
+msgid "sudo"
+msgstr ""
+
+#: configuredialogs.xrc:3213
+msgid ""
+"Check the box if you want 4Pane to store the password and provide it "
+"automatically if needed. For security reasons the longest permitted time is "
+"60 minutes"
+msgstr ""
+
+#: configuredialogs.xrc:3216
+msgid " Store passwords for:"
+msgstr ""
+
+#: configuredialogs.xrc:3234
+msgid "min"
+msgstr ""
+
+#: configuredialogs.xrc:3245
+msgid ""
+"If this box is checked, every time the password is supplied the time-limit "
+"will be renewed"
+msgstr ""
+
+#: configuredialogs.xrc:3248
+msgid " Restart time with each use"
+msgstr ""
+
+#: configuredialogs.xrc:3269
+msgid ""
+"An external program e.g. gksu. Only ones available on your system will be "
+"selectable"
+msgstr ""
+
+#: configuredialogs.xrc:3272
+msgid " An external program:"
+msgstr ""
+
+#: configuredialogs.xrc:3285
+msgid " kdesu"
+msgstr ""
+
+#: configuredialogs.xrc:3293
+msgid " gksu"
+msgstr ""
+
+#: configuredialogs.xrc:3301
+msgid " gnomesu"
+msgstr ""
+
+#: configuredialogs.xrc:3309
+msgid " Other..."
+msgstr ""
+
+#: configuredialogs.xrc:3311
+msgid ""
+"Enter your own choice of application, including any necessary options. It "
+"would be best if it were available on your system..."
+msgstr ""
+
+#: configuredialogs.xrc:3400
+msgid ""
+"The first 3 buttons configure File-opening, D'n'D and the statusbar\n"
+"The fourth exports 4Pane's configuration: see the tooltip"
+msgstr ""
+
+#: configuredialogs.xrc:3416
+msgid "Configure &Opening Files"
+msgstr ""
+
+#: configuredialogs.xrc:3419
+msgid "Click to tell 4Pane how you prefer it to open files"
+msgstr ""
+
+#: configuredialogs.xrc:3428
+msgid "Configure &Drag'n'Drop"
+msgstr ""
+
+#: configuredialogs.xrc:3431
+msgid "Click to configure the behaviour of Drag and Drop"
+msgstr ""
+
+#: configuredialogs.xrc:3440
+msgid "Configure &Statusbar"
+msgstr ""
+
+#: configuredialogs.xrc:3443
+msgid "Click to configure the statusbar sections"
+msgstr ""
+
+#: configuredialogs.xrc:3452
+msgid "&Export Configuration File"
+msgstr ""
+
+#: configuredialogs.xrc:3455
+msgid ""
+"Click to save bits of your configuration as ~/4Pane.conf. Very few people "
+"will need to do this; probably only distro packagers. For more details, "
+"press F1 after clicking."
+msgstr ""
+
+#: configuredialogs.xrc:3556
+msgid "Command to be run:"
+msgstr ""
+
+#: configuredialogs.xrc:3565
+msgid ""
+"Type in the name of the application or script to be run. If it is in your "
+"PATH, you should get away with just the name e.g. 'df'. Otherwise you will "
+"need the full filepath e.g. '/usr/X11R6/bin/foo'\n"
+"\n"
+"Parameters:\n"
+"%s will pass the selected file or folder to the application, %f (%d) a file "
+"(directory) only.\n"
+"%a will pass all of the active pane's selected items, %b one selection from "
+"both fileview panes.\n"
+"%p will prompt you for a parameter to pass to the application\n"
+"\n"
+"You can optionally add a modifier to most parameters:\n"
+"'A' is the active twin-pane, 'I' the inactive one. So %Af will pass the "
+"selected file from the active pane, or %Id a dir from the inactive one.\n"
+"Alternatively you can specify a particular pane e.g. %1f\n"
+"1 is the left (or top) dirview, 2 the left (or top) fileview; 3 and 4 "
+"similarly for the right (bottom) twin-pane.\n"
+"\n"
+"Finally 5-8 specify the active dirview, inactive dirview, active fileview, "
+"inactive fileview. So %6a will take all selected items from the inactive "
+"dirview."
+msgstr ""
+
+#: configuredialogs.xrc:3579
+msgid "Click to browse for the application to run"
+msgstr ""
+
+#: configuredialogs.xrc:3597 configuredialogs.xrc:3913
+msgid "Tick if you want the tool to be run in a Terminal"
+msgstr ""
+
+#: configuredialogs.xrc:3600 configuredialogs.xrc:3916
+msgid "Run in a Terminal"
+msgstr ""
+
+#: configuredialogs.xrc:3608 configuredialogs.xrc:3924
+msgid ""
+"Some programs need a terminal both to run in, and to display the results. If "
+"you tick this checkbox, the terminal will stay visible when the program is "
+"finished, to give you a chance to look at the output."
+msgstr ""
+
+#: configuredialogs.xrc:3611 configuredialogs.xrc:3927
+msgid "Keep terminal open"
+msgstr ""
+
+#: configuredialogs.xrc:3619 configuredialogs.xrc:3935
+msgid ""
+"Tick if you want the current pane to be automatically updated when the tool "
+"has finished"
+msgstr ""
+
+#: configuredialogs.xrc:3622 configuredialogs.xrc:3938
+msgid "Refresh pane after"
+msgstr ""
+
+#: configuredialogs.xrc:3630 configuredialogs.xrc:3946
+msgid "Tick if you want the other pane to be updated too"
+msgstr ""
+
+#: configuredialogs.xrc:3633 configuredialogs.xrc:3949
+msgid "Refresh opposite pane too"
+msgstr ""
+
+#: configuredialogs.xrc:3641 configuredialogs.xrc:3957
+msgid ""
+"Tick if you want the tool to be run with superuser privileges, but not in a "
+"terminal (in a terminal, you can use 'sudo' or 'su -c' anyway)"
+msgstr ""
+
+#: configuredialogs.xrc:3644 configuredialogs.xrc:3960
+msgid "Run command as root"
+msgstr ""
+
+#: configuredialogs.xrc:3667
+msgid "Label to display in the menu:"
+msgstr ""
+
+#: configuredialogs.xrc:3690
+msgid "Add it to this menu:"
+msgstr ""
+
+#: configuredialogs.xrc:3699
+msgid ""
+"These are the menus that are currently available.  Select one, or add a new "
+"one"
+msgstr ""
+
+#: configuredialogs.xrc:3711
+msgid "&New Menu"
+msgstr ""
+
+#: configuredialogs.xrc:3714
+msgid "Add a new menu or submenu to the list"
+msgstr ""
+
+#: configuredialogs.xrc:3724
+msgid "&Delete Menu"
+msgstr ""
+
+#: configuredialogs.xrc:3727
+msgid "Delete the currently-selected menu or submenu"
+msgstr ""
+
+#: configuredialogs.xrc:3747
+msgid "Add the &Tool"
+msgstr ""
+
+#: configuredialogs.xrc:3750
+msgid "Click to add the new tool"
+msgstr ""
+
+#: configuredialogs.xrc:3841
+msgid "Select a command, then click 'Edit this Command'"
+msgstr ""
+
+#: configuredialogs.xrc:3863 configuredialogs.xrc:4089
+msgid "Label in menu"
+msgstr ""
+
+#: configuredialogs.xrc:3872
+msgid ""
+"Select the label of the command you want to edit.  You can edit this too if "
+"you wish."
+msgstr ""
+
+#: configuredialogs.xrc:3887 configuredialogs.xrc:4113
+msgid "Command"
+msgstr ""
+
+#: configuredialogs.xrc:3896
+msgid "The command to be edited"
+msgstr ""
+
+#: configuredialogs.xrc:3976
+msgid "&Edit this Command"
+msgstr ""
+
+#: configuredialogs.xrc:4066
+msgid "Select an item, then click 'Delete this Command'"
+msgstr ""
+
+#: configuredialogs.xrc:4098
+msgid "Select the label of the command you want to delete"
+msgstr ""
+
+#: configuredialogs.xrc:4122
+msgid "The command to be deleted"
+msgstr ""
+
+#: configuredialogs.xrc:4138
+msgid "&Delete this Command"
+msgstr ""
+
+#: configuredialogs.xrc:4222
+msgid "Double-click an entry to change it"
+msgstr ""
+
+#: configuredialogs.xrc:4235
+msgid ""
+"Show the labels below without any mnemonic e.g. show 'Cut' instead of "
+"'C&ut'. You can still see and edit the mnemonic when you edit an item's label"
+msgstr ""
+
+#: configuredialogs.xrc:4238
+msgid "Display labels without mnemonics"
+msgstr ""
+
+#: configuredialogs.xrc:4309 configuredialogs.xrc:4453
+msgid "Select Colours"
+msgstr ""
+
+#: configuredialogs.xrc:4322
+msgid "The colours shown below will be used alternately in a file-view pane"
+msgstr ""
+
+#: configuredialogs.xrc:4341
+msgid "    Current 1st Colour"
+msgstr ""
+
+#: configuredialogs.xrc:4380
+msgid "    Current 2nd Colour"
+msgstr ""
+
+#: configuredialogs.xrc:4466
+msgid ""
+"Select the colour to use as the background for a pane.\n"
+"You can choose one colour for dir-views and another for file-views.\n"
+"Alternatively, tick the box to use the same one in both."
+msgstr ""
+
+#: configuredialogs.xrc:4487
+msgid "    Current Dir-view Colour"
+msgstr ""
+
+#: configuredialogs.xrc:4525
+msgid "    Current File-view Colour"
+msgstr ""
+
+#: configuredialogs.xrc:4553
+msgid " Use the same colour for both types of pane"
+msgstr ""
+
+#: configuredialogs.xrc:4607
+msgid "Select Pane Highlighting"
+msgstr ""
+
+#: configuredialogs.xrc:4620
+msgid ""
+"A pane can optionally be highlit when focused. Here you can alter the degree "
+"of highlighting."
+msgstr ""
+
+#: configuredialogs.xrc:4627
+msgid "For a dir-view, the highlight is in a narrow line above the toolbar."
+msgstr ""
+
+#: configuredialogs.xrc:4634
+msgid ""
+"For a file-view, the colour change is to the header, which is much thicker."
+msgstr ""
+
+#: configuredialogs.xrc:4641
+msgid ""
+"So I suggest you make the file-view 'offset' smaller,  as the difference is "
+"more obvious"
+msgstr ""
+
+#: configuredialogs.xrc:4683
+msgid " Dir-view focused"
+msgstr ""
+
+#: configuredialogs.xrc:4705
+msgid "Baseline"
+msgstr ""
+
+#: configuredialogs.xrc:4727
+msgid "File-view focused"
+msgstr ""
+
+#: configuredialogs.xrc:4808
+msgid "Enter a Shortcut"
+msgstr ""
+
+#: configuredialogs.xrc:4827
+msgid "Press the keys that you want to use for this function:"
+msgstr ""
+
+#: configuredialogs.xrc:4835
+msgid "                         Dummy"
+msgstr ""
+
+#: configuredialogs.xrc:4860
+msgid "Current"
+msgstr ""
+
+#: configuredialogs.xrc:4876
+msgid "Clear"
+msgstr ""
+
+#: configuredialogs.xrc:4879
+msgid "Click this if you don't want a shortcut for this action"
+msgstr ""
+
+#: configuredialogs.xrc:4903
+msgid "       Default:"
+msgstr ""
+
+#: configuredialogs.xrc:4911
+msgid "Ctrl+Shift+Alt+M"
+msgstr ""
+
+#: configuredialogs.xrc:4922
+msgid "Clicking this will enter the default accelerator seen above"
+msgstr ""
+
+#: configuredialogs.xrc:5003
+msgid "Change Label"
+msgstr ""
+
+#: configuredialogs.xrc:5013
+msgid " Change Help String"
+msgstr ""
+
+#: configuredialogs.xrc:5028
+msgid "Duplicate Accelerator"
+msgstr ""
+
+#: configuredialogs.xrc:5046
+msgid "This combination of keys is already used by:"
+msgstr ""
+
+#: configuredialogs.xrc:5054
+msgid "                        Dummy"
+msgstr ""
+
+#: configuredialogs.xrc:5062 dialogs.xrc:465 dialogs.xrc:628 dialogs.xrc:766
+#: dialogs.xrc:880 dialogs.xrc:997 dialogs.xrc:1216 dialogs.xrc:1383
+#: dialogs.xrc:1546 dialogs.xrc:1698
+msgid "What would you like to do?"
+msgstr ""
+
+#: configuredialogs.xrc:5089
+msgid "Choose different keys"
+msgstr ""
+
+#: configuredialogs.xrc:5097 dialogs.xrc:4533
+msgid "&Try Again"
+msgstr ""
+
+#: configuredialogs.xrc:5100
+msgid "Return to the dialog to make another choice of keys"
+msgstr ""
+
+#: configuredialogs.xrc:5111
+msgid "Steal the other shortcut's keys"
+msgstr ""
+
+#: configuredialogs.xrc:5119
+msgid "&Override"
+msgstr ""
+
+#: configuredialogs.xrc:5122
+msgid ""
+"Use your selection anyway.  You will be given the opportunity to make a new "
+"choice for the shortcut that is currently using them."
+msgstr ""
+
+#: configuredialogs.xrc:5132
+msgid "Give up"
+msgstr ""
+
+#: configuredialogs.xrc:5143
+msgid "The shortcut will revert to its previous value, if any"
+msgstr ""
+
+#: configuredialogs.xrc:5178
+msgid "How are plugged-in devices detected?"
+msgstr ""
+
+#: configuredialogs.xrc:5181
+msgid ""
+"Until the 2.4 kernel, usb pens and similar weren't detected at all. 2.4 "
+"kernels introduced the usb-storage method. More recent distros with 2.6 "
+"kernels usually use the udev/hal system. In between a few distros (e.g. SuSE "
+"9.2) did something odd involving /etc/mtab"
+msgstr ""
+
+#: configuredialogs.xrc:5186
+msgid "The original, usb-storage, method"
+msgstr ""
+
+#: configuredialogs.xrc:5187
+msgid "By looking in mtab"
+msgstr ""
+
+#: configuredialogs.xrc:5188
+msgid "The new, udev/hal, method"
+msgstr ""
+
+#: configuredialogs.xrc:5197
+msgid "Floppy drives mount automatically"
+msgstr ""
+
+#: configuredialogs.xrc:5206
+msgid "DVD-ROM etc drives mount automatically"
+msgstr ""
+
+#: configuredialogs.xrc:5215
+msgid "Removable devices mount automatically"
+msgstr ""
+
+#: configuredialogs.xrc:5307
+msgid "Which file (if any) holds data about a newly-inserted device?"
+msgstr ""
+
+#: configuredialogs.xrc:5327
+msgid "Floppies"
+msgstr ""
+
+#: configuredialogs.xrc:5337 configuredialogs.xrc:5384
+#: configuredialogs.xrc:5430
+msgid ""
+"This applies mostly to non-automounting distros, some of which insert "
+"information about devices directly into either /etc/mtab or /etc/fstab."
+msgstr ""
+
+#: configuredialogs.xrc:5342 configuredialogs.xrc:5389
+#: configuredialogs.xrc:5435
+msgid "mtab"
+msgstr ""
+
+#: configuredialogs.xrc:5343 configuredialogs.xrc:5390
+#: configuredialogs.xrc:5436
+msgid "fstab"
+msgstr ""
+
+#: configuredialogs.xrc:5344 configuredialogs.xrc:5391
+#: configuredialogs.xrc:5437
+msgid "none"
+msgstr ""
+
+#: configuredialogs.xrc:5353 configuredialogs.xrc:5400
+#: configuredialogs.xrc:5446
+msgid ""
+"Some distros (eg Mandriva 10.1) use Supermount to help manage disk-changes.  "
+"If so, a device's fstab entry may start with 'none' instead of the device "
+"name.  In which case, check this box."
+msgstr ""
+
+#: configuredialogs.xrc:5356 configuredialogs.xrc:5403
+#: configuredialogs.xrc:5449
+msgid "Supermounts"
+msgstr ""
+
+#: configuredialogs.xrc:5374
+msgid "CDRoms etc"
+msgstr ""
+
+#: configuredialogs.xrc:5420
+msgid "USB devices"
+msgstr ""
+
+#: configuredialogs.xrc:5551
+msgid "Check how often for newly-attached usb devices?"
+msgstr ""
+
+#: configuredialogs.xrc:5565
+msgid ""
+"4Pane checks to see if any removable devices have been removed, or new ones "
+"added. How often should this happen?"
+msgstr ""
+
+#: configuredialogs.xrc:5576
+msgid "seconds"
+msgstr ""
+
+#: configuredialogs.xrc:5592
+msgid "How should multicard usb readers be displayed?"
+msgstr ""
+
+#: configuredialogs.xrc:5601
+msgid ""
+"Multicard readers usually register as a separate device for each slot.\n"
+"By default only slots with a card inserted are displayed.\n"
+"If you tick here, each empty slot will get a button too, so a 13-slot device "
+"will always have 13 buttons!"
+msgstr ""
+
+#: configuredialogs.xrc:5604
+msgid " Add buttons even for empty slots"
+msgstr ""
+
+#: configuredialogs.xrc:5617
+msgid "What to do if 4Pane has mounted a usb device?"
+msgstr ""
+
+#: configuredialogs.xrc:5626
+msgid ""
+"Do you want to unmount before exiting? This only applies to removable "
+"devices, and only if your distro is non-automounting"
+msgstr ""
+
+#: configuredialogs.xrc:5629
+msgid " Ask before unmounting it on exit"
+msgstr ""
+
+#: configuredialogs.xrc:5716 configuredialogs.xrc:5915
+#: configuredialogs.xrc:6113
+msgid "For information, please read the tooltips"
+msgstr ""
+
+#: configuredialogs.xrc:5735
+msgid "Which file contains partition data?"
+msgstr ""
+
+#: configuredialogs.xrc:5744
+msgid "The list of known partitions.  Default: /proc/partitions"
+msgstr ""
+
+#: configuredialogs.xrc:5758
+msgid "Which dir contains device data?"
+msgstr ""
+
+#: configuredialogs.xrc:5767
+msgid "Holds 'files' like hda1, sda1.  Currently /dev/"
+msgstr ""
+
+#: configuredialogs.xrc:5780
+msgid "Which file(s) contains Floppy info"
+msgstr ""
+
+#: configuredialogs.xrc:5789
+msgid ""
+"Floppy info can usually be found in /sys/block/fd0, /sys/block/fd1 etc.\n"
+"Don't put the 0, 1 bit in here, only /sys/block/fd or whatever"
+msgstr ""
+
+#: configuredialogs.xrc:5802
+msgid "Which file contains CD/DVDROM info"
+msgstr ""
+
+#: configuredialogs.xrc:5811
+msgid ""
+"Information about fixed devices like cdroms can usually be found in /proc/"
+"sys/dev/cdrom/info. Alter it if that has changed"
+msgstr ""
+
+#: configuredialogs.xrc:5829 configuredialogs.xrc:6027
+#: configuredialogs.xrc:6180
+msgid "Reload Defaults"
+msgstr ""
+
+#: configuredialogs.xrc:5934
+msgid "2.4 kernels: usb-storage"
+msgstr ""
+
+#: configuredialogs.xrc:5943
+msgid ""
+"2.4 kernels detect removable devices and add a dir called /proc/scsi/usb-"
+"storage-0, storage-1 etc.\n"
+"Just put the /proc/scsi/usb-storage- bit here"
+msgstr ""
+
+#: configuredialogs.xrc:5956
+msgid "2.4 kernels: removable device list"
+msgstr ""
+
+#: configuredialogs.xrc:5965
+msgid ""
+"2.4 kernels keep a list of attached/previously-attached removable devices.\n"
+"Probably /proc/scsi/scsi"
+msgstr ""
+
+#: configuredialogs.xrc:5978
+msgid "Node-names for removable devices"
+msgstr ""
+
+#: configuredialogs.xrc:5987
+msgid ""
+"What device node is given to removable devices like usb-pens? Probably /dev/"
+"sda, sdb1 etc\n"
+"Just put the /dev/sd bit here"
+msgstr ""
+
+#: configuredialogs.xrc:6000
+msgid "2.6 kernels: removable device info dir"
+msgstr ""
+
+#: configuredialogs.xrc:6009
+msgid ""
+"In 2.6 kernels some removable-device info is found here\n"
+"Probably /sys/bus/scsi/devices"
+msgstr ""
+
+#: configuredialogs.xrc:6131
+msgid "What is the LVM prefix?"
+msgstr ""
+
+#: configuredialogs.xrc:6140
+msgid ""
+"By what name are Logical Volume Management 'partitions' called e.g. dm-0\n"
+"Only put in the dm- bit"
+msgstr ""
+
+#: configuredialogs.xrc:6153
+msgid "More LVM stuff.  See the tooltip"
+msgstr ""
+
+#: configuredialogs.xrc:6162
+msgid ""
+"Where are the proc 'block' files? This is needed to help manage LVM stuff.\n"
+"Probably /dev/.udevdb/block@foo. Just enter the '/dev/.udevdb/block@' bit"
+msgstr ""
+
+#: configuredialogs.xrc:6280
+msgid ""
+"Pick a Drive to configure\n"
+"Or 'Add a Drive' to add"
+msgstr ""
+
+#: configuredialogs.xrc:6312 configuredialogs.xrc:6481
+msgid "Add a Dri&ve"
+msgstr ""
+
+#: configuredialogs.xrc:6322 configuredialogs.xrc:6491
+msgid "&Edit this Drive"
+msgstr ""
+
+#: configuredialogs.xrc:6331 configuredialogs.xrc:6501
+msgid "&Delete this Drive"
+msgstr ""
+
+#: configuredialogs.xrc:6422
+msgid ""
+"Fixed drives should have been found automatically,\n"
+"but if one was missed or you want to alter some data\n"
+"you can do so here."
+msgstr ""
+
+#: configuredialogs.xrc:6449
+msgid ""
+"Select a drive to configure\n"
+"Or 'Add a Drive' to add one"
+msgstr ""
+
+#: configuredialogs.xrc:6572
+msgid "Fake, used to test for this version of the file"
+msgstr ""
+
+#: configuredialogs.xrc:6577
+msgid "Configure dir-view toolbar buttons"
+msgstr ""
+
+#: configuredialogs.xrc:6599
+msgid ""
+"These are the buttons on the right-hand side of the small toolbar in each "
+"dir-view.\n"
+"They act as bookmarks: clicking one 'goes to' its destination filepath"
+msgstr ""
+
+#: configuredialogs.xrc:6629 configuredialogs.xrc:7265
+msgid "Current Buttons"
+msgstr ""
+
+#: configuredialogs.xrc:6660
+msgid "&Add a Button"
+msgstr ""
+
+#: configuredialogs.xrc:6670
+msgid "&Edit this Button"
+msgstr ""
+
+#: configuredialogs.xrc:6679
+msgid "&Delete this Button"
+msgstr ""
+
+#: configuredialogs.xrc:6715
+msgid "Configure e.g. an Editor"
+msgstr ""
+
+#: configuredialogs.xrc:6763 moredialogs.xrc:745 moredialogs.xrc:860
+msgid "Name"
+msgstr ""
+
+#: configuredialogs.xrc:6781
+msgid "This is just a label so you will be able to recognise it.  e.g. kwrite"
+msgstr ""
+
+#: configuredialogs.xrc:6801 configuredialogs.xrc:7450
+msgid "Icon to use"
+msgstr ""
+
+#: configuredialogs.xrc:6818
+msgid "Launch Command"
+msgstr ""
+
+#: configuredialogs.xrc:6836
+msgid ""
+"This is the string that invokes the program. e.g. kwrite or /opt/gnome/bin/"
+"gedit"
+msgstr ""
+
+#: configuredialogs.xrc:6857
+msgid "Working Directory to use (optional)"
+msgstr ""
+
+#: configuredialogs.xrc:6875 dialogs.xrc:3329
+msgid ""
+"You can optionally provide a working directory. If you do, it will be 'cd'ed "
+"to before running the command. Most commands won't need this; in particular, "
+"it won't be needed for any commands that can be launched without a Path e.g. "
+"kwrite"
+msgstr ""
+
+#: configuredialogs.xrc:6904
+msgid "For example, if pasted with several files, GEdit can open them in tabs."
+msgstr ""
+
+#: configuredialogs.xrc:6907
+msgid "Accepts Multiple Input"
+msgstr ""
+
+#: configuredialogs.xrc:6916
+msgid ""
+"Don't load the icon for this program. Its configuration is retained, and you "
+"can 'unignore' it in the future"
+msgstr ""
+
+#: configuredialogs.xrc:6919
+msgid "Ignore this program"
+msgstr ""
+
+#: configuredialogs.xrc:6986
+msgid "Select Icon"
+msgstr ""
+
+#: configuredialogs.xrc:7010
+msgid ""
+"Current\n"
+"Selection"
+msgstr ""
+
+#: configuredialogs.xrc:7037
+msgid ""
+"Click an icon to Select it\n"
+"or Browse to search for others"
+msgstr ""
+
+#: configuredialogs.xrc:7052
+msgid "&Browse"
+msgstr ""
+
+#: configuredialogs.xrc:7117
+msgid "New Icon"
+msgstr ""
+
+#: configuredialogs.xrc:7149
+msgid "Add this Icon?"
+msgstr ""
+
+#: configuredialogs.xrc:7212
+msgid "Configure Editors etc"
+msgstr ""
+
+#: configuredialogs.xrc:7234
+msgid ""
+"These programs can be launched by clicking a button\n"
+"on the toolbar or by dragging a file onto the button.\n"
+"An obvious example would be a text editor such as\n"
+"kwrite, but it can be any program you wish."
+msgstr ""
+
+#: configuredialogs.xrc:7296
+msgid "&Add a Program"
+msgstr ""
+
+#: configuredialogs.xrc:7306
+msgid "&Edit this Program"
+msgstr ""
+
+#: configuredialogs.xrc:7316
+msgid "&Delete this Program"
+msgstr ""
+
+#: configuredialogs.xrc:7357
+msgid "Configure a small-toolbar icon"
+msgstr ""
+
+#: configuredialogs.xrc:7403
+msgid "Filepath"
+msgstr ""
+
+#: configuredialogs.xrc:7412
+msgid "Enter the filepath that you want to go to when the button is clicked"
+msgstr ""
+
+#: configuredialogs.xrc:7429
+msgid "Click to browse for the new filepath"
+msgstr ""
+
+#: configuredialogs.xrc:7457
+msgid "(Click to change)"
+msgstr ""
+
+#: configuredialogs.xrc:7475
+msgid "Label e.g. 'Music' or '/usr/share/'"
+msgstr ""
+
+#: configuredialogs.xrc:7484
+msgid ""
+"Supplying a label is optional, and won't display most of the time. However "
+"when in gtk3 there's not enough space to display all the icons, the overflow "
+"panel shows only the label, not the icon; so without a label there's a blank "
+"space."
+msgstr ""
+
+#: configuredialogs.xrc:7504
+msgid "Optional Tooltip Text"
+msgstr ""
+
+#: configuredialogs.xrc:7575
+msgid "Configure Drag and Drop"
+msgstr ""
+
+#: configuredialogs.xrc:7589
+msgid "Choose which keys should do the following:"
+msgstr ""
+
+#: configuredialogs.xrc:7629
+msgid "Move:"
+msgstr ""
+
+#: configuredialogs.xrc:7661
+msgid "Copy:"
+msgstr ""
+
+#: configuredialogs.xrc:7693
+msgid "Hardlink:"
+msgstr ""
+
+#: configuredialogs.xrc:7725
+msgid "Softlink:"
+msgstr ""
+
+#: configuredialogs.xrc:7759
+msgid "Alter these values to change D'n'D triggering sensitivity"
+msgstr ""
+
+#: configuredialogs.xrc:7777
+msgid "Horizontal"
+msgstr ""
+
+#: configuredialogs.xrc:7786
+msgid ""
+"How far left and right should the mouse move before D'n'D is triggered?  "
+"Default value 10"
+msgstr ""
+
+#: configuredialogs.xrc:7805
+msgid "Vertical"
+msgstr ""
+
+#: configuredialogs.xrc:7814
+msgid ""
+"How far up and down should the mouse move before D'n'D is triggered? Default "
+"value 15"
+msgstr ""
+
+#: configuredialogs.xrc:7833
+msgid "How many lines to scroll per mouse-wheel click"
+msgstr ""
+
+#: configuredialogs.xrc:7842
+msgid ""
+"If it can't be found from your system settings, this determines how "
+"sensitive the mouse-wheel is, during Drag-and-Drop only"
+msgstr ""
+
+#: configuredialogs.xrc:7904
+msgid "Configure the Statusbar"
+msgstr ""
+
+#: configuredialogs.xrc:7918
+msgid "The statusbar has four sections. Here you can adjust their proportions"
+msgstr ""
+
+#: configuredialogs.xrc:7926
+msgid "(Changes won't take effect until you restart 4Pane)"
+msgstr ""
+
+#: configuredialogs.xrc:7946
+msgid "Menu-item help"
+msgstr ""
+
+#: configuredialogs.xrc:7954
+msgid "(Default 5)"
+msgstr ""
+
+#: configuredialogs.xrc:7964
+msgid "Occasionally-helpful messages when you hover over a menu item"
+msgstr ""
+
+#: configuredialogs.xrc:7982
+msgid "Success Messages"
+msgstr ""
+
+#: configuredialogs.xrc:7990
+msgid "(Default 3)"
+msgstr ""
+
+#: configuredialogs.xrc:8000
+msgid ""
+"Messages like \"Successfully deleted 15 files\". These messages disappear "
+"after a configurable number of seconds"
+msgstr ""
+
+#: configuredialogs.xrc:8017
+msgid "Filepaths"
+msgstr ""
+
+#: configuredialogs.xrc:8025
+msgid "(Default 8)"
+msgstr ""
+
+#: configuredialogs.xrc:8035
+msgid ""
+"Information about the currently-selected file or directory; usually its "
+"type, name and size"
+msgstr ""
+
+#: configuredialogs.xrc:8052
+msgid "Filters"
+msgstr ""
+
+#: configuredialogs.xrc:8060
+msgid "(Default 2)"
+msgstr ""
+
+#: configuredialogs.xrc:8070
+msgid ""
+"What is the focused pane showing: D=directories F=files H=hidden files "
+"R=recursive subdirectory size.\n"
+"Any filter is also shown e.g. f*.txt for textfiles beginning with 'f'"
+msgstr ""
+
+#: configuredialogs.xrc:8134
+msgid "Export Data"
+msgstr ""
+
+#: configuredialogs.xrc:8148
+msgid ""
+"This is where, should you wish, you can export part of your configuration "
+"data to a file called 4Pane.conf."
+msgstr ""
+
+#: configuredialogs.xrc:8156
+msgid "If you're tempted, press F1 for more details."
+msgstr ""
+
+#: configuredialogs.xrc:8164
+msgid "Deselect any types of data you don't want to export"
+msgstr ""
+
+#: configuredialogs.xrc:8177
+msgid ""
+"Tools e.g. 'df -h' to supply by default. See the manual for more details"
+msgstr ""
+
+#: configuredialogs.xrc:8180
+msgid "  User-defined Tools data"
+msgstr ""
+
+#: configuredialogs.xrc:8188
+msgid ""
+"Which editor(s) e.g. gedit, kwrite, should have an icon added to the toolbar "
+"by default"
+msgstr ""
+
+#: configuredialogs.xrc:8191
+msgid "  Editors data"
+msgstr ""
+
+#: configuredialogs.xrc:8199
+msgid ""
+"Things from 'Configure 4Pane > Devices'. See the manual for more details"
+msgstr ""
+
+#: configuredialogs.xrc:8202
+msgid "  Device-mounting data"
+msgstr ""
+
+#: configuredialogs.xrc:8210
+msgid ""
+"Things from 'Configure 4Pane > Terminals'. See the manual for more details"
+msgstr ""
+
+#: configuredialogs.xrc:8213
+msgid "  Terminal-related data"
+msgstr ""
+
+#: configuredialogs.xrc:8221
+msgid ""
+"The contents of the 'Open With...' dialog, and which programs should open "
+"which MIME types"
+msgstr ""
+
+#: configuredialogs.xrc:8224
+msgid "'Open With' data"
+msgstr ""
+
+#: configuredialogs.xrc:8239
+msgid " Export Data"
+msgstr ""
+
+#: configuredialogs.xrc:8268
+msgid "Configure Previews"
+msgstr ""
+
+#: configuredialogs.xrc:8307
+msgid "Maximum width (px)"
+msgstr ""
+
+#: configuredialogs.xrc:8315
+msgid "Maximum height (px)"
+msgstr ""
+
+#: configuredialogs.xrc:8323
+msgid "Images:"
+msgstr ""
+
+#: configuredialogs.xrc:8351
+msgid "Text files:"
+msgstr ""
+
+#: configuredialogs.xrc:8386
+msgid "Preview trigger delay, in tenths of seconds:"
+msgstr ""
+
+#: configuredialogs.xrc:8458
+msgid "Configure File Opening"
+msgstr ""
+
+#: configuredialogs.xrc:8472
+msgid ""
+"How do you want 4Pane to try to open e.g. a text file in an editor.\n"
+"Use either the system way, 4Pane's built-in way, or both.\n"
+"If both, which should be tried first?"
+msgstr ""
+
+#: configuredialogs.xrc:8492
+msgid "Use your system's method"
+msgstr ""
+
+#: configuredialogs.xrc:8501
+msgid "Use 4Pane's method"
+msgstr ""
+
+#: configuredialogs.xrc:8516
+msgid "Prefer the system way"
+msgstr ""
+
+#: configuredialogs.xrc:8525
+msgid "Prefer 4Pane's way"
+msgstr ""
+
+#: dialogs.xrc:42
+msgid "&Locate"
+msgstr ""
+
+#: dialogs.xrc:66
+msgid "Clea&r"
+msgstr ""
+
+#: dialogs.xrc:76
+msgid "Cl&ose"
+msgstr ""
+
+#: dialogs.xrc:116
+msgid "Can't Read"
+msgstr ""
+
+#: dialogs.xrc:134
+msgid "I'm afraid you don't have Read permission for"
+msgstr ""
+
+#: dialogs.xrc:143
+msgid "a                 Pretend              q"
+msgstr ""
+
+#: dialogs.xrc:164 dialogs.xrc:687 dialogs.xrc:916 dialogs.xrc:1445
+#: dialogs.xrc:1609
+msgid "&Skip"
+msgstr ""
+
+#: dialogs.xrc:167
+msgid "Skip just this file"
+msgstr ""
+
+#: dialogs.xrc:182
+msgid "Skip &All"
+msgstr ""
+
+#: dialogs.xrc:185
+msgid "Skip any other files where I don't have Read permission"
+msgstr ""
+
+#: dialogs.xrc:200
+msgid "Tsk Tsk!"
+msgstr ""
+
+#: dialogs.xrc:218
+msgid "You seem to be trying to join"
+msgstr ""
+
+#: dialogs.xrc:226 dialogs.xrc:249 dialogs.xrc:1919 dialogs.xrc:1959
+#: dialogs.xrc:2452
+msgid "Pretend"
+msgstr ""
+
+#: dialogs.xrc:241
+msgid "to one of its descendants"
+msgstr ""
+
+#: dialogs.xrc:257
+msgid "This is certainly illegal and probably immoral"
+msgstr ""
+
+#: dialogs.xrc:279
+msgid "   I'm &Sorry :-("
+msgstr ""
+
+#: dialogs.xrc:282
+msgid "Click to apologise"
+msgstr ""
+
+#: dialogs.xrc:321
+msgid "What would you like the new name to be?"
+msgstr ""
+
+#: dialogs.xrc:331
+msgid "Type in the new name"
+msgstr ""
+
+#: dialogs.xrc:391 dialogs.xrc:516
+msgid "Overwrite or Rename"
+msgstr ""
+
+#: dialogs.xrc:419 dialogs.xrc:547 dialogs.xrc:1304
+msgid "There is already a file here with the name"
+msgstr ""
+
+#: dialogs.xrc:480 dialogs.xrc:645 dialogs.xrc:1231 dialogs.xrc:1400
+#: dialogs.xrc:1561
+msgid "&Overwrite it"
+msgstr ""
+
+#: dialogs.xrc:489 dialogs.xrc:666
+msgid "&Rename Incoming File"
+msgstr ""
+
+#: dialogs.xrc:654 dialogs.xrc:1409
+msgid " Overwrite &All"
+msgstr ""
+
+#: dialogs.xrc:657 dialogs.xrc:1412
+msgid "Overwrite all files when there is a name clash"
+msgstr ""
+
+#: dialogs.xrc:675
+msgid " Re&name All"
+msgstr ""
+
+#: dialogs.xrc:678
+msgid "Go straight to the RENAME dialog when there is a name clash"
+msgstr ""
+
+#: dialogs.xrc:690 dialogs.xrc:919 dialogs.xrc:1448 dialogs.xrc:1612
+#: dialogs.xrc:1716
+msgid "Skip this item"
+msgstr ""
+
+#: dialogs.xrc:699 dialogs.xrc:928 dialogs.xrc:1457 dialogs.xrc:1621
+msgid "S&kip All"
+msgstr ""
+
+#: dialogs.xrc:702 dialogs.xrc:1460
+msgid "Skip all files where there is a name clash"
+msgstr ""
+
+#: dialogs.xrc:735
+msgid "Rename or cancel"
+msgstr ""
+
+#: dialogs.xrc:758
+msgid "There is already a directory here with this name."
+msgstr ""
+
+#: dialogs.xrc:789 dialogs.xrc:895
+msgid "&Rename Incoming Dir"
+msgstr ""
+
+#: dialogs.xrc:827 dialogs.xrc:1659
+msgid "Rename or skip"
+msgstr ""
+
+#: dialogs.xrc:850 dialogs.xrc:1516
+msgid "There is already a Directory here with the name"
+msgstr ""
+
+#: dialogs.xrc:904
+msgid "Rename &All"
+msgstr ""
+
+#: dialogs.xrc:907
+msgid "Go straight to the RENAME dialog for all conflicting names"
+msgstr ""
+
+#: dialogs.xrc:931 dialogs.xrc:1624 dialogs.xrc:1728
+msgid "Skip all items where there is a name clash"
+msgstr ""
+
+#: dialogs.xrc:966
+msgid "Query duplicate in archive"
+msgstr ""
+
+#: dialogs.xrc:989
+msgid "There is already a file with this name in the archive"
+msgstr ""
+
+#: dialogs.xrc:1012
+msgid "&Store a duplicate of it"
+msgstr ""
+
+#: dialogs.xrc:1015
+msgid ""
+"Inside an archive you're allowed to have two identical items with the same "
+"name. If that's what you want (and you'll presumably have a good reason :/ ) "
+"click this button"
+msgstr ""
+
+#: dialogs.xrc:1042
+msgid "Duplicate by Renaming in archive"
+msgstr ""
+
+#: dialogs.xrc:1065
+msgid "Sorry, you can't do a direct duplication within an archive"
+msgstr ""
+
+#: dialogs.xrc:1073
+msgid "Would you like to duplicate by renaming instead?"
+msgstr ""
+
+#: dialogs.xrc:1088
+msgid "&Rename"
+msgstr ""
+
+#: dialogs.xrc:1091
+msgid "Make a copy of each item or items, using a different name"
+msgstr ""
+
+#: dialogs.xrc:1118
+msgid "Add to archive"
+msgstr ""
+
+#: dialogs.xrc:1150 dialogs.xrc:1682
+msgid "There is already an item here with the name"
+msgstr ""
+
+#: dialogs.xrc:1234
+msgid ""
+"Delete the original file from the archive, and replace it with the incoming "
+"one"
+msgstr ""
+
+#: dialogs.xrc:1243
+msgid "&Store both items"
+msgstr ""
+
+#: dialogs.xrc:1246
+msgid ""
+"It's allowed inside an archive to have multiple files with the same name. "
+"Click this button if that's what you want (you'll presumably have a good "
+"reason :/ )"
+msgstr ""
+
+#: dialogs.xrc:1273 dialogs.xrc:1493
+msgid "Overwrite or add to archive"
+msgstr ""
+
+#: dialogs.xrc:1421 dialogs.xrc:1585
+msgid "S&tore both items"
+msgstr ""
+
+#: dialogs.xrc:1424
+msgid ""
+"Inside an archive you're allowed to have two files with the same name. If "
+"that's what you want (and you'll presumably have a good reason :/ ) click "
+"this button"
+msgstr ""
+
+#: dialogs.xrc:1433 dialogs.xrc:1597
+msgid " Store A&ll"
+msgstr ""
+
+#: dialogs.xrc:1436
+msgid ""
+"Inside an archive you're allowed to have two files with the same name. If "
+"that's always what you want (and you'll presumably have a good reason :/ ) "
+"click this button"
+msgstr ""
+
+#: dialogs.xrc:1564
+msgid "Replace the current dir with the incoming one"
+msgstr ""
+
+#: dialogs.xrc:1573
+msgid "Overwrite &All"
+msgstr ""
+
+#: dialogs.xrc:1576
+msgid ""
+"Replace the current dir with the incoming one, and do this for any other "
+"clashes"
+msgstr ""
+
+#: dialogs.xrc:1588
+msgid ""
+"Inside an archive you're allowed to have two dirs with the same name. If "
+"that's what you want (and you'll presumably have a good reason :/ ) click "
+"this button"
+msgstr ""
+
+#: dialogs.xrc:1600
+msgid ""
+"Inside an archive you're allowed to have two dirs with the same name. If "
+"that's always what you want (and you'll presumably have a good reason :/ ) "
+"click this button"
+msgstr ""
+
+#: dialogs.xrc:1713
+msgid "&Skip it"
+msgstr ""
+
+#: dialogs.xrc:1725
+msgid "Skip &All Clashes"
+msgstr ""
+
+#: dialogs.xrc:1752
+msgid "Abort all items"
+msgstr ""
+
+#: dialogs.xrc:1786
+msgid "You seem to want to overwrite this file with itself"
+msgstr ""
+
+#: dialogs.xrc:1794
+msgid "Does this mean:"
+msgstr ""
+
+#: dialogs.xrc:1816
+msgid "I want to &DUPLICATE it"
+msgstr ""
+
+#: dialogs.xrc:1832
+msgid "or:"
+msgstr ""
+
+#: dialogs.xrc:1849
+msgid "&Oops, I didn't mean it"
+msgstr ""
+
+#: dialogs.xrc:1871
+msgid "Make a Link"
+msgstr ""
+
+#: dialogs.xrc:1897
+msgid "   Create a new Link from:"
+msgstr ""
+
+#: dialogs.xrc:1922 dialogs.xrc:1962 dialogs.xrc:2455
+msgid "This is what you are trying to Link to"
+msgstr ""
+
+#: dialogs.xrc:1943
+msgid "Make the link in the following Directory:"
+msgstr ""
+
+#: dialogs.xrc:1987
+msgid "What would you like to call the Link?"
+msgstr ""
+
+#: dialogs.xrc:2004
+msgid "Keep the same name"
+msgstr ""
+
+#: dialogs.xrc:2013
+msgid "Use the following Extension"
+msgstr ""
+
+#: dialogs.xrc:2021
+msgid "Use the following Name"
+msgstr ""
+
+#: dialogs.xrc:2043
+msgid "Enter the extension you would like to add to the original filename"
+msgstr ""
+
+#: dialogs.xrc:2053
+msgid "Enter the name you would like to give this link"
+msgstr ""
+
+#: dialogs.xrc:2070
+msgid ""
+"Check this box if you wish to make relative symlink(s) e.g. to ../../foo "
+"instead of /path/to/foo"
+msgstr ""
+
+#: dialogs.xrc:2073
+msgid "Make Relative"
+msgstr ""
+
+#: dialogs.xrc:2081
+msgid ""
+"Check this box if you wish these choices to be applied automatically to the "
+"rest of the items selected"
+msgstr ""
+
+#: dialogs.xrc:2084 dialogs.xrc:3645
+msgid "Apply to all"
+msgstr ""
+
+#: dialogs.xrc:2104
+msgid ""
+"If you've changed your mind about which type of link you want, chose again "
+"here."
+msgstr ""
+
+#: dialogs.xrc:2109
+msgid "I want to make a Hard Link"
+msgstr ""
+
+#: dialogs.xrc:2110
+msgid "I want to make a Soft link"
+msgstr ""
+
+#: dialogs.xrc:2149
+msgid "Skip"
+msgstr ""
+
+#: dialogs.xrc:2186
+msgid "Choose a name for the new item"
+msgstr ""
+
+#: dialogs.xrc:2204
+msgid "Do you want a new File or a new Directory?"
+msgstr ""
+
+#: dialogs.xrc:2209
+msgid "Make a new File"
+msgstr ""
+
+#: dialogs.xrc:2210
+msgid "Make a new Directory"
+msgstr ""
+
+#: dialogs.xrc:2294
+msgid "Choose a name for the new Directory"
+msgstr ""
+
+#: dialogs.xrc:2359
+msgid "Add a Bookmark"
+msgstr ""
+
+#: dialogs.xrc:2380
+msgid "Add the following to your Bookmarks:"
+msgstr ""
+
+#: dialogs.xrc:2391
+msgid "This is the bookmark that will be created"
+msgstr ""
+
+#: dialogs.xrc:2416
+msgid "What label would you like to give this bookmark?"
+msgstr ""
+
+#: dialogs.xrc:2436 dialogs.xrc:3359
+msgid "Add it to the following folder:"
+msgstr ""
+
+#: dialogs.xrc:2469
+msgid "Change &Folder"
+msgstr ""
+
+#: dialogs.xrc:2472
+msgid ""
+"Click if you want to save this bookmark in a different folder, or to create "
+"a new folder"
+msgstr ""
+
+#: dialogs.xrc:2533
+msgid "Edit a Bookmark"
+msgstr ""
+
+#: dialogs.xrc:2549
+msgid "Make any required alterations below"
+msgstr ""
+
+#: dialogs.xrc:2571
+msgid "Current Path"
+msgstr ""
+
+#: dialogs.xrc:2582
+msgid "This is current Path"
+msgstr ""
+
+#: dialogs.xrc:2596
+msgid "Current Label"
+msgstr ""
+
+#: dialogs.xrc:2607
+msgid "This is the current Label"
+msgstr ""
+
+#: dialogs.xrc:2667
+msgid "Manage Bookmarks"
+msgstr ""
+
+#: dialogs.xrc:2693 dialogs.xrc:3391
+msgid "&New Folder"
+msgstr ""
+
+#: dialogs.xrc:2696
+msgid "Create a new Folder"
+msgstr ""
+
+#: dialogs.xrc:2710
+msgid "New &Separator"
+msgstr ""
+
+#: dialogs.xrc:2713
+msgid "Insert a new Separator"
+msgstr ""
+
+#: dialogs.xrc:2727
+msgid "&Edit Selection"
+msgstr ""
+
+#: dialogs.xrc:2730
+msgid "Edit the highlit item"
+msgstr ""
+
+#: dialogs.xrc:2744
+msgid "&Delete"
+msgstr ""
+
+#: dialogs.xrc:2747
+msgid "Delete the highlit item"
+msgstr ""
+
+#: dialogs.xrc:2836
+msgid "Open with:"
+msgstr ""
+
+#: dialogs.xrc:2856
+msgid ""
+"Type in the path & name of the application to use, if you know it.  If not, "
+"browse, or choose from the list below."
+msgstr ""
+
+#: dialogs.xrc:2871 dialogs.xrc:3229
+msgid "Click to browse for the application to use"
+msgstr ""
+
+#: dialogs.xrc:2903
+msgid "&Edit Application"
+msgstr ""
+
+#: dialogs.xrc:2906
+msgid "Edit the selected Application"
+msgstr ""
+
+#: dialogs.xrc:2920
+msgid "&Remove Application"
+msgstr ""
+
+#: dialogs.xrc:2923
+msgid "Remove the selected Application from the folder"
+msgstr ""
+
+#: dialogs.xrc:2946
+msgid "&Add Application"
+msgstr ""
+
+#: dialogs.xrc:2949
+msgid "Add the Application to the selected folder below"
+msgstr ""
+
+#: dialogs.xrc:2977
+msgid "     Add &Folder"
+msgstr ""
+
+#: dialogs.xrc:2980
+msgid "Add a folder to the tree below"
+msgstr ""
+
+#: dialogs.xrc:2994
+msgid "Remove F&older"
+msgstr ""
+
+#: dialogs.xrc:2997
+msgid "Remove the selected folder from the tree below"
+msgstr ""
+
+#: dialogs.xrc:3030
+msgid "Click an application to select"
+msgstr ""
+
+#: dialogs.xrc:3054 dialogs.xrc:3425
+msgid "Tick the box to open the file with this application within a terminal"
+msgstr ""
+
+#: dialogs.xrc:3057 dialogs.xrc:3428
+msgid "Open in terminal"
+msgstr ""
+
+#: dialogs.xrc:3065 dialogs.xrc:3436
+msgid ""
+"Tick the box if in the future you want this application to be called "
+"automatically to launch this type of file"
+msgstr ""
+
+#: dialogs.xrc:3068 dialogs.xrc:3439
+msgid "Always use the selected application for this kind of file"
+msgstr ""
+
+#: dialogs.xrc:3132
+msgid "Add an Application"
+msgstr ""
+
+#: dialogs.xrc:3150
+msgid "Label to give the Application (optional)"
+msgstr ""
+
+#: dialogs.xrc:3170
+msgid ""
+"This name must be unique.  If you don't enter one, the end of the filepath "
+"will be used.\n"
+"eg /usr/local/bin/foo will be called 'foo'"
+msgstr ""
+
+#: dialogs.xrc:3193
+msgid ""
+"Where is the Application? eg  /usr/local/bin/gs\n"
+"(sometimes just the filename will work)"
+msgstr ""
+
+#: dialogs.xrc:3213
+msgid ""
+"Type in the name of the application.  If it is in your PATH, you should get "
+"away with just the name eg kwrite. Otherwise you will need the full pathname "
+"eg /usr/X11R6/bin/foo"
+msgstr ""
+
+#: dialogs.xrc:3250
+msgid "Extension(s) that it should launch? e.g. txt or htm,html"
+msgstr ""
+
+#: dialogs.xrc:3266
+msgid ""
+"This is optional. If you enter one or more extensions, this application will "
+"be offered when you right-click on files with such extensions. You must also "
+"enter one if you will want this application to be the default for launching "
+"this type of file.  So if you will want all files with the extension 'txt', "
+"on double-clicking, to be launched with this application, write txt here.\n"
+"You may enter more than one extension, separated by commas.  eg htm,html"
+msgstr ""
+
+#: dialogs.xrc:3282
+#, c-format
+msgid " What is the Command String to use?  e.g. kedit %s"
+msgstr ""
+
+#: dialogs.xrc:3297
+#, c-format
+msgid ""
+"This is the command to use to launch a file.  It is generally the program "
+"name followed by %s,  which represents the file to be launched.  So if kedit "
+"is your default text editor, and the launch Command is kedit %s,  double-"
+"clicking the file foo.txt will execute ' kedit 'foo.txt' '\n"
+"If this doesn't work, you'll need to RTFM for the application in question."
+msgstr ""
+
+#: dialogs.xrc:3314
+msgid " Working directory in which to run the app (optional)"
+msgstr ""
+
+#: dialogs.xrc:3381
+msgid "Put the application in this group.  So kwrite goes in Editors."
+msgstr ""
+
+#: dialogs.xrc:3394
+msgid "Add a new group to categorise applications"
+msgstr ""
+
+#: dialogs.xrc:3520
+msgid "For which Extensions do you want the application to be default."
+msgstr ""
+
+#: dialogs.xrc:3539
+msgid "These are the extensions to choose from"
+msgstr ""
+
+#: dialogs.xrc:3552
+msgid ""
+"You can either use the first two buttons, or select using the mouse (& Ctrl-"
+"key for non-contiguous choices)"
+msgstr ""
+
+#: dialogs.xrc:3557
+msgid "All of them"
+msgstr ""
+
+#: dialogs.xrc:3558
+msgid "Just the First"
+msgstr ""
+
+#: dialogs.xrc:3559
+msgid "Select with Mouse (+shift key)"
+msgstr ""
+
+#: dialogs.xrc:3616
+msgid "4Pane"
+msgstr ""
+
+#: dialogs.xrc:3685
+msgid "Save Template"
+msgstr ""
+
+#: dialogs.xrc:3713
+msgid "There is a Template loaded already."
+msgstr ""
+
+#: dialogs.xrc:3721
+msgid "Do you want to Overwrite this, or Save as a new Template?"
+msgstr ""
+
+#: dialogs.xrc:3736
+msgid "&Overwrite"
+msgstr ""
+
+#: dialogs.xrc:3751
+msgid "&New Template"
+msgstr ""
+
+#: dialogs.xrc:3779
+msgid "Enter the Filter String"
+msgstr ""
+
+#: dialogs.xrc:3805
+msgid ""
+"Enter a string to use as a filter, or use the history.  Multiple filters can "
+"be separated by either | or a comma.   eg  Pre*.txt  or *.jpg | *.png  or "
+"*htm,*html"
+msgstr ""
+
+#: dialogs.xrc:3824
+msgid "Show only files, not dirs"
+msgstr ""
+
+#: dialogs.xrc:3827
+msgid "Display only Files"
+msgstr ""
+
+#: dialogs.xrc:3836
+msgid "Reset the filter, so that all files are shown  ie  *"
+msgstr ""
+
+#: dialogs.xrc:3839
+msgid "Reset filter to  *"
+msgstr ""
+
+#: dialogs.xrc:3848
+msgid "Use the selected filter on all panes in this Tab"
+msgstr ""
+
+#: dialogs.xrc:3851
+msgid "Apply to All visible panes"
+msgstr ""
+
+#: dialogs.xrc:3910
+msgid "Multiple Rename"
+msgstr ""
+
+#: dialogs.xrc:3933
+msgid "You can either change foo.bar to, e.g., foo1.bar or new.foo.bar"
+msgstr ""
+
+#: dialogs.xrc:3941
+msgid "or do something more complex with a regex"
+msgstr ""
+
+#: dialogs.xrc:3976
+msgid "  Use a Regular Expression"
+msgstr ""
+
+#: dialogs.xrc:3987 moredialogs.xrc:12211
+msgid "&Regex Help"
+msgstr ""
+
+#: dialogs.xrc:4014
+msgid "Replace"
+msgstr ""
+
+#: dialogs.xrc:4017 dialogs.xrc:4230
+msgid "Type in the text or regular expression that you want to be substituted"
+msgstr ""
+
+#: dialogs.xrc:4025
+msgid "With"
+msgstr ""
+
+#: dialogs.xrc:4036
+msgid "Type in the text that you want to substitute"
+msgstr ""
+
+#: dialogs.xrc:4097
+msgid "Replace all matches in a name"
+msgstr ""
+
+#: dialogs.xrc:4112
+msgid "Replace the first"
+msgstr ""
+
+#: dialogs.xrc:4122
+msgid ""
+"Given the name 'foo-foo-foo' and replacement text 'bar', setting the count "
+"to 2 would result in 'bar-bar-foo'"
+msgstr ""
+
+#: dialogs.xrc:4132
+msgid "  matches in name"
+msgstr ""
+
+#: dialogs.xrc:4154
+msgid ""
+"Suppose you select all the files in a directory and want to use a regex to "
+"change any .jpeg files to .jpg. If you don't tick this box, all other files "
+"in the selection will also be renamed by the non-regex section; which is "
+"probably not what you want."
+msgstr ""
+
+#: dialogs.xrc:4157
+msgid "Completely ignore non-matching files"
+msgstr ""
+
+#: dialogs.xrc:4178
+msgid "How (else) to create new names:"
+msgstr ""
+
+#: dialogs.xrc:4181
+msgid ""
+"If you have successfully used a regex above, this may not be necessary. But "
+"if you didn't, or some clashes remain, this is how they will be overcome."
+msgstr ""
+
+#: dialogs.xrc:4195
+msgid "Change which part of the name?"
+msgstr ""
+
+#: dialogs.xrc:4198
+msgid ""
+"If the name is foo.something.bar, selecting 'Ext' will affect 'bar', not "
+"'something.bar'.\n"
+"If you choose 'Ext' when there isn't one, the body will be altered instead."
+msgstr ""
+
+#: dialogs.xrc:4203
+msgid "Body"
+msgstr ""
+
+#: dialogs.xrc:4204
+msgid "Ext"
+msgstr ""
+
+#: dialogs.xrc:4227
+msgid "Prepend text (optional)"
+msgstr ""
+
+#: dialogs.xrc:4237
+msgid "Append text (optional)"
+msgstr ""
+
+#: dialogs.xrc:4248
+msgid "Type in any text to Prepend"
+msgstr ""
+
+#: dialogs.xrc:4261
+msgid "Type in any text to Append"
+msgstr ""
+
+#: dialogs.xrc:4288
+msgid "Increment starting with:"
+msgstr ""
+
+#: dialogs.xrc:4305 dialogs.xrc:4315
+msgid ""
+"If there's still a name-clash despite anything you've done above, this adds "
+"a digit or a letter to create a new name. So joe.txt will become joe0.txt "
+"(or joe.txt0 if you've chosen to change the ext)"
+msgstr ""
+
+#: dialogs.xrc:4327
+msgid ""
+"If this box is ticked, an Increment will only happen if it's needed to avoid "
+"a name-clash. If it's not, it will happen anyway."
+msgstr ""
+
+#: dialogs.xrc:4330
+msgid " Only if needed"
+msgstr ""
+
+#: dialogs.xrc:4346
+msgid "Increment with a"
+msgstr ""
+
+#: dialogs.xrc:4349
+msgid "Determines whether 'joe' changes to 'joe0' or 'joeA'"
+msgstr ""
+
+#: dialogs.xrc:4354
+msgid "digit"
+msgstr ""
+
+#: dialogs.xrc:4355
+msgid "letter"
+msgstr ""
+
+#: dialogs.xrc:4369
+msgid "Case"
+msgstr ""
+
+#: dialogs.xrc:4372
+msgid "Do you want 'joe' become 'joeA' or joea'"
+msgstr ""
+
+#: dialogs.xrc:4377
+msgid "Upper"
+msgstr ""
+
+#: dialogs.xrc:4378
+msgid "Lower"
+msgstr ""
+
+#: dialogs.xrc:4439
+msgid "Confirm Rename"
+msgstr ""
+
+#: dialogs.xrc:4452
+msgid "Are you sure that you want to make these changes?"
+msgstr ""
+
+#: moredialogs.xrc:4
+msgid "Locate Files"
+msgstr ""
+
+#: moredialogs.xrc:22
+msgid "Enter the search string. eg *foo[ab]r"
+msgstr ""
+
+#: moredialogs.xrc:32
+msgid ""
+"This is the pattern to be matched.  If you type in 'foo', both path/foo and "
+"path/foobar/morepath will be found.  Alternatively you can use the wildcards "
+"*, ? and [ ].  If you do, Locate will only return exact matches, i.e. you "
+"need to enter *foo[ab]r* to find path/foobar/morepath"
+msgstr ""
+
+#: moredialogs.xrc:54
+msgid ""
+"Match only the final component of a file e.g. the 'foo' bit of /home/myname/"
+"bar/foo but not /home/myname/foo/bar"
+msgstr ""
+
+#: moredialogs.xrc:57
+msgid " -b  Basename"
+msgstr ""
+
+#: moredialogs.xrc:65
+msgid "If checked, the pattern 'foo' matches both foo and Foo (and FoO and...)"
+msgstr ""
+
+#: moredialogs.xrc:68
+msgid " -i   Ignore case"
+msgstr ""
+
+#: moredialogs.xrc:83
+msgid ""
+"Locate searches a database, which is usually updated only once a day. If "
+"this box is ticked, each result is checked to make sure it still exists, and "
+"hasn't been deleted since the last update. If there are lots of results, "
+"this may take a noticeable time to do."
+msgstr ""
+
+#: moredialogs.xrc:86
+msgid " -e  Existing"
+msgstr ""
+
+#: moredialogs.xrc:94
+msgid ""
+"If checked, treat the pattern as a Regular Expression, not just the usual "
+"glob"
+msgstr ""
+
+#: moredialogs.xrc:97
+msgid " -r   Regex"
+msgstr ""
+
+#: moredialogs.xrc:158
+msgid "Find"
+msgstr ""
+
+#: moredialogs.xrc:179 moredialogs.xrc:266 moredialogs.xrc:861
+msgid "Path"
+msgstr ""
+
+#: moredialogs.xrc:194
+msgid ""
+"This is Full Find. There is also a Quick Find\n"
+"that will suffice for most searches"
+msgstr ""
+
+#: moredialogs.xrc:208
+msgid "Click for &Quick Find"
+msgstr ""
+
+#: moredialogs.xrc:211
+msgid "Click here to go to the Quick Find dialog"
+msgstr ""
+
+#: moredialogs.xrc:222
+msgid "Tick the checkbox to make Quick Find the default in the future"
+msgstr ""
+
+#: moredialogs.xrc:225
+msgid "Make Quick Find the default"
+msgstr ""
+
+#: moredialogs.xrc:241
+msgid ""
+"Enter the Path from which to start searching (or use one of the shortcuts)"
+msgstr ""
+
+#: moredialogs.xrc:276 moredialogs.xrc:12581
+msgid "Type in the Path from which to search"
+msgstr ""
+
+#: moredialogs.xrc:305
+msgid "Search the current directory and below"
+msgstr ""
+
+#: moredialogs.xrc:308 moredialogs.xrc:3897 moredialogs.xrc:12302
+#: moredialogs.xrc:12610
+msgid "Current Directory"
+msgstr ""
+
+#: moredialogs.xrc:316
+msgid "Search your Home directory and below"
+msgstr ""
+
+#: moredialogs.xrc:327
+msgid "Search the whole directory tree"
+msgstr ""
+
+#: moredialogs.xrc:330 moredialogs.xrc:3913 moredialogs.xrc:12318
+#: moredialogs.xrc:12626
+msgid "Root ( / )"
+msgstr ""
+
+#: moredialogs.xrc:346 moredialogs.xrc:906
+msgid "&Add To Command String, surrounded by Quotes"
+msgstr ""
+
+#: moredialogs.xrc:349 moredialogs.xrc:909 moredialogs.xrc:3934
+msgid ""
+"Add to the Command string.  Single quotes will be provided to protect "
+"metacharacters."
+msgstr ""
+
+#: moredialogs.xrc:365 moredialogs.xrc:10311
+msgid "Options"
+msgstr ""
+
+#: moredialogs.xrc:380
+msgid "These options are applied to the whole command. Select any you wish."
+msgstr ""
+
+#: moredialogs.xrc:412
+msgid ""
+"Measure times (for -amin, -atime, -cmin, -ctime, -mmin, and -mtime) from the "
+"beginning of today rather than from 24 hours ago"
+msgstr ""
+
+#: moredialogs.xrc:415
+msgid "-daystart"
+msgstr ""
+
+#: moredialogs.xrc:423
+msgid ""
+"Process each directory's contents before the directory itself.  In other "
+"words, Find from the bottom upwards."
+msgstr ""
+
+#: moredialogs.xrc:426
+msgid "-depth"
+msgstr ""
+
+#: moredialogs.xrc:434
+msgid ""
+"Dereference symbolic links (ie look at what is linked to, not the link "
+"itself).  Implies -noleaf."
+msgstr ""
+
+#: moredialogs.xrc:437
+msgid "-follow"
+msgstr ""
+
+#: moredialogs.xrc:456
+msgid ""
+"Descend at most the selected number of levels of directories below the start "
+"path.  `-maxdepth 0' means only apply the tests and actions to the command "
+"line arguments."
+msgstr ""
+
+#: moredialogs.xrc:459
+msgid "-maxdepth"
+msgstr ""
+
+#: moredialogs.xrc:467
+msgid ""
+"Don't start searching until the selected depth down each directory branch.  "
+"`-mindepth 1' means process all files except the command line arguments."
+msgstr ""
+
+#: moredialogs.xrc:470
+msgid "-mindepth"
+msgstr ""
+
+#: moredialogs.xrc:517
+msgid ""
+"Don't optimise by assuming that directories contain 2 fewer subdirectories "
+"than their hard link count"
+msgstr ""
+
+#: moredialogs.xrc:520
+msgid "-noleaf"
+msgstr ""
+
+#: moredialogs.xrc:528
+msgid "Don't descend directories on other filesystems.  -mount is a synonym"
+msgstr ""
+
+#: moredialogs.xrc:531
+msgid "-xdev (-mount)"
+msgstr ""
+
+#: moredialogs.xrc:539
+msgid "HEELLLP!!"
+msgstr ""
+
+#: moredialogs.xrc:542
+msgid "-help"
+msgstr ""
+
+#: moredialogs.xrc:565 moredialogs.xrc:730 moredialogs.xrc:1306
+#: moredialogs.xrc:1554 moredialogs.xrc:2132 moredialogs.xrc:2556
+#: moredialogs.xrc:2861 moredialogs.xrc:2971 moredialogs.xrc:3260
+#: moredialogs.xrc:3636 moredialogs.xrc:3820 moredialogs.xrc:3931
+msgid "&Add To Command String"
+msgstr ""
+
+#: moredialogs.xrc:568 moredialogs.xrc:733 moredialogs.xrc:2559
+#: moredialogs.xrc:2864 moredialogs.xrc:2974 moredialogs.xrc:3263
+#: moredialogs.xrc:3639
+msgid "Add these choices to the Command string"
+msgstr ""
+
+#: moredialogs.xrc:580
+msgid "Operators"
+msgstr ""
+
+#: moredialogs.xrc:600
+msgid ""
+"Here for completeness, but it's usually easier to write them direct into the "
+"Command String."
+msgstr ""
+
+#: moredialogs.xrc:608
+msgid "Select one at a time."
+msgstr ""
+
+#: moredialogs.xrc:642
+msgid ""
+"Logically AND the two surrounding expressions.  Since this is the default, "
+"the only reason explicitly to use it is for emphasis."
+msgstr ""
+
+#: moredialogs.xrc:645
+msgid "-and"
+msgstr ""
+
+#: moredialogs.xrc:653
+msgid "Logically OR the surrounding expressions"
+msgstr ""
+
+#: moredialogs.xrc:656
+msgid "-or"
+msgstr ""
+
+#: moredialogs.xrc:664
+msgid "Negate the following expression"
+msgstr ""
+
+#: moredialogs.xrc:667
+msgid "-not"
+msgstr ""
+
+#: moredialogs.xrc:682
+msgid ""
+"Used (with Close Bracket) to alter precedence  eg ensure two -path "
+"expressions are run before a -prune.  It is automatically 'escaped' with a "
+"backslash."
+msgstr ""
+
+#: moredialogs.xrc:685
+msgid "Open Bracket"
+msgstr ""
+
+#: moredialogs.xrc:693
+msgid "Like Open Bracket, this is automatically 'escaped' with a backslash."
+msgstr ""
+
+#: moredialogs.xrc:696
+msgid "Close Bracket"
+msgstr ""
+
+#: moredialogs.xrc:704
+msgid ""
+"Separates list items with a comma.  If you can't think of a use for this, "
+"you're in good company."
+msgstr ""
+
+#: moredialogs.xrc:707
+msgid "List ( , )"
+msgstr ""
+
+#: moredialogs.xrc:764
+msgid ""
+"Enter a search term, which may include wildcards. It may instead be a "
+"Regular Expression."
+msgstr ""
+
+#: moredialogs.xrc:771
+msgid "Use Path or Regex if there is a '/' in the term, otherwise Name."
+msgstr ""
+
+#: moredialogs.xrc:778
+msgid "Symbolic-Link returns only symlinks."
+msgstr ""
+
+#: moredialogs.xrc:812
+msgid "Search term"
+msgstr ""
+
+#: moredialogs.xrc:823
+msgid "Type in the name to match.  eg *.txt  or /usr/s*"
+msgstr ""
+
+#: moredialogs.xrc:834
+msgid "Ignore Case"
+msgstr ""
+
+#: moredialogs.xrc:852
+msgid "This is a"
+msgstr ""
+
+#: moredialogs.xrc:855
+msgid ""
+"Select one of these alternatives. Apart from 'Regular Expression' they may "
+"contain wildcards.\n"
+"Symbolic-Link will return only matching symlinks.\n"
+"Regular Expression means the entry is a proper regex and will return "
+"anything it matches."
+msgstr ""
+
+#: moredialogs.xrc:862
+msgid "Regular Expression"
+msgstr ""
+
+#: moredialogs.xrc:863
+msgid "Symbolic-Link"
+msgstr ""
+
+#: moredialogs.xrc:882
+msgid "Return Matches"
+msgstr ""
+
+#: moredialogs.xrc:884
+msgid "Return any results (the default behaviour)"
+msgstr ""
+
+#: moredialogs.xrc:893
+msgid "Ignore Matches"
+msgstr ""
+
+#: moredialogs.xrc:895
+msgid ""
+"Usually you WANT the results, but sometimes you'll wish to ignore eg a "
+"particular directory.  If so, enter its path, then select Path and Ignore."
+msgstr ""
+
+#: moredialogs.xrc:946
+msgid "To filter by Time, select one of the following:"
+msgstr ""
+
+#: moredialogs.xrc:971 moredialogs.xrc:1117
+msgid "Files that were"
+msgstr ""
+
+#: moredialogs.xrc:989 moredialogs.xrc:1135
+msgid "Accessed"
+msgstr ""
+
+#: moredialogs.xrc:997 moredialogs.xrc:1143
+msgid "Modified"
+msgstr ""
+
+#: moredialogs.xrc:1005 moredialogs.xrc:1151
+msgid "Status changed"
+msgstr ""
+
+#: moredialogs.xrc:1023 moredialogs.xrc:1238 moredialogs.xrc:1383
+#: moredialogs.xrc:1722
+msgid "More than"
+msgstr ""
+
+#: moredialogs.xrc:1031 moredialogs.xrc:1246 moredialogs.xrc:1391
+#: moredialogs.xrc:1730
+msgid "Exactly"
+msgstr ""
+
+#: moredialogs.xrc:1039 moredialogs.xrc:1254 moredialogs.xrc:1399
+#: moredialogs.xrc:1738
+msgid "Less than"
+msgstr ""
+
+#: moredialogs.xrc:1056
+msgid "Enter the number of minutes or days"
+msgstr ""
+
+#: moredialogs.xrc:1078
+msgid "Minutes ago"
+msgstr ""
+
+#: moredialogs.xrc:1086
+msgid "Days ago"
+msgstr ""
+
+#: moredialogs.xrc:1169
+msgid "more recently than the file:"
+msgstr ""
+
+#: moredialogs.xrc:1182 moredialogs.xrc:3196 moredialogs.xrc:3239
+#: moredialogs.xrc:3617
+msgid "Type in the pathname of the file to compare with"
+msgstr ""
+
+#: moredialogs.xrc:1220
+msgid "Files that were last accessed"
+msgstr ""
+
+#: moredialogs.xrc:1271
+msgid "Enter the number of days"
+msgstr ""
+
+#: moredialogs.xrc:1289
+msgid "days after being modified"
+msgstr ""
+
+#: moredialogs.xrc:1309
+msgid "Add to the Command string."
+msgstr ""
+
+#: moredialogs.xrc:1325
+msgid "Size and type"
+msgstr ""
+
+#: moredialogs.xrc:1339 moredialogs.xrc:1587
+msgid "Choose up to one (at a time) of the following:"
+msgstr ""
+
+#: moredialogs.xrc:1365
+msgid "Files of size"
+msgstr ""
+
+#: moredialogs.xrc:1435
+msgid "bytes"
+msgstr ""
+
+#: moredialogs.xrc:1443
+msgid "512-byte blocks"
+msgstr ""
+
+#: moredialogs.xrc:1451
+msgid "kilobytes"
+msgstr ""
+
+#: moredialogs.xrc:1478
+msgid "Empty files"
+msgstr ""
+
+#: moredialogs.xrc:1511
+msgid "Type"
+msgstr ""
+
+#: moredialogs.xrc:1531
+msgid "File"
+msgstr ""
+
+#: moredialogs.xrc:1532
+msgid "SymLink"
+msgstr ""
+
+#: moredialogs.xrc:1533
+msgid "Pipe"
+msgstr ""
+
+#: moredialogs.xrc:1535
+msgid "Blk Special"
+msgstr ""
+
+#: moredialogs.xrc:1536
+msgid "Char Special"
+msgstr ""
+
+#: moredialogs.xrc:1557 moredialogs.xrc:2135
+msgid "Add to the Command string"
+msgstr ""
+
+#: moredialogs.xrc:1573
+msgid "Owner and permissions"
+msgstr ""
+
+#: moredialogs.xrc:1628 moredialogs.xrc:1850 moredialogs.xrc:6543
+#: moredialogs.xrc:7672 moredialogs.xrc:8864
+msgid "User"
+msgstr ""
+
+#: moredialogs.xrc:1662
+msgid "By Name"
+msgstr ""
+
+#: moredialogs.xrc:1675
+msgid "By ID"
+msgstr ""
+
+#: moredialogs.xrc:1696
+msgid "Type in the owner name to match.  eg root"
+msgstr ""
+
+#: moredialogs.xrc:1755
+msgid "Enter the ID to compare against"
+msgstr ""
+
+#: moredialogs.xrc:1790
+msgid "No User"
+msgstr ""
+
+#: moredialogs.xrc:1798
+msgid "No Group"
+msgstr ""
+
+#: moredialogs.xrc:1868 moredialogs.xrc:6559 moredialogs.xrc:7688
+#: moredialogs.xrc:8880
+msgid "Others"
+msgstr ""
+
+#: moredialogs.xrc:1883 moredialogs.xrc:6573 moredialogs.xrc:7702
+#: moredialogs.xrc:8894
+msgid "Read"
+msgstr ""
+
+#: moredialogs.xrc:1928 moredialogs.xrc:6614 moredialogs.xrc:7743
+#: moredialogs.xrc:8935
+msgid "Write"
+msgstr ""
+
+#: moredialogs.xrc:1973 moredialogs.xrc:6655 moredialogs.xrc:7784
+#: moredialogs.xrc:8976
+msgid "Exec"
+msgstr ""
+
+#: moredialogs.xrc:2018 moredialogs.xrc:6696 moredialogs.xrc:7825
+#: moredialogs.xrc:9017
+msgid "Special"
+msgstr ""
+
+#: moredialogs.xrc:2028 moredialogs.xrc:6704 moredialogs.xrc:7833
+#: moredialogs.xrc:9025
+msgid "suid"
+msgstr ""
+
+#: moredialogs.xrc:2037 moredialogs.xrc:6712 moredialogs.xrc:7841
+#: moredialogs.xrc:9033
+msgid "sgid"
+msgstr ""
+
+#: moredialogs.xrc:2046 moredialogs.xrc:6720 moredialogs.xrc:7849
+#: moredialogs.xrc:9041
+msgid "sticky"
+msgstr ""
+
+#: moredialogs.xrc:2064
+msgid "or Enter Octal"
+msgstr ""
+
+#: moredialogs.xrc:2075
+msgid "Type in the octal string to match.  eg 0664"
+msgstr ""
+
+#: moredialogs.xrc:2098
+msgid "Match Any"
+msgstr ""
+
+#: moredialogs.xrc:2106
+msgid "Exact Match only"
+msgstr ""
+
+#: moredialogs.xrc:2114
+msgid "Match Each Specified"
+msgstr ""
+
+#: moredialogs.xrc:2151
+msgid "Actions"
+msgstr ""
+
+#: moredialogs.xrc:2170
+msgid "What to do with the results.  The default is to Print them."
+msgstr ""
+
+#: moredialogs.xrc:2197
+msgid "Print the results on the standard output, each followed by a newline"
+msgstr ""
+
+#: moredialogs.xrc:2200
+msgid "  print"
+msgstr ""
+
+#: moredialogs.xrc:2224
+msgid ""
+"The same as 'Print', but adds a terminal '\\0' to each string instead of a "
+"newline"
+msgstr ""
+
+#: moredialogs.xrc:2227
+msgid "  print0"
+msgstr ""
+
+#: moredialogs.xrc:2251
+msgid "List the results in `ls -dils' format on the standard output"
+msgstr ""
+
+#: moredialogs.xrc:2254
+msgid "  ls"
+msgstr ""
+
+#: moredialogs.xrc:2289
+msgid "Execute the following command for each match"
+msgstr ""
+
+#: moredialogs.xrc:2292
+msgid "exec"
+msgstr ""
+
+#: moredialogs.xrc:2300
+msgid "Execute the following command, asking first for each match"
+msgstr ""
+
+#: moredialogs.xrc:2303
+msgid "ok"
+msgstr ""
+
+#: moredialogs.xrc:2317
+msgid "Command to execute"
+msgstr ""
+
+#: moredialogs.xrc:2329
+msgid ""
+"This is the command to be executed. The {} ; will be added automatically"
+msgstr ""
+
+#: moredialogs.xrc:2357
+msgid ""
+"Output each string as in print, but using the following format: see 'man "
+"find(1)' for the byzantine details"
+msgstr ""
+
+#: moredialogs.xrc:2360
+msgid "printf"
+msgstr ""
+
+#: moredialogs.xrc:2374 moredialogs.xrc:2510
+msgid "Format String"
+msgstr ""
+
+#: moredialogs.xrc:2409
+msgid "Output as ls, but to the following file"
+msgstr ""
+
+#: moredialogs.xrc:2412
+msgid "fls"
+msgstr ""
+
+#: moredialogs.xrc:2420
+msgid "Output each string as print, but to the following file"
+msgstr ""
+
+#: moredialogs.xrc:2423
+msgid "fprint"
+msgstr ""
+
+#: moredialogs.xrc:2431
+msgid "Same as fprint, but null-terminated"
+msgstr ""
+
+#: moredialogs.xrc:2434
+msgid "fprint0"
+msgstr ""
+
+#: moredialogs.xrc:2448 moredialogs.xrc:2525
+msgid "Destination File"
+msgstr ""
+
+#: moredialogs.xrc:2460 moredialogs.xrc:2535
+msgid ""
+"The filepath of the destination file.  It will be created/truncated as "
+"appropriate"
+msgstr ""
+
+#: moredialogs.xrc:2486
+msgid "Behaves like printf, but to the following file"
+msgstr ""
+
+#: moredialogs.xrc:2489
+msgid "fprintf"
+msgstr ""
+
+#: moredialogs.xrc:2586
+msgid "Command:"
+msgstr ""
+
+#: moredialogs.xrc:2597
+msgid ""
+"This is where the Find command string will be built.  Either use the dialog "
+"pages, or type things in direct"
+msgstr ""
+
+#: moredialogs.xrc:2630 moredialogs.xrc:4010 moredialogs.xrc:12451
+#: moredialogs.xrc:12803
+msgid "&SEARCH"
+msgstr ""
+
+#: moredialogs.xrc:2664
+msgid "Grep"
+msgstr ""
+
+#: moredialogs.xrc:2685
+msgid "General Options"
+msgstr ""
+
+#: moredialogs.xrc:2700
+msgid ""
+"This is the Full-Grep notebook.\n"
+"There's also a Quick-Grep dialog\n"
+"that will suffice for most searches"
+msgstr ""
+
+#: moredialogs.xrc:2715
+msgid "Click for &Quick Grep"
+msgstr ""
+
+#: moredialogs.xrc:2718
+msgid "Click here to go to the Quick-Grep dialog"
+msgstr ""
+
+#: moredialogs.xrc:2729
+msgid "Tick the checkbox to make Quick Grep the default in the future"
+msgstr ""
+
+#: moredialogs.xrc:2732
+msgid "Make Quick Grep the default"
+msgstr ""
+
+#: moredialogs.xrc:2756
+msgid "Syntax:  grep [options] [PatternToMatch] [File(s) to search]"
+msgstr ""
+
+#: moredialogs.xrc:2764
+msgid ""
+"Select any options you wish from the first 4 tabs, then in the last 2 enter "
+"the search pattern\n"
+"and the path or files to search. Alternatively you can write direct into the "
+"Command box."
+msgstr ""
+
+#: moredialogs.xrc:2788
+msgid "Select whichever options you need"
+msgstr ""
+
+#: moredialogs.xrc:2808
+msgid "-w  match Whole words only"
+msgstr ""
+
+#: moredialogs.xrc:2816
+msgid "Ignore case, both in the pattern and in filenames"
+msgstr ""
+
+#: moredialogs.xrc:2819
+msgid "-i   Ignore case"
+msgstr ""
+
+#: moredialogs.xrc:2834
+msgid "-x  return whole Line matches only"
+msgstr ""
+
+#: moredialogs.xrc:2842
+msgid "-v  return only lines that DON'T match"
+msgstr ""
+
+#: moredialogs.xrc:2876
+msgid "Directory Options"
+msgstr ""
+
+#: moredialogs.xrc:2893
+msgid "Options to do with Directories"
+msgstr ""
+
+#: moredialogs.xrc:2919
+msgid " Do what with Directories?"
+msgstr ""
+
+#: moredialogs.xrc:2937
+msgid "Try to match the names (the default)"
+msgstr ""
+
+#: moredialogs.xrc:2945
+msgid " -r  Recurse into them"
+msgstr ""
+
+#: moredialogs.xrc:2953 moredialogs.xrc:3133 moredialogs.xrc:12424
+msgid "Ignore them altogether"
+msgstr ""
+
+#: moredialogs.xrc:2990
+msgid "File Options"
+msgstr ""
+
+#: moredialogs.xrc:3004
+msgid "Options to do with Files"
+msgstr ""
+
+#: moredialogs.xrc:3036
+msgid " Stop searching a file after"
+msgstr ""
+
+#: moredialogs.xrc:3053
+msgid "Enter the maximum number of matches"
+msgstr ""
+
+#: moredialogs.xrc:3071
+msgid "matches found"
+msgstr ""
+
+#: moredialogs.xrc:3093
+msgid " Do what with Binary Files?"
+msgstr ""
+
+#: moredialogs.xrc:3111
+msgid "Report those containing a match (the default)"
+msgstr ""
+
+#: moredialogs.xrc:3113
+msgid ""
+"Search through the binary file, outputting only a 'Binary file matches' "
+"message, not the matching line"
+msgstr ""
+
+#: moredialogs.xrc:3122
+msgid "Treat them as if they were textfiles"
+msgstr ""
+
+#: moredialogs.xrc:3124
+msgid ""
+"Search through the binary file, outputting any line that matches the "
+"pattern. This usually results in garbage"
+msgstr ""
+
+#: moredialogs.xrc:3155
+msgid " -D skip   Ignore devices, sockets, FIFOs"
+msgstr ""
+
+#: moredialogs.xrc:3178
+msgid " Don't search in files that match the following pattern:"
+msgstr ""
+
+#: moredialogs.xrc:3221
+msgid " Only search in files that match the following pattern:"
+msgstr ""
+
+#: moredialogs.xrc:3275
+msgid "Output Options"
+msgstr ""
+
+#: moredialogs.xrc:3290
+msgid "Options relating to the Output"
+msgstr ""
+
+#: moredialogs.xrc:3319
+msgid "-c  print only Count of matches"
+msgstr ""
+
+#: moredialogs.xrc:3327
+msgid ""
+"Print only the names of the files that contain matches, not the matches "
+"themselves"
+msgstr ""
+
+#: moredialogs.xrc:3330
+msgid "-l   print just each match's Filename"
+msgstr ""
+
+#: moredialogs.xrc:3338
+msgid "-H  print the Filename for each match"
+msgstr ""
+
+#: moredialogs.xrc:3346
+msgid "-n  prefix a match with its line-Number"
+msgstr ""
+
+#: moredialogs.xrc:3354
+msgid "-s  don't print Error messages"
+msgstr ""
+
+#: moredialogs.xrc:3371
+msgid "-B  Show"
+msgstr ""
+
+#: moredialogs.xrc:3387 moredialogs.xrc:3497 moredialogs.xrc:3556
+msgid "Enter the number of lines of context you want to see"
+msgstr ""
+
+#: moredialogs.xrc:3404
+msgid "lines of leading context"
+msgstr ""
+
+#: moredialogs.xrc:3423
+msgid "-o  print only Matching section of line"
+msgstr ""
+
+#: moredialogs.xrc:3431
+msgid "Print only the names of those files that contain NO matches"
+msgstr ""
+
+#: moredialogs.xrc:3434
+msgid "-L  Print only filenames with no match"
+msgstr ""
+
+#: moredialogs.xrc:3442
+msgid "-h  Don't print filenames if multiple files"
+msgstr ""
+
+#: moredialogs.xrc:3450
+msgid "Prefix each match with its line's offset within the file, in bytes"
+msgstr ""
+
+#: moredialogs.xrc:3453
+msgid "-b  prefix a match with its Byte offset"
+msgstr ""
+
+#: moredialogs.xrc:3461
+msgid ""
+"No output at all, either matches or errors, but exit with 0 status at first "
+"match"
+msgstr ""
+
+#: moredialogs.xrc:3464
+msgid "-q  print No output at all"
+msgstr ""
+
+#: moredialogs.xrc:3481
+msgid "-A  Show"
+msgstr ""
+
+#: moredialogs.xrc:3514
+msgid "lines of trailing context"
+msgstr ""
+
+#: moredialogs.xrc:3539
+msgid "-C  Show"
+msgstr ""
+
+#: moredialogs.xrc:3574
+msgid "lines of both leading and trailing context"
+msgstr ""
+
+#: moredialogs.xrc:3596
+msgid ""
+"Displays input actually coming from standard input (or a pipe) as input "
+"coming from this filename.  eg if displaying the contents of an Archive"
+msgstr ""
+
+#: moredialogs.xrc:3599
+msgid " Make the display pretend the input came from File:"
+msgstr ""
+
+#: moredialogs.xrc:3651
+msgid "Pattern"
+msgstr ""
+
+#: moredialogs.xrc:3671
+msgid ""
+"If your search pattern begins with a minus sign eg  -foo   grep will try to "
+"find a non-existant option '-foo'.  The -e option protects against this."
+msgstr ""
+
+#: moredialogs.xrc:3674
+msgid "-e Use this if your pattern begins with a minus sign"
+msgstr ""
+
+#: moredialogs.xrc:3690 moredialogs.xrc:12203
+msgid "Regular Expression to be matched"
+msgstr ""
+
+#: moredialogs.xrc:3703 moredialogs.xrc:12226
+msgid "Type in the name for which to search.  eg foobar  or f.*r"
+msgstr ""
+
+#: moredialogs.xrc:3718
+msgid ""
+"&Regex\n"
+"Help"
+msgstr ""
+
+#: moredialogs.xrc:3743
+msgid ""
+"Treat the pattern not as a Regular Expression but as a list of fixed "
+"strings, separated by newlines, any of which is to be matched  ie as though "
+"using fgrep"
+msgstr ""
+
+#: moredialogs.xrc:3746
+msgid "-F Treat pattern as if using fgrep"
+msgstr ""
+
+#: moredialogs.xrc:3761
+msgid "-P treat pattern as a Perl regex"
+msgstr ""
+
+#: moredialogs.xrc:3783
+msgid ""
+"Instead of entering the pattern in the box above, extract it from this file"
+msgstr ""
+
+#: moredialogs.xrc:3786
+msgid "-f  instead load the pattern from File:"
+msgstr ""
+
+#: moredialogs.xrc:3823
+msgid ""
+"Add to the Command string.  The Pattern will be given single quotes to "
+"protect metacharacters."
+msgstr ""
+
+#: moredialogs.xrc:3835
+msgid "Location"
+msgstr ""
+
+#: moredialogs.xrc:3848
+msgid "Enter the Path or list of Files to search (or use one of the shortcuts)"
+msgstr ""
+
+#: moredialogs.xrc:3872 moredialogs.xrc:12273
+msgid ""
+"Type in the Path from which to search. If you use the shortcuts on the "
+"right, you can then append a /* if needed"
+msgstr ""
+
+#: moredialogs.xrc:3961
+msgid "This will be the grep command string"
+msgstr ""
+
+#: moredialogs.xrc:3985
+msgid ""
+"This is where the grep command string will be built.  Either use the dialog "
+"pages, or type things in direct"
+msgstr ""
+
+#: moredialogs.xrc:4080
+msgid ""
+"If checked, the dialog will automatically close 2 seconds after the last "
+"entry is made"
+msgstr ""
+
+#: moredialogs.xrc:4083
+msgid "Auto-Close"
+msgstr ""
+
+#: moredialogs.xrc:4123
+msgid "Archive Files"
+msgstr ""
+
+#: moredialogs.xrc:4164 moredialogs.xrc:4590
+msgid "File(s) to store in the Archive"
+msgstr ""
+
+#: moredialogs.xrc:4203 moredialogs.xrc:4629 moredialogs.xrc:4964
+#: moredialogs.xrc:5243 moredialogs.xrc:5741
+msgid "Add another File"
+msgstr ""
+
+#: moredialogs.xrc:4236
+msgid "Browse for another file"
+msgstr ""
+
+#: moredialogs.xrc:4250 moredialogs.xrc:5010 moredialogs.xrc:10901
+msgid "&Add"
+msgstr ""
+
+#: moredialogs.xrc:4253 moredialogs.xrc:4677 moredialogs.xrc:5013
+#: moredialogs.xrc:5291 moredialogs.xrc:5790
+msgid "Add the file or directory in the above box to the list on the left"
+msgstr ""
+
+#: moredialogs.xrc:4292
+msgid "Name to give the Archive"
+msgstr ""
+
+#: moredialogs.xrc:4302
+msgid ""
+"Enter just the main part of the name, not the extension  eg foo, not foo.tar."
+"gz"
+msgstr ""
+
+#: moredialogs.xrc:4311
+msgid "(Don't add an ext)"
+msgstr ""
+
+#: moredialogs.xrc:4330
+msgid "Create in this folder"
+msgstr ""
+
+#: moredialogs.xrc:4366
+msgid "Browse for a suitable folder"
+msgstr ""
+
+#: moredialogs.xrc:4402
+msgid "Create the archive using Tar"
+msgstr ""
+
+#: moredialogs.xrc:4414 moredialogs.xrc:5036
+msgid "Compress using:"
+msgstr ""
+
+#: moredialogs.xrc:4417
+msgid ""
+"Which program to use (or none) to compress the Archive.  gzip and bzip2 are "
+"good choices. If it's available on your system, xz gives the best "
+"compression."
+msgstr ""
+
+#: moredialogs.xrc:4422 moredialogs.xrc:5044
+msgid "bzip2"
+msgstr ""
+
+#: moredialogs.xrc:4423 moredialogs.xrc:5045
+msgid "gzip"
+msgstr ""
+
+#: moredialogs.xrc:4424 moredialogs.xrc:5046
+msgid "xz"
+msgstr ""
+
+#: moredialogs.xrc:4425 moredialogs.xrc:5047
+msgid "lzma"
+msgstr ""
+
+#: moredialogs.xrc:4426
+msgid "7z"
+msgstr ""
+
+#: moredialogs.xrc:4427 moredialogs.xrc:5048
+msgid "lzop"
+msgstr ""
+
+#: moredialogs.xrc:4428
+msgid "don't compress"
+msgstr ""
+
+#: moredialogs.xrc:4441 moredialogs.xrc:4807
+msgid ""
+"Don't store in the archive the Name of a symbolic link, store the file to "
+"which it points"
+msgstr ""
+
+#: moredialogs.xrc:4444
+msgid "Dereference symlinks"
+msgstr ""
+
+#: moredialogs.xrc:4453 moredialogs.xrc:4818
+msgid ""
+"Try to verify the integrity of the archive once it's made.  Not guaranteed, "
+"but better than nothing.  Takes a long time for very large archives, though."
+msgstr ""
+
+#: moredialogs.xrc:4456
+msgid "Verify afterwards"
+msgstr ""
+
+#: moredialogs.xrc:4464 moredialogs.xrc:4829
+msgid ""
+"Delete the source files once they have been added to the archive.  For "
+"courageous users only, unless the files are unimportant!"
+msgstr ""
+
+#: moredialogs.xrc:4467
+msgid "Delete source files"
+msgstr ""
+
+#: moredialogs.xrc:4495
+msgid ""
+"Use zip both to archive the file(s) and compress them.  It compresses less "
+"well than gzip or bzip2,  so use it for compatability with lesser operating "
+"systems that don't have these programs."
+msgstr ""
+
+#: moredialogs.xrc:4498
+msgid "Use zip instead"
+msgstr ""
+
+#: moredialogs.xrc:4549
+msgid "Append files to existing Archive"
+msgstr ""
+
+#: moredialogs.xrc:4674 moredialogs.xrc:5288 moredialogs.xrc:5787
+msgid "&Add to List"
+msgstr ""
+
+#: moredialogs.xrc:4720
+msgid "Archive to which to Append"
+msgstr ""
+
+#: moredialogs.xrc:4742 moredialogs.xrc:5542
+msgid ""
+"Path and name of the archive.  If not already in the entry list, write it in "
+"or Browse."
+msgstr ""
+
+#: moredialogs.xrc:4759 moredialogs.xrc:5559
+msgid "Browse"
+msgstr ""
+
+#: moredialogs.xrc:4810
+msgid "Dereference Symlinks"
+msgstr ""
+
+#: moredialogs.xrc:4821
+msgid "Verify archive afterwards"
+msgstr ""
+
+#: moredialogs.xrc:4832
+msgid "Delete Source Files afterwards"
+msgstr ""
+
+#: moredialogs.xrc:4894
+msgid "Compress files"
+msgstr ""
+
+#: moredialogs.xrc:4928
+msgid "File(s) to Compress"
+msgstr ""
+
+#: moredialogs.xrc:5039
+msgid ""
+"Which program to compress with.  Bzip2 is said to squeeze harder (at least "
+"for large files) but takes longer.\n"
+"If for some reason you want to use Zip, this is available from Archive > "
+"Create."
+msgstr ""
+
+#: moredialogs.xrc:5049
+msgid "'compress'"
+msgstr ""
+
+#: moredialogs.xrc:5066
+msgid "Faster"
+msgstr ""
+
+#: moredialogs.xrc:5076
+msgid ""
+"Applies only to gzip.  The higher the value, the greater the compression but "
+"the longer it takes to do"
+msgstr ""
+
+#: moredialogs.xrc:5086
+msgid "Smaller"
+msgstr ""
+
+#: moredialogs.xrc:5107
+msgid ""
+"Normal behaviour is not to overwrite an existing compressed file with the "
+"same name.  Check this box if you want to override this."
+msgstr ""
+
+#: moredialogs.xrc:5110
+msgid "Overwrite any existing files"
+msgstr ""
+
+#: moredialogs.xrc:5118
+msgid ""
+"If checked, all files in any selected directories (and their subdirectories) "
+"will be compressed.  If unchecked, directories are ignored."
+msgstr ""
+
+#: moredialogs.xrc:5121
+msgid "Recursively compress all files in any selected directories"
+msgstr ""
+
+#: moredialogs.xrc:5175
+msgid "Extract Compressed Files"
+msgstr ""
+
+#: moredialogs.xrc:5209
+msgid "Compressed File(s) to Extract"
+msgstr ""
+
+#: moredialogs.xrc:5329
+msgid ""
+"If a selection is a directory, uncompress any compressed files within it and "
+"its subdirectories"
+msgstr ""
+
+#: moredialogs.xrc:5332
+msgid "Recurse into Directories"
+msgstr ""
+
+#: moredialogs.xrc:5341
+msgid ""
+"If a file has the same name as an extracted file, automatically overwrite it"
+msgstr ""
+
+#: moredialogs.xrc:5344 moredialogs.xrc:5609
+msgid "Overwrite existing files"
+msgstr ""
+
+#: moredialogs.xrc:5353
+msgid ""
+"Uncompress, but don't extract, any selected archives.  If unchecked, "
+"archives are ignored"
+msgstr ""
+
+#: moredialogs.xrc:5356
+msgid "Uncompress Archives too"
+msgstr ""
+
+#: moredialogs.xrc:5422
+msgid "Extract an Archive"
+msgstr ""
+
+#: moredialogs.xrc:5461
+msgid "Archive to Extract"
+msgstr ""
+
+#: moredialogs.xrc:5520
+msgid "Directory into which to Extract"
+msgstr ""
+
+#: moredialogs.xrc:5606
+msgid ""
+"If there already exist files with the same name as any of those extracted "
+"from the archive, overwrite them."
+msgstr ""
+
+#: moredialogs.xrc:5674
+msgid "Verify Compressed Files"
+msgstr ""
+
+#: moredialogs.xrc:5707
+msgid "Compressed File(s) to Verify"
+msgstr ""
+
+#: moredialogs.xrc:5814
+msgid "&Verify Compressed Files"
+msgstr ""
+
+#: moredialogs.xrc:5853
+msgid "Verify an Archive"
+msgstr ""
+
+#: moredialogs.xrc:5887
+msgid "Archive to Verify"
+msgstr ""
+
+#: moredialogs.xrc:6014
+msgid "Do you wish to Extract an Archive, or Decompress files?"
+msgstr ""
+
+#: moredialogs.xrc:6029
+msgid "&Extract an Archive"
+msgstr ""
+
+#: moredialogs.xrc:6044
+msgid "&Decompress File(s)"
+msgstr ""
+
+#: moredialogs.xrc:6100
+msgid "Do you wish to Verify an Archive, or Compressed files?"
+msgstr ""
+
+#: moredialogs.xrc:6115
+msgid "An &Archive"
+msgstr ""
+
+#: moredialogs.xrc:6130
+msgid "Compressed &File(s)"
+msgstr ""
+
+#: moredialogs.xrc:6159 moredialogs.xrc:7219 moredialogs.xrc:8356
+msgid "Properties"
+msgstr ""
+
+#: moredialogs.xrc:6170 moredialogs.xrc:7230 moredialogs.xrc:8367
+msgid "General"
+msgstr ""
+
+#: moredialogs.xrc:6214 moredialogs.xrc:7270 moredialogs.xrc:8406
+msgid "Name:"
+msgstr ""
+
+#: moredialogs.xrc:6230 moredialogs.xrc:7286 moredialogs.xrc:8422
+msgid "Location:"
+msgstr ""
+
+#: moredialogs.xrc:6245 moredialogs.xrc:7301 moredialogs.xrc:8437
+msgid "Type:"
+msgstr ""
+
+#: moredialogs.xrc:6331 moredialogs.xrc:7445 moredialogs.xrc:8639
+msgid "Size:"
+msgstr ""
+
+#: moredialogs.xrc:6346 moredialogs.xrc:7460 moredialogs.xrc:8653
+msgid "Accessed:"
+msgstr ""
+
+#: moredialogs.xrc:6360 moredialogs.xrc:7474 moredialogs.xrc:8667
+msgid "Admin Changed:"
+msgstr ""
+
+#: moredialogs.xrc:6375 moredialogs.xrc:7489 moredialogs.xrc:8681
+msgid "Modified:"
+msgstr ""
+
+#: moredialogs.xrc:6490 moredialogs.xrc:7619 moredialogs.xrc:8811
+msgid "Permissions and Ownership"
+msgstr ""
+
+#: moredialogs.xrc:6762 moredialogs.xrc:7888 moredialogs.xrc:9084
+msgid "User:"
+msgstr ""
+
+#: moredialogs.xrc:6778 moredialogs.xrc:7904 moredialogs.xrc:9100
+msgid "Group:"
+msgstr ""
+
+#: moredialogs.xrc:6846 moredialogs.xrc:7968 moredialogs.xrc:9168
+msgid ""
+"Apply any change in permissions or ownership to each contained file and "
+"subdirectory"
+msgstr ""
+
+#: moredialogs.xrc:6849 moredialogs.xrc:7971 moredialogs.xrc:9171
+msgid "Apply changes to all descendants"
+msgstr ""
+
+#: moredialogs.xrc:6898 moredialogs.xrc:8035 moredialogs.xrc:9235
+msgid "Esoterica"
+msgstr ""
+
+#: moredialogs.xrc:6939 moredialogs.xrc:8076 moredialogs.xrc:9276
+msgid "Device ID:"
+msgstr ""
+
+#: moredialogs.xrc:6954 moredialogs.xrc:8091 moredialogs.xrc:9291
+msgid "Inode:"
+msgstr ""
+
+#: moredialogs.xrc:6969 moredialogs.xrc:8106 moredialogs.xrc:9306
+msgid "No. of Hard Links:"
+msgstr ""
+
+#: moredialogs.xrc:6984 moredialogs.xrc:8121 moredialogs.xrc:9321
+msgid "No. of 512B Blocks:"
+msgstr ""
+
+#: moredialogs.xrc:6999 moredialogs.xrc:8136 moredialogs.xrc:9336
+msgid "Blocksize:"
+msgstr ""
+
+#: moredialogs.xrc:7013 moredialogs.xrc:8150 moredialogs.xrc:9350
+msgid "Owner ID:"
+msgstr ""
+
+#: moredialogs.xrc:7028 moredialogs.xrc:8165 moredialogs.xrc:9365
+msgid "Group ID:"
+msgstr ""
+
+#: moredialogs.xrc:7158 moredialogs.xrc:8295 moredialogs.xrc:9495
+msgid "Output of 'file' command:"
+msgstr ""
+
+#: moredialogs.xrc:7317
+msgid "Link Target:"
+msgstr ""
+
+#: moredialogs.xrc:7384 moredialogs.xrc:8540
+msgid ""
+"To change the target, either write in the name of a different file or dir, "
+"or use the Browse button"
+msgstr ""
+
+#: moredialogs.xrc:7395 moredialogs.xrc:8551
+msgid "Browse to select a different target for the symlink"
+msgstr ""
+
+#: moredialogs.xrc:7411
+msgid "&Go To Link Target"
+msgstr ""
+
+#: moredialogs.xrc:8453
+msgid "First Link Target:"
+msgstr ""
+
+#: moredialogs.xrc:8467
+msgid "Ultimate Target:"
+msgstr ""
+
+#: moredialogs.xrc:8565
+msgid "&Go To First Link Target"
+msgstr ""
+
+#: moredialogs.xrc:8568
+msgid "Go to the link that is the immediate target of this one"
+msgstr ""
+
+#: moredialogs.xrc:8597
+msgid "Go To &Ultimate Target"
+msgstr ""
+
+#: moredialogs.xrc:8600
+msgid "Go to the file that is the ultimate target of this link"
+msgstr ""
+
+#: moredialogs.xrc:9556
+msgid "Mount an fstab partition"
+msgstr ""
+
+#: moredialogs.xrc:9593 moredialogs.xrc:9823
+msgid "Partition to Mount"
+msgstr ""
+
+#: moredialogs.xrc:9616
+msgid "This is the list of known, unmounted partitions in fstab"
+msgstr ""
+
+#: moredialogs.xrc:9663 moredialogs.xrc:9893
+msgid "Mount-Point for the Partition"
+msgstr ""
+
+#: moredialogs.xrc:9686
+msgid ""
+"This is the mount-point corresponding to the selected partition, taken from "
+"fstab"
+msgstr ""
+
+#: moredialogs.xrc:9720
+msgid "&Mount a non-fstab partition"
+msgstr ""
+
+#: moredialogs.xrc:9723
+msgid ""
+"If a partition is not in fstab, it won't be listed above. Click this button "
+"for all known partitions"
+msgstr ""
+
+#: moredialogs.xrc:9786
+msgid "Mount a Partition"
+msgstr ""
+
+#: moredialogs.xrc:9846
+msgid ""
+"This is the list of known, unmounted partitions. If you think that you know "
+"another, you may write it in."
+msgstr ""
+
+#: moredialogs.xrc:9916 moredialogs.xrc:10271 moredialogs.xrc:10631
+#: moredialogs.xrc:10734 moredialogs.xrc:11047 moredialogs.xrc:11566
+msgid ""
+"If there is an fstab entry for this device, the mount-point will "
+"automatically have been entered. If not, you must enter one yourself (or "
+"browse)."
+msgstr ""
+
+#: moredialogs.xrc:9934 moredialogs.xrc:10289 moredialogs.xrc:10647
+#: moredialogs.xrc:10752 moredialogs.xrc:11065 moredialogs.xrc:11584
+msgid "Browse for a mount-point"
+msgstr ""
+
+#: moredialogs.xrc:9960 moredialogs.xrc:11091 moredialogs.xrc:11610
+msgid "Mount Options"
+msgstr ""
+
+#: moredialogs.xrc:9978
+msgid "No writing to the filesystem shall be allowed"
+msgstr ""
+
+#: moredialogs.xrc:9981
+msgid "Read Only"
+msgstr ""
+
+#: moredialogs.xrc:9989
+msgid "All writes to the filesystem while it is mounted shall be synchronous"
+msgstr ""
+
+#: moredialogs.xrc:9992
+msgid "Synchronous Writes"
+msgstr ""
+
+#: moredialogs.xrc:10000
+msgid "Access times of files shall not be updated when the files are accessed"
+msgstr ""
+
+#: moredialogs.xrc:10003
+msgid "No File Access-time update"
+msgstr ""
+
+#: moredialogs.xrc:10017
+msgid "No files in the filesystem shall be executed"
+msgstr ""
+
+#: moredialogs.xrc:10020
+msgid "Files not executable"
+msgstr ""
+
+#: moredialogs.xrc:10028
+msgid "No device special files in the filesystem shall be accessible"
+msgstr ""
+
+#: moredialogs.xrc:10031
+msgid "Hide device special files"
+msgstr ""
+
+#: moredialogs.xrc:10039
+msgid ""
+"Setuid and Setgid permissions on files in the filesystem shall be ignored"
+msgstr ""
+
+#: moredialogs.xrc:10042
+msgid "Ignore Setuid/Setgid"
+msgstr ""
+
+#: moredialogs.xrc:10055
+msgid ""
+"If ticked, a passive translator will be created in addition to an active "
+"one. The mount will then persist, even after a reboot, until you choose to "
+"remove it."
+msgstr ""
+
+#: moredialogs.xrc:10059
+msgid "Create a Passive Translator too"
+msgstr ""
+
+#: moredialogs.xrc:10120
+msgid "Mount using sshfs"
+msgstr ""
+
+#: moredialogs.xrc:10148
+msgid "Remote user"
+msgstr ""
+
+#: moredialogs.xrc:10158
+msgid ""
+"Optionally, enter the name of the remote user. If you leave it blank, your "
+"local username will be used"
+msgstr ""
+
+#: moredialogs.xrc:10170
+msgid " @"
+msgstr ""
+
+#: moredialogs.xrc:10183
+msgid "Host name"
+msgstr ""
+
+#: moredialogs.xrc:10193
+msgid "Enter the name of the server e.g. myserver.com"
+msgstr ""
+
+#: moredialogs.xrc:10206
+msgid " :"
+msgstr ""
+
+#: moredialogs.xrc:10219
+msgid "Remote directory"
+msgstr ""
+
+#: moredialogs.xrc:10229
+msgid ""
+"Optionally, supply a directory to mount. The default is the remote user's "
+"home dir"
+msgstr ""
+
+#: moredialogs.xrc:10250
+msgid "Local mount-point"
+msgstr ""
+
+#: moredialogs.xrc:10321
+msgid ""
+"Translate the uid and gid of the remote host user to those of the local one. "
+"Recommended"
+msgstr ""
+
+#: moredialogs.xrc:10324
+msgid "idmap=user"
+msgstr ""
+
+#: moredialogs.xrc:10336
+msgid "mount read-only"
+msgstr ""
+
+#: moredialogs.xrc:10359
+msgid "Other options:"
+msgstr ""
+
+#: moredialogs.xrc:10368
+msgid ""
+"Enter any other options you need e.g. -p 1234 -o cache_timeout=2. I'll trust "
+"you to get the syntax right"
+msgstr ""
+
+#: moredialogs.xrc:10419
+msgid "Mount a DVD-RAM Disc"
+msgstr ""
+
+#: moredialogs.xrc:10441
+msgid "Device to Mount"
+msgstr ""
+
+#: moredialogs.xrc:10464
+msgid "This is the device-name for the dvdram drive"
+msgstr ""
+
+#: moredialogs.xrc:10507
+msgid ""
+"These are the appropriate mount-points in fstab. You can supply your own if "
+"you wish"
+msgstr ""
+
+#: moredialogs.xrc:10571
+msgid "Mount an iso-image"
+msgstr ""
+
+#: moredialogs.xrc:10608
+msgid "Image to Mount"
+msgstr ""
+
+#: moredialogs.xrc:10692
+msgid "Mount-Point for the Image"
+msgstr ""
+
+#: moredialogs.xrc:10711
+msgid ""
+"Already\n"
+"Mounted"
+msgstr ""
+
+#: moredialogs.xrc:10826
+msgid "Mount an NFS export"
+msgstr ""
+
+#: moredialogs.xrc:10862
+msgid "Choose a Server"
+msgstr ""
+
+#: moredialogs.xrc:10885
+msgid ""
+"This is the list of NFS servers currently active on the network. If you know "
+"of another, use the button on the right to add it."
+msgstr ""
+
+#: moredialogs.xrc:10904
+msgid "Manually add another server"
+msgstr ""
+
+#: moredialogs.xrc:10937
+msgid "Export to Mount"
+msgstr ""
+
+#: moredialogs.xrc:10963
+msgid "These are the Exports available on the above Server"
+msgstr ""
+
+#: moredialogs.xrc:10979 moredialogs.xrc:11500
+msgid "  already mounted"
+msgstr ""
+
+#: moredialogs.xrc:11106
+msgid ""
+"What to do if the server fails.  A Hard mount will freeze your computer "
+"until the server recovers;  a Soft should quickly unfreeze itself, but may "
+"lose data"
+msgstr ""
+
+#: moredialogs.xrc:11111
+msgid "Hard Mount"
+msgstr ""
+
+#: moredialogs.xrc:11112
+msgid "Soft Mount"
+msgstr ""
+
+#: moredialogs.xrc:11131 moredialogs.xrc:11708
+msgid "Mount read-write"
+msgstr ""
+
+#: moredialogs.xrc:11132 moredialogs.xrc:11709
+msgid "Mount read-only"
+msgstr ""
+
+#: moredialogs.xrc:11180
+msgid "Add an NFS server"
+msgstr ""
+
+#: moredialogs.xrc:11217
+msgid "IP address of the new Server"
+msgstr ""
+
+#: moredialogs.xrc:11240
+msgid "Type in the address.  It should be something like 192.168.0.2"
+msgstr ""
+
+#: moredialogs.xrc:11261
+msgid "Store this address for future use"
+msgstr ""
+
+#: moredialogs.xrc:11326
+msgid "Mount a Samba Share"
+msgstr ""
+
+#: moredialogs.xrc:11362
+msgid "Available Servers"
+msgstr ""
+
+#: moredialogs.xrc:11385
+msgid "IP Address"
+msgstr ""
+
+#: moredialogs.xrc:11396
+msgid ""
+"These are the IP addresses of the known sources of samba shares on the "
+"network"
+msgstr ""
+
+#: moredialogs.xrc:11413
+msgid "Host Name"
+msgstr ""
+
+#: moredialogs.xrc:11424
+msgid ""
+"These are the host-names of the known sources of samba shares on the network"
+msgstr ""
+
+#: moredialogs.xrc:11461
+msgid "Share to Mount"
+msgstr ""
+
+#: moredialogs.xrc:11484
+msgid "These are the shares available on the above Server"
+msgstr ""
+
+#: moredialogs.xrc:11627
+msgid "Use this Name and Password"
+msgstr ""
+
+#: moredialogs.xrc:11628
+msgid "Try to Mount Anonymously"
+msgstr ""
+
+#: moredialogs.xrc:11653
+msgid "Username"
+msgstr ""
+
+#: moredialogs.xrc:11662
+msgid "Enter your samba username for this share"
+msgstr ""
+
+#: moredialogs.xrc:11678
+msgid "Password"
+msgstr ""
+
+#: moredialogs.xrc:11687
+msgid "Enter the corresponding password (if there is one)"
+msgstr ""
+
+#: moredialogs.xrc:11759
+msgid "Unmount a partition"
+msgstr ""
+
+#: moredialogs.xrc:11796
+msgid "      Partition to Unmount"
+msgstr ""
+
+#: moredialogs.xrc:11819
+msgid "This is the list of mounted partitions from mtab"
+msgstr ""
+
+#: moredialogs.xrc:11866
+msgid "Mount-Point for this Partition"
+msgstr ""
+
+#: moredialogs.xrc:11889
+msgid "This is the mount-point corresponding to the selected partition"
+msgstr ""
+
+#: moredialogs.xrc:11959
+msgid "Execute as superuser"
+msgstr ""
+
+#: moredialogs.xrc:11983
+msgid "The command:"
+msgstr ""
+
+#: moredialogs.xrc:11998
+msgid "requires extra privileges"
+msgstr ""
+
+#: moredialogs.xrc:12025
+msgid "Please enter the administrator password:"
+msgstr ""
+
+#: moredialogs.xrc:12056
+msgid "If ticked the password will be saved for, by default, 15 minutes"
+msgstr ""
+
+#: moredialogs.xrc:12059
+msgid " Remember this password for a while"
+msgstr ""
+
+#: moredialogs.xrc:12121
+msgid "Quick Grep"
+msgstr ""
+
+#: moredialogs.xrc:12140
+msgid ""
+"This is the Quick-Grep dialog.\n"
+"It provides only the commonest\n"
+"of the many grep options."
+msgstr ""
+
+#: moredialogs.xrc:12155
+msgid "Click for &Full Grep"
+msgstr ""
+
+#: moredialogs.xrc:12158
+msgid "Click here to go to the Full Grep dialog"
+msgstr ""
+
+#: moredialogs.xrc:12169
+msgid "Tick the checkbox to make Full Grep the default in the future"
+msgstr ""
+
+#: moredialogs.xrc:12172
+msgid "Make Full Grep the default"
+msgstr ""
+
+#: moredialogs.xrc:12262
+msgid ""
+"Enter the Path or list of Files to search\n"
+"(or use one of the shortcuts)"
+msgstr ""
+
+#: moredialogs.xrc:12356
+msgid "Only match whole words"
+msgstr ""
+
+#: moredialogs.xrc:12359
+msgid "-w match Whole words only"
+msgstr ""
+
+#: moredialogs.xrc:12367 moredialogs.xrc:12696
+msgid "Do a case-insensitive search"
+msgstr ""
+
+#: moredialogs.xrc:12370
+msgid "-i Ignore case"
+msgstr ""
+
+#: moredialogs.xrc:12378 moredialogs.xrc:12389
+msgid "Don't bother searching inside binary files"
+msgstr ""
+
+#: moredialogs.xrc:12381
+msgid "-n  prefix match with line-number"
+msgstr ""
+
+#: moredialogs.xrc:12392
+msgid "Ignore binary files"
+msgstr ""
+
+#: moredialogs.xrc:12400
+msgid "Don't try to search in devices, fifos, sockets and the like"
+msgstr ""
+
+#: moredialogs.xrc:12403
+msgid "Ignore devices, fifos etc"
+msgstr ""
+
+#: moredialogs.xrc:12417
+msgid "Do what with directories?"
+msgstr ""
+
+#: moredialogs.xrc:12422
+msgid "Match the names"
+msgstr ""
+
+#: moredialogs.xrc:12423
+msgid "Recurse into them"
+msgstr ""
+
+#: moredialogs.xrc:12489
+msgid "Quick Find"
+msgstr ""
+
+#: moredialogs.xrc:12508
+msgid ""
+"This is the Quick-Find dialog.\n"
+"It provides only the commonest\n"
+"of the many find options."
+msgstr ""
+
+#: moredialogs.xrc:12523
+msgid "Click for &Full Find"
+msgstr ""
+
+#: moredialogs.xrc:12526
+msgid "Click here to go to the full Find dialog"
+msgstr ""
+
+#: moredialogs.xrc:12537
+msgid "Tick the checkbox to make Full Find the default in the future"
+msgstr ""
+
+#: moredialogs.xrc:12540
+msgid "Make Full Find the default"
+msgstr ""
+
+#: moredialogs.xrc:12570
+msgid ""
+"Enter the Path from which to start searching\n"
+"(or use one of the shortcuts)"
+msgstr ""
+
+#: moredialogs.xrc:12664
+msgid "Search term:"
+msgstr ""
+
+#: moredialogs.xrc:12679
+msgid ""
+"Type in the name or path for which to search. It can include wild-cards e.g. "
+"foobar  or f.*r\n"
+"Alternatively it can be a regular expression."
+msgstr ""
+
+#: moredialogs.xrc:12699
+msgid "Ignore case"
+msgstr ""
+
+#: moredialogs.xrc:12708
+msgid "Put a '*' wild-card in front of the text"
+msgstr ""
+
+#: moredialogs.xrc:12711
+msgid "Prepend '*'"
+msgstr ""
+
+#: moredialogs.xrc:12720
+msgid "Put a '*' wild-card after the text"
+msgstr ""
+
+#: moredialogs.xrc:12723
+msgid "Append '*'"
+msgstr ""
+
+#: moredialogs.xrc:12749
+msgid "This is a:"
+msgstr ""
+
+#: moredialogs.xrc:12758
+msgid "name"
+msgstr ""
+
+#: moredialogs.xrc:12767
+msgid "path"
+msgstr ""
+
+#: moredialogs.xrc:12776
+msgid "regex"
+msgstr ""

@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>The Tools menu</title>
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+</head>
+
+<body style="background-color: rgb(255, 255, 255); direction: ltr;">
+<center>
+<table style="margin-left: auto; margin-right: auto; width: 100%; text-align: center;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="width: 33%; text-align: center;"><a href="Mount.htm"><img src="back.gif" alt="The Mount Menu" align="top" border="0"></a>&nbsp;&nbsp;<a href="Mount.htm">The Mount Menu</a></td>
+      <td style="width: 34%; text-align: center;">&nbsp;&nbsp;<a href="Menu.htm"><img src="up.gif" alt="Menu Sections" align="top" border="0"></a>&nbsp;&nbsp;<a href="Menu.htm">Menu Sections</a></td>
+      <td style="width: 33%; text-align: center;">&nbsp;&nbsp;<a align="middle" href="Options.htm">The Options menu</a>&nbsp;&nbsp;<a href="Options.htm"><img src="forward.gif" alt="The Options menu" align="top" border="0"></a></td>
+    </tr>
+  </tbody>
+</table>
+
+</center>
+<hr>
+
+<h2><u>The Tools menu</u></h2>
+<p>
+What is a Tool? An outside program that is called from 4Pane, and the results displayed by 4Pane. There are three of these built-in, but you can add more yourself.<br><br>
+
+The first three menu-items are for the standard tools: <b>Locate</b>, <b>Find</b> and <b>Grep</b>. Selecting one of these invokes the appropriate dialog, and the results are displayed in the <a href="TerminalEm.htm">Terminal Emulator</a>.<br><br>
+
+<b>Locate</b> is the quickest way of searching for a file or directory, as it looks up a database rather than each search scanning the filesystem. If it isn't already available on your system, 
+install the 'findutils' package.  Its search pattern can contain the simple wildcards *, ? and [Aa] (but see the -r option below).<br>
+The Locate dialog is quite simple; most often you'll just put the search string in the box and click OK. 
+It keeps a history of the searches that you can access from the dropdown arrow or the Down/Up keys. There are also options that may occasionally be useful: 
+<ul><li>-b returns only matches in the last segment of a filepath; so the pattern 'foo' would match /bar/bigfoot but not /bigfoot/bar.
+				<li>-i ignores case, so that 'foO' would match /Foo, /FOO etc
+				<li>-e checks for the continued existence of each match, in case it had been deleted since the last database update. This might take a little time.
+				<li>-r says to treat the pattern as a <a href="RegExpHelp.htm">Regular Expression</a>.
+</ul><br><br>
+
+<b>Grep</b> comes in two flavours. For everyday use there is <b>Quick Grep</b>, which is easy to use but provides only the commonest options; 
+and <b>Full Grep</b>, which has many more (see below).<br><br>
+
+In the <b>Quick Grep</b> dialog, all you absolutely <i>must</i> fill in is the search pattern and the search path, though there are other (self-explanatory) things too e.g. 'ignore binary files'. 
+There are convenient shortcuts for the path: $HOME, '/' and (the most useful) the currently-selected directory. These settings are remembered by the dialog, as are recently used patterns and paths.<br>
+At the top of the dialog is a button to take you to the <b>Full Grep</b> dialog instead, and a checkbox to tick if you want that to be the default.<br><br>
+
+Since 4Pane 5.0, <b>Find</b> similarly has 'Quick' and 'Full' alternatives.<br><br>
+
+The <b>Find</b> and <b>Full Grep</b> dialogs definitely <i>aren't</i> simple; in fact they are too complicated to describe in detail here. Instead I've 
+made them as self-describing as possible. Both split the numerous available options into several pages, and most options have a detailed tooltip.<br>
+
+For <b>Find</b> you will almost certainly want, as a minimum, to select from the <i>Path</i> and the <i>Name</i> pages; 
+for <b>Full Grep</b> the <i>File Options</i>, <i>Pattern</i> and <i>Location</i> pages. As you will see, selections made on a page aren't added to the 
+command until the <i>Add to Command String</i> button is clicked.<br>
+Most items that require you to provide a name e.g. the Find path, have a history. The final command also has a history, so you can alter and 
+repeat one of the previous commands. You can also do this from the Terminal Emulator's history.<br><br>
+
+The output of these commands are a list of files displayed in the Terminal Emulator, and you'll often want to open one or more of them. 
+You can, by:
+<UL>
+	<LI> Double-clicking one of them. If it's an executable file, it will be run. Otherwise, if it's a filetype that 4Pane knows how to deal with (e.g. a .txt file) it will be opened, or else the <a href="OpenWith.htm">Open With dialog</a> will appear.<br>
+If instead, while you double-click, you press the <b>Ctrl</b> key, instead of opening the file you will "Go To" it: the current pane will display its directory, with the file itself selected.
+	<LI> Right-clicking over a file. A context menu will appear that contains those alternatives: Open or Go To.
+</UL>
+<br>
+
+Next a single item, <b>Launch Terminal</b> (<b>Ctrl-T</b>). This does just what is says: it opens a new console window, which will use the current selection as its path. 
+You can configure which console application is opened (konsole, gnome-terminal etc) in <i>Options > Configure 4Pane > Terminals</i>.<br><br>
+
+The rest of the menu deals with user-defined tools: programs or scripts that you have chosen yourself (from the <i>Options > Configure 4Pane</i>); more about these <a href="ConfigureUserDefTools.htm">here</a>.<br>
+<b>Run a Program</b> opens a submenu from which you can select one of these tools. Once you've run one of them, the last command, <b>Repeat Previous Program</b>, 
+allows you easily to repeat it.
+</p>
+</body>
+</html>

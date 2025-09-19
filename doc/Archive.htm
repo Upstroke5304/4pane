@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <title>The Archive menu</title>
+</head>
+
+<body style="background-color: rgb(255, 255, 255); direction: ltr;">
+<center>
+<table style="margin-left: auto; margin-right: auto; width: 100%; text-align: center;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="width: 33%; text-align: center;"><a href="Bookmarks.htm"><img src="back.gif" alt="The Bookmarks Menu" align="top" border="0"></a>&nbsp;&nbsp;<a href="Bookmarks.htm">The Bookmarks Menu</a></td>
+      <td style="width: 34%; text-align: center;">&nbsp;&nbsp;<a href="Menu.htm"><img src="up.gif" alt="Menu Sections" align="top" border="0"></a>&nbsp;&nbsp;<a href="Menu.htm">Menu Sections</a></td>
+      <td style="width: 33%; text-align: center;">&nbsp;&nbsp;<a align="middle" href="Mount.htm">The Mount menu</a>&nbsp;&nbsp;<a href="Mount.htm"><img src="forward.gif" alt="The Mount menu" align="top" border="0"></a></td>
+    </tr>
+  </tbody>
+</table>
+
+</center>
+<hr>
+
+<h2><u>The Archive menu</u></h2>
+
+<p>
+With this menu you can create and manage Archives, and compress/decompress files. Note that it doesn't deal with "virtual" browsing of archives; for this see <a href="ArchiveBrowse.htm">here</a>.<br><br>
+
+If the programs are installed on your computer, 4Pane can compress and decompress files using gzip, bzip2, xz, lmza, lzop and compress, corresponding to filenames ending in 
+<b>gz, bz2, xz, lzma, lzo</b> and <b>Z</b>. Similarly it can extract tar, zip, 7-Zip, ar, rar and cpio archives, with filenames ending in 
+<b>.tar.gz, .tgz</b> etc, <b>.zip, .7z, .rar, .ar </b>(and <b>.deb</b>) and <b>.cpio</b> (and <b>rpm</b>). It can create archives using tar and zip; tar archives can be compressed using the above compressors plus 7z. (4Pane doesn't try to create 'standard' 7z archives (like those made in 7-Zip) as these don't store their content's ownership/group info, and so aren't appropriate for Linux. If you especially wish to make an archive compressed with 7z, use .tar.7z.)<br>
+
+All the following are applied to the currently-selected items in the active pane; so to create a new archive containing three particular files, first highlight those files. Most of the dialogs allow you to add extra items later, but pre-selection is usually easier.<br><br>
+
+The first menu item is <b>Extract Archive or Compressed File(s)</b>, with the shortcut <b>Ctrl-E</b>. If the highlit items are compressed files, or a mixture of compessed files and archives, a dialog will appear that lists the items to be decompressed. To the right of the list is a section that allows you to add more items: write in another file, or browse for one, then click the <b>Add to List</b> button.<br>
+Below are three tickboxes. If first is ticked, and there are directories in the list, any compressed files in those directories and their subdirectories will be decompressed too. 
+The second deals with overwriting existing files; unless it's ticked, if there is already a file called foo, trying to decompress foo.gz will fail. 
+The third determines what to do with any archives in the list. If it's ticked, archives are decompressed but <u>not</u> extracted: so foo.tar.gz becomes foo.tar. If not, archives are ignored.<br><br>
+
+If the selected item is an archive (you can only extract archives one at a time; if more than one is selected, only the first will be extracted) you get a different dialog that just asks you to choose a directory in which to put the extracted files. By default this is the currect directory.<br><br>
+
+<b>Create a New Archive</b> (<b>Sh-Ctrl-Z</b>) brings up a dialog which starts in the same way as the Extract dialog: a list of files to add, and a way to get more. 
+Below is place for you to type in the name you want for the archive; just the main part, the extension will be added automatically. To the right you optionally can choose a different directory to put the archive in; by default it will be the current one.<br>
+Finally choose the type of archive to make: tar or zip. If it's tar, you can choose to compress it with e.g. gzip or xz, or not at all; whether to add any symlinks to the archive, or the files that they target; 
+whether to verify the archive afterwards; and whether to delete the original files once they've been added (<u>not</u> a good idea for important files). These choices will persist for future dialogs.<br><br>
+
+The next item, <b>Add to an Existing Archive</b>, uses a similar dialog to <b>Create a New Archive</b>. It tries to be intelligent: if the current pane has an archive highlit as well as files, it will suggest adding the files to that archive. However it isn't all <i>that</i> intelligent; it doesn't prevent you from adding the file foo.txt to an archive that already contains a foo.txt.<br><br>
+
+<b>Test integrity of an Archive or Compressed File(s)</b> does this for the selected archive or compressed files, after showing a dialog.<br><br>
+
+The last item is <b>Compress Files</b> (<b>Ctrl-Alt-Z</b>). It produces a dialog that by now should be familiar. The main difference is that, for compressors where it's appropriate, you can also choose whether to compress faster/less or slower/better.<br><br>
+
+A few general points:
+<ul>
+	<li> The output of all these commands is shown in a (different) dialog, so you can see what is happening, and what goes wrong. This dialog self-closes after 2 seconds if all goes well, or 5 seconds if there are any failures; 
+							if you don't want it to, untick the "Auto-Close" tickbox. These times can be changed in <i>Options > Configure 4Pane > Misc: Times</i>.<br></li>
+	<li> Enormous archives will take a very long time to process and display; to backup a whole filesystem, you might prefer to use a terminal.<br></li>
+	<li> 4Pane subcontracts these commands to other programs (tar, gzip etc). As a result they are outside 4Pane's Undo/Redo system.</li>
+</ul>
+</p>
+
+</body>
+</html>

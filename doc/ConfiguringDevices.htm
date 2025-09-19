@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <title>Configuring Devices and Editors</title>
+</head>
+
+<body style="background-color: rgb(255, 255, 255); direction: ltr;">
+<center>
+<table style="margin-left: auto; margin-right: auto; width: 100%; text-align: center;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="width: 33%; text-align: center;"><a href="ConfigureUserDefTools.htm"><img src="back.gif" alt="User-defined Tools" align="top" border="0"></a>&nbsp;&nbsp;<a href="ConfigureUserDefTools.htm">User-defined Tools</a></td>
+      <td style="width: 34%; text-align: center;">&nbsp;&nbsp;<a href="Configure.htm"><img src="up.gif" alt="Configuring 4Pane" align="top" border="0"></a>&nbsp;&nbsp;<a href="Configure.htm">Configuring 4Pane</a></td>
+      <td style="width: 33%; text-align: center;">&nbsp;&nbsp;<a align="middle" href="ConfiguringDisplay.htm">Configuring the Display</a>&nbsp;&nbsp;<a href="ConfiguringDisplay.htm"><img src="forward.gif" alt="Configuring the Display" align="top" border="0"></a></td>
+    </tr>
+  </tbody>
+</table>
+
+</center>
+<hr>
+
+<h2><u>Configuring Devices and Editors</u></h2>
+<p>
+
+Devices are things like dvdrom drives and usb-pens. Different Linux distros vary enormously in how they deal with these; some, especially recent ones, 
+automatically mount them as soon as they're found; others, especially older versions, do nothing automatically, leaving you to do the work. 
+When 4Pane first runs, it tries to work out which choices your distro makes, and work with them. When it gets it wrong, this is where you can sort things out.<br><br>
+
+For each attached device 4Pane adds an icon on the righthand side of the toolbar. In automounting distros, this can be clicked to display the device's 
+contents in the current pane; in non-automounting distros, this will also mount the device. For read-write devices like usb-pens, you can 
+also drag files onto the icon to move or copy them to the device.<br><br>
+
+To the left of the device icons in the toolbar are "editor" ones, which can be configured in the <a href="ConfiguringDisplay.htm">Display section</a>.
+
+The Configuring Devices and Editors dialog has four buttons, each of which brings up another dialog. They are:
+<ul><li><b><u>Automount</u></b><br>
+This section deals with device detection and automounting. Until the 2.4 kernel, usb pens and similar weren't detected at all. 
+2.4 kernels introduced the usb-storage method. Recent distros with 2.6 kernels usually use udev/hal, but earlier ones used to do other things involving mtab.
+
+4Pane should have got this right automatically; if not, use trial and error.
+<br><br>
+Below is where to configure whether 4Pane treats floppies, dvd drives and removable devices as automounting. Again the default settings should be correct but, for example, you might wish to 
+turn off automounting and have 4Pane mount devices on demand.
+<br><br>
+
+				<li><b><u>Mounting</u></b></b><br>
+The next sub-page applies mostly to non-automounting distros, some of which insert information about devices directly into either /etc/mtab or /etc/fstab.<br><br>
+A few older distros (e.g. Mandriva 10.1) use Supermount to help manage disk-changes; if so, the fstab entry may start with "none" instead of the device name, so tick the Supermount box.
+</li><br>
+
+				<li><b><u>Usb devices</u></b></b><br>
+This sub-page is about usb devices. You can change how often 4Pane checks to see if any devices have been inserted or removed; by default this is every 3 seconds.<br><br>
+
+Multicard usb readers are usually treated by the system as if each slot were a separate device. By default 4Pane only adds a button to the toolbar for the slots with a card inserted. 
+If you tick here, each empty slot will get a button too, so a 13-slot device will always have 13 buttons!<br><br>
+
+Lastly, you can decide what, in a non-automounting distro, you want to do when 4Pane has mounted a removable device, and then you exit 4Pane; do you want to leave the device mounted? 
+</li><br>
+
+				<li><b><u>Configure Removable Devices</u></b><br>
+Removable devices like usb-pens or usb-readers should be autodetected by 4Pane the first time they are plugged in. 
+If not, or if it gets it wrong, this is where you can configure things.<br><br>
+
+You will see a list of known drives. To the right of this are buttons for adding a new device, and editing or deleting the current selection. 
+Note that Delete doesn't actually delete the device's information, it just ignores the device. If you reattach it, you can use Edit to 'undelete' it.<br><br>
+
+Add and Edit invoke similar dialogs. The name of the device and manufacturer should have been auto-inserted, but if not you can enter them. 
+Select the most appropriate device type e.g. 'usb pen', then say whether it is read-only: the answer is usually "No". You can also choose to Ignore or Un-ignore the device.<br><br>
+If a device has an entry in /etc/fstab, you should be able to mount it without needing superuser privileges. For this to work in 
+4Pane, the device node and mount point entries here must be the same as in /etc/fstab.<br><br>
+Any changes <i>should</i> take effect immediately, but sometimes (I don't know why) they don't show until you restart 4Pane. This is especially likely if it involves a change of icon.
+</li><br>
+
+				<li><b><u>Configure Fixed Devices</u></b><br>
+Fixed devices are things like floppy disc drives, dvdrom drives. 4Pane should have autodetected these when it first started, but if it got it wrong, 
+or you add a new device, this is where you can configure things.<br><br>
+
+You will see a list of known drives. To the right of this are buttons for adding a new device, and editing or deleting the current selection. 
+Note that Delete doesn't actually delete the device's information, it just ignores the device. If you reattach it, you can use Edit to 'undelete' it.<br><br>
+
+Add and Edit invoke similar dialogs. You will need to provide or change the device node (e.g. /dev/dvd) and mount-point (e.g. /media/dvdrom). 
+Next provide a label to call the device (e.g. "dvd") and select the most appropriate device type. Then say whether it is read-only: the answer is usually 
+"Yes" except for floppies. You can also choose to Ignore or Unignore the device.<br>
+If a device has an entry in /etc/fstab, you should be able to mount it without needing superuser privileges. For this to work in 
+4Pane, the device node and mount point entries here must be the same as in /etc/fstab. Beware device node symlinks: it's common to find that e.g. 
+<b>/dev/dvd</b> is a symlink to <b>/dev/hdb</b>. You must use whichever is written in the /etc/fstab entry.<br><br>
+Any changes <i>should</i> take effect immediately, but sometimes (I don't know why) they don't show until you restart 4Pane. This is especially likely if it involves a change of icon.
+</li><br>
+
+				<li><b><u>Advanced Configuration</u></b><br>
+Finally, the <i>Advanced</i> page has three sub-pages dealing with very low-level issues. You are very unlikely to need any of them, but if you do, the tooltips contain useful information.
+<br><br></li>
+
+
+
+</p>
+</body>
+</html>

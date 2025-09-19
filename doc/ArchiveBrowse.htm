@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <title>Browsing Archives</title>
+</head>
+
+<body style="background-color: rgb(255, 255, 255); direction: ltr;">
+<center>
+<table style="margin-left: auto; margin-right: auto; width: 100%; text-align: center;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="width: 33%; text-align: center;"><a href="Archive.htm"><img src="back.gif" alt="The Archive Menu" align="top" border="0"></a>&nbsp;&nbsp;<a href="Archive.htm">The Archive Menu</a></td>
+      <td style="width: 34%; text-align: center;">&nbsp;&nbsp;<a href="Archive.htm"><img src="up.gif" alt="The Archive Menu" align="top" border="0"></a>&nbsp;&nbsp;<a href="Archive.htm">The Archive Menu</a></td>
+      <td style="width: 33%; text-align: center;">&nbsp;&nbsp;<a align="middle" href="Mount.htm">The Mount menu</a>&nbsp;&nbsp;<a href="Mount.htm"><img src="forward.gif" alt="The Mount menu" align="top" border="0"></a></td>
+    </tr>
+  </tbody>
+</table>
+
+</center>
+<hr>
+
+<h2><u>Browsing Archives</u></h2>
+
+<p>
+It's one of the features of 4Pane that you can "browse" inside a tar or zip archive without having to extract it (for compressed tars this works for compression by gz, bz2, xz and lzma). In fact browse is an understatement: you can do much more than just look.<br><br>
+
+Double-click on an archive (NB this only works for archives, not compressed files). You'll see that the dir-view changes to show the archive as the "root directory"; any subdirectories that the archive contains will appear beneath. 
+The file-view will now be showing the archive's contents. Notice that the icon of each file or directory is somewhat ghost-like, to remind you that what you're seeing is "virtual".<br><br>
+
+You can do most of the things inside the archive that you'd be able to do outside, and in the same ways. So for example you can 
+Cut and Paste files or subdirectories, either from a menu, shortcut or Drag'n'Drop; and you can do this within an archive, between the archive and the "real world", 
+or even between two archives. Undo/Redo works.<br>
+Open and Open With appear to work as usual, but here there's a catch: to open foo.txt in kwrite, the text-file is first copied into a real, temporary file; 
+then the temporary file is opened. So although the file isn't officially read-only, any changes that you make will be saved to the temporary file and then deleted. Be warned!<br><br>
+
+There are a few things that you <i>can't</i> do within an archive. You can't make an archive item a symlink target (it would be meaningless to try). 
+You can't open the Properties dialog for an archive item. You can't create a new item inside the archive; however you <i>can</i> create a file or directory outside the archive, and then Move it in. 
+And if you move a relative symlink within an archive or between archives, it doesn't keep pointing at its previous target.
+
+<br>There's one thing that you can do within an archive but probably <i>shouldn't</i>. Archives are happy to contain two files with the 
+name, and so it's possible to paste a file into an archive directory more than once if you want to. However 4Pane has no way of distinguishing 
+between such files, so if you delete or rename one, both are affected.
+<br><br>
+There's also an extra thing that you can do: highlighting one or more files and choosing <b>Extract from Archive</b> from the Context Menu allows you to extract just those files to the directory of your choice.
+</p>
+
+</body>
+</html>

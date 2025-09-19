@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+  <title>Undo/Redo</title>
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  </head>
+<body style="background-color: rgb(255, 255, 255); direction: ltr;">
+<center>
+<table style="margin-left: auto; margin-right: auto; width: 100%; text-align: center;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="width: 33%; text-align: center;"><a href="Properties.htm"><img src="back.gif" alt="The Properties Dialog" align="top" border="0"></a>&nbsp;&nbsp;<a href="Properties.htm">The Properties Dialog</a></td>
+      <td style="width: 34%; text-align: center;">&nbsp;&nbsp;<a href="Toolbar.htm"><img src="up.gif" alt="Toolbar" align="top" border="0"></a>&nbsp;&nbsp;<a href="Toolbar.htm">Toolbar</a></td>
+      <td style="width: 33%; text-align: center;">&nbsp;&nbsp;<a align="middle" href="MultipleRenDup.htm">Multiple Renaming or Duplication</a>&nbsp;&nbsp;<a href="MultipleRenDup.htm"><img src="forward.gif" alt="Multiple Renaming or Duplication" align="top" border="0"></a></td>
+    </tr>
+  </tbody>
+</table>
+</center>
+<hr>
+
+<h2><u>Undoing and Redoing an Alteration</u></h2>
+You can access this from the <b>Edit</b> menu (or the Context menu) or use the shortcuts <b>Ctrl-Z</b> and <b>Ctrl-R</b> respectively; but the most convenient way is to use the pair of curved arrows on the main toolbar (which will be disabled unless there are alterations available).<br>
+In what follows I'll mostly refer to Undoing things, but Redoing is exactly the same.<br><br>
+
+There are two ways to use these buttons:
+<UL>
+	<LI> Click the main part of the button. The next available alteration will be undone. More clicks, more undos. This is also what you get from a menu or a shortcut.
+	<LI> Use the "dropdown" arrow to the right of the main button. A menu-like window will appear, that lists the available items to undo. Select one and all items up to and including it will be Undone.
+	     If there are too many to show on one page (15 by default but you can change this in <i>Options > Configure 4Pane > Misc</i>) there will be a 'More' entry at the bottom to show the next page.<br>
+		   Each item will give you some idea what you'll be Undoing e.g. <b>Undo Delete</b> or <b>Undo Rename (17 items)</b>.
+</UL>
+
+As you just read, actions are clustered: if you rename 17 items, you get to Undo and Redo these all at once; if you delete a directory containing hundreds of files, it appears as just one deletion. 
+This is normally what you'd want (you really wouldn't want to have to undo hundreds of deletions one by one) but it does mean that if you decide you only wanted to rename 16 of these files, you have to Undo them all, select the correct files and rename again.<br><br>
+
+You <i>should</i> be able to go up and down the list, Undoing and Redoing the items, as often as you wish. However there are four situations where Redoing will no longer be possible:
+<UL>
+	<LI> If you reach the maximum number of allowed Undos. After this, when you add an extra Undo, the oldest one on the list is silently discarded.<br>
+	     By default that maximum number is 10000, which should be enough for most people. However it isn't quite as good as it seems: Deleting 17 selected files uses up 17 Undo items (as data for each has to be stored). However deleting a directory with all its contents counts only as one.
+		   You can change the maximum number of Undos in <i>Options > Configure 4Pane > Misc</i>, but the change won't take effect until 4Pane is restarted.
+	<LI> If you Undo several alterations, and then do something else, you can't then Redo those several alterations. This is intentional: there would be no guarantee that those Redos were still possible and safe.
+	<LI> For similar reasons, if you empty the 'Deleted Can' (<i>Options > Permanently delete 'Deleted' files</i>) all Undo/Redos are lost. A warning message is shown first.
+	<LI> If something is done outside 4Pane. Suppose you rename a file, and then a different application deletes it. You clearly cannot then Undo the rename.
+	     Not only that, but if this happens 4Pane decides it can't trust any upstream Redo, and discards them.
+</UL>	
+
+The moral: You can't absolutely rely on the Undo/Redo system. It will work 99.9% of the time, but if you contemplate doing something that will hazard important files, I strongly suggest backing them up <i>first</i>.
+ (Perhaps this would be a good time to re-read the <a href="Licence.htm">licence and disclaimer</a>.)<br><br>
+
+Most things that you do to your filesystem with 4Pane can be Undone and Redone. However there are some that can't. The main exceptions are:
+<UL>
+	<LI> Extracting an archive (<i>Archive > Extract Archive or Compressed Files</i>)
+	<LI> Anything that you do in the Terminal Emulator or Command-line, or with User-defined tools.
+	<LI> <b>Permanently Delete</b>, which intentionally bypasses the Undo/Redo system, thus trading safety for speed.
+</UL>	
+<p>
+
+
+<br>
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>

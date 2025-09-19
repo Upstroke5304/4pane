@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <title>The Edit menu</title>
+</head>
+
+<body style="background-color: rgb(255, 255, 255); direction: ltr;">
+<center>
+<table style="margin-left: auto; margin-right: auto; width: 100%; text-align: center;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="width: 33%; text-align: center;"><a href="Menu.htm"><img src="back.gif" alt="Menu Sections" align="top" border="0"></a>&nbsp;&nbsp;<a href="Menu.htm">Menu Sections</a></td>
+      <td style="width: 34%; text-align: center;">&nbsp;&nbsp;<a href="Menu.htm"><img src="up.gif" alt="Menu Sections" align="top" border="0"></a>&nbsp;&nbsp;<a href="Menu.htm">Menu Sections</a></td>
+      <td style="width: 33%; text-align: center;">&nbsp;&nbsp;<a align="middle" href="View.htm">The View menu</a>&nbsp;&nbsp;<a href="View.htm"><img src="forward.gif" alt="The View menu" align="top" border="0"></a></td>
+    </tr>
+  </tbody>
+</table>
+
+</center>
+<hr>
+
+<h2><u>The Edit menu</u></h2>
+
+<p>
+The first three items in this menu are <b>Cut, Copy</b> and <b>Paste</b>, and as you'd expect they have the standard shortcuts:
+ <b>Ctrl-X, Ctrl-C</b> and <b>Ctrl-V</b> (by default: all the shortcuts mentioned in this Help assume that you haven't <a href="ConfiguringShortcuts.htm">altered them</a>).<br>
+If you Cut a file or directory, it will be immediately removed from the display and 'deleted' (see below for what that doesn't mean). If you change your mind, you can use <a href="UnRedo.htm">Undo</a> to retrieve it.<br>
+<br>(Copying and) Pasting a symlink behaves as you would wish: the new symlink has the same target as did the original. 
+This normally applies to relative symlinks too; to alter this behaviour see <a href="Options.htm">here</a>.
+
+<br><br>The fourth item is <b>Paste as Directory Template</b>. Occasionally you may wish to replicate a directory and all its subdirectories, 
+but without their contained files. To do so, Copy the directory, select the destination dir, then use this menu-item.
+
+<br><br>The last item in this section is <b>Cancel Paste</b>. Since 4Pane 4.0 pasting usually happens in a separate thread, which allows large, time-consuming ones to be cancelled if you wish. Note
+ that this doesn't always work, particularly when pasting from a slow device like a usbpen or over NFS.
+ <br>Talking of time-consuming pastes, since 4Pane 5.0 a paste's progress is displayed in the statusbar.
+
+<br><br><br>Creating a file or directory is straightforward. The only thing worth mentioning is that, if a file-view pane has focus, 
+the dialog gives you the choice of making a file or a directory; if a dir-view, you can only make a directory.
+<br><br>
+Next comes Linking. You can choose to make a <b>Symbolic Link</b> (Symlink) with <b>Alt-Sh-L</b> or a <b>Hard link</b> with <b>Ctrl-Sh-L</b>
+ (note that the same metakeys are used to make the corresponding link in <a href="DnD.htm">Drag'n'Drop</a>). As with Pasting, you need first to have Copied the item(s) to be linked, then clicked on the directory in which you want the link(s) to be created.<br>
+When you call Link, a dialog appears in which you can:
+	<ul>
+	<li> Choose a name to give the link: either keeping the same name as the link's target (providing you're not making the link in the same directory!); using the same name plus an extension e.g. foo -> foo.lnk; or providing a new name of your choice.</li>
+	<li> Change your mind as to which sort of link to make.</li>
+	<li> If a symlink, choose whether this should be absolute or relative e.g. /home/me/foo or ../foo</li>
+	<li> If you are creating links to more than one file, you can make these choices 'Apply to all' of them. This isn't possible if you are choosing a new name for the links.</li>
+	</ul>
+	<br>
+
+The next two items are <b>Trash</b> (<b>Del</b>) and <b>Delete</b> (<b>Sh-Del</b>). These have similar meanings to normal, but different mechanisms. Neither actually deletes anything; instead files are moved to a newly-created temporary directory.
+This means that you can <b>Undo</b> a Delete! The difference between Delete and Trash is that the Delete temporary dirs are (really) deleted when 4Pane exits. The Trash ones are never lost, unless you use <i>Options > Empty the Trash-can</i>.<br>
+There are three consequences of this. The first two are bad: Deleting a directory containing thousands of files and subdirectories will take a long time (on a slow computer a <i>very</i> long time); and Deleting a very large file e.g. a 4GB iso image, will take forever if it's on a different partition.
+The good news is that, were your computer to crash before you have a chance to Undo an accidental Delete, the file will still be available, probably in a dir called ~/.cache/4Pane/.Trash/DeletedBy4Pane/05-07-18__13-53-14/ where '05-07-18__13-53-14' is the timestamp of the Deletion.<br><br>
+Third in this section is <b>Permanently Delete</b>. This does what it sounds like: deletes without saving the files. So it would be a good choice for getting rid of large items you are entirely sure you 
+no longer want; but beware, you can't undo this!<br><br>
+Then come <b>Rename</b> (<b>F2</b>) and <b>Duplicate</b> (<b>Ctrl-D</b>). Both of these are simple and obvious when applied to only one file or dir. However you can also do <a href="MultipleRenDup.htm">multiple rename/duplicate</a>.<br><br>
+
+Undo (<b>Ctrl-Z</b>) and Redo (<b>Ctrl-R</b>) are next. They are discussed <a href="UnRedo.htm">here</a>.<br><br>
+
+Finally you can view information about the current selection, and change its permissions etc, in <a href="Properties.htm">Properties</a>.
+</p>
+
+</body>
+</html>

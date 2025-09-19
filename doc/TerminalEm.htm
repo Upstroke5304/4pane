@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>The Terminal Emulator and Command-line</title>
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+</head>
+
+<body style="background-color: rgb(255, 255, 255); direction: ltr;">
+<center>
+<table style="margin-left: auto; margin-right: auto; width: 100%; text-align: center;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="width: 33%; text-align: center;"><a href="DnD.htm"><img src="back.gif" alt="Drag'n'Drop" align="top" border="0"></a>&nbsp;&nbsp;<a href="DnD.htm">Drag'n'Drop</a></td>
+      <td style="width: 34%; text-align: center;">&nbsp;&nbsp;<a href="Display.htm"><img src="up.gif" alt="The Display" align="top" border="0"></a>&nbsp;&nbsp;<a href="Display.htm">The Display</a></td>
+      <td style="width: 33%; text-align: center;">&nbsp;&nbsp;<a align="middle" href="Menu.htm">Menu Sections</a>&nbsp;&nbsp;<a href="Menu.htm"><img src="forward.gif" alt="Menu Sections" align="top" border="0"></a></td>
+    </tr>
+  </tbody>
+</table>
+
+</center>
+<hr>
+
+<h2><u>The Terminal Emulator</u></h2>
+<p>
+If you do <i>View > Show Terminal Emulator</i> or <b>Ctrl-M</b>, a new area will appear near the bottom of the screen, between the panes and the statusbar. 
+This is the Terminal Emulator, a place where you can type commands such as <i>ls</i> or <i>df -h</i> and have the result displayed. 
+It also is where are displayed the results of Find, Grep and Locate (see <a href="Tools.htm">Tools</a>).<br>
+
+Just like a real console, the Terminal Emulator has a prompt. By default this will look something like: <b>david@linux: /home/david $></b> (especially if you're called 'david'). 
+However this can be configured at <i>Options > Configure 4Pane > Terminals</i>. Changes will take effect the next time the Terminal Emulator is opened.<br><br>
+
+On the right you will see three buttons with self-explanatory labels. The <b>Cancel</b> button does its best to interrupt a running command, but it doesn't always succeed. 
+This can be a problem, as the Terminal Emulator isn't as fast as a real console; a command that displays hundreds of thousands of lines will take a long time to finish.<br><br>
+The Terminal Emulator has other disadvantages too:
+<UL>
+	<LI> You can't create a root terminal with <b>su</b> or <b>sudo bash</b>. However you <i>can</i> run simple commands as the superuser with sudo 
+       e.g. <i>sudo mkdir /mnt/foo</i> or, for non-sudo distros, using su -c: <i>su -c "mkdir /mnt/foo"</i>
+	<LI> It's not a real terminal emulator, so you can't use the official escape sequences
+	<LI> You can't use most bash things e.g. variables, <b>Ctrl-R</b>.
+</UL>
+
+However: 
+<UL>
+	<LI> It does support things like wildcards ('*' and '?'), pipes ('|') and redirection ('>' and '<').
+	<LI> You can navigate through the command history with the <b>Up</b> and <b>Down</b> keys, or go to the first and last items with <b>Ctrl-PageUp</b> and <b>Ctrl-PageDown</b>.
+	<LI> You can drag files from a pane into the Terminal Emulator. If the Ctrl key is being pressed, dragging 'foo' will write ./foo into the Terminal Emulator; 
+							if Ctrl-Shift, the full filepath; otherwise just the filename. You might find this convenient to add parameters to a command that you're constructing.
+</UL>
+There is also an extra feature that I often find useful. If you use Locate or Find, in the results you'll have a list of files. You can:
+<UL>
+	<LI> Double-click one of them. If it's an executable file, it will be run. Otherwise, if it's a filetype that 4Pane knows how to deal with (e.g. a .txt file) it will be opened, or else the <a href="OpenWith.htm">Open With dialog</a> will appear.<br>
+If instead, while you double-click, you press the <b>Ctrl</b> key, instead of opening the file you will 'Go To' it: the current pane will display its directory, with the file itself selected.
+	<LI> If you right-click over a file, a context menu will appear that contains those alternatives: Open or Go To.
+</UL>
+
+The size of the Terminal Emulator can be adjusted by dragging its top border up or down. It can be closed by the same methods that open it, or by clicking its Close button.
+</p>
+
+<h2><u>The Command-line</u></h2>
+<p>
+This is a single-line version of the Terminal Emulator. It is shown/hidden by <i>View > Show Command-line</i> or <b>Ctrl-F6</b>, and is positioned just below the toolbar.<br>
+You can use the Command-line in the same sort of way as the Terminal Emulator, but as it's only a single line, any output of a command is shown in the Terminal Emulator. 
+So why not just use the Terminal Emulator in the first place? Good question. I've no idea why file-managers usually have both; but they do, so presumably someone likes them. If you want it, it's there.<br><br><br>
+
+If you run a command in the Terminal Emulator or Command-line, it's executed outside 4Pane; therefore the results can't be Undone and Redone. So don't experiment here with 'rm -f /' ;)
+</p>
+
+</body>
+</html>

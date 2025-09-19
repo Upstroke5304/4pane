@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>The Options menu</title>
+</head>
+
+<body style="background-color: rgb(255, 255, 255); direction: ltr;">
+<center>
+<table style="margin-left: auto; margin-right: auto; width: 100%; text-align: center;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="width: 33%; text-align: center;"><a href="Tools.htm"><img src="back.gif" alt="The Tools Menu" align="top" border="0"></a>&nbsp;&nbsp;<a href="Tools.htm">The Tools Menu</a></td>
+      <td style="width: 34%; text-align: center;">&nbsp;&nbsp;<a href="Menu.htm"><img src="up.gif" alt="Menu Sections" align="top" border="0"></a>&nbsp;&nbsp;<a href="Menu.htm">Menu Sections</a></td>
+      <td style="width: 33%; text-align: center;">&nbsp;&nbsp;<a align="middle" href="ContextMenu.htm">The Context Menu</a>&nbsp;&nbsp;<a href="ContextMenu.htm"><img src="forward.gif" alt="The Context Menu" align="top" border="0"></a></td>
+    </tr>
+  </tbody>
+</table>
+
+</center>
+<hr>
+
+<h2><u>The Options menu</u></h2>
+<p>
+This is the "Everything else" menu: it contains some miscellaneous things, plus Configure.<br><br>
+
+
+The first menu item is <b>Show Recursive dir sizes</b>. Huh? In a dir-view, select a directory containing subdirectories, and in the file-view select one of the subdirectories. 
+In the third section of the statusbar, you'll see "Directory: Foo <i>x.x</i>K of files" where <i>x.x</i> is the total size of the directory's <u>files</u>. 
+By default, 4Pane ignores any subdirectories in this calculation. Why? Because if the selected directory has lots of children, it takes a while recursively to calculate their total size: 
+for example, my /usr takes 15 seconds.<br>
+However you may sometimes want the total size. If so, with this item set the statusbar would have read "Directory: Foo <i>x.x</i>K of files and subdirectories". 
+You'll also notice that the fourth statusbar section has changed from (probably) "D F H  *" to "D F R H  *".<br>
+Note that recursive sizes apply only to directories in the file-view. In the interest of speed, dir-views ignore this setting.<br><br>
+
+Then comes <b>Retain relative Symlink Targets</b>. Huh again? When you Move or Paste a normal symlink (or dirs containing them), 4Pane cleverly 
+retains the original target of the symlink. Most of the time this is what you'll want to happen in the case of relative symlinks too, but 
+occasionally you might prefer it <i>not</i> to happen e.g. if you have a symlink libfoo.so pointing to libfoo.so.0 in the same directory, and you move both. 
+By setting or resetting this item, you can select whichever of these behaviours is appropriate.<br>
+An example may make that clearer. Suppose there is a dir ~/subdir/. It contains a file foo and a relative symlink pointing to it, foolink. You move foolink to ~/differentDir/. If Retain relative Symlink Targets is set, ~/differentDir/foolink will still point to  ~/subdir/foo. If not, it will point to ~/differentDir/foo which doesn't exist, so the symlink will be marked as broken.
+<br><br>
+
+Starting with 4Pane 6.0 there is another item in this section: <b>Keep Modification-time when pasting files</b>. When Moving or Pasting files, if the modification time of the new files matters at all 
+you will usually want it to be the current time. But sometimes you might prefer the 'cp -a' behaviour, where the timestamp is set to that of the originals. 
+If this item is ticked, those original times are (as far as possible) preserved. It works for files, dirs and symlinks. It doesn't work for rarer things such as hardlinks, 
+and not when 'browsing' inside archives (where timestamps seem always to be retained).<br><br>
+
+The next two menu items are <b>Save Pane Settings</b>, which happens immediately, and <b>Save Pane Settings on Exit</b>. The settings saved are 
+what you see on the screen: 4Pane's size, which panes are shown, in which orientation, which file-view columns etc.<br><br>
+
+You'll remember from <a href="Edit.htm">the Edit menu</a> that 4Pane has its own Trash and Delete 'Cans'. The next two items, 
+<b>Empty the Trash-can</b> and <b>Permanently delete 'Deleted' files</b>, give you the option of emptying these. While this is the only way 
+(apart from brute force) of emptying the Trash-can, remember that 4Pane automatically empties the Delete-can whenever it exits. 
+However you might occasionally want to Delete it earlier e.g. if you've deleted very large files, and you're short of space on your hard disc.<br><br>
+
+The final item, <b>Configure 4Pane</b>, is discussed <a href="Configure.htm">here</a>.
+
+</p>
+
+</body>
+</html>

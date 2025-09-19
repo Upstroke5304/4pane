@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+  <title>RAQ</title>
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+</head>
+<body style="background-color: rgb(255, 255, 255); direction: ltr;">
+<center>
+<table style="margin-left: auto; margin-right: auto; width: 100%; text-align: center;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="width: 33%; text-align: center;"><a href="FAQ.htm"><img src="back.gif" alt="FAQ" align="top" border="0"></a>&nbsp;&nbsp;<a href="FAQ.htm">FAQ</a></td>
+      <td style="width: 34%; text-align: center;">&nbsp;&nbsp;<a href="Contents.htm"><img src="up.gif" alt="Contents" align="top" border="0"></a>&nbsp;&nbsp;<a href="Contents.htm">Contents</a></td>
+      <td style="width: 33%; text-align: center;">&nbsp;&nbsp;<a align="middle" href="Licence.htm">Licence and Disclaimer</a>&nbsp;&nbsp;<a href="Licence.htm"><img src="forward.gif" alt="Licence and Disclaimer" align="top" border="0"></a></td>
+    </tr>
+  </tbody>
+</table>
+</center>
+<hr>
+
+<h2>Rarely Asked Questions</h2>
+
+<p>
+<ul>
+	<li><b>Why did you write 4Pane?</b><br>
+		I used to use a free MSWindows file manager called <a href="http://www.v-com.com/product/PowerDesk_free.html">PowerDesk</a>. When in 2003 
+		I upgraded to Linux, I couldn't find an equivalent dual twin-pane file manager. There were various half-written, unmaintained efforts; 
+		and there was Nautilus (which wasn't exactly feature-rich) and Konqueror (which was slow, bloated and crashed twice a day). So I decided to 
+		write my own. It took a bit longer than I expected...</li><br>
+	<li><b>What toolkit does 4Pane use?</b><br>
+		It's written using <a href="https://www.wxwidgets.org/">wxWidgets</a>, which is a cross-platform toolkit that tries to look native on each platform. As a result, 4Pane has a gtk appearance 
+    (though gtk-qt-engine often gives a good kde look).</li><br>
+	<li><b>Does that mean that 4Pane will work on other platforms?</b><br>
+		No, there are lots of Unix-only bits in it.<br>
+    4Pane is known to work on Linux and (since 4Pane 3.0) on GNU-hurd. I've not tried it on other Unices, but it might build and work on any that use the GNU C library. 
+		As I understand it, that means that it <i>won't</i> work on BSDs (though it could probably be adapted if there's overwhelming demand).</li><br>
+	<li><b>What about older hardware, and previous versions of distros?</b><br>
+		I've tested 4Pane on an old machine with an AMD K6-2 150 processor. It ran surprisingly fast, and was quite usable. (It took 10 minutes to build, though!)
+		The only problem with old equipment is likely to be the display size: you won't enjoy using it at 800x600, and some of the configuration 
+		dialogs won't fit on the screen. (Update: since 0.7.0 they will.).<br>
+		Old distros shouldn't be a problem. 4Pane builds and runs on Redhat 7.2, which is 2001 vintage.
+		</li><br>
+	<li><b>Which version of wxWidgets should I use?</b><br>
+		Many distros provide wxWidgets as a binary package (.rpm or .deb or whatever: the name often starts with wxGTK-). Early 4Pane versions would build and work with any version 
+		from wxGTK-2.4.0 to wxGTK-2.8.12. 4Pane 6.0 requires wxGTK-3.0.0 or later. Since 2018 all the main distros have at least wxGTK-3.0.0<br><br>
+		
+		If you're building wxWidgets from source, use the latest stable version. The only exception to that is if you want to use gtk1.2, 
+		in which case consider wxGTK-2.6.3 (it's the last wx version extensively tested against gtk1.2) and use 4Pane 0.6.0, as later versions of 4Pane won't build against it.
+		</li><br>
+	<li><b>Huh? Why would I want to use gtk1.2? It's old and less pretty.</b><br>
+		wxWidgets applications display noticeably faster using gtk1.2. Also, if you're not using gnome as your desktop, and your distro is a 2005/6 
+		version or older, the way gtk2, wxWidgets and the theme engine interact results in severe ugliness. It's not a problem nowadays, and almost everyone should use gtk2 or 3. 
+		</li><br>
+	<li><b>And what about wxX11?</b><br>
+		wxX11 is a wxWidgets port that doesn't use any version of gtk. You might want this if you're using a minimalist distro, and you don't have 
+		the space for either gtk. It's not beautiful, but it works (though tooltips don't, and scrolling/resizing corrupts the screen a bit, and...).
+		<i>Very</i> few people should choose it; but if you do, use wxX11-2.8.12 and 4Pane 2.0 (later versions won't compile).
+		</li></ul></p>
+</body></html>

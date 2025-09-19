@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html><head>
+  
+  <meta name="GENERATOR" content="tex2rtf">
+
+<!-- Sitemap 1.0 --></head>
+
+<body style="direction: ltr;">
+<object type="text/site properties">
+ <param name="ImageType" value="Folder">
+</object>
+<ul>
+
+
+<li> <object type="text/sitemap">
+<param name="Local" value="Contents.htm">
+<param name="Name" value="Contents">
+</object>
+<ul> <li> <object type="text/sitemap">
+  <param name="Local" value="Introduction.htm">
+  <param name="Name" value="Introduction">
+  </object>
+ <br>
+<li> <object type="text/sitemap">
+  <param name="Local" value="Quickstart.htm">
+  <param name="Name" value="Help for people who don't read manuals">
+  </object> <br></li>
+<li> <object type="text/sitemap">
+  <param name="Local" value="Features.htm"><param name="Name" value="Main Features">
+  </object><br></li>
+ 
+<li> <object type="text/sitemap">
+<param name="Local" value="Running.htm">
+<param name="Name" value="Running 4Pane">
+</object><br></li>
+<li> <object type="text/sitemap">
+<param name="Local" value="Using4Pane.htm"><param name="Name" value="Using 4Pane">
+</object><br></li>
+		<ul>
+				<li> <object type="text/sitemap"><param name="Local" value="Display.htm"><param name="Name" value="The Display"></object><br></li>
+						<ul>
+									<li> <object type="text/sitemap"><param name="Local" value="Toolbar.htm"><param name="Name" value="The Toolbar"></object><br></li>
+									<li> <object type="text/sitemap"><param name="Local" value="Statusbar.htm"><param name="Name" value="The Statusbar"></object><br></li>
+									<li> <object type="text/sitemap"><param name="Local" value="FileviewCols.htm"><param name="Name" value="Fileview Columns"></object><br></li>
+									<li> <object type="text/sitemap"><param name="Local" value="DnD.htm"><param name="Name" value="Drag'n'Drop"></object><br></li>
+									<li> <object type="text/sitemap"><param name="Local" value="TerminalEm.htm"><param name="Name" value="The Terminal Emulator and Command-line"></object><br></li>
+						</ul>
+				<li> <object type="text/sitemap"><param name="Local" value="Menu.htm"><param name="Name" value="Menu Sections"></object><br></li>
+						<ul>
+									<li> <object type="text/sitemap"><param name="Local" value="Edit.htm"><param name="Name" value="Edit"></object><br></li>
+									<li> <object type="text/sitemap"><param name="Local" value="View.htm"><param name="Name" value="View"></object><br></li>
+									<li> <object type="text/sitemap"><param name="Local" value="Tabs.htm"><param name="Name" value="Tabs"></object><br></li>
+									<li> <object type="text/sitemap"><param name="Local" value="Bookmarks.htm"><param name="Name" value="Bookmarks"></object><br></li>
+									<li> <object type="text/sitemap"><param name="Local" value="Archive.htm"><param name="Name" value="Archive"></object><br></li>
+									<li> <object type="text/sitemap"><param name="Local" value="Mount.htm"><param name="Name" value="Mounting"></object><br></li>
+									<li> <object type="text/sitemap"><param name="Local" value="Tools.htm"><param name="Name" value="Tools"></object><br></li>
+									<li> <object type="text/sitemap"><param name="Local" value="Options.htm"><param name="Name" value="Options"></object><br></li>
+										<ul>
+													<li> <object type="text/sitemap"><param name="Local" value="Configure.htm"><param name="Name" value="Configuring 4Pane"></object><br></li>
+															<ul>
+																		<li> <object type="text/sitemap"><param name="Local" value="ConfiguringShortcuts.htm"><param name="Name" value="Configuring Shortcuts"></object><br></li>
+																		<li> <object type="text/sitemap"><param name="Local" value="ConfigureUserDefTools.htm"><param name="Name" value="Configuring User-defined Tools"></object><br></li>
+																		<li> <object type="text/sitemap"><param name="Local" value="ConfiguringDevices.htm"><param name="Name" value="Configuring Devices and Editors"></object><br></li>
+																		<li> <object type="text/sitemap"><param name="Local" value="ConfiguringDisplay.htm"><param name="Name" value="Configuring the Display"></object><br></li>
+																		<li> <object type="text/sitemap"><param name="Local" value="ConfiguringTerminals.htm"><param name="Name" value="Configuring Terminals"></object><br></li>
+																		<li> <object type="text/sitemap"><param name="Local" value="ConfiguringNetworks.htm"><param name="Name" value="Configuring Networks"></object><br></li>
+																		<li> <object type="text/sitemap"><param name="Local" value="ConfiguringMisc.htm"><param name="Name" value="Configuring Miscellany"></object><br></li>
+																						<UL>
+																									<li><object type="text/sitemap"><param name="Local" value="Export.htm"><param name="Name" value="Exporting a Configuration"></object><br></li>
+																						</UL>
+											</ul>
+									</ul>
+						</ul>
+				<li> <object type="text/sitemap"><param name="Local" value="ContextMenu.htm"><param name="Name" value="The Context Menu"></object><br></li>
+						<ul><li> <object type="text/sitemap"><param name="Local" value="Properties.htm"><param name="Name" value="The Properties Dialog"></object><br></li></ul>
+				<li> <object type="text/sitemap"><param name="Local" value="UnRedo.htm"><param name="Name" value="Undo and Redo"></object><br></li>
+				<li> <object type="text/sitemap"><param name="Local" value="MultipleRenDup.htm"><param name="Name" value="Multiple Renaming or Duplication"></object><br></li>
+				<li> <object type="text/sitemap"><param name="Local" value="Editors.htm"><param name="Name" value="Editors"></object><br></li>
+				<li> <object type="text/sitemap"><param name="Local" value="Devices.htm"><param name="Name" value="Devices"></object><br></li>
+        <li> <object type="text/sitemap"><param name="Local" value="KeyboardNavigation.htm"><param name="Name" value="Keyboard navigation"></object><br></li>
+        <li> <object type="text/sitemap"><param name="Local" value="Previews.htm"><param name="Name" value="Previews"></object><br></li>
+				<li> <object type="text/sitemap"><param name="Local" value="Open.htm"><param name="Name" value="Opening and Launching"></object><br></li>
+						<ul><li> <object type="text/sitemap"><param name="Local" value="OpenWith.htm"><param name="Name" value="The 'Open With' dialog"></object><br></li></ul>
+		</ul>
+		
+<li> <object type="text/sitemap">
+  <param name="Local" value="FAQ.htm">
+  <param name="Name" value="FAQ">
+  </object>
+        <br>
+</li><li> <object type="text/sitemap">
+  <param name="Local" value="RAQ.htm">
+  <param name="Name" value="RAQ">
+  </object>
+        <br>
+</li><li> <object type="text/sitemap">
+  <param name="Local" value="Licence.htm">
+  <param name="Name" value="Licence and Disclaimer">
+  </object>
+        <br>
+</li></ul>
+</li>
+</ul>
+
+</body></html>

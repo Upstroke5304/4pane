@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <title>Configuring the Display</title>
+</head>
+
+<body style="background-color: rgb(255, 255, 255); direction: ltr;">
+<center>
+<table style="margin-left: auto; margin-right: auto; width: 100%; text-align: center;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="width: 33%; text-align: center;"><a href="ConfiguringDevices.htm"><img src="back.gif" alt="Configuring Devices and Editors" align="top" border="0"></a>&nbsp;&nbsp;<a href="ConfiguringDevices.htm">Configuring Devices and Editors</a></td>
+      <td style="width: 34%; text-align: center;">&nbsp;&nbsp;<a href="Configure.htm"><img src="up.gif" alt="Configuring 4Pane" align="top" border="0"></a>&nbsp;&nbsp;<a href="Configure.htm">Configuring 4Pane</a></td>
+      <td style="width: 33%; text-align: center;">&nbsp;&nbsp;<a align="middle" href="ConfiguringTerminals.htm">Configuring Terminals</a>&nbsp;&nbsp;<a href="ConfiguringTerminals.htm"><img src="forward.gif" alt="Configuring Terminals" align="top" border="0"></a></td>
+    </tr>
+  </tbody>
+</table>
+
+</center>
+<hr>
+
+<h2><u>Configuring the Display</u></h2>
+<p>
+This section is where you can configure 4Pane's appearance.<br><br>
+
+<b><u>The 'Trees' sub-page</u></b> contains things to do with the appearance of the trees on the panes.<br>
+First is tree indents. In a dir-view, subdirectories are indented compared to their parent. 
+If a subdirectory itself has children, there will be an "expand" box within that indent. You can configure both the distance
+between the parent level and the expand box, and that between the expand box and the directory's name.<br><br>
+
+Then come several tick-boxes.
+<ul><li>The first sets whether hidden files and directories are displayed by default (individual panes can override this setting).</li>
+<li>The second is about the order in which files are sorted: if ticked, this happens in a locale-aware way.</li>
+<li>The third is about where in a file-view a symlink-to-a-directory is displayed. Normally it's shown at the top, with the real directories. 
+Untick this box if you want it below, in with the files.</li>
+<li>The fourth determines whether directories and subdirectories are joined by lines in dir-views. If you don't want this, untick the box.</li>
+<li>Tick the fifth if you want to set a background colour for dir-views, file-views or both; then choose the colours using the button on the right.</li>
+<li>The sixth is about fileviews. Some file managers colour the background of alternate lines, presumably to make it easier to see which size, time etc belong to a file. 
+I find these stripes unaesthetic, but if you want them, tick this box. You can then select which lurid colours to use by clicking the button on the right.</li>
+<li>The seventh is about highlighting the focused pane. If the box is ticked, 4Pane will subtly hint at which of its four panes currently has focus: in a dir-view by changing the brightness at 
+the top of its toolbar; in a file-view by changing the brightness of its column headers. You can configure the degree of subtlety used from the dialog fired by clicking the 'Configure' button.</li>
+<li>Finally one that indirectly affects the display. Before version 2.0, when files and directories were added/deleted/altered by 4Pane itself, the display was updated; but if such changes were made <i>outside</i> 4Pane (e.g. from running a script) nothing changed unless the user happened to 'Refresh the Display'. Now 4Pane gets 'inotify' to inform it of any changes, so the display refreshes in both situations. This is enabled by default; untick the box if you prefer the old behaviour (NB current panes won't be affected until they are refreshed).</li>
+</ul><br>
+
+<b><u>The 'Tree font' sub-page</u></b> lets you can change the font used in the panes. Click the "Change" button to select a different font, which will be displayed 
+in the adjacent box if valid. There's also a "Use Default" button.<br><br>
+
+<b><u>The 'Misc' sub-page</u></b> starts with a tick-box that specifies whether or not the current filepath is displayed in the toolbar. 
+This is useful to have, partly to confirm what <i>is</i> currently selected, and as an alternative way of changing it (write in the desired 
+filepath followed by Enter); but mostly because you can use Ctrl-C to Copy it, then paste into a different application. However if you don't want one, untick here.<br><br>
+
+The next tick-box lets you configure which icons to use in the toolbars: your theme's 'stock' ones wherever possible 
+(e.g. for things like Copy and Undo), or the ones that 4Pane supplies.<br><br>
+
+The last two tick-boxes determine whether or not an "Are you Sure?" dialog pops up when you Delete or Trash a file. 
+By default Delete does, Trash doesn't; but you can change this behaviour here. Below you can change which directory contains these cans.<br><br>
+
+Last come four buttons, which bring up the following dialogs:
+<ul><li><u>Configure Editors</u><br>
+The Configure Editors dialog is similar to the device ones. You can Add a new editor, or select an existing one and click Edit or Delete. 
+If you Add or Edit, another dialog appears, asking for the program's name, and the launch command. For kwrite, both will be "kwrite"; other programs may need the full path to the command. 
+You might occasionally need to fill in the optional "Working Directory to use" field; most programs don't need this but a few might, especially ones you build yourself 
+but don't 'make install'.<br><br>
+
+Some editors e.g. gedit, accept multiple files, each opening in a new tab. Others e.g. kwrite, don't. Set the tick-box accordingly. 
+You can also "Ignore" the editor, so that it doesn't get an icon.<br><br>
+
+To the right of the Name box is the "Icon to use" bitmap-button, which shows the current/suggested icon. If you don't like it, clicking it 
+brings up a dialog where you can select a different one from those available, or browse to add one of your own.</li><br>
+
+<li><u>Small toolbar buttons</u><br>
+The second button deals with the configurable "GoTo" buttons that you get in each dir-view's toolbar. By default you get one for 
+"Home", and another for "Documents" if you have a ~/Documents directory. However you can add more here.<br>
+Clicking the "Configure small-toolbar Tools" button brings up a dialog, with the current items listed on the left. To the right are buttons for adding a new item, 
+and editing or deleting the current selection. Add and Edit produce similar dialogs; you're asked for a filepath to GoTo, and if you wish you can provide a tooltip. 
+You can also click on the offered icon to change it, either to another of the built-in ones or one of your own.</li><br>
+
+<li><u>Previews</u><br>
+Starting from 4Pane 3.0, hovering over an image or text file optionally shows a tooltip preview of its contents. The third button lets you configure what the preview's maximum dimensions should be; you can set different sizes for images and text files. You can also configure how long a delay should occur before it shows; enter a figure in tenths of a second.</li><br>
+
+
+<li><u>Tooltips</u><br>
+The last button deals with tooltips. Clicking it gives a dialog where you can configure the delay before a tooltip appears, and whether they are shown at all. 
+Note that this doesn't currently work for tooltips from toolbar tools.
+</li></ul>
+</p>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>The Mount menu</title>
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+</head>
+
+<body style="background-color: rgb(255, 255, 255); direction: ltr;">
+<center>
+<table style="margin-left: auto; margin-right: auto; width: 100%; text-align: center;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="width: 33%; text-align: center;"><a href="Archive.htm"><img src="back.gif" alt="The Archive Menu" align="top" border="0"></a>&nbsp;&nbsp;<a href="Archive.htm">The Archive Menu</a></td>
+      <td style="width: 34%; text-align: center;">&nbsp;&nbsp;<a href="Menu.htm"><img src="up.gif" alt="Menu Sections" align="top" border="0"></a>&nbsp;&nbsp;<a href="Menu.htm">Menu Sections</a></td>
+      <td style="width: 33%; text-align: center;">&nbsp;&nbsp;<a align="middle" href="Tools.htm">The Tools menu</a>&nbsp;&nbsp;<a href="Tools.htm"><img src="forward.gif" alt="The Tools menu" align="top" border="0"></a></td>
+    </tr>
+  </tbody>
+</table>
+
+</center>
+<hr>
+
+<h2><u>The Mount menu</u></h2>
+<p>
+This is where you can Mount and Unmount other partitions, ISO images and network mounts. Devices, such as dvdroms and usb pens, are managed from their toolbar icons: see <a href="Devices.htm">here</a>.<br>
+Note that this applies when using Linux. See the bottom of the page for GNU-Hurd differences.<br><br>
+
+Linux distros vary in how they deal with other partitions. Older distros ignore them, and most current ones still do so. However some now will detect and automatically mount all the partitions on your disc.<br>
+If your partitions are not automatically mounted, you can do it yourself using the <b>Mount a Partition</b> menu item. 
+Selecting this will bring up a dialog that lists any unmounted partitions in /etc/fstab, together with their mount-points; that is, ones that an ordinary user can (probably) mount. 
+If the partition that you're interested in is there, select it and click OK. The partition will be mounted, and should be displayed in the active pane.<br><br>
+If the partition wasn't listed, click the <b>Mount a non-fstab partition</b> button. A different dialog will appear, listing all the other available partitions. 
+This time you have to enter your own choice of mount-point: if this doesn't exist, 4Pane will offer to create it. 
+Alternatively, you can use the <b>Browse</b> button which will open a Select a Directory dialog, starting at the contents of /mnt/.<br>
+Underneath the mountpoint is an Options section; there are several of these available, which you'll probably never want to use.<br>
+For non-fstab partitions you will then be asked for a password. In most distros this will be the root, superuser, password; in sudo-using ones like *buntu it will be your own password.<br><br>
+To Unmount a partition, use the next item, <b>Unmount a Partition</b>. A dialog will appear that lists the currently-mounted partitions and their mount-points. Select the one you want. Again you might have to provide a password.<br><br>
+
+Next comes <b>Mount an ISO image</b>. An ISO image is the image, on your hard-disc, of a dvdrom. A common example is downloading a different Linux distro; this goes first to your hard-disc, then you burn the image onto a usbcard or dvdrom. 
+However it's sometimes useful to "look inside" the image, perhaps to extract a file from it.<br>
+Select the image in the current pane, then choose this menu-item. In the dialog, choose where to mount the image. 
+After you provide your password, the image will be mounted, read-only, as though it were a dvdrom. When you've finished with it, use <b>Unmount a Partition</b> to unmount it.<br><br><br>
+
+The rest of this menu deals with network mounts: NFS, sshfs and samba. Be aware that 4Pane <u>doesn't</u> set up NFS, ssh or samba for you. 
+Getting the appropriate daemons and utilities running, poking holes in your firewall etc; you have to have done such things yourself, perhaps with your distro's help. 
+Then 4Pane will help you mount/unmount exports, shares etc over the network.<br><br>
+
+First in this section is <b>Mount an NFS export</b>. At the top of resulting dialog you should see a list of known NFS servers, and the exports associated with the selected one. 
+If the export is currently mounted, this will be stated alongside. 4Pane reads /etc/fstab to try to find servers, and remembers previous ones, but you can add missing ones by clicking the "Add" button.<br>
+Below this is a place for the mount-point for your selected export. If the export is in /etc/fstab this will automatically have been filled, otherwise you need to enter one yourself.<br>
+Lastly you need to choose how the export should be mounted: a <i>Hard Mount</i> is fine while it works, but if something goes wrong your computer may hang. A <i>Soft Mount</i> won't do this (or not for long), but might lose data. <br>
+After entering your password (if the export isn't in fstab) the current pane will display the mounted export, which can be manipulated just as though it were on your computer.<br><br>
+
+Next is <b>Mount over Ssh using sshfs</b>. Sshfs lets you mount a directory located on a remote server. For this to work you need to have <i>fuse</i> and <i>sshfs</i> installed (if they aren't, this item will be missing from the menu); you also need ssh access to the server.<br><br>
+
+In the dialog you must fill at least the <i>Host name</i> and <i>Local mount-point</i> fields. You can also choose the remote username and 'base' directory; otherwise your local username and its 'home' directory will be used. Add any options you wish; make sure they are valid, though, as 4Pane doesn't check them, and mistakes will cause the mount to fail. Note that there is no password field. If you haven't set up password-less logins to that server, you should install <i>ssh-askpass</i> to provide the password.<br><br>
+
+If the mount succeeds, after a short delay the active pane will change to display the mount. If it fails, a statusbar message will eventually appear.<br><br>
+
+The <b>Mount a Samba share</b> item produces a similar dialog. Select a server and one of its shares, then enter a mount-point. 
+Below you choose whether to try to mount anonymously, or supply a username and password; and whether to mount read-only.<br><br>
+
+NFS, sshfs and samba mounts are unmounted using the last menu-item, <b>Unmount a Network mount</b>.
+</p>
+
+<h3><u>GNU-Hurd</u></h3>
+Most 4Pane features work just the same on GNU-Hurd as on Linux. However hurd does mounting very differently. Currently 4Pane can mount partitions, ISO images and NFS exports, but not Sshfs (which doesn't exist), Devices or Samba shares. Mounts can be 'active' or both 'active' and 'passive' (hurd seems to have troubles at present with pure 'passive' mounts, so these are not currently supported).
+<br><br>Unmounting all of these happens in the same way: there's no separate section for network unmounts.
+</p>
+</body>
+</html>

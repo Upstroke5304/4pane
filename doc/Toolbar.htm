@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+  <title>Toolbars</title>
+</head>
+
+<body style="background-color: rgb(255, 255, 255); direction: ltr;">
+
+<center>
+<table style="margin-left: auto; margin-right: auto; width: 100%; text-align: center;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+	<td style="width: 20%; text-align: center;"><a href="Display.htm"><img src="back.gif" alt="The Display" align="top" border="0"></a>&nbsp;&nbsp;<a href="Display.htm">The Display</a></td>
+	<td style="width: 20%; text-align: center;">&nbsp;&nbsp;<a href="Contents.htm"><img src="up.gif" alt="Contents" align="top" border="0"></a>&nbsp;&nbsp;<a href="Contents.htm">Contents</a></td>
+	<td style="width: 20%; text-align: center;">&nbsp;&nbsp;<a align="middle" href="Statusbar.htm">The Statusbar</a>&nbsp;&nbsp;<a href="Statusbar.htm"><img src="forward.gif" alt="The Statusbar" align="top" border="0"></a></td>
+</tr>
+</tbody>
+</table>
+</center>
+<hr>
+
+<h2><u>Toolbars</u></h2>
+<p>
+4Pane has two sorts of toolbar: there is a standard one near the top, but each dir-view pane has its own small one.<br>
+
+<h4><u>The Main Toolbar</u></h4>
+This is divided into three sections. 
+<UL>
+	<LI>On the left are normal toolbar buttons. The first three are the standard <b>Cut</b> <b>Copy</b> and <b>Paste</b>. Next you'll see two buttons 
+	with curved arrows; each button has a thinner partner with a down-arrow. These are for undoing and redoing changes that you've made 
+to your files e.g. Moving, Deleting. 	The first pair of buttons undo, the second redo. More about this <a href="UnRedo.htm">here</a>.<br>
+The next two buttons are to do with <a href="Tabs.htm">tabs</a>. The first creates a new tab, the second deletes the current one.<br>
+The last button turns on or off whether <a href="Previews.htm">Previews</a> of image and text files are shown.<br>
+
+
+	<LI>The middle of the toolbar is occupied by a box that displays the filepath of the current pane's selection. This has three uses: 
+	it's a visual confirmation of what <i>is</i> currently selected; it's an alternative way of changing it (write in the new 
+filepath followed by Enter); and you can Copy its contents (<b>Ctrl-C</b>), then paste the filepath into a different application.<br> 
+If you don't want the filepath to be displayed here, this can be changed in the Display section of <i>Options > Configure 4Pane</i>.<br> 
+
+	<LI>The right of the toolbar contains two types of icon: <a href="Editors.htm">Editors</a> first, then <a href="Devices.htm">Devices</a>. 
+	Clicking an icon opens the editor, or mounts the device. Dragging a file onto the icon opens it in the editor, or moves/copies it to the device.
+</UL>
+
+<h4><u>Dir-view Toolbars</u></h4>
+At the top of every dir-view pane is a small toolbar. Its first button has a tree icon on it, and is a toggle button. When it is depressed 
+the pane is in "Full-tree" mode: its topmost directory is always the root, '/' directory. When it isn't, its topmost directory will (probably) be a lower, 
+branch directory e.g. your Home directory.<br><br>
+I use "Branch" mode almost all the time; with an extensive filesystem it's much more manageable to focus down on the bit you're currently interested in. 
+It <i>is</i> more difficult to navigate in this mode, but the next few buttons help. The first (which is disabled in Full-tree mode) goes Up 
+to the next higher directory. The next ones (which you <i>can</i> use in Full-tree mode, but they're much less useful) navigate backwards/forwards 
+through the directory history. Both of these have a companion button to launch a dropdown page, like the Undo/Redo ones on the main toolbar. 
+So if a dir-view starts in Branch mode at /home/yourname; you double-click /home/you/foo/, then use a bookmark to go to /home/you/somewhere/else/bar/, the pane will now 
+have /home/you/somewhere/else/bar/ as 'root' and show its contents. One click on the Back button will take you back to /home/you/foo/, a second to /home/you/ again.<br><br>
+
+The rest of toolbar is for "GoTo" buttons. These have the same function as bookmarks, but are more convenient. Clicking one in Branch mode 
+changes the pane's root to the button's path; in Full-tree mode it makes that directory visible.<br>
+4Pane automatically provides a button for your Home directory, and another for ~/Documents if this exists. You can add others of your choice from <i>Options > Configure 4Pane</i>, in the 
+<i>Display > Configure small-toolbar Tools</i> dialog.
+</p>
+</body></html>

@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <title>Exporting a Configuration</title>
+  </head>
+<body style="background-color: rgb(255, 255, 255); direction: ltr;">
+<center>
+<table style="margin-left: auto; margin-right: auto; width: 100%; text-align: center;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="width: 33%; text-align: center;"><a href="ConfiguringMisc.htm"><img src="back.gif" alt="Configuring Miscellany" align="top" border="0"></a>&nbsp;&nbsp;<a href="ConfiguringMisc.htm">Configuring Miscellany</a></td>
+      <td style="width: 34%; text-align: center;">&nbsp;&nbsp;<a href="Configure.htm"><img src="up.gif" alt="Configuring 4Pane" align="top" border="0"></a>&nbsp;&nbsp;<a href="Configure.htm">Configuring 4Pane</a></td>
+      <td style="width: 33%; text-align: center;">&nbsp;&nbsp;<a align="middle" href="ContextMenu.htm">The Context Menu</a>&nbsp;&nbsp;<a href="ContextMenu.htm"><img src="forward.gif" alt="The Context Menu" align="top" border="0"></a></td>
+    </tr>
+  </tbody>
+</table>
+
+</center>
+<hr>
+
+<h2><u>Exporting a Configuration</u></h2>
+<p>
+Most people won't want to do this! 4Pane creates and uses a configuration file, ~/.4Pane, which is specific to your software and hardware; 
+not to mention any personal choices that you've made.<br><br>
+
+However there are three reasons that I can think of to want some or all of this configuration to be passed to other machines.
+<ol>
+		<li>If you happen to have two or more identical setups. In that case you'd configure one box, then just copy ~/.4Pane to the others.
+		<li>If you have the same software running on several machines with different hardware.
+		<li>If you're a packager for a distro, creating a 4Pane package :D. You might want to specify e.g. default editors or file associations 
+		that are appropriate for that distro.
+</ol>
+
+In the second two cases you'd want to copy just some of the configuration. This can be done from the dialog that you get when you click the 
+"Export Configuration File" button in <i>Options > Configure 4Pane > Misc > Other</i>. You can choose to export data about any or all of:
+<ul>
+		<li>User-defined Tools
+		<li>Editors
+		<li>Device-mounting
+		<li>Terminals
+		<li>File Associations
+</ul>
+
+The selected parts of your current configuration will be saved in your home directory, as file called <b>4Pane.conf</b>.<br><br>
+
+When 4Pane starts, it looks for its configuration file. If it can't find one, the setup wizard opens. This normally creates a configuration 
+file containing data that is, as far as possible, appropriate for your machine and distro. However it first looks for a file called either 
+4Pane.conf or 4pane.conf; looking first in $HOME, then in the current working directory, and finally in /etc/4Pane/ and /etc/4pane/. If one 
+of these exists, any saved data is used instead of the wizard's guesses.<br><br>
+
+So to copy your preferences to a different machine, export them as above, and transfer 4Pane.conf to the other machines' $HOME. To use 4Pane.conf 
+in a packaging situation, arrange for it to be installed in one of those places, presumably /etc/4[Pp]ane/.
+
+</p>
+</body>
+</html>

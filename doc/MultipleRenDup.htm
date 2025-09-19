@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+  <title>Multiple Renaming or Duplication</title>
+  </head>
+<body style="background-color: rgb(255, 255, 255); direction: ltr;">
+<center>
+<table style="margin-left: auto; margin-right: auto; width: 100%; text-align: center;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="width: 33%; text-align: center;"><a href="UnRedo.htm"><img src="back.gif" alt="Undo and Redo" align="top" border="0"></a>&nbsp;&nbsp;<a href="UnRedo.htm">Undo and Redo</a></td>
+      <td style="width: 34%; text-align: center;">&nbsp;&nbsp;<a href="Using4Pane.htm"><img src="up.gif" alt="Using 4Pane" align="top" border="0"></a>&nbsp;&nbsp;<a href="Using4Pane.htm">Using 4Pane</a></td>
+      <td style="width: 33%; text-align: center;">&nbsp;&nbsp;<a align="middle" href="Editors.htm">Editors</a>&nbsp;&nbsp;<a href="Editors.htm"><img src="forward.gif" alt="Editors" align="top" border="0"></a></td>
+    </tr>
+  </tbody>
+</table>
+</center>
+<hr>
+
+<h2>Multiple Renaming or Duplication</h2>
+You can access Rename and Duplicate from the <b>Edit</b> menu (or the Context menu) or use the shortcuts <b>F2</b> and <b>Ctrl-D</b> respectively.
+If more than one item is currently selected, the Multiple Rename dialog will appear (or Multiple Duplicate: the only difference is its title. From now on I'll just refer to Rename).<br><br>
+
+The dialog provides three different ways to generate a new name for each item; you can use all or any of these.
+<ul>
+	<li> First on the dialog is Regular Expressions (RegEx). Put the regular expression in the box on the left, and the replacement text on the right.
+	     So you could rename <b>BillGates.txt</b> as <b>LinusTorvalds.txt</b> simply by putting <b>BillGates</b> in the first box, <b>LinusTorvalds</b> in the second (remember that letters/digits match themselves in a RegEx).<br>
+		   You can of course use more complex RegEx.s too. There's a button that shows <a href="RegExpHelp.htm">this help</a>. However exactly what is available depends on your system e.g. backreferences may be missing.<br><br>
+       At the end of the RegEx section is another checkbox, 'Completely ignore non-matching files', which needs some explanation. Suppose you've selected all the files in a directory. It contains a number of .jpeg files that you wish to rename to .jpg, but mixed in with them are also some .txt files. You can use a RegEx to make the jpeg to jpg change, but you don't want to alter the .txt files. With this box ticked, the unmatched .txt files aren't renamed. Untick it and they will be, probably from foo.txt to foo0.txt; which you'll usually not want.<br><br>
+       </li>
+	<li> You can either prepend or append (or both) some text, either to the body of each original name (the bit before the last '.') or the ext (the bit after it). So you could append '.old' to every name, so that <b>joe.txt</b> becomes  <b>joe.txt.old</b>.<br><br></li>
+	<li> Finally, you can add either a digit or a letter (uppercase or lower depending on a checkbox), to either the body of each original name or the ext.<br>
+	     So you can change <b>joe.txt</b> and <b>john.smith.txt</b> to <b>joe0.txt</b> and <b>john.smith0.txt</b>, or <b>joe.txtA</b> and <b>john.smith.txtA</b> etc. You can also choose to add a higher number/letter instead.<br>
+		   Why does the dialog use the word 'incrementing' to describe this process? Suppose you were to duplicate <b>joe.txt</b>, but <b>joe0.txt</b> already exists. The potential clash will be detected, and the new file called <b>joe1.txt</b> instead.
+		   And what about that 'Only if needed' checkbox? If you use one of the other methods too e.g. you prepend extra text, this prevents an unnecessary increment. 
+		   So <b>joe.txt</b> is changed to <b>newjoe.txt</b> if there isn't already a file called <b>newjoe.txt</b>, or to <b>newjoe0.txt</b> if there is.</li>
+</ul>
+
+Notice that the Regex section is turned off by default, and Appending/Prepending is optional. Incrementing however will always happen automatically if it's needed to prevent a name-clash.<br><br>
+
+A more realistic example: Your digital camera names each picture 0001.jpg, 0002.jpg etc. You've stored 100 of these pictures in a directory, and you'd like to rename them '2013 Holiday 1.jpg', '2013 Holiday 2.jpg' etc. 
+Select all the pictures and press F2 to get the dialog. Click the 'Use a Regular Expression' tickbox. In the 'Replace' box put <b>[[:digit:]]*.jpg</b> and in the 'With' box <b>2013 Holiday .jpg</b>. Then set the 'Increment starting with' control to '1' (unless you want the first picture to be number 0) and untick 'Only if needed' (otherwise the first picture will be unnumbered). 
+Click OK and a 'Confirm' dialog will appear, showing the old and new names. This gives you a chance to try again if it wasn't just as you wanted, as well as OK and Cancel.<br>
+What is happening? First the RegEx renames <i>all</i> the pictures '2013 Holiday .jpg'. The Increment section then adds a number from 1 to 100 between the second space and the '.' to make the name unique. (Yes, I know there are other ways to have done this, but this one is easy to understand.)
+<p>
+
+
+<br>
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>

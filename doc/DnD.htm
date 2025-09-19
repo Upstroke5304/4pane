@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <title>Drag and Drop</title>
+</head>
+
+<body style="background-color: rgb(255, 255, 255); direction: ltr;">
+
+<center>
+<table style="margin-left: auto; margin-right: auto; width: 100%; text-align: center;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+	<td style="width: 20%; text-align: center;"><a href="FileviewCols.htm"><img src="back.gif" alt="Fileview Columns" align="top" border="0"></a>&nbsp;&nbsp;<a href="FileviewCols.htm">Fileview Columns</a></td>
+	<td style="width: 20%; text-align: center;">&nbsp;&nbsp;<a href="Display.htm"><img src="up.gif" alt="The Display" align="top" border="0"></a>&nbsp;&nbsp;<a href="Display.htm">The Display</a></td>
+	<td style="width: 20%; text-align: center;">&nbsp;&nbsp;<a align="middle" href="TerminalEm.htm">The Terminal Emulator</a>&nbsp;&nbsp;<a href="TerminalEm.htm"><img src="forward.gif" alt="The Terminal Emulator" align="top" border="0"></a></td>
+</tr>
+</tbody>
+</table>
+</center>
+<hr>
+
+<h2><u>Drag and Drop</u></h2>
+<p>
+<h4><u>Between Panes</u></h4>
+4Pane uses Drag and Drop (D'n'D) to Move, Paste or Link files or directories. The destination will usually be a directory displayed in a 
+different pane, but it can be in the same pane (or even sometimes the same directory).<br><br>
+
+To start dragging, place the mouse on the <u>name</u> of the item to be dragged, press the left mouse button and start moving. 
+For multiple items, first highlight them, then press the Ctrl key as you begin to drag one of them; release it once the drag has "caught" if you don't need it. 
+Within the first centimeter of movement you should get a visual feedback to show that dragging has started. You can configure how easily you want 
+this to happen in <i>Options > Configure 4Pane > Misc</i>; however too low a trigger distance might result in unintended changes to your filesystem!<br><br>
+
+The visual feedback will depend on what you're trying to do:<br>
+If no metakeys are being pressed, you are <b>Moving</b> and you will see <img src="Move.png" alt="Move" align="centre" border="0"><br><br>
+With the Ctrl key pressed you're <b>Copying</b>, and you will see <img src="Copier.png" alt="Copier" align="centre" border="0"><br>
+With the Ctrl and Shift keys pressed you get a <b>Hardlink</b>, and you will see <img src="Hardlink.png" alt="Hard link" align="centre" border="0"><br>
+With the Alt and Shift keys you're making a <b>Softlink</b>, and you will see <img src="Softlink.png" alt="Soft link" align="centre" border="0"><br><br>
+If you change keys in mid-drag, the icon will change appropriately. You can choose different metakey-patterns in <i>Options > Configure 4Pane > Misc</i>.<br><br>
+
+Apart from this "What am I doing?" feedback, you also need some for "Are we there yet?". This is provided by the cursor: if you can't drop 
+in the current position, the cursor looks like &nbsp;&nbsp;<img src="DnDStdCursor.png" alt="Can't Drop cursor" align="centre" border="0"><br>
+Once you're over a suitable target, so you can drop, it changes to &nbsp;&nbsp;<img src="DnDSelectedCursor.png" alt="Can Drop Here cursor" align="centre" border="0"><br><br>
+
+What if you are dragging, and you realise that your target directory isn't actually visible? Well the easy answer is to stop dragging 
+(in "mid air", so you don't accidentally drop the files in the wrong place), expose the target, and start again. But if you want you <i>can</i> 
+force a scroll while dragging, in three ways:
+<ul>
+	<li>If you hover just above/below the destination pane, it will slowly scroll in that direction.</li>
+	<li>If you hover over the destination pane, you can use the mousewheel to scroll.</li>
+	<li>A right-click above or below the destination pane's vertical scrollbar's thumb (the bit that moves) will scroll a page at a time. Don't forget to keep the 
+					left button pressed all the time, or the drag will abort.</li>
+</ul>
+
+Once you are over the name of a directory, the cursor will change and dropping is possible. If you are doing a Move or a Paste, it 
+will just happen. For Linking, a dialog will appear. In this you can:
+	<ul>
+	<li>Choose a name to give the link: either keeping the same name as the link's target (providing you're not making the link in the same directory!); using the same name plus an extension e.g. foo -> foo.lnk; or providing a new name of your choice.</li>
+	<li>Change your mind as to which sort of link to make.</li>
+	<li>If you are creating links to more than one file, you can make these choices 'Apply to all' of them. This isn't possible if you are choosing a new name for the links.</li>
+	</ul>
+
+Instead of dropping onto a directory in a dir-view, you can drop in a file-view. If you drop onto a file, it will be the file's parent directory 
+that accepts the drop; if onto a subdirectory in the fileview, it will be that subdirectory.<br><br>
+	
+If you Move or Paste a file by D'n'D, but drop it back into its own directory, this will usually be accidental: either D'n'D triggered unintentionally, 
+or you released the mouse button too early. If this happens a dialog appears, allowing you to admit to the mistake, but also giving the option 
+to Duplicate the file instead. However creating a Link in the same directory is perfectly reasonable, you just need to give it a different name.<br><br>
+
+Starting with 4Pane 4.0 Moving or Pasting a file by D'n'D usually happens in a separate thread. This allows large, time-consuming ones to be cancelled if you wish; see <a href="Edit.htm">the Edit menu</a>. 
+Note that cancelling doesn't always work, particularly when pasting from a slow device like a usbpen or over NFS. 
+<br><br>
+
+<h4><u>D'n'D to elsewhere</u></h4>
+You can use D'n'D from a pane in three other situations:
+	<ul>
+	<li>You can drag item(s) onto the Terminal Emulator or the Command-line. The name segment of each filepath will be copied there. If the 
+						Ctrl key is pressed, instead you get <i>./filename</i>; with both Ctrl and Shift keys pressed, the whole filepaths are copied. This is useful if you're building a command and want to pass it several filenames as parameters.</li>
+	<li><a href="Editors.htm">Editors</a>. These are applications, usually editors e.g. kwrite, but may be others e.g. Firefox, OpenOffice. Each has an icon in the 
+					<a href="Toolbar.htm">toolbar</a>. Dragging a file (or for some applications e.g. gedit, multiple files) onto an editor's icon will 
+								launch that editor, with that file opened. This is useful for opening a text file that doesn't have the .txt extension e.g. a Readme file.</li>
+	<li><a href="Devices.htm">Devices</a>. These are things like dvdrom drives and usbpens. Each has an icon in the toolbar, to the right of the Editors. 
+						Dragging item(s) onto a device's icon will have no effect if it's read-only e.g. a dvdrom, but if it's read-write e.g. a floppy disc or a 
+						usbpen, the device will be mounted if it isn't already, and the file Moved or Copied onto it.</li>
+	</ul>
+
+It isn't possible to use D'n'D from 4Pane to other applications, or from outside into 4Pane.
+</p>
+</body></html>

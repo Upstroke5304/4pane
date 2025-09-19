@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>Properties</title>
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+</head>
+
+<body style="background-color: rgb(255, 255, 255); direction: ltr;">
+<center>
+<table style="margin-left: auto; margin-right: auto; width: 100%; text-align: center;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="width: 33%; text-align: center;"><a href="ContextMenu.htm"><img src="back.gif" alt="The Context Menu" align="top" border="0"></a>&nbsp;&nbsp;<a href="ContextMenu.htm">The Context Menu</a></td>
+      <td style="width: 34%; text-align: center;">&nbsp;&nbsp;<a href="Using4Pane.htm"><img src="up.gif" alt="Using 4Pane" align="top" border="0"></a>&nbsp;&nbsp;<a href="Using4Pane.htm">Using 4Pane</a></td>
+      <td style="width: 33%; text-align: center;">&nbsp;&nbsp;<a align="middle" href="UnRedo.htm">Undo and Redo</a>&nbsp;&nbsp;<a href="UnRedo.htm"><img src="forward.gif" alt="Undo and Redo" align="top" border="0"></a></td>
+    </tr>
+  </tbody>
+</table>
+
+</center>
+<hr>
+
+<h2>Properties</h2>
+
+<p>
+To access the Properties dialog, first select one or more files or directories, then either press <b>Alt-P</b> or use Edit > Properties (or the Context menu).<br><br>
+
+The dialog has three pages (and opens at the page last used).
+	<ul>
+	<li> The first page, General, shows the selection's filename (which you can change, if you have permission); its path and filetype e.g. regular file, directory; its size, and the time it was last accessed/modified/administratively changed. Note that here the size is accurate e.g. 23171 bytes; elsewhere in 4Pane that would be simplified to 22.6KB.<br>
+	     If the selection is a symlink, there is also the filepath of its target (which you can amend if you wish), and a button <i>Go To Link Target</i> that will take you there.
+		   If the target is itself a symlink, the dialog is different again: there is also an <i>Ultimate Target</i> field (which you <i>can't</i> amend) and a button to take you there.<br><br></li>
+	<li> The second page deals with permissions and ownership. You can see which permissions are set for the selected file, and its owner and group information.<br>
+	     If the file belongs to you (or you have superuser rights) you can alter the permissions and group. If you're root, you can alter the owner too.<br>
+		   If several files are selected, these changes will apply to them all. If a directory is selected, there will be a tick-box that gives you the option of applying any changes to all the directory contents too.<br><br></li>
+	<li> The third page, Esoterica, contains a lot of information about the selection that you are very unlikely to want to know. However, since 4Pane 7.0, it also shows the output of the 'file' command, which may occasionally be useful.</li>
+	</ul>
+</p>
+
+</body>
+</html>

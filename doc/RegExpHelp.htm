@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <title>Regular Expression Summary</title>
+</head>
+
+<body>
+<h3>Regular Expression Help</h3>
+<br>
+
+<b>The following match as stated</b>:<br><br>
+
+<table style="text-align: left; width: 80%;" border="0" cellpadding="5" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="white-space: nowrap; vertical-align: middle;">
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: middle; white-space: nowrap; width: 50px;">&nbsp;.</td>
+            <td style="width: 347px;" nowrap="nowrap" valign="middle">any single character </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: middle; white-space: nowrap; width: 50px;">&nbsp;$</td>
+            <td style="width: 347px;" nowrap="nowrap" valign="middle">end of a line </td>
+          </tr>
+          <tr>
+            <td style="width: 50px;" nowrap="nowrap" valign="middle">\&lt; </td>
+            <td style="width: 347px;" nowrap="nowrap" valign="middle">start of a word </td>
+          </tr>
+          <tr>
+            <td style="width: 50px;" nowrap="nowrap" valign="middle">\b </td>
+            <td style="width: 347px;" nowrap="nowrap" valign="middle">either edge of a word </td>
+          </tr>
+          <tr>
+            <td nowrap="nowrap" valign="middle"></td>
+            <td nowrap="nowrap" valign="middle"></td>
+          </tr>
+          <tr>
+            <td style="white-space: nowrap; vertical-align: middle;">[asd]</td>
+            <td style="width: 347px;" nowrap="nowrap" valign="middle">a, s <i>or</i> d </td>
+          </tr>
+          <tr>
+            <td style="width: 50px;" nowrap="nowrap" valign="middle">[^a-zA-Z]</td>
+            <td style="width: 347px;" nowrap="nowrap" valign="middle">Anything <i>except</i> a letter (the ^ negates)</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+
+      <td style="vertical-align: middle; white-space: nowrap; width: 50%;">
+      <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+            <td nowrap="nowrap" valign="middle"></td>
+            <td nowrap="nowrap" valign="middle"></td>
+          </tr>
+          <tr>
+           <td style="white-space: nowrap; vertical-align: middle;">&nbsp;^</td>
+            <td nowrap="nowrap" valign="middle">beginning of a line </td>
+          </tr>
+          <tr>
+            <td nowrap="nowrap" valign="middle">\&gt;</td>
+            <td nowrap="nowrap" valign="middle">end of a word </td>
+          </tr>
+          <tr>
+            <td nowrap="nowrap" valign="middle">\B </td>
+            <td nowrap="nowrap" valign="middle">empty string <i>not</i> at the edge of a word </td>
+          </tr>
+          <tr>
+            <td nowrap="nowrap" valign="middle"></td>
+            <td nowrap="nowrap" valign="middle"></td>
+          </tr>
+          <tr>
+            <td nowrap="nowrap" valign="middle">[a-d 0-9]</td>
+            <td nowrap="nowrap" valign="middle">abcd0123456789 <i>or</i> space </td>
+          </tr>
+          <tr>
+            <td nowrap="nowrap" valign="middle"></td>
+            <td nowrap="nowrap" valign="middle"></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br><br><br>
+
+<b>Repetition Operators</b>:<br><br>
+
+<table style="text-align: left;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: middle; width: 50px;">? </td>
+      <td style="width: 347px;" nowrap="nowrap" valign="middle">The preceding item will be matched zero or one times </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle; width: 50px;">* </td>
+      <td style="width: 347px;" nowrap="nowrap" valign="middle">The preceding item will be matched zero or more times </td>
+    </tr>
+    <tr>
+      <td style="width: 50px;" nowrap="nowrap" valign="middle">+ </td>
+      <td style="width: 347px;" nowrap="nowrap" valign="middle">The preceding item will be matched one or more times </td>
+    </tr>
+    <tr>
+      <td style="width: 50px;" nowrap="nowrap" valign="middle">{n} </td>
+      <td style="width: 347px;" nowrap="nowrap" valign="middle">The preceding item will be matched exactly n times </td>
+    </tr>
+    <tr>
+      <td nowrap="nowrap" valign="middle">{n,}</td>
+      <td nowrap="nowrap" valign="middle">The preceding item will be matched n or more times</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: middle;">{n,m} </td>
+      <td style="width: 347px;" nowrap="nowrap" valign="middle">The preceding item will be matched from n to m times </td>
+    </tr>
+  </tbody>
+</table>
+
+<br><br><br>
+
+<b>Shortcuts</b>:<br><br>
+
+[:alpha:]&nbsp; [:lower:]&nbsp; [:upper:]&nbsp; [:digit:]&nbsp; [:alnum:]&nbsp; [:punct:] &nbsp;[:blank:]&nbsp;
+[:cntrl:]&nbsp; [:graph:]&nbsp; [:print:]&nbsp; [:space:]&nbsp; [:xdigit:]<br><br>
+
+[:blank:] means space or tab.&nbsp; [:space:] means space tab CR FF NL or VT<br>
+
+[:print:]&nbsp; means&nbsp; [:alnum:], [:punct:] or [:space:]<br>
+
+[:xdigit:] means a hexadecimal digit, i.e. [0-9A-Fa-f]<br><br>
+
+Note that these shortcuts still need to be in brackets. Yes, really! e.g. [[:punct:]e] matches
+punctuation or&nbsp;'e'<br><br>
+
+\w is a synonym for [[:alnum:]]&nbsp;&nbsp;&nbsp;&nbsp; \W is a synonym for [^[:alnum]]<br>
+
+( ) do their usual precedence thing.&nbsp; | is the OR operator&nbsp; e.g. d(i|o)g matches dig or dog<br><br><br>
+
+For less concise information, including about backreferences, see man grep. If then you are still insufficiently
+confused, try man 7 regex.
+</body>
+</html>

@@ -1,0 +1,60 @@
+[OPTIONS]
+Compatibility=1.1
+Full-text search=Yes
+Contents file=Chapt.hhc
+Compiled file=Chapt.chm
+Default Window=Contents.htm
+Default topic=Contents.htm
+Index file=Chapt.hhk
+Title=4Pane Help
+
+[WINDOWS]
+ChaptHelp=,"Chapt.hhc","Chapt.hhk","Contents.htm",,,,,,0x2420,,0x380e,,,,,0,,,
+
+[FILES]
+ArchiveBrowse.htm
+Archive.htm
+Bookmarks.htm
+Contents.htm
+Configure.htm
+ConfigureUserDefTools.htm
+ConfiguringDevices.htm
+ConfiguringDisplay.htm
+ConfiguringMisc.htm
+ConfiguringNetworks.htm
+ConfiguringShortcuts.htm
+ConfiguringTerminals.htm
+ContextMenu.htm
+Devices.htm
+Display.htm
+DnD.htm
+Edit.htm
+Editors.htm
+Export.htm
+FAQ.htm
+Features.htm
+FileviewCols.htm
+Filter.htm
+Introduction.htm
+KeyboardNavigation.htm
+Licence.htm
+Menu.htm
+Mount.htm
+MultipleRenDup.htm
+Open.htm
+OpenWith.htm
+Options.htm
+Previews.htm
+Properties.htm
+Quickstart.htm
+RAQ.htm
+RegExpHelp.htm
+Running.htm
+Statusbar.htm
+Tabs.htm
+TerminalEm.htm
+Toolbar.htm
+Tools.htm
+UnRedo.htm
+Using4Pane.htm
+View.htm

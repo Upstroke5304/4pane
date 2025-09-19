@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <title>Configuring Misc</title>
+  </head>
+<body style="background-color: rgb(255, 255, 255); direction: ltr;">
+<center>
+<table style="margin-left: auto; margin-right: auto; width: 100%; text-align: center;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="width: 33%; text-align: center;"><a href="ConfiguringNetworks.htm"><img src="back.gif" alt="Configuring Networks" align="top" border="0"></a>&nbsp;&nbsp;<a href="ConfiguringNetworks.htm">Configuring Networks</a></td>
+      <td style="width: 34%; text-align: center;">&nbsp;&nbsp;<a href="Configure.htm"><img src="up.gif" alt="Configuring 4Pane" align="top" border="0"></a>&nbsp;&nbsp;<a href="Configure.htm">Configuring 4Pane</a></td>
+      <td style="width: 33%; text-align: center;">&nbsp;&nbsp;<a align="middle" href="ContextMenu.htm">The Context Menu</a>&nbsp;&nbsp;<a href="ContextMenu.htm"><img src="forward.gif" alt="The Context Menu" align="top" border="0"></a></td>
+    </tr>
+  </tbody>
+</table>
+
+</center>
+<hr>
+
+<h2><u>Configuring Misc</u></h2>
+<p>
+This is where to configure the bits that don't fit anywhere else. The first sub-page is for "How many?".<br><br>
+
+Most of the alterations that 4Pane makes to files can be <a href="UnRedo.htm">undone and redone again</a>. Each time it is opened, 
+4Pane reserves a certain amount of space to hold the data needed to do this. By default this is enough for 10000 items, but remember that it 
+would immediately be filled by selecting and then deleting all the contents of a directory that contains >9999 files! Change the number here if you wish. This will take effect when 4Pane next opens.<br><br>
+
+Next, dropdowns. These are used in two places: the Undo/Redo buttons on the main toolbar, and the Back/Forward buttons on the small dir-view 
+toolbars. To process several items at once, you click the side button with the 'down' arrow and a dropdown page opens containing the first so-many available items. 
+This is where you can configure how many that is, the default being 15.<br><br>
+
+The second sub-page is for "How long?".<br>
+The first two items concern the transient message dialogs that appear, telling you the result of e.g. extracting an archive. Unless you stop them these automatically 
+close after a few seconds: 2 seconds if the process succeeded, 5 if it failed (to give you longer to read why). You 
+can change either of these times here.<br><br>
+
+Similarly you can change how long statusbar messages last e.g. "3 items copied". By default this is 10 seconds.<br><br>
+
+The next sub-page is about becoming superuser. Sometimes you'll need administrative privileges e.g. to mount a non-fstab partition. You can do 
+this by using a gui 'su'-type program, for example gksu, but since v1.0 4Pane can do this 'in-house'.<br>
+
+4Pane should have detected whether you're on a distro that uses sudo (ubuntu) or the commoner su, but if it gets it wrong you can set it here. 
+You can also choose whether the password is temporarily remembered and, if so, for how long (maximum 1 hour) and whether the countdown is restarted on each use.<br>
+Alternatively if you'd prefer to use an external front-end, choose which one here; 4Pane should prevent you selecting any missing from your system.<br><br>
+
+Next, four buttons. The first deals with how to open a file, for example when a text file is double-clicked. Since version 3.0, 4Pane has two methods for doing this: 
+<ul><li>It can ask your system for the default application for that extension, and use that.</li>
+    <li>4Pane's original, built-in method. When 4Pane first starts, it searches your system for standard applications like kwrite and gedit, and 'associates' these with text files. 
+        You can change these and add others at any time using the <a href="OpenWith.htm">"Open With..."</a> dialog.<br>
+    </li>
+</ul>
+By default both are tried, with the system method going first. Here you can change that to use only one, or to try the 4Pane method first.
+<br><br>
+
+The second button brings up a dialog for configuring Drag and Drop. The first part of this lets you change which metakeys do what. 
+By default with no metakeys pressed D'n'D does a Move; with Ctrl pressed Copy; Shift + Ctrl creates a Hardlink; and Shift + Alt a softlink. 
+Change these if you wish.<br>
+Below you can configure the triggering sensitivity of D'n'D. By default this won't trigger until the mouse has dragged more than 10 pixels 
+horizontally, or 15 vertically. (The horizontal figure is lower because you will often want to drag horizontally onto the adjacent pane, and 
+D'n'D won't trigger once you leave the original pane.)<br>
+The last D'n'D item is about scrollwheel sensitivity. Sometimes during D'n'D you'll want to scroll a pane to make visible a destination subdirectory. 
+One of the ways to do this is to use the scrollwheel. Here you can change how many lines a pane will scroll per wheel 'click'; the default is 2.<br><br>
+
+The third button produces a dialog for statusbar configuration. The statusbar is divided into 4 sections, and here you can alter the proportion each section gets.<br><br>
+The last button is "Export Configuration File". If you think you might want to do this 
+(to transfer your preferences to multiple computers, or perhaps because you're a packager for a distro)  see <a href="Export.htm">here</a>.
+</p>
+</body>
+</html>

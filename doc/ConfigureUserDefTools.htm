@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <title>User-defined Tools</title>
+</head>
+
+<body style="background-color: rgb(255, 255, 255); direction: ltr;">
+<center>
+<table style="margin-left: auto; margin-right: auto; width: 100%; text-align: center;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="width: 33%; text-align: center;"><a href="ConfiguringShortcuts.htm"><img src="back.gif" alt="Configuring Shortcuts" align="top" border="0"></a>&nbsp;&nbsp;<a href="ConfiguringShortcuts.htm">Configuring Shortcuts</a></td>
+      <td style="width: 34%; text-align: center;">&nbsp;&nbsp;<a href="Configure.htm"><img src="up.gif" alt="Configuring 4Pane" align="top" border="0"></a>&nbsp;&nbsp;<a href="Configure.htm">Configuring 4Pane</a></td>
+      <td style="width: 33%; text-align: center;">&nbsp;&nbsp;<a href="ConfiguringDevices.htm">Devices and Editors</a>&nbsp;&nbsp;<a href="ConfiguringDevices.htm"><img src="forward.gif" alt="Devices and Editors" align="top" border="0"></a></td>
+    </tr>
+  </tbody>
+</table>
+
+</center>
+<hr>
+
+<h2><u>User-defined Tools</u></h2>
+<p>
+One of the good things about using a gui file manager is being able to select several files, then do something to them e.g. rename or delete them. 
+But rename etc has to be built into the file manager. Wouldn't it be nice if it were possible to extend this idea to process selected files 
+using commands of your own. Well, with 4Pane you can do exactly this. A user-defined tool can call any available commands or scripts, to which you can pass selected items as parameters.<br><br>
+
+Though you <i>can</i> run programs that don't need parameters, such as 'df -h', you'll usually want to use them. This is how:
+<ul>    <li><b>%s</b> is replaced by a <b>s</b>ingle selected file or directory.</li>
+				<li><b>%f</b> is replaced by a single selected <b>f</b>ile only; directories are ignored.</li>
+				<li><b>%d</b> is replaced by a single selected <b>d</b>irectory only; files are ignored.</li>
+				<li><b>%a</b> is replaced by <b>a</b>ll the items selected in the active pane.</li>
+				<li><b>%b</b> is replaced by a single selected item from <b>b</b>oth of the file-views.</li>
+				<li><b>%p</b> will ask the user each time the command is run for a <b>p</b>arameter to pass to the application.</li>
+				<li><b>%%</b> is replaced by %, in case you need to use one in a script.</li>
+</ul>
+Sometimes you'll want finer control over which pane the items come from. For the 's', 'f', 'd' and 'a' parameters this can be done using the following modifiers (these examples use %s, but 
+the other parameters could be substituted):
+<ul>    <li><b>%1s</b> An item from the left (or top if the split is horizontal) dir-view.</li>
+				<li><b>%2s</b> An item from the left (or top) file-view.</li>
+				<li><b>%3s</b> An item from the right (or bottom) dir-view.</li>
+				<li><b>%4s</b> An item from the right (or bottom) file-view.</li>
+        <li><b>%As</b> An item from the currently <b>A</b>ctive pane.</li>
+				<li><b>%Is</b> An item from the <b>I</b>nactive pane (the equivalent pane on the opposite side).</li>
+</ul>
+Since 4Pane 6.0 you can also use:
+<ul>    <li><b>%5s</b> An item from the Active left (or top) dir-view.</li>
+				<li><b>%6s</b> An item from the Inactive (or top) dir-view.</li>
+				<li><b>%7s</b> An item from the Active right (or bottom) file-view.</li>
+				<li><b>%8s</b> An item from the Inactive right (or bottom) file-view.</li>
+</ul>
+Note that some combinations aren't sensible (e.g. %3f: you can't select a file in a dir-view); and multiple modifiers aren't permitted (e.g. %A3d).
+<br><br>
+
+These parameters can be combined or repeated as appropriate  e.g. <i>~/myscript %p %a %p</i> will prompt the user for two string parameters, then pass these and all the currently selected items to myscript.<br>
+<i>diff -u %2f %4f</i> will diff two selected files, one from each file-view ("diff -u %b" or "diff -u %Af %If" would do the same if a file-view is active).<br>
+<i>rsync -avu %3d/ %1d</i> will update the contents of the selected directory in the left dir-view to match those of the right dir-view selection (the extra '/' is needed by rsync).<br><br>
+
+You can run  a tool with superuser privileges without opening a terminal: tick the box when you Add the tool. However this ability is limited: the command should be one that quickly returns, e.g. <i>fdisk %p</i>, not one that will linger like <i>kwrite %f</i>; and as there's no terminal there is nowhere to display output, so there's no sense in doing something like <i>fdisk -l</i>. Instead try using an outside front-end such as kdesu or gksu  e.g. <i>kdesu kwrite %f</i>; or in a terminal by prefixing 'su -c ' or 'sudo '.<br><br>
+
+
+The available user-defined commands can be run from the <i>Tools > Run a Program</i> menu or from the context menu. Alternatively you can give a tool a keyboard shortcut: see <a href="ConfiguringShortcuts.htm">Configuring Shortcuts</a>.
+<br><br><br>
+
+<b><u>Add a new tool</u></b><br>
+4Pane comes with a "starter-pack" of these tools, but the idea is to add your own. You can do this in the <i>Tools</i> section of <i>Options > Configure 4Pane</i>. 
+In the first box of the <i>Add a tool</i> sub-page, type in the full command e.g. <b>myscript %f %p</b>.<br><br>
+
+If the command needs to run in a terminal e.g. df -h, tick the "Run in Terminal" tickbox below. Some terminal commands (again df -h is a good example) display their output in the terminal, then immediately close before you can read the results.
+To prevent this, tick the "Keep terminal open" box.<br><br>
+
+The next two tick-boxes are 'Refresh pane after' and 'Refresh opposite pane too'. They are for commands that don't run in a terminal, and tell 4Pane to update either the current pane, 
+or both of them, once the command has finished running.<br>
+You'd want this for a command that affects the files in one of the visible panes. For example, this mini-script uses imageMagick to resize all the selected files to quarter-size:<br>
+<b>for image in %a; do path=`dirname ${image}` && filename=`basename ${image}` && name=`echo ${filename} | cut -d\'.\' -f1` && ext=`echo ${filename} | cut -d\'.\' -f2`  && convert ${image} -resize 25%% ${path}/${name}-25%%.${ext}; done</b>
+<br>
+You'd like to be able to see that the size of the files has changed when the command has finished running, so tell 4Pane to update the current pane by ticking the 
+'Refresh pane after' box.<br><br>
+
+The last tickbox is for when you want to run a program as root, and don't need to be shown any detailed output; for example, editing a root-owned file in a text editor. 
+If you <i>do</i> need to view output you need to run in a terminal instead.
+<br><br>
+
+In the second box type the label: the words that you want to be seen in the Tools menu; if you leave this blank, the command itself will be used.<br><br>
+
+Lastly you need to choose to which menu or submenu the command should be added. The default is <i>Run a Program</i>, but you can also select any available submenus. 
+You can create a new submenu, or delete the currently selected one, using the buttons on the right.<br><br><br>
+
+
+<b><u>Edit an existing tool</u></b><br>
+The next sub-page lets you edit existing tools. Select from the dropdown box the label of the tool to be edited; 
+the command and "in terminal" etc status will be shown below. When you have the correct tool selected. click the "Edit this Command" button. 
+You will then be able to alter any of the entries. When you've finished click the button again (it will have changed its label to "Click when finished").<br><br><br>
+
+<b><u>Delete an existing tool</u></b><br>
+The last sub-page handles deletion. Select the tool to delete from the dropdown box, then click the "Delete this command" button. 
+An "Are you sure" dialog will appear, to allow you to change your mind.<br><br><br>
+
+
+Once the data has changed, the Apply and Cancel buttons become enabled. When you've finished all your alterations, 
+click "Apply" (or Cancel if you've changed your mind). Until you do this, <b>the results are not saved</b>.<br><br>
+ 
+If you've finished configuring, click "Finished" to close the Configure dialog.
+</p>
+</body>
+</html>

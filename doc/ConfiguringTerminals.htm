@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <title>Configuring Terminals</title>
+</head>
+
+<body style="background-color: rgb(255, 255, 255); direction: ltr;">
+<center>
+<table style="margin-left: auto; margin-right: auto; width: 100%; text-align: center;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="width: 33%; text-align: center;"><a href="ConfiguringDisplay.htm"><img src="back.gif" alt="Configuring the Display" align="top" border="0"></a>&nbsp;&nbsp;<a href="ConfiguringDisplay.htm">Configuring the Display</a></td>
+      <td style="width: 34%; text-align: center;">&nbsp;&nbsp;<a href="Configure.htm"><img src="up.gif" alt="Configuring 4Pane" align="top" border="0"></a>&nbsp;&nbsp;<a href="Configure.htm">Configuring 4Pane</a></td>
+      <td style="width: 33%; text-align: center;">&nbsp;&nbsp;<a align="middle" href="ConfiguringNetworks.htm">Configuring Networks</a>&nbsp;&nbsp;<a href="ConfiguringNetworks.htm"><img src="forward.gif" alt="Configuring Networks" align="top" border="0"></a></td>
+    </tr>
+  </tbody>
+</table>
+
+</center>
+<hr>
+
+<h2><u>Configuring Terminals</u></h2>
+<p>
+This is about both "real" terminals, and 4Pane's <a href="TerminalEm.htm">terminal emulator</a>. The first sub-page deals with terminals.<br><br>
+
+4Pane uses terminals in three ways. It can launch a terminal application (e.g. xterm) via <i>Tools > Launch Terminal</i> (<b>Ctrl-T</b>); 
+it can open a file in a terminal by <a href="Open.htm">double-clicking it (or using Open)</a>; 
+and it can open an application in a terminal with a <a href="ConfigureUserDefTools.htm">user-defined tool</a>.<br><br>
+
+The top three items on the page all have the same format. On the left is a list of common choices, with the currently-used one highlit. 
+Select whichever you prefer from the list. To the right is a box for you to enter others if you wish (pressing OK adds each to the list).<br><br>
+
+The first item lets you choose which application to use in "Launch Terminal"; if you write in a different one, you'll probably just need the application's name. 
+The second does the same for Opening an application in a terminal, either directly or from a user-defined tool. This time the command will need an extra option e.g. "xterm -e", 
+so if you add your own you'll need to know what you're doing. The third item is similar, but only for user-defined tools where you want the terminal to stay open 
+once the command has ended so you can read the output e.g. "df -h". Again you'll need extra options, and not all terminals can do this (e.g. gnome-terminal).<br><br><br>
+
+
+The other sub-page is for the terminal emulator and command-line.<br>
+First the prompt. Type the format you want into the box. You can use normal characters, and also any of the following options:
+<ul><li>%H is changed to the full hostname e.g. linux.joe.bloggs.com</li><li>%h is substituted by the hostname up to the first dot e.g. linux</li>
+<li>%u is replaced by your username</li>
+<li>%w becomes the current working directory</li><li>%W becomes the last segment only of the current working directory</li>
+<li>%$ is substituted either by <b>$</b>, or by <b>#</b> if you are root.</li>
+</ul>
+
+You can also alter the font used in the terminal emulator and command-line. Click the "Change" button to select a different font, which will be displayed 
+in the adjacent box if valid. There's also a "Use Default" button.
+</p>
+</body>
+</html>

@@ -1,0 +1,4569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns="http://www.wxwidgets.org/wxxrc">
+  <object class="wxPanel" name="TerminalPane">
+    <size>1,1</size>
+    <style>wxBORDER_NONE</style>
+    <object class="wxBoxSizer">
+      <orient>wxHORIZONTAL</orient>
+    </object>
+  </object>
+  <object class="wxPanel" name="CommandPane">
+    <size>40,30</size>
+    <style>wxBORDER_NONE</style>
+    <object class="wxBoxSizer">
+      <orient>wxHORIZONTAL</orient>
+    </object>
+  </object>
+  <object class="wxPanel" name="Locate" subclass="MyBottomPanel">
+    <style>wxTAB_TRAVERSAL</style>
+    <object class="wxBoxSizer">
+      <orient>wxHORIZONTAL</orient>
+      <object class="sizeritem">
+        <flag>wxLEFT|wxEXPAND</flag>
+        <border>5</border>
+        <option>1</option>
+        <object class="wxTextCtrl" name="text" subclass="TerminalEm">
+          <style>wxTE_MULTILINE|wxBORDER_NONE</style>
+        </object>
+      </object>
+      <object class="sizeritem" name="boxSizer1137">
+        <flag>wxLEFT|wxEXPAND</flag>
+        <border>1</border>
+        <object class="wxBoxSizer">
+          <orient>wxVERTICAL</orient>
+          <object class="spacer" name="Spacer1138">
+            <flag>wxTOP</flag>
+            <option>1</option>
+          </object>
+          <object class="sizeritem">
+            <flag>wxALL</flag>
+            <border>5</border>
+            <object class="wxButton" name="DoItBtn">
+              <label>&amp;Locate</label>
+              <style/>
+              <bitmapposition>wxLEFT</bitmapposition>
+              <default>1</default>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <flag>wxALL</flag>
+            <border>5</border>
+            <object class="wxButton" name="Cancel">
+              <label>&amp;Cancel</label>
+              <style/>
+              <bitmapposition>wxLEFT</bitmapposition>
+              <default>0</default>
+            </object>
+          </object>
+          <object class="spacer" name="Spacer1141">
+            <flag>wxTOP</flag>
+            <border>15</border>
+          </object>
+          <object class="sizeritem">
+            <flag>wxALL</flag>
+            <border>5</border>
+            <object class="wxButton" name="Clear">
+              <label>Clea&amp;r</label>
+              <style/>
+              <bitmapposition>wxLEFT</bitmapposition>
+              <default>0</default>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <flag>wxALL</flag>
+            <border>5</border>
+            <object class="wxButton" name="Close">
+              <label>Cl&amp;ose</label>
+              <style/>
+              <bitmapposition>wxLEFT</bitmapposition>
+              <default>0</default>
+            </object>
+          </object>
+          <object class="spacer" name="Spacer1144">
+            <flag>wxTOP</flag>
+            <option>1</option>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="HtmlDlg">
+    <title>About</title>
+    <centered>1</centered>
+    <style>wxRESIZE_BORDER</style>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem" name="boxSizer1147">
+        <flag>wxALL|wxEXPAND</flag>
+        <border>5</border>
+        <object class="wxBoxSizer">
+          <orient>wxVERTICAL</orient>
+          <object class="sizeritem">
+            <flag>wxALIGN_CENTER</flag>
+            <object class="wxButton" name="wxID_CANCEL">
+              <label>&amp;Finished</label>
+              <style/>
+              <focused>1</focused>
+              <bitmapposition>wxLEFT</bitmapposition>
+              <default>0</default>
+            </object>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="CantReadMultipleDlg">
+    <title>Can't Read</title>
+    <centered>1</centered>
+    <style>wxDEFAULT_DIALOG_STYLE</style>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem" name="boxSizer1151">
+        <flag>wxALL|wxEXPAND</flag>
+        <border>10</border>
+        <object class="wxBoxSizer">
+          <orient>wxVERTICAL</orient>
+          <object class="sizeritem" name="boxSizer1152">
+            <flag>wxEXPAND</flag>
+            <object class="wxBoxSizer">
+              <orient>wxVERTICAL</orient>
+              <object class="sizeritem">
+                <flag>wxTOP|wxEXPAND</flag>
+                <border>15</border>
+                <object class="wxStaticText" name="m_staticText1153">
+                  <label>I'm afraid you don't have Read permission for</label>
+                  <style>wxALIGN_CENTRE</style>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <flag>wxTOP|wxALIGN_CENTER_HORIZONTAL</flag>
+                <border>4</border>
+                <option>3</option>
+                <object class="wxStaticText" name="Filename">
+                  <label>a                 Pretend              q</label>
+                  <style/>
+                </object>
+              </object>
+            </object>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem" name="boxSizer1156">
+        <flag>wxLEFT|wxRIGHT|wxBOTTOM|wxEXPAND</flag>
+        <border>10</border>
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="spacer" name="Spacer1157">
+            <size>20,10</size>
+            <flag/>
+          </object>
+          <object class="sizeritem">
+            <flag>wxALL</flag>
+            <border>5</border>
+            <object class="wxButton" name="Skip">
+              <label>&amp;Skip</label>
+              <style/>
+              <tooltip>
+                <![CDATA[Skip just this file]]>
+              </tooltip>
+              <bitmapposition>wxLEFT</bitmapposition>
+              <default>0</default>
+            </object>
+          </object>
+          <object class="spacer" name="Spacer1159">
+            <flag>wxLEFT</flag>
+            <border>10</border>
+            <option>1</option>
+          </object>
+          <object class="sizeritem">
+            <flag>wxALL</flag>
+            <border>5</border>
+            <object class="wxButton" name="SkipAll">
+              <label>Skip &amp;All</label>
+              <style/>
+              <tooltip>
+                <![CDATA[Skip any other files where I don't have Read permission]]>
+              </tooltip>
+              <bitmapposition>wxLEFT</bitmapposition>
+              <default>0</default>
+            </object>
+          </object>
+          <object class="spacer" name="Spacer1161">
+            <size>20,10</size>
+            <flag>wxEXPAND</flag>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="IncestDlg">
+    <title>Tsk Tsk!</title>
+    <centered>1</centered>
+    <style>wxRESIZE_BORDER</style>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem" name="boxSizer1164">
+        <flag>wxALL|wxEXPAND</flag>
+        <border>10</border>
+        <object class="wxBoxSizer">
+          <orient>wxVERTICAL</orient>
+          <object class="sizeritem" name="boxSizer1165">
+            <flag>wxEXPAND</flag>
+            <object class="wxBoxSizer">
+              <orient>wxVERTICAL</orient>
+              <object class="sizeritem">
+                <flag>wxTOP|wxALIGN_CENTER</flag>
+                <border>15</border>
+                <object class="wxStaticText" name="m_staticText1166">
+                  <label>You seem to be trying to join</label>
+                  <style/>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <flag>wxTOP|wxALIGN_CENTER</flag>
+                <border>5</border>
+                <object class="wxStaticText" name="frompath">
+                  <label>Pretend</label>
+                  <style/>
+                </object>
+              </object>
+            </object>
+          </object>
+          <object class="sizeritem" name="boxSizer1168">
+            <flag>wxBOTTOM|wxEXPAND</flag>
+            <border>20</border>
+            <object class="wxBoxSizer">
+              <orient>wxVERTICAL</orient>
+              <object class="sizeritem">
+                <flag>wxTOP|wxALIGN_CENTER</flag>
+                <border>15</border>
+                <object class="wxStaticText" name="m_staticText1169">
+                  <label>to one of its descendants</label>
+                  <style/>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <flag>wxTOP|wxALIGN_CENTER</flag>
+                <border>5</border>
+                <object class="wxStaticText" name="topath">
+                  <label>Pretend</label>
+                  <style/>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <flag>wxTOP|wxALIGN_CENTER</flag>
+                <border>15</border>
+                <object class="wxStaticText" name="m_staticText1171">
+                  <label>This is certainly illegal and probably immoral</label>
+                  <style/>
+                </object>
+              </object>
+            </object>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem" name="boxSizer1172">
+        <flag>wxALL|wxEXPAND</flag>
+        <border>10</border>
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="spacer" name="Spacer1173">
+            <size>20,10</size>
+            <flag>wxEXPAND</flag>
+            <option>1</option>
+          </object>
+          <object class="sizeritem">
+            <flag>wxLEFT</flag>
+            <border>20</border>
+            <object class="wxButton" name="wxID_OK">
+              <label>   I'm &amp;Sorry :-(</label>
+              <style/>
+              <tooltip>
+                <![CDATA[Click to apologise]]>
+              </tooltip>
+              <focused>1</focused>
+              <bitmapposition>wxLEFT</bitmapposition>
+              <default>1</default>
+            </object>
+          </object>
+          <object class="spacer" name="Spacer1175">
+            <size>30,10</size>
+            <flag>wxEXPAND</flag>
+            <option>1</option>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="RenameDlg">
+    <title>Rename</title>
+    <centered>1</centered>
+    <style>wxDEFAULT_DIALOG_STYLE|wxRESIZE_BORDER</style>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem" name="staticBoxSizer1178">
+        <flag>wxALL|wxEXPAND</flag>
+        <border>10</border>
+        <object class="wxStaticBoxSizer" name="staticBoxSizer1178">
+          <sizeritem>
+            <object class="spacer"/>
+          </sizeritem>
+          <orient>wxVERTICAL</orient>
+          <label/>
+          <object class="sizeritem" name="boxSizer1179">
+            <flag>wxEXPAND</flag>
+            <object class="wxBoxSizer">
+              <orient>wxVERTICAL</orient>
+              <object class="sizeritem">
+                <flag>wxTOP|wxBOTTOM|wxALIGN_CENTER</flag>
+                <border>10</border>
+                <object class="wxStaticText" name="m_staticText1180">
+                  <label>What would you like the new name to be?</label>
+                  <style/>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <flag>wxLEFT|wxRIGHT|wxBOTTOM|wxEXPAND</flag>
+                <border>12</border>
+                <object class="wxTextCtrl" name="newfilename">
+                  <style/>
+                  <tooltip>
+                    <![CDATA[Type in the new name]]>
+                  </tooltip>
+                  <focused>1</focused>
+                </object>
+              </object>
+            </object>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem" name="boxSizer1182">
+        <flag>wxALL|wxEXPAND</flag>
+        <border>10</border>
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="spacer" name="Spacer1183">
+            <size>20,10</size>
+            <flag>wxEXPAND</flag>
+            <option>1</option>
+          </object>
+          <object class="sizeritem">
+            <flag>wxLEFT</flag>
+            <border>20</border>
+            <object class="wxButton" name="wxID_OK">
+              <label>OK</label>
+              <style/>
+              <tooltip>
+                <![CDATA[Click when finished]]>
+              </tooltip>
+              <bitmapposition>wxLEFT</bitmapposition>
+              <default>1</default>
+            </object>
+          </object>
+          <object class="spacer" name="Spacer1185">
+            <size>30,10</size>
+            <flag>wxEXPAND</flag>
+            <option>1</option>
+          </object>
+          <object class="sizeritem">
+            <flag>wxRIGHT|wxBOTTOM</flag>
+            <border>15</border>
+            <object class="wxButton" name="wxID_CANCEL">
+              <label>&amp;CANCEL</label>
+              <style/>
+              <tooltip>
+                <![CDATA[Click to abort]]>
+              </tooltip>
+              <bitmapposition>wxLEFT</bitmapposition>
+              <default>0</default>
+            </object>
+          </object>
+          <object class="spacer" name="Spacer1187">
+            <size>20,10</size>
+            <flag>wxEXPAND</flag>
+            <option>1</option>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="QueryRenameDlg">
+    <title>Overwrite or Rename</title>
+    <centered>1</centered>
+    <style>wxRESIZE_BORDER</style>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem" name="staticBoxSizer1190">
+        <flag>wxALL|wxEXPAND</flag>
+        <border>15</border>
+        <option>1</option>
+        <object class="wxStaticBoxSizer" name="staticBoxSizer1190">
+          <sizeritem>
+            <object class="spacer"/>
+          </sizeritem>
+          <orient>wxVERTICAL</orient>
+          <label/>
+          <object class="sizeritem" name="boxSizer1191">
+            <flag>wxALL|wxEXPAND</flag>
+            <border>10</border>
+            <object class="wxBoxSizer">
+              <orient>wxVERTICAL</orient>
+              <object class="sizeritem" name="boxSizer1192">
+                <flag>wxTOP|wxBOTTOM|wxALIGN_CENTER</flag>
+                <border>20</border>
+                <object class="wxBoxSizer">
+                  <orient>wxVERTICAL</orient>
+                  <object class="sizeritem">
+                    <flag>wxALIGN_CENTER</flag>
+                    <object class="wxStaticText" name="NameStatic">
+                      <label>There is already a file here with the name</label>
+                      <style/>
+                    </object>
+                  </object>
+                </object>
+              </object>
+              <object class="sizeritem" name="boxSizer1196">
+                <flag>wxEXPAND</flag>
+                <object class="wxBoxSizer">
+                  <orient>wxVERTICAL</orient>
+                  <object class="sizeritem" name="boxSizer1197">
+                    <flag>wxBOTTOM|wxEXPAND</flag>
+                    <border>7</border>
+                    <object class="wxBoxSizer">
+                      <orient>wxVERTICAL</orient>
+                      <object class="sizeritem">
+                        <flag>wxALL|wxALIGN_CENTER</flag>
+                        <border>7</border>
+                        <object class="wxStaticText" name="Current">
+                          <label/>
+                          <style/>
+                        </object>
+                      </object>
+                    </object>
+                  </object>
+                  <object class="sizeritem" name="boxSizer1201">
+                    <flag>wxBOTTOM|wxEXPAND</flag>
+                    <border>40</border>
+                    <object class="wxBoxSizer">
+                      <orient>wxVERTICAL</orient>
+                      <object class="sizeritem">
+                        <flag>wxALL|wxALIGN_CENTER</flag>
+                        <border>7</border>
+                        <object class="wxStaticText" name="Incoming">
+                          <label/>
+                          <style/>
+                        </object>
+                      </object>
+                    </object>
+                  </object>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <flag>wxBOTTOM|wxALIGN_CENTER_HORIZONTAL</flag>
+                <border>5</border>
+                <object class="wxStaticText" name="m_staticText1205">
+                  <label>What would you like to do?</label>
+                  <style/>
+                </object>
+              </object>
+              <object class="sizeritem" name="gridSizer1206">
+                <flag>wxALL|wxEXPAND</flag>
+                <border>10</border>
+                <object class="wxGridSizer">
+                  <cols>0</cols>
+                  <rows>1</rows>
+                  <vgap>0</vgap>
+                  <hgap>15</hgap>
+                  <object class="sizeritem">
+                    <flag>wxEXPAND</flag>
+                    <object class="wxButton" name="Overwrite">
+                      <label>&amp;Overwrite it</label>
+                      <style/>
+                      <bitmapposition>wxLEFT</bitmapposition>
+                      <default>0</default>
+                    </object>
+                  </object>
+                  <object class="sizeritem">
+                    <flag>wxEXPAND</flag>
+                    <object class="wxButton" name="Rename">
+                      <label>&amp;Rename Incoming File</label>
+                      <style/>
+                      <bitmapposition>wxLEFT</bitmapposition>
+                      <default>0</default>
+                    </object>
+                  </object>
+                  <object class="sizeritem">
+                    <flag>wxEXPAND</flag>
+                    <object class="wxButton" name="wxID_CANCEL">
+                      <label>&amp;Cancel</label>
+                      <style/>
+                      <tooltip>
+                        <![CDATA[Click to abort]]>
+                      </tooltip>
+                      <bitmapposition>wxLEFT</bitmapposition>
+                      <default>0</default>
+                    </object>
+                  </object>
+                </object>
+              </object>
+            </object>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="QueryRenameMultipleDlg">
+    <title>Overwrite or Rename</title>
+    <centered>1</centered>
+    <style>wxDEFAULT_DIALOG_STYLE</style>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem" name="staticBoxSizer1212">
+        <flag>wxALL|wxALIGN_CENTER</flag>
+        <border>15</border>
+        <object class="wxStaticBoxSizer" name="staticBoxSizer1212">
+          <sizeritem>
+            <object class="spacer"/>
+          </sizeritem>
+          <orient>wxVERTICAL</orient>
+          <label/>
+          <object class="sizeritem" name="boxSizer1213">
+            <flag>wxALL|wxEXPAND</flag>
+            <border>10</border>
+            <object class="wxBoxSizer">
+              <orient>wxVERTICAL</orient>
+              <object class="sizeritem" name="boxSizer1214">
+                <flag>wxEXPAND</flag>
+                <object class="wxBoxSizer">
+                  <orient>wxVERTICAL</orient>
+                  <object class="sizeritem" name="boxSizer1215">
+                    <flag>wxTOP|wxBOTTOM|wxEXPAND</flag>
+                    <border>20</border>
+                    <object class="wxBoxSizer">
+                      <orient>wxVERTICAL</orient>
+                      <object class="sizeritem">
+                        <flag>wxALIGN_CENTER</flag>
+                        <object class="wxStaticText" name="NameStatic">
+                          <label>There is already a file here with the name</label>
+                          <style/>
+                        </object>
+                      </object>
+                    </object>
+                  </object>
+                  <object class="sizeritem" name="boxSizer1217">
+                    <flag>wxEXPAND</flag>
+                    <object class="wxBoxSizer">
+                      <orient>wxVERTICAL</orient>
+                      <object class="sizeritem" name="boxSizer1218">
+                        <flag>wxBOTTOM|wxEXPAND</flag>
+                        <border>7</border>
+                        <object class="wxBoxSizer">
+                          <orient>wxHORIZONTAL</orient>
+                          <object class="spacer" name="Spacer1219">
+                            <flag/>
+                            <option>1</option>
+                          </object>
+                          <object class="sizeritem">
+                            <flag>wxALL|wxEXPAND</flag>
+                            <border>7</border>
+                            <option>3</option>
+                            <object class="wxStaticText" name="Current">
+                              <label/>
+                              <style/>
+                            </object>
+                          </object>
+                          <object class="spacer" name="Spacer1221">
+                            <flag/>
+                            <option>1</option>
+                          </object>
+                        </object>
+                      </object>
+                      <object class="sizeritem" name="boxSizer1222">
+                        <flag>wxBOTTOM|wxEXPAND</flag>
+                        <border>15</border>
+                        <object class="wxBoxSizer">
+                          <orient>wxHORIZONTAL</orient>
+                          <object class="spacer" name="Spacer1223">
+                            <flag/>
+                            <option>1</option>
+                          </object>
+                          <object class="sizeritem">
+                            <flag>wxALL|wxEXPAND</flag>
+                            <border>7</border>
+                            <option>3</option>
+                            <object class="wxStaticText" name="Incoming">
+                              <label/>
+                              <style/>
+                            </object>
+                          </object>
+                          <object class="spacer" name="Spacer1225">
+                            <flag/>
+                            <option>1</option>
+                          </object>
+                        </object>
+                      </object>
+                    </object>
+                  </object>
+                  <object class="sizeritem" name="boxSizer1226">
+                    <flag>wxEXPAND</flag>
+                    <object class="wxBoxSizer">
+                      <orient>wxHORIZONTAL</orient>
+                      <object class="sizeritem">
+                        <flag>wxALL</flag>
+                        <border>7</border>
+                        <option>1</option>
+                        <object class="wxStaticText" name="Filename">
+                          <label/>
+                          <style/>
+                        </object>
+                      </object>
+                    </object>
+                  </object>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <flag>wxBOTTOM|wxALIGN_CENTER</flag>
+                <border>5</border>
+                <object class="wxStaticText" name="m_staticText1228">
+                  <label>What would you like to do?</label>
+                  <style/>
+                </object>
+              </object>
+            </object>
+          </object>
+          <object class="sizeritem" name="gridSizer1229">
+            <flag>wxLEFT|wxRIGHT|wxBOTTOM|wxALIGN_CENTER</flag>
+            <border>5</border>
+            <object class="wxGridSizer">
+              <cols>2</cols>
+              <rows>0</rows>
+              <vgap>8</vgap>
+              <hgap>8</hgap>
+              <object class="sizeritem">
+                <flag>wxEXPAND</flag>
+                <object class="wxButton" name="Overwrite">
+                  <label>&amp;Overwrite it</label>
+                  <style/>
+                  <bitmapposition>wxLEFT</bitmapposition>
+                  <default>0</default>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <flag>wxEXPAND</flag>
+                <object class="wxButton" name="OverwriteAll">
+                  <label> Overwrite &amp;All</label>
+                  <style/>
+                  <tooltip>
+                    <![CDATA[Overwrite all files when there is a name clash]]>
+                  </tooltip>
+                  <bitmapposition>wxLEFT</bitmapposition>
+                  <default>0</default>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <flag>wxEXPAND</flag>
+                <object class="wxButton" name="Rename">
+                  <label>&amp;Rename Incoming File</label>
+                  <style/>
+                  <bitmapposition>wxLEFT</bitmapposition>
+                  <default>0</default>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <flag>wxEXPAND</flag>
+                <object class="wxButton" name="RenameAll">
+                  <label> Re&amp;name All</label>
+                  <style/>
+                  <tooltip>
+                    <![CDATA[Go straight to the RENAME dialog when there is a name clash]]>
+                  </tooltip>
+                  <bitmapposition>wxLEFT</bitmapposition>
+                  <default>0</default>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <flag>wxEXPAND</flag>
+                <object class="wxButton" name="Skip">
+                  <label>&amp;Skip</label>
+                  <style/>
+                  <tooltip>
+                    <![CDATA[Skip this item]]>
+                  </tooltip>
+                  <bitmapposition>wxLEFT</bitmapposition>
+                  <default>0</default>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <flag>wxEXPAND</flag>
+                <object class="wxButton" name="SkipAll">
+                  <label>S&amp;kip All</label>
+                  <style/>
+                  <tooltip>
+                    <![CDATA[Skip all files where there is a name clash]]>
+                  </tooltip>
+                  <bitmapposition>wxLEFT</bitmapposition>
+                  <default>0</default>
+                </object>
+              </object>
+            </object>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem" name="boxSizer1236">
+        <flag>wxBOTTOM|wxEXPAND</flag>
+        <border>10</border>
+        <object class="wxBoxSizer">
+          <orient>wxVERTICAL</orient>
+          <object class="sizeritem">
+            <flag>wxTOP|wxBOTTOM|wxALIGN_CENTER</flag>
+            <border>5</border>
+            <object class="wxButton" name="Cancel">
+              <label>&amp;Cancel</label>
+              <style/>
+              <tooltip>
+                <![CDATA[Click to abort]]>
+              </tooltip>
+              <bitmapposition>wxLEFT</bitmapposition>
+              <default>0</default>
+            </object>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="QueryRenameDirDlg">
+    <title>Rename or cancel</title>
+    <centered>1</centered>
+    <style>wxDEFAULT_DIALOG_STYLE</style>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem" name="staticBoxSizer1240">
+        <flag>wxALL|wxEXPAND</flag>
+        <border>15</border>
+        <object class="wxStaticBoxSizer" name="staticBoxSizer1240">
+          <sizeritem>
+            <object class="spacer"/>
+          </sizeritem>
+          <orient>wxVERTICAL</orient>
+          <label/>
+          <object class="sizeritem" name="boxSizer1241">
+            <flag>wxALL|wxEXPAND</flag>
+            <border>10</border>
+            <object class="wxBoxSizer">
+              <orient>wxVERTICAL</orient>
+              <object class="sizeritem">
+                <flag>wxALL|wxALIGN_CENTER</flag>
+                <border>5</border>
+                <object class="wxStaticText" name="m_staticText1242">
+                  <label>There is already a directory here with this name.</label>
+                  <style/>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <flag>wxALL|wxALIGN_CENTER</flag>
+                <border>5</border>
+                <object class="wxStaticText" name="m_staticText1243">
+                  <label>What would you like to do?</label>
+                  <style/>
+                </object>
+              </object>
+              <object class="spacer" name="Spacer1244">
+                <size>20,10</size>
+                <flag>wxEXPAND</flag>
+                <option>1</option>
+              </object>
+              <object class="sizeritem" name="boxSizer1245">
+                <flag>wxALL|wxEXPAND</flag>
+                <border>10</border>
+                <object class="wxBoxSizer">
+                  <orient>wxHORIZONTAL</orient>
+                  <object class="spacer" name="Spacer1246">
+                    <size>10,10</size>
+                    <flag>wxEXPAND</flag>
+                    <option>1</option>
+                  </object>
+                  <object class="sizeritem">
+                    <flag>wxLEFT</flag>
+                    <border>10</border>
+                    <object class="wxButton" name="Rename">
+                      <label>&amp;Rename Incoming Dir</label>
+                      <style/>
+                      <bitmapposition>wxLEFT</bitmapposition>
+                      <default>0</default>
+                    </object>
+                  </object>
+                  <object class="spacer" name="Spacer1248">
+                    <size>30,10</size>
+                    <flag>wxEXPAND</flag>
+                    <option>1</option>
+                  </object>
+                  <object class="sizeritem">
+                    <flag>wxRIGHT|wxBOTTOM</flag>
+                    <border>10</border>
+                    <object class="wxButton" name="wxID_CANCEL">
+                      <label>&amp;Cancel</label>
+                      <style/>
+                      <tooltip>
+                        <![CDATA[Click to abort]]>
+                      </tooltip>
+                      <bitmapposition>wxLEFT</bitmapposition>
+                      <default>0</default>
+                    </object>
+                  </object>
+                  <object class="spacer" name="Spacer1250">
+                    <size>10,10</size>
+                    <flag>wxEXPAND</flag>
+                    <option>1</option>
+                  </object>
+                </object>
+              </object>
+            </object>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="QueryRenameMultipleDirDlg">
+    <title>Rename or skip</title>
+    <centered>1</centered>
+    <style>wxDEFAULT_DIALOG_STYLE</style>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem" name="staticBoxSizer1253">
+        <flag>wxALL|wxALIGN_CENTER</flag>
+        <border>15</border>
+        <object class="wxStaticBoxSizer" name="staticBoxSizer1253">
+          <sizeritem>
+            <object class="spacer"/>
+          </sizeritem>
+          <orient>wxVERTICAL</orient>
+          <label/>
+          <object class="sizeritem" name="boxSizer1254">
+            <flag>wxALL|wxALIGN_CENTER</flag>
+            <border>10</border>
+            <object class="wxBoxSizer">
+              <orient>wxVERTICAL</orient>
+              <object class="sizeritem">
+                <flag>wxALL|wxALIGN_CENTER</flag>
+                <border>5</border>
+                <object class="wxStaticText" name="m_staticText1255">
+                  <label>There is already a Directory here with the name</label>
+                  <style/>
+                </object>
+              </object>
+              <object class="sizeritem" name="boxSizer1256">
+                <flag>wxEXPAND</flag>
+                <object class="wxBoxSizer">
+                  <orient>wxHORIZONTAL</orient>
+                  <object class="spacer" name="Spacer1257">
+                    <flag/>
+                    <option>1</option>
+                  </object>
+                  <object class="sizeritem">
+                    <flag>wxALL|wxEXPAND</flag>
+                    <border>7</border>
+                    <object class="wxStaticText" name="Filename">
+                      <label/>
+                      <style/>
+                    </object>
+                  </object>
+                  <object class="spacer" name="Spacer1259">
+                    <flag/>
+                    <option>1</option>
+                  </object>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <flag>wxBOTTOM|wxALIGN_CENTER</flag>
+                <border>5</border>
+                <object class="wxStaticText" name="m_staticText1260">
+                  <label>What would you like to do?</label>
+                  <style/>
+                </object>
+              </object>
+              <object class="sizeritem" name="gridSizer1261">
+                <flag>wxALL|wxALIGN_CENTER</flag>
+                <border>10</border>
+                <object class="wxGridSizer">
+                  <cols>2</cols>
+                  <rows>0</rows>
+                  <vgap>10</vgap>
+                  <hgap>10</hgap>
+                  <object class="sizeritem">
+                    <flag>wxEXPAND</flag>
+                    <object class="wxButton" name="Rename">
+                      <label>&amp;Rename Incoming Dir</label>
+                      <style/>
+                      <bitmapposition>wxLEFT</bitmapposition>
+                      <default>0</default>
+                    </object>
+                  </object>
+                  <object class="sizeritem">
+                    <flag>wxEXPAND</flag>
+                    <object class="wxButton" name="RenameAll">
+                      <label>Rename &amp;All</label>
+                      <style/>
+                      <tooltip>
+                        <![CDATA[Go straight to the RENAME dialog for all conflicting names]]>
+                      </tooltip>
+                      <bitmapposition>wxLEFT</bitmapposition>
+                      <default>0</default>
+                    </object>
+                  </object>
+                  <object class="sizeritem">
+                    <flag>wxEXPAND</flag>
+                    <object class="wxButton" name="Skip">
+                      <label>&amp;Skip</label>
+                      <style/>
+                      <tooltip>
+                        <![CDATA[Skip this item]]>
+                      </tooltip>
+                      <bitmapposition>wxLEFT</bitmapposition>
+                      <default>0</default>
+                    </object>
+                  </object>
+                  <object class="sizeritem">
+                    <flag>wxEXPAND</flag>
+                    <object class="wxButton" name="SkipAll">
+                      <label>S&amp;kip All</label>
+                      <style/>
+                      <tooltip>
+                        <![CDATA[Skip all items where there is a name clash]]>
+                      </tooltip>
+                      <bitmapposition>wxLEFT</bitmapposition>
+                      <default>0</default>
+                    </object>
+                  </object>
+                </object>
+              </object>
+            </object>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem" name="boxSizer1266">
+        <flag>wxBOTTOM|wxEXPAND</flag>
+        <border>10</border>
+        <object class="wxBoxSizer">
+          <orient>wxVERTICAL</orient>
+          <object class="sizeritem">
+            <flag>wxTOP|wxBOTTOM|wxALIGN_CENTER</flag>
+            <border>5</border>
+            <object class="wxButton" name="Cancel">
+              <label>&amp;Cancel</label>
+              <style/>
+              <tooltip>
+                <![CDATA[Click to abort]]>
+              </tooltip>
+              <bitmapposition>wxLEFT</bitmapposition>
+              <default>0</default>
+            </object>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="QueryArchiveDupDlg">
+    <title>Query duplicate in archive</title>
+    <centered>1</centered>
+    <style>wxRESIZE_BORDER</style>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem" name="staticBoxSizer1270">
+        <flag>wxALL|wxEXPAND</flag>
+        <border>15</border>
+        <object class="wxStaticBoxSizer" name="staticBoxSizer1270">
+          <sizeritem>
+            <object class="spacer"/>
+          </sizeritem>
+          <orient>wxVERTICAL</orient>
+          <label/>
+          <object class="sizeritem" name="boxSizer1271">
+            <flag>wxALL|wxEXPAND</flag>
+            <border>10</border>
+            <object class="wxBoxSizer">
+              <orient>wxVERTICAL</orient>
+              <object class="sizeritem">
+                <flag>wxALL|wxALIGN_CENTER</flag>
+                <border>5</border>
+                <object class="wxStaticText" name="QueryIdiot_message">
+                  <label>There is already a file with this name in the archive</label>
+                  <style/>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <flag>wxTOP|wxBOTTOM|wxALIGN_CENTER</flag>
+                <border>5</border>
+                <object class="wxStaticText" name="m_staticText1273">
+                  <label>What would you like to do?</label>
+                  <style/>
+                </object>
+              </object>
+              <object class="sizeritem" name="gridSizer1274">
+                <flag>wxTOP|wxBOTTOM|wxALIGN_CENTER</flag>
+                <border>10</border>
+                <object class="wxGridSizer">
+                  <cols>0</cols>
+                  <rows>1</rows>
+                  <vgap>0</vgap>
+                  <hgap>10</hgap>
+                  <object class="sizeritem">
+                    <flag>wxEXPAND</flag>
+                    <object class="wxButton" name="Store">
+                      <label>&amp;Store a duplicate of it</label>
+                      <style>wxBORDER_SIMPLE</style>
+                      <tooltip>
+                        <![CDATA[Inside an archive you're allowed to have two identical items with the same name. If that's what you want (and you'll presumably have a good reason :/ ) click this button]]>
+                      </tooltip>
+                      <bitmapposition>wxLEFT</bitmapposition>
+                      <default>0</default>
+                    </object>
+                  </object>
+                  <object class="sizeritem">
+                    <flag>wxEXPAND</flag>
+                    <object class="wxButton" name="wxID_CANCEL">
+                      <label>&amp;Cancel</label>
+                      <style/>
+                      <tooltip>
+                        <![CDATA[Click to abort]]>
+                      </tooltip>
+                      <bitmapposition>wxLEFT</bitmapposition>
+                      <default>0</default>
+                    </object>
+                  </object>
+                </object>
+              </object>
+            </object>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="QuerySameArchiveRenameDlg">
+    <title>Duplicate by Renaming in archive</title>
+    <centered>1</centered>
+    <style>wxRESIZE_BORDER</style>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem" name="staticBoxSizer1279">
+        <flag>wxALL|wxEXPAND</flag>
+        <border>15</border>
+        <object class="wxStaticBoxSizer" name="staticBoxSizer1279">
+          <sizeritem>
+            <object class="spacer"/>
+          </sizeritem>
+          <orient>wxVERTICAL</orient>
+          <label/>
+          <object class="sizeritem" name="boxSizer1280">
+            <flag>wxALL|wxEXPAND</flag>
+            <border>10</border>
+            <object class="wxBoxSizer">
+              <orient>wxVERTICAL</orient>
+              <object class="sizeritem">
+                <flag>wxALL|wxALIGN_CENTER</flag>
+                <border>5</border>
+                <object class="wxStaticText" name="message1">
+                  <label>Sorry, you can't do a direct duplication within an archive</label>
+                  <style/>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <flag>wxALL|wxALIGN_CENTER</flag>
+                <border>10</border>
+                <object class="wxStaticText" name="message2">
+                  <label>Would you like to duplicate by renaming instead?</label>
+                  <style/>
+                </object>
+              </object>
+              <object class="sizeritem" name="gridSizer1283">
+                <flag>wxTOP|wxBOTTOM|wxALIGN_CENTER</flag>
+                <border>10</border>
+                <object class="wxGridSizer">
+                  <cols>0</cols>
+                  <rows>1</rows>
+                  <vgap>0</vgap>
+                  <hgap>20</hgap>
+                  <object class="sizeritem">
+                    <flag>wxEXPAND</flag>
+                    <object class="wxButton" name="Rename">
+                      <label>&amp;Rename</label>
+                      <style>wxBORDER_SIMPLE</style>
+                      <tooltip>
+                        <![CDATA[Make a copy of each item or items, using a different name]]>
+                      </tooltip>
+                      <bitmapposition>wxLEFT</bitmapposition>
+                      <default>0</default>
+                    </object>
+                  </object>
+                  <object class="sizeritem">
+                    <flag>wxEXPAND</flag>
+                    <object class="wxButton" name="wxID_CANCEL">
+                      <label>&amp;Cancel</label>
+                      <style/>
+                      <tooltip>
+                        <![CDATA[Click to abort]]>
+                      </tooltip>
+                      <bitmapposition>wxLEFT</bitmapposition>
+                      <default>0</default>
+                    </object>
+                  </object>
+                </object>
+              </object>
+            </object>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="QueryArchiveAddDlg">
+    <title>Add to archive</title>
+    <centered>1</centered>
+    <style>wxRESIZE_BORDER</style>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem" name="staticBoxSizer1288">
+        <flag>wxALL|wxEXPAND</flag>
+        <border>15</border>
+        <option>1</option>
+        <object class="wxStaticBoxSizer" name="staticBoxSizer1288">
+          <sizeritem>
+            <object class="spacer"/>
+          </sizeritem>
+          <orient>wxVERTICAL</orient>
+          <label/>
+          <object class="sizeritem" name="boxSizer1289">
+            <flag>wxALL|wxEXPAND</flag>
+            <border>10</border>
+            <object class="wxBoxSizer">
+              <orient>wxVERTICAL</orient>
+              <object class="sizeritem" name="boxSizer1290">
+                <flag>wxTOP|wxBOTTOM|wxALIGN_CENTER</flag>
+                <border>20</border>
+                <object class="wxBoxSizer">
+                  <orient>wxHORIZONTAL</orient>
+                  <object class="spacer" name="Spacer1291">
+                    <flag/>
+                    <option>1</option>
+                  </object>
+                  <object class="sizeritem">
+                    <flag>wxALIGN_CENTER</flag>
+                    <object class="wxStaticText" name="NameStatic">
+                      <label>There is already an item here with the name</label>
+                      <style/>
+                    </object>
+                  </object>
+                  <object class="spacer" name="Spacer1293">
+                    <flag/>
+                    <option>1</option>
+                  </object>
+                </object>
+              </object>
+              <object class="sizeritem" name="boxSizer1294">
+                <flag>wxEXPAND</flag>
+                <object class="wxBoxSizer">
+                  <orient>wxVERTICAL</orient>
+                  <object class="sizeritem" name="boxSizer1295">
+                    <flag>wxBOTTOM|wxEXPAND</flag>
+                    <border>7</border>
+                    <object class="wxBoxSizer">
+                      <orient>wxHORIZONTAL</orient>
+                      <object class="spacer" name="Spacer1296">
+                        <flag/>
+                        <option>1</option>
+                      </object>
+                      <object class="sizeritem">
+                        <flag>wxALL|wxALIGN_CENTER</flag>
+                        <border>7</border>
+                        <object class="wxStaticText" name="Current">
+                          <label/>
+                          <style>wxALIGN_CENTRE</style>
+                        </object>
+                      </object>
+                      <object class="spacer" name="Spacer1298">
+                        <flag/>
+                        <option>1</option>
+                      </object>
+                    </object>
+                  </object>
+                  <object class="sizeritem" name="boxSizer1299">
+                    <flag>wxBOTTOM|wxEXPAND</flag>
+                    <border>25</border>
+                    <object class="wxBoxSizer">
+                      <orient>wxHORIZONTAL</orient>
+                      <object class="spacer" name="Spacer1300">
+                        <flag/>
+                        <option>1</option>
+                      </object>
+                      <object class="sizeritem">
+                        <flag>wxALL|wxALIGN_CENTER</flag>
+                        <border>7</border>
+                        <object class="wxStaticText" name="Incoming">
+                          <label/>
+                          <style>wxALIGN_CENTRE</style>
+                        </object>
+                      </object>
+                      <object class="spacer" name="Spacer1302">
+                        <flag/>
+                        <option>1</option>
+                      </object>
+                    </object>
+                  </object>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <flag>wxBOTTOM|wxALIGN_CENTER</flag>
+                <border>5</border>
+                <object class="wxStaticText" name="m_staticText1303">
+                  <label>What would you like to do?</label>
+                  <style/>
+                </object>
+              </object>
+              <object class="sizeritem" name="gridSizer1304">
+                <flag>wxALL|wxALIGN_CENTER</flag>
+                <border>10</border>
+                <object class="wxGridSizer">
+                  <cols>0</cols>
+                  <rows>1</rows>
+                  <vgap>0</vgap>
+                  <hgap>15</hgap>
+                  <object class="sizeritem">
+                    <flag>wxEXPAND</flag>
+                    <object class="wxButton" name="Overwrite">
+                      <label>&amp;Overwrite it</label>
+                      <style/>
+                      <tooltip>
+                        <![CDATA[Delete the original file from the archive, and replace it with the incoming one]]>
+                      </tooltip>
+                      <bitmapposition>wxLEFT</bitmapposition>
+                      <default>0</default>
+                    </object>
+                  </object>
+                  <object class="sizeritem">
+                    <flag>wxEXPAND</flag>
+                    <object class="wxButton" name="Store">
+                      <label>&amp;Store both items</label>
+                      <style/>
+                      <tooltip>
+                        <![CDATA[It's allowed inside an archive to have multiple files with the same name. Click this button if that's what you want (you'll presumably have a good reason :/ )]]>
+                      </tooltip>
+                      <bitmapposition>wxLEFT</bitmapposition>
+                      <default>0</default>
+                    </object>
+                  </object>
+                  <object class="sizeritem">
+                    <flag>wxEXPAND</flag>
+                    <object class="wxButton" name="wxID_CANCEL">
+                      <label>&amp;Cancel</label>
+                      <style/>
+                      <tooltip>
+                        <![CDATA[Click to abort]]>
+                      </tooltip>
+                      <bitmapposition>wxLEFT</bitmapposition>
+                      <default>0</default>
+                    </object>
+                  </object>
+                </object>
+              </object>
+            </object>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="QueryArchiveAddMultipleDlg">
+    <title>Overwrite or add to archive</title>
+    <centered>1</centered>
+    <style>wxRESIZE_BORDER</style>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem" name="staticBoxSizer1310">
+        <flag>wxALL|wxALIGN_CENTER</flag>
+        <border>15</border>
+        <object class="wxStaticBoxSizer" name="staticBoxSizer1310">
+          <sizeritem>
+            <object class="spacer"/>
+          </sizeritem>
+          <orient>wxVERTICAL</orient>
+          <label/>
+          <object class="sizeritem" name="boxSizer1311">
+            <flag>wxALL|wxEXPAND</flag>
+            <border>10</border>
+            <object class="wxBoxSizer">
+              <orient>wxVERTICAL</orient>
+              <object class="sizeritem" name="boxSizer1312">
+                <flag>wxEXPAND</flag>
+                <object class="wxBoxSizer">
+                  <orient>wxVERTICAL</orient>
+                  <object class="sizeritem" name="boxSizer1313">
+                    <flag>wxTOP|wxBOTTOM|wxEXPAND</flag>
+                    <border>20</border>
+                    <object class="wxBoxSizer">
+                      <orient>wxVERTICAL</orient>
+                      <object class="sizeritem">
+                        <flag/>
+                        <object class="wxStaticText" name="NameStatic">
+                          <label>There is already a file here with the name</label>
+                          <style/>
+                        </object>
+                      </object>
+                    </object>
+                  </object>
+                  <object class="sizeritem" name="boxSizer1315">
+                    <flag>wxEXPAND</flag>
+                    <object class="wxBoxSizer">
+                      <orient>wxVERTICAL</orient>
+                      <object class="sizeritem" name="boxSizer1316">
+                        <flag>wxBOTTOM|wxALIGN_CENTER</flag>
+                        <border>7</border>
+                        <object class="wxBoxSizer">
+                          <orient>wxHORIZONTAL</orient>
+                          <object class="spacer" name="Spacer1317">
+                            <flag/>
+                            <option>1</option>
+                          </object>
+                          <object class="sizeritem">
+                            <flag>wxALL|wxALIGN_CENTER</flag>
+                            <border>7</border>
+                            <object class="wxStaticText" name="Current">
+                              <label/>
+                              <style>wxALIGN_CENTRE</style>
+                            </object>
+                          </object>
+                          <object class="spacer" name="Spacer1319">
+                            <flag/>
+                            <option>1</option>
+                          </object>
+                        </object>
+                      </object>
+                      <object class="sizeritem" name="boxSizer1320">
+                        <flag>wxBOTTOM|wxALIGN_CENTER</flag>
+                        <border>15</border>
+                        <object class="wxBoxSizer">
+                          <orient>wxHORIZONTAL</orient>
+                          <object class="spacer" name="Spacer1321">
+                            <flag/>
+                            <option>1</option>
+                          </object>
+                          <object class="sizeritem">
+                            <flag>wxALL|wxALIGN_CENTER</flag>
+                            <border>7</border>
+                            <object class="wxStaticText" name="Incoming">
+                              <label/>
+                              <style>wxALIGN_CENTRE</style>
+                            </object>
+                          </object>
+                          <object class="spacer" name="Spacer1323">
+                            <flag/>
+                            <option>1</option>
+                          </object>
+                        </object>
+                      </object>
+                    </object>
+                  </object>
+                  <object class="sizeritem" name="boxSizer1324">
+                    <flag>wxEXPAND</flag>
+                    <object class="wxBoxSizer">
+                      <orient>wxHORIZONTAL</orient>
+                      <object class="sizeritem">
+                        <flag>wxALL|wxEXPAND</flag>
+                        <border>7</border>
+                        <option>1</option>
+                        <object class="wxStaticText" name="Filename">
+                          <label/>
+                          <style>wxALIGN_CENTRE</style>
+                        </object>
+                      </object>
+                    </object>
+                  </object>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <flag>wxBOTTOM|wxALIGN_CENTER</flag>
+                <border>5</border>
+                <object class="wxStaticText" name="m_staticText1326">
+                  <label>What would you like to do?</label>
+                  <style/>
+                </object>
+              </object>
+            </object>
+          </object>
+          <object class="sizeritem" name="gridSizer1327">
+            <flag>wxLEFT|wxRIGHT|wxBOTTOM|wxALIGN_CENTER</flag>
+            <border>5</border>
+            <object class="wxGridSizer">
+              <cols>2</cols>
+              <rows>0</rows>
+              <vgap>8</vgap>
+              <hgap>20</hgap>
+              <object class="sizeritem">
+                <flag>wxEXPAND</flag>
+                <object class="wxButton" name="Overwrite">
+                  <label>&amp;Overwrite it</label>
+                  <style/>
+                  <bitmapposition>wxLEFT</bitmapposition>
+                  <default>0</default>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <flag>wxEXPAND</flag>
+                <object class="wxButton" name="OverwriteAll">
+                  <label> Overwrite &amp;All</label>
+                  <style/>
+                  <tooltip>
+                    <![CDATA[Overwrite all files when there is a name clash]]>
+                  </tooltip>
+                  <bitmapposition>wxLEFT</bitmapposition>
+                  <default>0</default>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <flag>wxEXPAND</flag>
+                <object class="wxButton" name="Store">
+                  <label>S&amp;tore both items</label>
+                  <style/>
+                  <tooltip>
+                    <![CDATA[Inside an archive you're allowed to have two files with the same name. If that's what you want (and you'll presumably have a good reason :/ ) click this button]]>
+                  </tooltip>
+                  <bitmapposition>wxLEFT</bitmapposition>
+                  <default>0</default>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <flag>wxEXPAND</flag>
+                <object class="wxButton" name="StoreAll">
+                  <label> Store A&amp;ll</label>
+                  <style/>
+                  <tooltip>
+                    <![CDATA[Inside an archive you're allowed to have two files with the same name. If that's always what you want (and you'll presumably have a good reason :/ ) click this button]]>
+                  </tooltip>
+                  <bitmapposition>wxLEFT</bitmapposition>
+                  <default>0</default>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <flag>wxEXPAND</flag>
+                <object class="wxButton" name="Skip">
+                  <label>&amp;Skip</label>
+                  <style/>
+                  <tooltip>
+                    <![CDATA[Skip this item]]>
+                  </tooltip>
+                  <bitmapposition>wxLEFT</bitmapposition>
+                  <default>0</default>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <flag>wxEXPAND</flag>
+                <object class="wxButton" name="SkipAll">
+                  <label>S&amp;kip All</label>
+                  <style/>
+                  <tooltip>
+                    <![CDATA[Skip all files where there is a name clash]]>
+                  </tooltip>
+                  <bitmapposition>wxLEFT</bitmapposition>
+                  <default>0</default>
+                </object>
+              </object>
+            </object>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem" name="boxSizer1334">
+        <flag>wxBOTTOM|wxEXPAND</flag>
+        <border>10</border>
+        <object class="wxBoxSizer">
+          <orient>wxVERTICAL</orient>
+          <object class="sizeritem">
+            <flag>wxTOP|wxBOTTOM|wxALIGN_CENTER</flag>
+            <border>5</border>
+            <object class="wxButton" name="Cancel">
+              <label>&amp;Cancel</label>
+              <style/>
+              <tooltip>
+                <![CDATA[Click to abort]]>
+              </tooltip>
+              <bitmapposition>wxLEFT</bitmapposition>
+              <default>0</default>
+            </object>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="QueryArchiveAddMultipleDirDlg">
+    <title>Overwrite or add to archive</title>
+    <centered>1</centered>
+    <style>wxDEFAULT_DIALOG_STYLE</style>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem" name="staticBoxSizer1338">
+        <flag>wxALL|wxALIGN_CENTER</flag>
+        <border>15</border>
+        <object class="wxStaticBoxSizer" name="staticBoxSizer1338">
+          <sizeritem>
+            <object class="spacer"/>
+          </sizeritem>
+          <orient>wxVERTICAL</orient>
+          <label/>
+          <object class="sizeritem" name="boxSizer1339">
+            <flag>wxALL|wxALIGN_CENTER</flag>
+            <border>10</border>
+            <object class="wxBoxSizer">
+              <orient>wxVERTICAL</orient>
+              <object class="sizeritem">
+                <flag>wxALL|wxALIGN_CENTER</flag>
+                <border>5</border>
+                <object class="wxStaticText" name="m_staticText1340">
+                  <label>There is already a Directory here with the name</label>
+                  <style/>
+                </object>
+              </object>
+              <object class="sizeritem" name="boxSizer1341">
+                <flag>wxEXPAND</flag>
+                <object class="wxBoxSizer">
+                  <orient>wxHORIZONTAL</orient>
+                  <object class="spacer" name="Spacer1342">
+                    <flag/>
+                    <option>1</option>
+                  </object>
+                  <object class="sizeritem">
+                    <flag>wxALL|wxEXPAND</flag>
+                    <border>7</border>
+                    <object class="wxStaticText" name="Filename">
+                      <label/>
+                      <style>wxALIGN_CENTRE</style>
+                    </object>
+                  </object>
+                  <object class="spacer" name="Spacer1344">
+                    <flag/>
+                    <option>1</option>
+                  </object>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <flag>wxBOTTOM|wxALIGN_CENTER</flag>
+                <border>5</border>
+                <object class="wxStaticText" name="m_staticText1345">
+                  <label>What would you like to do?</label>
+                  <style/>
+                </object>
+              </object>
+              <object class="sizeritem" name="gridSizer1346">
+                <flag>wxALL|wxALIGN_CENTER</flag>
+                <border>10</border>
+                <object class="wxGridSizer">
+                  <cols>2</cols>
+                  <rows>0</rows>
+                  <vgap>10</vgap>
+                  <hgap>10</hgap>
+                  <object class="sizeritem">
+                    <flag>wxEXPAND</flag>
+                    <object class="wxButton" name="Rename">
+                      <label>&amp;Overwrite it</label>
+                      <style/>
+                      <tooltip>
+                        <![CDATA[Replace the current dir with the incoming one]]>
+                      </tooltip>
+                      <bitmapposition>wxLEFT</bitmapposition>
+                      <default>0</default>
+                    </object>
+                  </object>
+                  <object class="sizeritem">
+                    <flag>wxEXPAND</flag>
+                    <object class="wxButton" name="RenameAll">
+                      <label>Overwrite &amp;All</label>
+                      <style/>
+                      <tooltip>
+                        <![CDATA[Replace the current dir with the incoming one, and do this for any other clashes]]>
+                      </tooltip>
+                      <bitmapposition>wxLEFT</bitmapposition>
+                      <default>0</default>
+                    </object>
+                  </object>
+                  <object class="sizeritem">
+                    <flag>wxEXPAND</flag>
+                    <object class="wxButton" name="Store">
+                      <label>S&amp;tore both items</label>
+                      <style/>
+                      <tooltip>
+                        <![CDATA[Inside an archive you're allowed to have two dirs with the same name. If that's what you want (and you'll presumably have a good reason :/ ) click this button]]>
+                      </tooltip>
+                      <bitmapposition>wxLEFT</bitmapposition>
+                      <default>0</default>
+                    </object>
+                  </object>
+                  <object class="sizeritem">
+                    <flag>wxEXPAND</flag>
+                    <object class="wxButton" name="StoreAll">
+                      <label> Store A&amp;ll</label>
+                      <style/>
+                      <tooltip>
+                        <![CDATA[Inside an archive you're allowed to have two dirs with the same name. If that's always what you want (and you'll presumably have a good reason :/ ) click this button]]>
+                      </tooltip>
+                      <bitmapposition>wxLEFT</bitmapposition>
+                      <default>0</default>
+                    </object>
+                  </object>
+                  <object class="sizeritem">
+                    <flag>wxEXPAND</flag>
+                    <object class="wxButton" name="Skip">
+                      <label>&amp;Skip</label>
+                      <style/>
+                      <tooltip>
+                        <![CDATA[Skip this item]]>
+                      </tooltip>
+                      <bitmapposition>wxLEFT</bitmapposition>
+                      <default>0</default>
+                    </object>
+                  </object>
+                  <object class="sizeritem">
+                    <flag>wxEXPAND</flag>
+                    <object class="wxButton" name="SkipAll">
+                      <label>S&amp;kip All</label>
+                      <style/>
+                      <tooltip>
+                        <![CDATA[Skip all items where there is a name clash]]>
+                      </tooltip>
+                      <bitmapposition>wxLEFT</bitmapposition>
+                      <default>0</default>
+                    </object>
+                  </object>
+                </object>
+              </object>
+            </object>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem" name="boxSizer1353">
+        <flag>wxBOTTOM|wxEXPAND</flag>
+        <border>10</border>
+        <object class="wxBoxSizer">
+          <orient>wxVERTICAL</orient>
+          <object class="sizeritem">
+            <flag>wxTOP|wxBOTTOM|wxALIGN_CENTER</flag>
+            <border>5</border>
+            <object class="wxButton" name="Cancel">
+              <label>&amp;Cancel</label>
+              <style/>
+              <tooltip>
+                <![CDATA[Click to abort]]>
+              </tooltip>
+              <bitmapposition>wxLEFT</bitmapposition>
+              <default>0</default>
+            </object>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="PoorMansClashDlg">
+    <title>Rename or skip</title>
+    <centered>1</centered>
+    <style>wxDEFAULT_DIALOG_STYLE</style>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem" name="staticBoxSizer1357">
+        <flag>wxALL|wxALIGN_CENTER</flag>
+        <border>15</border>
+        <object class="wxStaticBoxSizer" name="staticBoxSizer1357">
+          <sizeritem>
+            <object class="spacer"/>
+          </sizeritem>
+          <orient>wxVERTICAL</orient>
+          <label/>
+          <object class="sizeritem" name="boxSizer1358">
+            <flag>wxALL|wxALIGN_CENTER</flag>
+            <border>10</border>
+            <object class="wxBoxSizer">
+              <orient>wxVERTICAL</orient>
+              <object class="sizeritem">
+                <flag>wxALL|wxALIGN_CENTER</flag>
+                <border>5</border>
+                <object class="wxStaticText" name="m_staticText1359">
+                  <label>There is already an item here with the name</label>
+                  <style/>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <flag>wxTOP|wxBOTTOM|wxALIGN_CENTER</flag>
+                <border>15</border>
+                <object class="wxStaticText" name="Filename">
+                  <label/>
+                  <style/>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <flag>wxTOP|wxBOTTOM|wxALIGN_CENTER</flag>
+                <border>15</border>
+                <object class="wxStaticText" name="m_staticText1364">
+                  <label>What would you like to do?</label>
+                  <style/>
+                </object>
+              </object>
+              <object class="sizeritem" name="gridSizer1365">
+                <flag>wxALL|wxALIGN_CENTER</flag>
+                <border>10</border>
+                <object class="wxGridSizer">
+                  <cols>2</cols>
+                  <rows>0</rows>
+                  <vgap>10</vgap>
+                  <hgap>10</hgap>
+                  <object class="sizeritem">
+                    <flag>wxEXPAND</flag>
+                    <object class="wxButton" name="Skip">
+                      <label>&amp;Skip it</label>
+                      <style/>
+                      <tooltip>
+                        <![CDATA[Skip this item]]>
+                      </tooltip>
+                      <bitmapposition>wxLEFT</bitmapposition>
+                      <default>0</default>
+                    </object>
+                  </object>
+                  <object class="sizeritem">
+                    <flag>wxEXPAND</flag>
+                    <object class="wxButton" name="SkipAll">
+                      <label>Skip &amp;All Clashes</label>
+                      <style/>
+                      <tooltip>
+                        <![CDATA[Skip all items where there is a name clash]]>
+                      </tooltip>
+                      <bitmapposition>wxLEFT</bitmapposition>
+                      <default>0</default>
+                    </object>
+                  </object>
+                </object>
+              </object>
+            </object>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem" name="boxSizer1368">
+        <flag>wxBOTTOM|wxEXPAND</flag>
+        <border>10</border>
+        <object class="wxBoxSizer">
+          <orient>wxVERTICAL</orient>
+          <object class="sizeritem">
+            <flag>wxTOP|wxBOTTOM|wxALIGN_CENTER</flag>
+            <border>5</border>
+            <object class="wxButton" name="Cancel">
+              <label>&amp;Cancel</label>
+              <style/>
+              <tooltip>
+                <![CDATA[Abort all items]]>
+              </tooltip>
+              <bitmapposition>wxLEFT</bitmapposition>
+              <default>0</default>
+            </object>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="QueryIdiotDlg">
+    <title/>
+    <centered>1</centered>
+    <style>wxDEFAULT_DIALOG_STYLE</style>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem" name="staticBoxSizer1372">
+        <flag>wxALL|wxEXPAND</flag>
+        <border>15</border>
+        <object class="wxStaticBoxSizer" name="staticBoxSizer1372">
+          <sizeritem>
+            <object class="spacer"/>
+          </sizeritem>
+          <orient>wxVERTICAL</orient>
+          <label/>
+          <object class="sizeritem" name="boxSizer1373">
+            <flag>wxALL|wxEXPAND</flag>
+            <border>10</border>
+            <object class="wxBoxSizer">
+              <orient>wxVERTICAL</orient>
+              <object class="sizeritem">
+                <flag>wxALL|wxALIGN_CENTER</flag>
+                <border>5</border>
+                <object class="wxStaticText" name="QueryIdiot_message">
+                  <label>You seem to want to overwrite this file with itself</label>
+                  <style/>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <flag>wxTOP|wxBOTTOM|wxALIGN_CENTER</flag>
+                <border>5</border>
+                <object class="wxStaticText" name="m_staticText1375">
+                  <label>Does this mean:</label>
+                  <style/>
+                </object>
+              </object>
+              <object class="spacer" name="Spacer1376">
+                <size>20,10</size>
+                <flag>wxEXPAND</flag>
+                <option>1</option>
+              </object>
+              <object class="sizeritem" name="boxSizer1377">
+                <flag>wxEXPAND</flag>
+                <object class="wxBoxSizer">
+                  <orient>wxHORIZONTAL</orient>
+                  <object class="spacer" name="Spacer1378">
+                    <flag>wxEXPAND</flag>
+                    <option>1</option>
+                  </object>
+                  <object class="sizeritem">
+                    <flag>wxLEFT|wxRIGHT|wxBOTTOM|wxALIGN_CENTER</flag>
+                    <border>5</border>
+                    <option>2</option>
+                    <object class="wxButton" name="Rename">
+                      <label>I want to &amp;DUPLICATE it</label>
+                      <style>wxBORDER_SIMPLE</style>
+                      <bitmapposition>wxLEFT</bitmapposition>
+                      <default>0</default>
+                    </object>
+                  </object>
+                  <object class="spacer" name="Spacer1380">
+                    <flag>wxEXPAND</flag>
+                    <option>1</option>
+                  </object>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <flag>wxALL|wxALIGN_CENTER</flag>
+                <border>5</border>
+                <object class="wxStaticText" name="m_staticText1381">
+                  <label>or:</label>
+                  <style/>
+                </object>
+              </object>
+              <object class="sizeritem" name="boxSizer1382">
+                <flag>wxEXPAND</flag>
+                <object class="wxBoxSizer">
+                  <orient>wxHORIZONTAL</orient>
+                  <object class="spacer" name="Spacer1383">
+                    <flag>wxEXPAND</flag>
+                    <option>1</option>
+                  </object>
+                  <object class="sizeritem">
+                    <flag>wxALL|wxEXPAND</flag>
+                    <border>5</border>
+                    <option>2</option>
+                    <object class="wxButton" name="wxID_CANCEL">
+                      <label>&amp;Oops, I didn't mean it</label>
+                      <style/>
+                      <tooltip>
+                        <![CDATA[Click to abort]]>
+                      </tooltip>
+                      <bitmapposition>wxLEFT</bitmapposition>
+                      <default>0</default>
+                    </object>
+                  </object>
+                  <object class="spacer" name="Spacer1385">
+                    <flag>wxEXPAND</flag>
+                    <option>1</option>
+                  </object>
+                </object>
+              </object>
+            </object>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="MakeLinkDlg">
+    <title>Make a Link</title>
+    <centered>1</centered>
+    <style>wxDEFAULT_DIALOG_STYLE</style>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem" name="boxSizer1388">
+        <flag>wxALL</flag>
+        <border>15</border>
+        <object class="wxBoxSizer">
+          <orient>wxVERTICAL</orient>
+          <object class="sizeritem" name="boxSizer1389">
+            <flag>wxTOP|wxALIGN_CENTER</flag>
+            <border>15</border>
+            <object class="wxBoxSizer">
+              <orient>wxVERTICAL</orient>
+              <object class="sizeritem" name="boxSizer1390">
+                <flag>wxEXPAND</flag>
+                <object class="wxBoxSizer">
+                  <orient>wxHORIZONTAL</orient>
+                  <object class="spacer" name="Spacer1391">
+                    <flag/>
+                    <option>1</option>
+                  </object>
+                  <object class="sizeritem">
+                    <flag>wxALIGN_CENTER</flag>
+                    <object class="wxStaticText" name="link_message">
+                      <label>   Create a new Link from:</label>
+                      <style/>
+                    </object>
+                  </object>
+                  <object class="spacer" name="Spacer1393">
+                    <flag/>
+                    <option>1</option>
+                  </object>
+                </object>
+              </object>
+              <object class="sizeritem" name="boxSizer1394">
+                <flag>wxTOP|wxEXPAND</flag>
+                <border>5</border>
+                <object class="wxBoxSizer">
+                  <orient>wxHORIZONTAL</orient>
+                  <object class="spacer" name="Spacer1395">
+                    <flag/>
+                    <option>1</option>
+                  </object>
+                  <object class="sizeritem">
+                    <flag>wxEXPAND</flag>
+                    <object class="wxStaticText" name="link_frompath">
+                      <label>Pretend</label>
+                      <style/>
+                      <tooltip>
+                        <![CDATA[This is what you are trying to Link to]]>
+                      </tooltip>
+                    </object>
+                  </object>
+                  <object class="spacer" name="Spacer1397">
+                    <flag/>
+                    <option>1</option>
+                  </object>
+                </object>
+              </object>
+            </object>
+          </object>
+          <object class="sizeritem" name="boxSizer1398">
+            <flag>wxBOTTOM|wxALIGN_CENTER</flag>
+            <border>20</border>
+            <object class="wxBoxSizer">
+              <orient>wxVERTICAL</orient>
+              <object class="sizeritem">
+                <flag>wxTOP|wxALIGN_CENTER</flag>
+                <border>15</border>
+                <object class="wxStaticText" name="m_staticText1399">
+                  <label>Make the link in the following Directory:</label>
+                  <style/>
+                </object>
+              </object>
+              <object class="sizeritem" name="boxSizer1400">
+                <flag>wxTOP|wxEXPAND</flag>
+                <border>5</border>
+                <object class="wxBoxSizer">
+                  <orient>wxHORIZONTAL</orient>
+                  <object class="spacer" name="Spacer1401">
+                    <flag/>
+                    <option>1</option>
+                  </object>
+                  <object class="sizeritem">
+                    <flag>wxEXPAND</flag>
+                    <object class="wxStaticText" name="link_path">
+                      <label>Pretend</label>
+                      <style/>
+                      <tooltip>
+                        <![CDATA[This is what you are trying to Link to]]>
+                      </tooltip>
+                    </object>
+                  </object>
+                  <object class="spacer" name="Spacer1403">
+                    <flag/>
+                    <option>1</option>
+                  </object>
+                </object>
+              </object>
+            </object>
+          </object>
+          <object class="sizeritem" name="staticBoxSizer1404">
+            <flag>wxALL|wxALIGN_CENTER</flag>
+            <border>15</border>
+            <object class="wxStaticBoxSizer" name="staticBoxSizer1404">
+              <sizeritem>
+                <object class="spacer"/>
+              </sizeritem>
+              <orient>wxVERTICAL</orient>
+              <label/>
+              <object class="sizeritem">
+                <flag>wxALL|wxALIGN_CENTER</flag>
+                <border>10</border>
+                <object class="wxStaticText" name="m_staticText1405">
+                  <label>What would you like to call the Link?</label>
+                  <style/>
+                </object>
+              </object>
+              <object class="sizeritem" name="boxSizer1406">
+                <flag>wxLEFT|wxRIGHT</flag>
+                <border>10</border>
+                <object class="wxBoxSizer">
+                  <orient>wxHORIZONTAL</orient>
+                  <object class="sizeritem" name="boxSizer1407">
+                    <flag/>
+                    <object class="wxBoxSizer">
+                      <orient>wxVERTICAL</orient>
+                      <object class="sizeritem">
+                        <flag/>
+                        <object class="wxRadioButton" name="NameSame">
+                          <style>wxRB_GROUP</style>
+                          <label>Keep the same name</label>
+                          <value>1</value>
+                        </object>
+                      </object>
+                      <object class="sizeritem">
+                        <flag>wxTOP|wxBOTTOM</flag>
+                        <border>5</border>
+                        <object class="wxRadioButton" name="NameExt">
+                          <style/>
+                          <label>Use the following Extension</label>
+                          <value>1</value>
+                        </object>
+                      </object>
+                      <object class="sizeritem">
+                        <flag/>
+                        <object class="wxRadioButton" name="NameName">
+                          <style/>
+                          <label>Use the following Name</label>
+                          <value>1</value>
+                        </object>
+                      </object>
+                    </object>
+                  </object>
+                  <object class="sizeritem" name="boxSizer1411">
+                    <flag>wxTOP|wxEXPAND</flag>
+                    <border>10</border>
+                    <object class="wxBoxSizer">
+                      <orient>wxVERTICAL</orient>
+                      <object class="spacer" name="Spacer1412">
+                        <size>1,7</size>
+                        <flag>wxBOTTOM</flag>
+                        <border>7</border>
+                      </object>
+                      <object class="sizeritem">
+                        <flag>wxBOTTOM|wxALIGN_CENTER</flag>
+                        <border>5</border>
+                        <object class="wxTextCtrl" name="link_ext">
+                          <style/>
+                          <tooltip>
+                            <![CDATA[Enter the extension you would like to add to the original filename]]>
+                          </tooltip>
+                        </object>
+                      </object>
+                      <object class="sizeritem">
+                        <flag>wxBOTTOM|wxALIGN_CENTER</flag>
+                        <border>7</border>
+                        <object class="wxTextCtrl" name="link_filename">
+                          <style/>
+                          <tooltip>
+                            <![CDATA[Enter the name you would like to give this link]]>
+                          </tooltip>
+                        </object>
+                      </object>
+                    </object>
+                  </object>
+                </object>
+              </object>
+              <object class="sizeritem" name="boxSizer1415">
+                <flag>wxALL|wxALIGN_CENTER</flag>
+                <border>10</border>
+                <object class="wxBoxSizer">
+                  <orient>wxVERTICAL</orient>
+                  <object class="sizeritem">
+                    <flag/>
+                    <object class="wxCheckBox" name="MakeRelCheck">
+                      <tooltip>
+                        <![CDATA[Check this box if you wish to make relative symlink(s) e.g. to ../../foo instead of /path/to/foo]]>
+                      </tooltip>
+                      <style/>
+                      <label>Make Relative</label>
+                      <checked>0</checked>
+                    </object>
+                  </object>
+                  <object class="sizeritem">
+                    <flag/>
+                    <object class="wxCheckBox" name="ApplyToAllCheck">
+                      <tooltip>
+                        <![CDATA[Check this box if you wish these choices to be applied automatically to the rest of the items selected]]>
+                      </tooltip>
+                      <style/>
+                      <label>Apply to all</label>
+                      <checked>0</checked>
+                    </object>
+                  </object>
+                </object>
+              </object>
+            </object>
+          </object>
+          <object class="sizeritem" name="boxSizer1418">
+            <flag>wxBOTTOM|wxALIGN_CENTER</flag>
+            <border>5</border>
+            <object class="wxBoxSizer">
+              <orient>wxHORIZONTAL</orient>
+              <object class="sizeritem">
+                <flag>wxLEFT|wxRIGHT|wxEXPAND</flag>
+                <border>10</border>
+                <object class="wxRadioBox" name="link_radiobox">
+                  <label/>
+                  <style>wxRA_SPECIFY_ROWS|wxBORDER_NONE</style>
+                  <tooltip>
+                    <![CDATA[If you've changed your mind about which type of link you want, chose again here.]]>
+                  </tooltip>
+                  <dimension>1</dimension>
+                  <selection>1</selection>
+                  <content>
+                    <item>I want to make a Hard Link</item>
+                    <item>I want to make a Soft link</item>
+                  </content>
+                </object>
+              </object>
+            </object>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem" name="boxSizer1420">
+        <flag>wxALL|wxEXPAND</flag>
+        <border>10</border>
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="spacer" name="Spacer1421">
+            <size>20,10</size>
+            <flag>wxEXPAND</flag>
+            <option>1</option>
+          </object>
+          <object class="sizeritem">
+            <flag>wxLEFT</flag>
+            <border>20</border>
+            <object class="wxButton" name="wxID_OK">
+              <label>OK</label>
+              <style/>
+              <tooltip>
+                <![CDATA[Click when finished]]>
+              </tooltip>
+              <bitmapposition>wxLEFT</bitmapposition>
+              <default>1</default>
+            </object>
+          </object>
+          <object class="spacer" name="Spacer1423">
+            <size>15,10</size>
+            <flag>wxEXPAND</flag>
+            <option>1</option>
+          </object>
+          <object class="sizeritem">
+            <flag/>
+            <object class="wxButton" name="Skip">
+              <label>Skip</label>
+              <style/>
+              <tooltip>
+                <![CDATA[Click to abort]]>
+              </tooltip>
+              <bitmapposition>wxLEFT</bitmapposition>
+              <default>0</default>
+            </object>
+          </object>
+          <object class="spacer" name="Spacer1425">
+            <size>15,10</size>
+            <flag>wxEXPAND</flag>
+            <option>1</option>
+          </object>
+          <object class="sizeritem">
+            <flag>wxRIGHT|wxBOTTOM</flag>
+            <border>15</border>
+            <object class="wxButton" name="wxID_CANCEL">
+              <label>&amp;CANCEL</label>
+              <style/>
+              <tooltip>
+                <![CDATA[Click to abort]]>
+              </tooltip>
+              <bitmapposition>wxLEFT</bitmapposition>
+              <default>0</default>
+            </object>
+          </object>
+          <object class="spacer" name="Spacer1427">
+            <size>20,10</size>
+            <flag>wxEXPAND</flag>
+            <option>1</option>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="NewFileOrDir">
+    <title>Choose a name for the new item</title>
+    <centered>1</centered>
+    <style>wxDEFAULT_DIALOG_STYLE|wxRESIZE_BORDER</style>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem" name="boxSizer1430">
+        <flag>wxLEFT|wxRIGHT|wxEXPAND</flag>
+        <border>35</border>
+        <option>1</option>
+        <object class="wxBoxSizer">
+          <orient>wxVERTICAL</orient>
+          <object class="sizeritem">
+            <flag>wxALL|wxALIGN_CENTER</flag>
+            <border>15</border>
+            <object class="wxRadioBox" name="FileDir_radiobox">
+              <label/>
+              <style>wxRA_SPECIFY_ROWS|wxBORDER_NONE</style>
+              <tooltip>
+                <![CDATA[Do you want a new File or a new Directory?]]>
+              </tooltip>
+              <dimension>1</dimension>
+              <selection>0</selection>
+              <content>
+                <item>Make a new File</item>
+                <item>Make a new Directory</item>
+              </content>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <flag>wxLEFT|wxRIGHT|wxBOTTOM|wxEXPAND</flag>
+            <border>30</border>
+            <object class="wxTextCtrl" name="FileDir_text">
+              <style/>
+              <focused>1</focused>
+            </object>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem" name="boxSizer1433">
+        <flag>wxALL|wxEXPAND</flag>
+        <border>20</border>
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="spacer" name="Spacer1434">
+            <size>10,10</size>
+            <flag>wxEXPAND</flag>
+            <option>1</option>
+          </object>
+          <object class="sizeritem">
+            <flag>wxLEFT</flag>
+            <border>10</border>
+            <object class="wxButton" name="wxID_OK">
+              <label>OK</label>
+              <style/>
+              <tooltip>
+                <![CDATA[Click when finished]]>
+              </tooltip>
+              <bitmapposition>wxLEFT</bitmapposition>
+              <default>1</default>
+            </object>
+          </object>
+          <object class="spacer" name="Spacer1436">
+            <size>30,10</size>
+            <flag>wxEXPAND</flag>
+            <option>1</option>
+          </object>
+          <object class="sizeritem">
+            <flag>wxRIGHT|wxBOTTOM</flag>
+            <border>10</border>
+            <object class="wxButton" name="wxID_CANCEL">
+              <label>&amp;CANCEL</label>
+              <style/>
+              <tooltip>
+                <![CDATA[Click to abort]]>
+              </tooltip>
+              <bitmapposition>wxLEFT</bitmapposition>
+              <default>0</default>
+            </object>
+          </object>
+          <object class="spacer" name="Spacer1438">
+            <size>10,10</size>
+            <flag>wxEXPAND</flag>
+            <option>1</option>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="NewDir">
+    <title>New Directory</title>
+    <centered>1</centered>
+    <style>wxDEFAULT_DIALOG_STYLE|wxRESIZE_BORDER</style>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem" name="boxSizer1441">
+        <flag>wxLEFT|wxRIGHT|wxEXPAND</flag>
+        <border>35</border>
+        <object class="wxBoxSizer">
+          <orient>wxVERTICAL</orient>
+          <object class="spacer" name="Spacer6">
+            <size>0,20</size>
+            <flag/>
+            <border>30</border>
+          </object>
+          <object class="sizeritem">
+            <flag>wxBOTTOM</flag>
+            <border>5</border>
+            <object class="wxStaticText" name="m_staticText4">
+              <label>Choose a name for the new Directory</label>
+              <style/>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <flag>wxBOTTOM|wxEXPAND</flag>
+            <border>15</border>
+            <object class="wxTextCtrl" name="FileDir_text">
+              <style/>
+              <focused>1</focused>
+            </object>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem" name="boxSizer1443">
+        <flag>wxALL|wxEXPAND</flag>
+        <border>20</border>
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="spacer" name="Spacer1444">
+            <size>10,10</size>
+            <flag>wxEXPAND</flag>
+            <option>1</option>
+          </object>
+          <object class="sizeritem">
+            <flag>wxLEFT</flag>
+            <border>10</border>
+            <object class="wxButton" name="wxID_OK">
+              <label>OK</label>
+              <style/>
+              <tooltip>
+                <![CDATA[Click when finished]]>
+              </tooltip>
+              <bitmapposition>wxLEFT</bitmapposition>
+              <default>1</default>
+            </object>
+          </object>
+          <object class="spacer" name="Spacer1446">
+            <size>30,10</size>
+            <flag>wxEXPAND</flag>
+            <option>1</option>
+          </object>
+          <object class="sizeritem">
+            <flag>wxRIGHT|wxBOTTOM</flag>
+            <border>10</border>
+            <object class="wxButton" name="wxID_CANCEL">
+              <label>&amp;CANCEL</label>
+              <style/>
+              <tooltip>
+                <![CDATA[Click to abort]]>
+              </tooltip>
+              <bitmapposition>wxLEFT</bitmapposition>
+              <default>0</default>
+            </object>
+          </object>
+          <object class="spacer" name="Spacer1448">
+            <size>10,10</size>
+            <flag>wxEXPAND</flag>
+            <option>1</option>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="AddBookmarkDlg">
+    <title>Add a Bookmark</title>
+    <centered>1</centered>
+    <style>wxDEFAULT_DIALOG_STYLE|wxRESIZE_BORDER</style>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem" name="staticBoxSizer1451">
+        <flag>wxALL|wxEXPAND</flag>
+        <border>15</border>
+        <object class="wxStaticBoxSizer" name="staticBoxSizer1451">
+          <sizeritem>
+            <object class="spacer"/>
+          </sizeritem>
+          <orient>wxVERTICAL</orient>
+          <label/>
+          <object class="sizeritem" name="boxSizer1452">
+            <flag>wxEXPAND</flag>
+            <object class="wxBoxSizer">
+              <orient>wxVERTICAL</orient>
+              <object class="sizeritem">
+                <flag>wxALIGN_CENTER</flag>
+                <object class="wxStaticText" name="AddBookmark_message">
+                  <label>Add the following to your Bookmarks:</label>
+                  <style/>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <flag>wxALL|wxEXPAND</flag>
+                <border>10</border>
+                <option>1</option>
+                <object class="wxTextCtrl" name="AddBookmark_Bookmark">
+                  <style>wxTE_PROCESS_ENTER</style>
+                  <tooltip>
+                    <![CDATA[This is the bookmark that will be created]]>
+                  </tooltip>
+                </object>
+              </object>
+            </object>
+          </object>
+          <object class="sizeritem" name="boxSizer1456">
+            <flag>wxEXPAND</flag>
+            <object class="wxBoxSizer">
+              <orient>wxVERTICAL</orient>
+              <object class="sizeritem">
+                <flag>wxTOP|wxBOTTOM|wxALIGN_CENTER</flag>
+                <border>10</border>
+                <object class="wxStaticText" name="m_staticText1457">
+                  <label>What would you like to call it?</label>
+                  <style/>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <flag>wxLEFT|wxRIGHT|wxBOTTOM|wxEXPAND</flag>
+                <border>10</border>
+                <option>1</option>
+                <object class="wxTextCtrl" name="AddBookmark_Label">
+                  <style/>
+                  <tooltip>
+                    <![CDATA[What label would you like to give this bookmark?]]>
+                  </tooltip>
+                  <focused>1</focused>
+                </object>
+              </object>
+            </object>
+          </object>
+          <object class="sizeritem" name="staticBoxSizer1460">
+            <flag>wxEXPAND</flag>
+            <border>20</border>
+            <object class="wxStaticBoxSizer" name="staticBoxSizer1460">
+              <sizeritem>
+                <object class="spacer"/>
+              </sizeritem>
+              <orient>wxVERTICAL</orient>
+              <label/>
+              <object class="sizeritem">
+                <flag>wxTOP|wxALIGN_CENTER</flag>
+                <border>15</border>
+                <object class="wxStaticText" name="m_staticText1461">
+                  <label>Add it to the following folder:</label>
+                  <style/>
+                </object>
+              </object>
+              <object class="sizeritem" name="boxSizer1462">
+                <flag>wxEXPAND</flag>
+                <object class="wxBoxSizer">
+                  <orient>wxHORIZONTAL</orient>
+                  <object class="spacer" name="Spacer1463">
+                    <flag/>
+                    <option>1</option>
+                  </object>
+                  <object class="sizeritem">
+                    <flag>wxTOP|wxEXPAND</flag>
+                    <border>10</border>
+                    <object class="wxStaticText" name="AddBookmark_Path">
+                      <label>Pretend</label>
+                      <style/>
+                      <tooltip>
+                        <![CDATA[This is what you are trying to Link to]]>
+                      </tooltip>
+                    </object>
+                  </object>
+                  <object class="spacer" name="Spacer1465">
+                    <flag/>
+                    <option>1</option>
+                  </object>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <flag>wxTOP|wxBOTTOM|wxALIGN_CENTER</flag>
+                <border>10</border>
+                <object class="wxButton" name="ChangeFolderBtn">
+                  <label>Change &amp;Folder</label>
+                  <style/>
+                  <tooltip>
+                    <![CDATA[Click if you want to save this bookmark in a different folder, or to create a new folder]]>
+                  </tooltip>
+                  <bitmapposition>wxLEFT</bitmapposition>
+                  <default>0</default>
+                </object>
+              </object>
+            </object>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem" name="boxSizer1467">
+        <flag>wxALL|wxEXPAND</flag>
+        <border>10</border>
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="spacer" name="Spacer1468">
+            <size>20,10</size>
+            <flag>wxEXPAND</flag>
+            <option>1</option>
+          </object>
+          <object class="sizeritem">
+            <flag>wxLEFT</flag>
+            <border>20</border>
+            <object class="wxButton" name="wxID_OK">
+              <label>OK</label>
+              <style/>
+              <tooltip>
+                <![CDATA[Click when finished]]>
+              </tooltip>
+              <bitmapposition>wxLEFT</bitmapposition>
+              <default>1</default>
+            </object>
+          </object>
+          <object class="spacer" name="Spacer1470">
+            <size>30,10</size>
+            <flag>wxEXPAND</flag>
+            <option>1</option>
+          </object>
+          <object class="sizeritem">
+            <flag>wxRIGHT|wxBOTTOM</flag>
+            <border>15</border>
+            <object class="wxButton" name="wxID_CANCEL">
+              <label>&amp;CANCEL</label>
+              <style/>
+              <tooltip>
+                <![CDATA[Click to abort]]>
+              </tooltip>
+              <bitmapposition>wxLEFT</bitmapposition>
+              <default>0</default>
+            </object>
+          </object>
+          <object class="spacer" name="Spacer1472">
+            <size>20,10</size>
+            <flag>wxEXPAND</flag>
+            <option>1</option>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="EditBookmarkDlg">
+    <title>Edit a Bookmark</title>
+    <centered>1</centered>
+    <style>wxDEFAULT_DIALOG_STYLE|wxRESIZE_BORDER</style>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem" name="boxSizer1475">
+        <flag>wxLEFT|wxRIGHT|wxEXPAND</flag>
+        <border>50</border>
+        <option>1</option>
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="sizeritem">
+            <flag>wxLEFT|wxRIGHT|wxTOP|wxEXPAND</flag>
+            <border>10</border>
+            <option>1</option>
+            <object class="wxStaticText" name="m_staticText1476">
+              <label>Make any required alterations below</label>
+              <style>wxALIGN_CENTRE</style>
+            </object>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem" name="staticBoxSizer1477">
+        <flag>wxALL|wxEXPAND</flag>
+        <border>15</border>
+        <object class="wxStaticBoxSizer" name="staticBoxSizer1477">
+          <sizeritem>
+            <object class="spacer"/>
+          </sizeritem>
+          <orient>wxVERTICAL</orient>
+          <label/>
+          <object class="sizeritem" name="boxSizer1478">
+            <flag>wxEXPAND</flag>
+            <object class="wxBoxSizer">
+              <orient>wxVERTICAL</orient>
+              <object class="sizeritem">
+                <flag>wxALIGN_CENTER</flag>
+                <object class="wxStaticText" name="m_staticText1479">
+                  <label>Current Path</label>
+                  <style/>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <flag>wxALL|wxEXPAND</flag>
+                <border>10</border>
+                <option>1</option>
+                <object class="wxTextCtrl" name="EditPath">
+                  <style>wxTE_PROCESS_ENTER</style>
+                  <tooltip>
+                    <![CDATA[This is current Path]]>
+                  </tooltip>
+                </object>
+              </object>
+            </object>
+          </object>
+          <object class="sizeritem" name="boxSizer1482">
+            <flag>wxEXPAND</flag>
+            <object class="wxBoxSizer">
+              <orient>wxVERTICAL</orient>
+              <object class="sizeritem">
+                <flag>wxTOP|wxBOTTOM|wxALIGN_CENTER</flag>
+                <border>10</border>
+                <object class="wxStaticText" name="m_staticText1483">
+                  <label>Current Label</label>
+                  <style/>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <flag>wxLEFT|wxRIGHT|wxBOTTOM|wxEXPAND</flag>
+                <border>10</border>
+                <option>1</option>
+                <object class="wxTextCtrl" name="EditLabel">
+                  <style/>
+                  <tooltip>
+                    <![CDATA[This is the current Label]]>
+                  </tooltip>
+                  <focused>1</focused>
+                </object>
+              </object>
+            </object>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem" name="boxSizer1486">
+        <flag>wxALL|wxEXPAND</flag>
+        <border>10</border>
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="spacer" name="Spacer1487">
+            <size>20,10</size>
+            <flag>wxEXPAND</flag>
+            <option>1</option>
+          </object>
+          <object class="sizeritem">
+            <flag>wxLEFT</flag>
+            <border>20</border>
+            <object class="wxButton" name="wxID_OK">
+              <label>OK</label>
+              <style/>
+              <tooltip>
+                <![CDATA[Click when finished]]>
+              </tooltip>
+              <bitmapposition>wxLEFT</bitmapposition>
+              <default>1</default>
+            </object>
+          </object>
+          <object class="spacer" name="Spacer1489">
+            <size>30,10</size>
+            <flag>wxEXPAND</flag>
+            <option>1</option>
+          </object>
+          <object class="sizeritem">
+            <flag>wxRIGHT|wxBOTTOM</flag>
+            <border>15</border>
+            <object class="wxButton" name="wxID_CANCEL">
+              <label>&amp;CANCEL</label>
+              <style/>
+              <tooltip>
+                <![CDATA[Click to abort]]>
+              </tooltip>
+              <bitmapposition>wxLEFT</bitmapposition>
+              <default>0</default>
+            </object>
+          </object>
+          <object class="spacer" name="Spacer1491">
+            <size>20,10</size>
+            <flag>wxEXPAND</flag>
+            <option>1</option>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="ManageBookmarks">
+    <title>Manage Bookmarks</title>
+    <centered>1</centered>
+    <style>wxDEFAULT_DIALOG_STYLE|wxRESIZE_BORDER</style>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem" name="boxSizer1494">
+        <flag>wxTOP|wxALIGN_CENTER</flag>
+        <border>5</border>
+        <object class="wxBoxSizer">
+          <orient>wxVERTICAL</orient>
+          <object class="spacer" name="Spacer1495">
+            <flag/>
+          </object>
+          <object class="sizeritem" name="boxSizer1496">
+            <flag>wxEXPAND</flag>
+            <object class="wxBoxSizer">
+              <orient>wxHORIZONTAL</orient>
+              <object class="spacer" name="Spacer1497">
+                <size>10,10</size>
+                <flag>wxEXPAND</flag>
+                <option>1</option>
+              </object>
+              <object class="sizeritem">
+                <flag>wxEXPAND</flag>
+                <option>1</option>
+                <object class="wxButton" name="NewFolder">
+                  <label>&amp;New Folder</label>
+                  <style/>
+                  <tooltip>
+                    <![CDATA[Create a new Folder]]>
+                  </tooltip>
+                  <bitmapposition>wxLEFT</bitmapposition>
+                  <default>0</default>
+                </object>
+              </object>
+              <object class="spacer" name="Spacer1499">
+                <size>10,5</size>
+                <flag/>
+              </object>
+              <object class="sizeritem">
+                <flag>wxEXPAND</flag>
+                <option>1</option>
+                <object class="wxButton" name="NewSeparator">
+                  <label>New &amp;Separator</label>
+                  <style/>
+                  <tooltip>
+                    <![CDATA[Insert a new Separator]]>
+                  </tooltip>
+                  <bitmapposition>wxLEFT</bitmapposition>
+                  <default>0</default>
+                </object>
+              </object>
+              <object class="spacer" name="Spacer1501">
+                <size>10,5</size>
+                <flag/>
+              </object>
+              <object class="sizeritem">
+                <flag>wxEXPAND</flag>
+                <option>1</option>
+                <object class="wxButton" name="EditBookmark">
+                  <label>&amp;Edit Selection</label>
+                  <style/>
+                  <tooltip>
+                    <![CDATA[Edit the highlit item]]>
+                  </tooltip>
+                  <bitmapposition>wxLEFT</bitmapposition>
+                  <default>0</default>
+                </object>
+              </object>
+              <object class="spacer" name="Spacer1503">
+                <size>10,5</size>
+                <flag/>
+              </object>
+              <object class="sizeritem">
+                <flag>wxEXPAND</flag>
+                <option>1</option>
+                <object class="wxButton" name="Delete">
+                  <label>&amp;Delete</label>
+                  <style/>
+                  <tooltip>
+                    <![CDATA[Delete the highlit item]]>
+                  </tooltip>
+                  <bitmapposition>wxLEFT</bitmapposition>
+                  <default>0</default>
+                </object>
+              </object>
+              <object class="spacer" name="Spacer1505">
+                <size>10,10</size>
+                <flag>wxEXPAND</flag>
+                <option>1</option>
+              </object>
+            </object>
+          </object>
+          <object class="spacer" name="Spacer1506">
+            <flag/>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem" name="staticBoxSizer1507">
+        <flag>wxALL|wxEXPAND</flag>
+        <border>5</border>
+        <option>1</option>
+        <object class="wxStaticBoxSizer" name="staticBoxSizer1507">
+          <sizeritem>
+            <object class="spacer"/>
+          </sizeritem>
+          <orient>wxHORIZONTAL</orient>
+          <label/>
+          <object class="sizeritem">
+            <flag>wxEXPAND</flag>
+            <option>1</option>
+            <object class="wxTreeCtrl" name="TREE" subclass="MyBmTree">
+              <style>wxTR_HIDE_ROOT|wxTR_HAS_BUTTONS</style>
+            </object>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem" name="boxSizer1509">
+        <flag>wxLEFT|wxRIGHT|wxTOP|wxEXPAND</flag>
+        <border>10</border>
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="spacer" name="Spacer1510">
+            <size>20,10</size>
+            <flag>wxEXPAND</flag>
+            <option>1</option>
+          </object>
+          <object class="sizeritem">
+            <flag>wxLEFT</flag>
+            <border>20</border>
+            <object class="wxButton" name="wxID_OK">
+              <label>OK</label>
+              <style/>
+              <tooltip>
+                <![CDATA[Click when finished]]>
+              </tooltip>
+              <focused>1</focused>
+              <bitmapposition>wxLEFT</bitmapposition>
+              <default>1</default>
+            </object>
+          </object>
+          <object class="spacer" name="Spacer1512">
+            <size>30,10</size>
+            <flag>wxEXPAND</flag>
+            <option>1</option>
+          </object>
+          <object class="sizeritem">
+            <flag>wxRIGHT|wxBOTTOM</flag>
+            <border>15</border>
+            <object class="wxButton" name="wxID_CANCEL">
+              <label>&amp;CANCEL</label>
+              <style/>
+              <tooltip>
+                <![CDATA[Click to abort]]>
+              </tooltip>
+              <bitmapposition>wxLEFT</bitmapposition>
+              <default>0</default>
+            </object>
+          </object>
+          <object class="spacer" name="Spacer1514">
+            <size>20,10</size>
+            <flag>wxEXPAND</flag>
+            <option>1</option>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="ManageFiletypes">
+    <title>Open with:</title>
+    <centered>1</centered>
+    <style>wxDEFAULT_DIALOG_STYLE|wxRESIZE_BORDER</style>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem" name="boxSizer1517">
+        <flag>wxEXPAND</flag>
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="spacer" name="Spacer1518">
+            <flag>wxALL|wxEXPAND</flag>
+            <border>10</border>
+          </object>
+          <object class="sizeritem">
+            <flag>wxLEFT|wxTOP|wxBOTTOM|wxALIGN_CENTER_VERTICAL</flag>
+            <border>10</border>
+            <option>1</option>
+            <object class="wxTextCtrl" name="text">
+              <style/>
+              <tooltip>
+                <![CDATA[Type in the path & name of the application to use, if you know it.  If not, browse, or choose from the list below.]]>
+              </tooltip>
+            </object>
+          </object>
+          <object class="spacer" name="Spacer1520">
+            <size>10,5</size>
+            <flag/>
+          </object>
+          <object class="sizeritem">
+            <flag>wxTOP|wxBOTTOM|wxALIGN_CENTER_VERTICAL</flag>
+            <border>10</border>
+            <object class="wxBitmapButton" name="Browse">
+              <bitmap>../bitmaps/fileopen.xpm</bitmap>
+              <style>wxBU_AUTODRAW</style>
+              <tooltip>
+                <![CDATA[Click to browse for the application to use]]>
+              </tooltip>
+              <default>0</default>
+            </object>
+          </object>
+          <object class="spacer" name="Spacer1522">
+            <flag>wxALL|wxEXPAND</flag>
+            <border>10</border>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem" name="boxSizer1523">
+        <flag>wxBOTTOM|wxALIGN_CENTER</flag>
+        <border>5</border>
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="spacer" name="Spacer1524">
+            <flag/>
+          </object>
+          <object class="sizeritem" name="boxSizer1525">
+            <flag>wxLEFT|wxTOP|wxEXPAND</flag>
+            <border>10</border>
+            <object class="wxBoxSizer">
+              <orient>wxVERTICAL</orient>
+              <object class="spacer" name="Spacer1526">
+                <size>5,5</size>
+                <flag/>
+              </object>
+              <object class="sizeritem">
+                <flag>wxEXPAND</flag>
+                <option>1</option>
+                <object class="wxButton" name="EditApplication">
+                  <label>&amp;Edit Application</label>
+                  <style/>
+                  <tooltip>
+                    <![CDATA[Edit the selected Application]]>
+                  </tooltip>
+                  <bitmapposition>wxLEFT</bitmapposition>
+                  <default>0</default>
+                </object>
+              </object>
+              <object class="spacer" name="Spacer1528">
+                <size>5,5</size>
+                <flag/>
+              </object>
+              <object class="sizeritem">
+                <flag>wxEXPAND</flag>
+                <option>1</option>
+                <object class="wxButton" name="RemoveApplication">
+                  <label>&amp;Remove Application</label>
+                  <style/>
+                  <tooltip>
+                    <![CDATA[Remove the selected Application from the folder]]>
+                  </tooltip>
+                  <bitmapposition>wxLEFT</bitmapposition>
+                  <default>0</default>
+                </object>
+              </object>
+              <object class="spacer" name="Spacer1530">
+                <size>5,5</size>
+                <flag/>
+              </object>
+            </object>
+          </object>
+          <object class="spacer" name="Spacer1531">
+            <flag/>
+          </object>
+          <object class="sizeritem" name="boxSizer1532">
+            <flag>wxLEFT|wxRIGHT|wxEXPAND</flag>
+            <border>20</border>
+            <object class="wxBoxSizer">
+              <orient>wxVERTICAL</orient>
+              <object class="sizeritem">
+                <flag>wxEXPAND</flag>
+                <object class="wxButton" name="AddApplication">
+                  <label>&amp;Add Application</label>
+                  <style/>
+                  <tooltip>
+                    <![CDATA[Add the Application to the selected folder below]]>
+                  </tooltip>
+                  <bitmapposition>wxLEFT</bitmapposition>
+                  <default>0</default>
+                </object>
+              </object>
+              <object class="spacer" name="Spacer1534">
+                <flag/>
+                <option>1</option>
+              </object>
+            </object>
+          </object>
+          <object class="spacer" name="Spacer1535">
+            <flag>wxEXPAND</flag>
+          </object>
+          <object class="sizeritem" name="boxSizer1536">
+            <flag>wxRIGHT|wxTOP|wxEXPAND</flag>
+            <border>10</border>
+            <object class="wxBoxSizer">
+              <orient>wxVERTICAL</orient>
+              <object class="spacer" name="Spacer1537">
+                <size>20,5</size>
+                <flag/>
+              </object>
+              <object class="sizeritem">
+                <flag>wxEXPAND</flag>
+                <option>1</option>
+                <object class="wxButton" name="AddFolder">
+                  <label>     Add &amp;Folder</label>
+                  <style/>
+                  <tooltip>
+                    <![CDATA[Add a folder to the tree below]]>
+                  </tooltip>
+                  <bitmapposition>wxLEFT</bitmapposition>
+                  <default>0</default>
+                </object>
+              </object>
+              <object class="spacer" name="Spacer1539">
+                <size>10,5</size>
+                <flag/>
+              </object>
+              <object class="sizeritem">
+                <flag>wxEXPAND</flag>
+                <option>1</option>
+                <object class="wxButton" name="RemoveFolder">
+                  <label>Remove F&amp;older</label>
+                  <style/>
+                  <tooltip>
+                    <![CDATA[Remove the selected folder from the tree below]]>
+                  </tooltip>
+                  <bitmapposition>wxLEFT</bitmapposition>
+                  <default>0</default>
+                </object>
+              </object>
+              <object class="spacer" name="Spacer1541">
+                <size>20,5</size>
+                <flag/>
+              </object>
+            </object>
+          </object>
+          <object class="spacer" name="Spacer1542">
+            <flag/>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem" name="staticBoxSizer1543">
+        <flag>wxALL|wxEXPAND</flag>
+        <border>5</border>
+        <option>1</option>
+        <object class="wxStaticBoxSizer" name="staticBoxSizer1543">
+          <sizeritem>
+            <object class="spacer"/>
+          </sizeritem>
+          <orient>wxHORIZONTAL</orient>
+          <label/>
+          <object class="sizeritem">
+            <flag>wxEXPAND</flag>
+            <option>1</option>
+            <object class="wxTreeCtrl" name="TREE" subclass="MyFiletypeTree">
+              <style>wxTR_HAS_BUTTONS</style>
+              <tooltip>
+                <![CDATA[Click an application to select]]>
+              </tooltip>
+              <focused>1</focused>
+            </object>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem" name="boxSizer1545">
+        <flag>wxEXPAND</flag>
+        <border>15</border>
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="spacer" name="Spacer1546">
+            <size>20,10</size>
+            <flag>wxEXPAND</flag>
+          </object>
+          <object class="sizeritem" name="boxSizer1547">
+            <flag>wxEXPAND</flag>
+            <object class="wxBoxSizer">
+              <orient>wxVERTICAL</orient>
+              <object class="sizeritem">
+                <flag/>
+                <object class="wxCheckBox" name="OpenInTerminal">
+                  <tooltip>
+                    <![CDATA[Tick the box to open the file with this application within a terminal]]>
+                  </tooltip>
+                  <style/>
+                  <label>Open in terminal</label>
+                  <checked>0</checked>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <flag/>
+                <object class="wxCheckBox" name="AlwaysUse">
+                  <tooltip>
+                    <![CDATA[Tick the box if in the future you want this application to be called automatically to launch this type of file]]>
+                  </tooltip>
+                  <style/>
+                  <label>Always use the selected application for this kind of file</label>
+                  <checked>0</checked>
+                </object>
+              </object>
+            </object>
+          </object>
+          <object class="spacer" name="Spacer1550">
+            <size>20,10</size>
+            <flag>wxEXPAND</flag>
+            <option>1</option>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem" name="boxSizer1551">
+        <flag>wxLEFT|wxRIGHT|wxTOP|wxEXPAND</flag>
+        <border>10</border>
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="spacer" name="Spacer1552">
+            <size>20,10</size>
+            <flag>wxEXPAND</flag>
+            <option>1</option>
+          </object>
+          <object class="sizeritem">
+            <flag>wxLEFT</flag>
+            <border>20</border>
+            <object class="wxButton" name="wxID_OK">
+              <label>OK</label>
+              <style/>
+              <tooltip>
+                <![CDATA[Click when finished]]>
+              </tooltip>
+              <bitmapposition>wxLEFT</bitmapposition>
+              <default>1</default>
+            </object>
+          </object>
+          <object class="spacer" name="Spacer1554">
+            <size>30,10</size>
+            <flag>wxEXPAND</flag>
+            <option>1</option>
+          </object>
+          <object class="sizeritem">
+            <flag>wxRIGHT|wxBOTTOM</flag>
+            <border>15</border>
+            <object class="wxButton" name="wxID_CANCEL">
+              <label>&amp;CANCEL</label>
+              <style/>
+              <tooltip>
+                <![CDATA[Click to abort]]>
+              </tooltip>
+              <bitmapposition>wxLEFT</bitmapposition>
+              <default>0</default>
+            </object>
+          </object>
+          <object class="spacer" name="Spacer1556">
+            <size>20,10</size>
+            <flag>wxEXPAND</flag>
+            <option>1</option>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="AddApplicationDlg">
+    <title>Add an Application</title>
+    <centered>1</centered>
+    <style>wxDEFAULT_DIALOG_STYLE|wxRESIZE_BORDER</style>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem" name="boxSizer1559">
+        <flag>wxLEFT|wxRIGHT|wxTOP|wxEXPAND</flag>
+        <border>15</border>
+        <object class="wxBoxSizer">
+          <orient>wxVERTICAL</orient>
+          <object class="sizeritem" name="boxSizer1560">
+            <flag>wxEXPAND</flag>
+            <object class="wxBoxSizer">
+              <orient>wxVERTICAL</orient>
+              <object class="sizeritem">
+                <flag>wxTOP|wxBOTTOM|wxALIGN_CENTER</flag>
+                <border>5</border>
+                <object class="wxStaticText" name="m_staticText1561">
+                  <label>Label to give the Application (optional)</label>
+                  <style/>
+                </object>
+              </object>
+              <object class="sizeritem" name="boxSizer1562">
+                <flag>wxEXPAND</flag>
+                <object class="wxBoxSizer">
+                  <orient>wxHORIZONTAL</orient>
+                  <object class="spacer" name="Spacer1563">
+                    <size>5,5</size>
+                    <flag/>
+                    <option>1</option>
+                  </object>
+                  <object class="sizeritem">
+                    <flag>wxLEFT|wxRIGHT|wxBOTTOM|wxEXPAND</flag>
+                    <border>10</border>
+                    <option>1</option>
+                    <object class="wxTextCtrl" name="Label">
+                      <style/>
+                      <tooltip>
+                        <![CDATA[This name must be unique.  If you don't enter one, the end of the filepath will be used.\neg /usr/local/bin/foo will be called 'foo']]>
+                      </tooltip>
+                      <focused>1</focused>
+                    </object>
+                  </object>
+                  <object class="spacer" name="Spacer1565">
+                    <size>5,5</size>
+                    <flag/>
+                    <option>1</option>
+                  </object>
+                </object>
+              </object>
+            </object>
+          </object>
+          <object class="sizeritem" name="boxSizer1566">
+            <flag>wxBOTTOM|wxEXPAND</flag>
+            <border>5</border>
+            <object class="wxBoxSizer">
+              <orient>wxVERTICAL</orient>
+              <object class="sizeritem">
+                <flag>wxBOTTOM|wxEXPAND</flag>
+                <border>5</border>
+                <object class="wxStaticText" name="AddApplic_message">
+                  <label>Where is the Application? eg  /usr/local/bin/gs
+(sometimes just the filename will work)</label>
+                  <style>wxALIGN_CENTRE</style>
+                </object>
+              </object>
+              <object class="sizeritem" name="boxSizer1568">
+                <flag>wxEXPAND</flag>
+                <object class="wxBoxSizer">
+                  <orient>wxHORIZONTAL</orient>
+                  <object class="spacer" name="Spacer1569">
+                    <size>5,5</size>
+                    <flag/>
+                  </object>
+                  <object class="sizeritem">
+                    <flag>wxLEFT|wxRIGHT|wxBOTTOM|wxEXPAND</flag>
+                    <border>5</border>
+                    <option>1</option>
+                    <object class="wxTextCtrl" name="Filepath">
+                      <style>wxTE_PROCESS_ENTER</style>
+                      <tooltip>
+                        <![CDATA[Type in the name of the application.  If it is in your PATH, you should get away with just the name eg kwrite. Otherwise you will need the full pathname eg /usr/X11R6/bin/foo]]>
+                      </tooltip>
+                      <focused>1</focused>
+                    </object>
+                  </object>
+                  <object class="spacer" name="Spacer1571">
+                    <size>5,5</size>
+                    <flag/>
+                  </object>
+                  <object class="sizeritem">
+                    <flag>wxBOTTOM|wxALIGN_CENTER_VERTICAL</flag>
+                    <border>10</border>
+                    <object class="wxBitmapButton" name="Browse">
+                      <bitmap>../bitmaps/fileopen.xpm</bitmap>
+                      <style>wxBU_AUTODRAW</style>
+                      <tooltip>
+                        <![CDATA[Click to browse for the application to use]]>
+                      </tooltip>
+                      <default>0</default>
+                    </object>
+                  </object>
+                  <object class="spacer" name="Spacer1573">
+                    <size>5,5</size>
+                    <flag/>
+                  </object>
+                </object>
+              </object>
+            </object>
+          </object>
+          <object class="sizeritem" name="boxSizer1574">
+            <flag>wxEXPAND</flag>
+            <object class="wxBoxSizer">
+              <orient>wxVERTICAL</orient>
+              <object class="sizeritem">
+                <flag>wxTOP|wxBOTTOM|wxALIGN_CENTER</flag>
+                <border>5</border>
+                <object class="wxStaticText" name="m_staticText1575">
+                  <label>Extension(s) that it should launch? e.g. txt or htm,html</label>
+                  <style/>
+                </object>
+              </object>
+              <object class="sizeritem" name="boxSizer1576">
+                <flag>wxEXPAND</flag>
+                <object class="wxBoxSizer">
+                  <orient>wxHORIZONTAL</orient>
+                  <object class="sizeritem">
+                    <flag>wxLEFT|wxRIGHT|wxBOTTOM|wxEXPAND</flag>
+                    <border>10</border>
+                    <option>1</option>
+                    <object class="wxTextCtrl" name="Ext">
+                      <style>wxTE_MULTILINE</style>
+                      <size>100,22</size>
+                      <tooltip>
+                        <![CDATA[This is optional. If you enter one or more extensions, this application will be offered when you right-click on files with such extensions. You must also enter one if you will want this application to be the default for launching this type of file.  So if you will want all files with the extension 'txt', on double-clicking, to be launched with this application, write txt here.\nYou may enter more than one extension, separated by commas.  eg htm,html]]>
+                      </tooltip>
+                    </object>
+                  </object>
+                </object>
+              </object>
+            </object>
+          </object>
+          <object class="sizeritem" name="boxSizer1578">
+            <flag>wxEXPAND</flag>
+            <object class="wxBoxSizer">
+              <orient>wxVERTICAL</orient>
+              <object class="sizeritem">
+                <flag>wxTOP|wxBOTTOM|wxALIGN_CENTER</flag>
+                <border>5</border>
+                <object class="wxStaticText" name="m_staticText1579">
+                  <label> What is the Command String to use?  e.g. kedit %s</label>
+                  <style/>
+                </object>
+              </object>
+              <object class="sizeritem" name="boxSizer1580">
+                <flag>wxEXPAND</flag>
+                <object class="wxBoxSizer">
+                  <orient>wxHORIZONTAL</orient>
+                  <object class="sizeritem">
+                    <flag>wxLEFT|wxRIGHT|wxBOTTOM|wxEXPAND</flag>
+                    <border>10</border>
+                    <option>1</option>
+                    <object class="wxTextCtrl" name="Command">
+                      <style/>
+                      <tooltip>
+                        <![CDATA[This is the command to use to launch a file.  It is generally the program name followed by %s,  which represents the file to be launched.  So if kedit is your default text editor, and the launch Command is kedit %s,  double-clicking the file foo.txt will execute ' kedit 'foo.txt' '\nIf this doesn't work, you'll need to RTFM for the application in question.]]>
+                      </tooltip>
+                      <focused>1</focused>
+                    </object>
+                  </object>
+                </object>
+              </object>
+            </object>
+          </object>
+          <object class="sizeritem" name="boxSizer1582">
+            <flag>wxEXPAND</flag>
+            <object class="wxBoxSizer">
+              <orient>wxVERTICAL</orient>
+              <object class="sizeritem">
+                <flag>wxTOP|wxBOTTOM|wxALIGN_CENTER</flag>
+                <border>5</border>
+                <object class="wxStaticText" name="m_staticText1583">
+                  <label> Working directory in which to run the app (optional)</label>
+                  <style/>
+                </object>
+              </object>
+              <object class="sizeritem" name="boxSizer1584">
+                <flag>wxEXPAND</flag>
+                <object class="wxBoxSizer">
+                  <orient>wxHORIZONTAL</orient>
+                  <object class="sizeritem">
+                    <flag>wxLEFT|wxRIGHT|wxBOTTOM|wxEXPAND</flag>
+                    <border>10</border>
+                    <option>1</option>
+                    <object class="wxTextCtrl" name="WorkingDir">
+                      <style/>
+                      <tooltip>
+                        <![CDATA[You can optionally provide a working directory. If you do, it will be 'cd'ed to before running the command. Most commands won't need this; in particular, it won't be needed for any commands that can be launched without a Path e.g. kwrite]]>
+                      </tooltip>
+                    </object>
+                  </object>
+                </object>
+              </object>
+            </object>
+          </object>
+          <object class="sizeritem" name="staticBoxSizer1586">
+            <flag>wxALL|wxEXPAND</flag>
+            <object class="wxStaticBoxSizer" name="staticBoxSizer1586">
+              <sizeritem>
+                <object class="spacer"/>
+              </sizeritem>
+              <orient>wxVERTICAL</orient>
+              <label/>
+              <object class="sizeritem" name="boxSizer1587">
+                <flag>wxALL|wxEXPAND</flag>
+                <border>5</border>
+                <option>1</option>
+                <object class="wxBoxSizer">
+                  <orient>wxVERTICAL</orient>
+                  <object class="sizeritem" name="boxSizer1588">
+                    <flag>wxEXPAND</flag>
+                    <object class="wxBoxSizer">
+                      <orient>wxHORIZONTAL</orient>
+                      <object class="sizeritem">
+                        <flag>wxRIGHT|wxALIGN_CENTER_VERTICAL</flag>
+                        <border>5</border>
+                        <object class="wxStaticText" name="m_staticText1589">
+                          <label>Add it to the following folder:</label>
+                          <style/>
+                        </object>
+                      </object>
+                      <object class="spacer" name="Spacer1590">
+                        <size>35,5</size>
+                        <flag/>
+                        <option>1</option>
+                      </object>
+                    </object>
+                  </object>
+                  <object class="sizeritem" name="boxSizer1591">
+                    <flag>wxEXPAND</flag>
+                    <object class="wxBoxSizer">
+                      <orient>wxHORIZONTAL</orient>
+                      <object class="sizeritem">
+                        <flag>wxRIGHT|wxTOP|wxBOTTOM|wxALIGN_CENTER</flag>
+                        <border>5</border>
+                        <option>1</option>
+                        <object class="wxComboBox" name="Combo">
+                          <style/>
+                          <tooltip>
+                            <![CDATA[Put the application in this group.  So kwrite goes in Editors.]]>
+                          </tooltip>
+                          <selection>-1</selection>
+                          <content/>
+                        </object>
+                      </object>
+                      <object class="sizeritem">
+                        <flag>wxLEFT|wxTOP|wxBOTTOM|wxALIGN_CENTER</flag>
+                        <border>5</border>
+                        <object class="wxButton" name="NewFolder">
+                          <label>&amp;New Folder</label>
+                          <style/>
+                          <tooltip>
+                            <![CDATA[Add a new group to categorise applications]]>
+                          </tooltip>
+                          <bitmapposition>wxLEFT</bitmapposition>
+                          <default>0</default>
+                        </object>
+                      </object>
+                    </object>
+                  </object>
+                </object>
+              </object>
+            </object>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem" name="boxSizer1594">
+        <flag>wxALL|wxEXPAND</flag>
+        <border>8</border>
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="spacer" name="Spacer1595">
+            <size>20,10</size>
+            <flag>wxEXPAND</flag>
+          </object>
+          <object class="sizeritem" name="boxSizer1596">
+            <flag>wxEXPAND</flag>
+            <object class="wxBoxSizer">
+              <orient>wxVERTICAL</orient>
+              <object class="sizeritem">
+                <flag/>
+                <object class="wxCheckBox" name="OpenInTerminal">
+                  <tooltip>
+                    <![CDATA[Tick the box to open the file with this application within a terminal]]>
+                  </tooltip>
+                  <style/>
+                  <label>Open in terminal</label>
+                  <checked>0</checked>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <flag/>
+                <object class="wxCheckBox" name="AlwaysUse">
+                  <tooltip>
+                    <![CDATA[Tick the box if in the future you want this application to be called automatically to launch this type of file]]>
+                  </tooltip>
+                  <style/>
+                  <label>Always use the selected application for this kind of file</label>
+                  <checked>0</checked>
+                </object>
+              </object>
+            </object>
+          </object>
+          <object class="spacer" name="Spacer1599">
+            <size>20,10</size>
+            <flag>wxEXPAND</flag>
+            <option>1</option>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem" name="boxSizer1600">
+        <flag>wxALL|wxEXPAND</flag>
+        <border>10</border>
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="spacer" name="Spacer1601">
+            <size>20,10</size>
+            <flag>wxEXPAND</flag>
+            <option>1</option>
+          </object>
+          <object class="sizeritem">
+            <flag>wxLEFT</flag>
+            <border>20</border>
+            <object class="wxButton" name="wxID_OK">
+              <label>OK</label>
+              <style/>
+              <tooltip>
+                <![CDATA[Click when finished]]>
+              </tooltip>
+              <bitmapposition>wxLEFT</bitmapposition>
+              <default>1</default>
+            </object>
+          </object>
+          <object class="spacer" name="Spacer1603">
+            <size>30,10</size>
+            <flag>wxEXPAND</flag>
+            <option>1</option>
+          </object>
+          <object class="sizeritem">
+            <flag>wxRIGHT|wxBOTTOM</flag>
+            <border>15</border>
+            <object class="wxButton" name="wxID_CANCEL">
+              <label>&amp;CANCEL</label>
+              <style/>
+              <tooltip>
+                <![CDATA[Click to abort]]>
+              </tooltip>
+              <bitmapposition>wxLEFT</bitmapposition>
+              <default>0</default>
+            </object>
+          </object>
+          <object class="spacer" name="Spacer1605">
+            <size>20,10</size>
+            <flag>wxEXPAND</flag>
+            <option>1</option>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="MultipleDefaultDlg">
+    <title/>
+    <centered>1</centered>
+    <style>wxDEFAULT_DIALOG_STYLE</style>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem" name="boxSizer1608">
+        <flag>wxLEFT|wxRIGHT|wxTOP|wxEXPAND</flag>
+        <border>10</border>
+        <object class="wxBoxSizer">
+          <orient>wxVERTICAL</orient>
+          <object class="sizeritem" name="boxSizer1609">
+            <flag>wxEXPAND</flag>
+            <object class="wxBoxSizer">
+              <orient>wxVERTICAL</orient>
+              <object class="sizeritem">
+                <flag/>
+                <object class="wxStaticText" name="message">
+                  <label>For which Extensions do you want the application to be default.</label>
+                  <style/>
+                </object>
+              </object>
+            </object>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem" name="boxSizer1611">
+        <flag>wxALL|wxEXPAND</flag>
+        <border>5</border>
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="sizeritem">
+            <flag>wxALL|wxEXPAND</flag>
+            <border>10</border>
+            <object class="wxListBox" name="Listbox">
+              <style>wxLB_EXTENDED</style>
+              <tooltip>
+                <![CDATA[These are the extensions to choose from]]>
+              </tooltip>
+              <content/>
+              <selection>-1</selection>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <flag>wxALL|wxEXPAND</flag>
+            <border>10</border>
+            <object class="wxRadioBox" name="radiobox">
+              <label/>
+              <style>wxRA_SPECIFY_COLS</style>
+              <tooltip>
+                <![CDATA[You can either use the first two buttons, or select using the mouse (& Ctrl-key for non-contiguous choices)]]>
+              </tooltip>
+              <dimension>1</dimension>
+              <selection>0</selection>
+              <content>
+                <item>All of them</item>
+                <item>Just the First</item>
+                <item>Select with Mouse (+shift key)</item>
+              </content>
+            </object>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem" name="boxSizer1614">
+        <flag>wxALL|wxEXPAND</flag>
+        <border>10</border>
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="spacer" name="Spacer1615">
+            <size>20,10</size>
+            <flag>wxEXPAND</flag>
+            <option>1</option>
+          </object>
+          <object class="sizeritem">
+            <flag>wxLEFT</flag>
+            <border>20</border>
+            <object class="wxButton" name="wxID_OK">
+              <label>OK</label>
+              <style/>
+              <tooltip>
+                <![CDATA[Click when finished]]>
+              </tooltip>
+              <bitmapposition>wxLEFT</bitmapposition>
+              <default>1</default>
+            </object>
+          </object>
+          <object class="spacer" name="Spacer1617">
+            <size>30,10</size>
+            <flag>wxEXPAND</flag>
+            <option>1</option>
+          </object>
+          <object class="sizeritem">
+            <flag>wxRIGHT|wxBOTTOM</flag>
+            <border>15</border>
+            <object class="wxButton" name="wxID_CANCEL">
+              <label>&amp;CANCEL</label>
+              <style/>
+              <tooltip>
+                <![CDATA[Click to abort]]>
+              </tooltip>
+              <bitmapposition>wxLEFT</bitmapposition>
+              <default>0</default>
+            </object>
+          </object>
+          <object class="spacer" name="Spacer1619">
+            <size>20,10</size>
+            <flag>wxEXPAND</flag>
+            <option>1</option>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="ApplyToAllDlg">
+    <title>4Pane</title>
+    <centered>1</centered>
+    <style>wxDEFAULT_DIALOG_STYLE</style>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem" name="boxSizer1608">
+        <flag>wxALL|wxEXPAND</flag>
+        <border>10</border>
+        <object class="wxBoxSizer">
+          <orient>wxVERTICAL</orient>
+          <object class="sizeritem">
+            <flag/>
+            <object class="wxStaticText" name="m_MessageTxt">
+              <label/>
+              <style/>
+            </object>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem" name="boxSizer1614">
+        <flag>wxALL|wxEXPAND</flag>
+        <border>10</border>
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="sizeritem">
+            <flag>wxLEFT|wxRIGHT</flag>
+            <border>10</border>
+            <object class="wxCheckBox" name="m_ApplyToAllCheck">
+              <style/>
+              <label>Apply to all</label>
+              <checked>0</checked>
+            </object>
+          </object>
+          <object class="spacer" name="Spacer1615">
+            <size>20,10</size>
+            <flag>wxEXPAND</flag>
+            <option>1</option>
+          </object>
+          <object class="sizeritem">
+            <flag>wxLEFT</flag>
+            <border>20</border>
+            <object class="wxButton" name="wxID_YES">
+              <label/>
+              <style/>
+              <tooltip>
+                <![CDATA[Click when finished]]>
+              </tooltip>
+              <bitmapposition>wxLEFT</bitmapposition>
+              <default>1</default>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <flag>wxLEFT|wxRIGHT</flag>
+            <border>10</border>
+            <object class="wxButton" name="wxID_NO">
+              <label/>
+              <style/>
+              <tooltip>
+                <![CDATA[Click to abort]]>
+              </tooltip>
+              <bitmapposition>wxLEFT</bitmapposition>
+              <default>0</default>
+            </object>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="TabTemplateOverwriteDlg">
+    <title>Save Template</title>
+    <centered>1</centered>
+    <style>wxDEFAULT_DIALOG_STYLE</style>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem" name="staticBoxSizer1622">
+        <flag>wxALL</flag>
+        <border>15</border>
+        <object class="wxStaticBoxSizer" name="staticBoxSizer1622">
+          <sizeritem>
+            <object class="spacer"/>
+          </sizeritem>
+          <orient>wxVERTICAL</orient>
+          <label/>
+          <object class="sizeritem" name="boxSizer1623">
+            <flag>wxALL|wxEXPAND</flag>
+            <border>10</border>
+            <object class="wxBoxSizer">
+              <orient>wxVERTICAL</orient>
+              <object class="sizeritem" name="boxSizer1624">
+                <flag>wxTOP</flag>
+                <border>20</border>
+                <object class="wxBoxSizer">
+                  <orient>wxVERTICAL</orient>
+                  <object class="sizeritem">
+                    <flag>wxTOP|wxALIGN_CENTER</flag>
+                    <border>10</border>
+                    <object class="wxStaticText" name="Static">
+                      <label>There is a Template loaded already.</label>
+                      <style/>
+                    </object>
+                  </object>
+                  <object class="sizeritem">
+                    <flag>wxALL</flag>
+                    <border>10</border>
+                    <object class="wxStaticText" name="m_staticText1626">
+                      <label>Do you want to Overwrite this, or Save as a new Template?</label>
+                      <style/>
+                    </object>
+                  </object>
+                </object>
+              </object>
+              <object class="sizeritem" name="boxSizer1627">
+                <flag>wxBOTTOM|wxALIGN_CENTER</flag>
+                <border>30</border>
+                <object class="wxBoxSizer">
+                  <orient>wxHORIZONTAL</orient>
+                  <object class="sizeritem">
+                    <flag>wxALL|wxALIGN_CENTER</flag>
+                    <border>5</border>
+                    <object class="wxButton" name="Overwrite">
+                      <label>&amp;Overwrite</label>
+                      <style/>
+                      <bitmapposition>wxLEFT</bitmapposition>
+                      <default>0</default>
+                    </object>
+                  </object>
+                  <object class="spacer" name="Spacer1629">
+                    <size>20,10</size>
+                    <flag>wxEXPAND</flag>
+                    <option>1</option>
+                  </object>
+                  <object class="sizeritem">
+                    <flag>wxALL|wxALIGN_CENTER</flag>
+                    <border>5</border>
+                    <object class="wxButton" name="SaveAs">
+                      <label>&amp;New Template</label>
+                      <style/>
+                      <bitmapposition>wxLEFT</bitmapposition>
+                      <default>0</default>
+                    </object>
+                  </object>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <flag>wxALL|wxALIGN_CENTER</flag>
+                <border>5</border>
+                <object class="wxButton" name="wxID_CANCEL">
+                  <label>Cancel</label>
+                  <style/>
+                  <tooltip>
+                    <![CDATA[Click to abort]]>
+                  </tooltip>
+                  <bitmapposition>wxLEFT</bitmapposition>
+                  <default>0</default>
+                </object>
+              </object>
+            </object>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="FilterDlg">
+    <title>Enter the Filter String</title>
+    <centered>1</centered>
+    <style>wxDEFAULT_DIALOG_STYLE</style>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem" name="staticBoxSizer1634">
+        <flag>wxALL|wxEXPAND</flag>
+        <border>15</border>
+        <object class="wxStaticBoxSizer" name="staticBoxSizer1634">
+          <sizeritem>
+            <object class="spacer"/>
+          </sizeritem>
+          <orient>wxVERTICAL</orient>
+          <label/>
+          <object class="sizeritem" name="boxSizer1635">
+            <flag>wxTOP|wxEXPAND</flag>
+            <border>20</border>
+            <object class="wxBoxSizer">
+              <orient>wxHORIZONTAL</orient>
+              <object class="sizeritem">
+                <flag>wxALL|wxEXPAND</flag>
+                <border>20</border>
+                <option>1</option>
+                <object class="wxComboBox" name="Combo">
+                  <style/>
+                  <tooltip>
+                    <![CDATA[Enter a string to use as a filter, or use the history.  Multiple filters can be separated by either | or a comma.   eg  Pre*.txt  or *.jpg | *.png  or *htm,*html]]>
+                  </tooltip>
+                  <focused>1</focused>
+                  <selection>-1</selection>
+                  <content/>
+                </object>
+              </object>
+            </object>
+          </object>
+          <object class="sizeritem" name="boxSizer1637">
+            <flag>wxBOTTOM|wxALIGN_CENTER</flag>
+            <border>15</border>
+            <object class="wxBoxSizer">
+              <orient>wxVERTICAL</orient>
+              <object class="sizeritem">
+                <flag>wxLEFT</flag>
+                <border>10</border>
+                <object class="wxCheckBox" name="FilesOnly">
+                  <tooltip>
+                    <![CDATA[Show only files, not dirs]]>
+                  </tooltip>
+                  <style/>
+                  <label>Display only Files</label>
+                  <checked>0</checked>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <flag>wxLEFT</flag>
+                <border>10</border>
+                <object class="wxCheckBox" name="Reset">
+                  <tooltip>
+                    <![CDATA[Reset the filter, so that all files are shown  ie  *]]>
+                  </tooltip>
+                  <style/>
+                  <label>Reset filter to  *</label>
+                  <checked>0</checked>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <flag>wxLEFT</flag>
+                <border>10</border>
+                <object class="wxCheckBox" name="AllPanes">
+                  <tooltip>
+                    <![CDATA[Use the selected filter on all panes in this Tab]]>
+                  </tooltip>
+                  <style/>
+                  <label>Apply to All visible panes</label>
+                  <checked>0</checked>
+                </object>
+              </object>
+            </object>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem" name="boxSizer1641">
+        <flag>wxALL|wxEXPAND</flag>
+        <border>10</border>
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="spacer" name="Spacer1642">
+            <size>10,10</size>
+            <flag>wxEXPAND</flag>
+            <option>1</option>
+          </object>
+          <object class="sizeritem">
+            <flag>wxLEFT</flag>
+            <border>10</border>
+            <object class="wxButton" name="wxID_OK">
+              <label>OK</label>
+              <style/>
+              <tooltip>
+                <![CDATA[Click when finished]]>
+              </tooltip>
+              <bitmapposition>wxLEFT</bitmapposition>
+              <default>1</default>
+            </object>
+          </object>
+          <object class="spacer" name="Spacer1644">
+            <size>30,10</size>
+            <flag>wxEXPAND</flag>
+            <option>1</option>
+          </object>
+          <object class="sizeritem">
+            <flag>wxRIGHT|wxBOTTOM</flag>
+            <border>10</border>
+            <object class="wxButton" name="wxID_CANCEL">
+              <label>&amp;CANCEL</label>
+              <style/>
+              <tooltip>
+                <![CDATA[Click to abort]]>
+              </tooltip>
+              <bitmapposition>wxLEFT</bitmapposition>
+              <default>0</default>
+            </object>
+          </object>
+          <object class="spacer" name="Spacer1646">
+            <size>10,10</size>
+            <flag>wxEXPAND</flag>
+            <option>1</option>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="MultipleRenameDlg" subclass="MultipleRenameDlg">
+    <title>Multiple Rename</title>
+    <centered>1</centered>
+    <style>wxDEFAULT_DIALOG_STYLE|wxRESIZE_BORDER</style>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem" name="boxSizer1649">
+        <flag>wxTOP</flag>
+        <border>10</border>
+        <object class="wxBoxSizer">
+          <orient>wxVERTICAL</orient>
+          <object class="sizeritem" name="boxSizer1650">
+            <flag>wxLEFT|wxRIGHT</flag>
+            <border>40</border>
+            <object class="wxBoxSizer">
+              <orient>wxVERTICAL</orient>
+              <object class="sizeritem" name="boxSizer1651">
+                <flag>wxEXPAND</flag>
+                <object class="wxBoxSizer">
+                  <orient>wxVERTICAL</orient>
+                  <object class="sizeritem">
+                    <flag>wxALIGN_CENTER</flag>
+                    <border>15</border>
+                    <object class="wxStaticText" name="m_staticText1652">
+                      <label>You can either change foo.bar to, e.g., foo1.bar or new.foo.bar</label>
+                      <style/>
+                    </object>
+                  </object>
+                  <object class="sizeritem">
+                    <flag>wxALIGN_CENTER</flag>
+                    <border>15</border>
+                    <object class="wxStaticText" name="m_staticText1653">
+                      <label>or do something more complex with a regex</label>
+                      <style/>
+                    </object>
+                  </object>
+                </object>
+              </object>
+              <object class="sizeritem" name="boxSizer1654">
+                <flag>wxTOP|wxEXPAND</flag>
+                <border>3</border>
+                <object class="wxBoxSizer">
+                  <orient>wxVERTICAL</orient>
+                  <object class="sizeritem">
+                    <flag>wxLEFT|wxRIGHT|wxEXPAND</flag>
+                    <border>50</border>
+                    <object class="wxStaticLine" name="m_staticLine1655">
+                      <style>wxLI_HORIZONTAL</style>
+                    </object>
+                  </object>
+                </object>
+              </object>
+              <object class="sizeritem" name="boxSizer1656">
+                <flag>wxTOP|wxEXPAND</flag>
+                <border>10</border>
+                <option>1</option>
+                <object class="wxBoxSizer">
+                  <orient>wxVERTICAL</orient>
+                  <object class="sizeritem" name="boxSizer1657">
+                    <flag>wxBOTTOM|wxEXPAND</flag>
+                    <border>5</border>
+                    <object class="wxBoxSizer">
+                      <orient>wxHORIZONTAL</orient>
+                      <object class="sizeritem">
+                        <flag/>
+                        <object class="wxCheckBox" name="UseRegexChk">
+                          <style/>
+                          <label>  Use a Regular Expression</label>
+                          <checked>0</checked>
+                        </object>
+                      </object>
+                      <object class="spacer" name="Spacer1659">
+                        <flag/>
+                        <option>1</option>
+                      </object>
+                      <object class="sizeritem">
+                        <flag>wxALIGN_CENTER_VERTICAL</flag>
+                        <object class="wxButton" name="RegexCrib">
+                          <label>&amp;Regex Help</label>
+                          <style/>
+                          <bitmapposition>wxLEFT</bitmapposition>
+                          <default>0</default>
+                        </object>
+                      </object>
+                    </object>
+                  </object>
+                  <object class="sizeritem">
+                    <flag>wxALIGN_CENTER</flag>
+                    <object class="wxPanel" name="Panel">
+                      <style>wxTAB_TRAVERSAL</style>
+                      <enabled>0</enabled>
+                      <object class="wxBoxSizer">
+                        <orient>wxVERTICAL</orient>
+                        <object class="sizeritem" name="gridSizer24">
+                          <flag>wxEXPAND</flag>
+                          <option>1</option>
+                          <object class="wxGridSizer">
+                            <cols>2</cols>
+                            <rows>0</rows>
+                            <vgap>0</vgap>
+                            <hgap>0</hgap>
+                            <object class="sizeritem">
+                              <flag>wxBOTTOM|wxALIGN_CENTER</flag>
+                              <border>5</border>
+                              <object class="wxStaticText" name="m_staticText1666">
+                                <label>Replace</label>
+                                <style/>
+                                <tooltip>
+                                  <![CDATA[Type in the text or regular expression that you want to be substituted]]>
+                                </tooltip>
+                              </object>
+                            </object>
+                            <object class="sizeritem">
+                              <flag>wxBOTTOM|wxALIGN_CENTER</flag>
+                              <border>5</border>
+                              <object class="wxStaticText" name="m_staticText1670">
+                                <label>With</label>
+                                <style/>
+                              </object>
+                            </object>
+                            <object class="sizeritem">
+                              <flag>wxRIGHT|wxEXPAND</flag>
+                              <border>5</border>
+                              <minsize>200,-1</minsize>
+                              <object class="wxComboBox" name="ReplaceCombo">
+                                <style/>
+                                <tooltip>
+                                  <![CDATA[Type in the text that you want to substitute]]>
+                                </tooltip>
+                                <selection>-1</selection>
+                                <content/>
+                              </object>
+                            </object>
+                            <object class="sizeritem">
+                              <flag>wxLEFT|wxEXPAND</flag>
+                              <border>5</border>
+                              <minsize>200,-1</minsize>
+                              <object class="wxComboBox" name="WithCombo">
+                                <style/>
+                                <selection>-1</selection>
+                                <content/>
+                              </object>
+                            </object>
+                          </object>
+                        </object>
+                        <object class="sizeritem" name="boxSizer1673">
+                          <flag>wxTOP|wxBOTTOM|wxEXPAND</flag>
+                          <border>10</border>
+                          <object class="wxBoxSizer">
+                            <orient>wxHORIZONTAL</orient>
+                            <object class="spacer" name="Spacer1674">
+                              <flag/>
+                              <option>1</option>
+                            </object>
+                            <object class="sizeritem" name="boxSizer1675">
+                              <flag>wxALIGN_CENTER</flag>
+                              <object class="wxBoxSizer">
+                                <orient>wxVERTICAL</orient>
+                                <object class="sizeritem">
+                                  <flag/>
+                                  <object class="wxRadioButton" name="ReplaceAllRadio">
+                                    <style>wxRB_GROUP</style>
+                                    <label/>
+                                    <value>1</value>
+                                  </object>
+                                </object>
+                                <object class="sizeritem">
+                                  <flag/>
+                                  <object class="wxRadioButton" name="ReplaceOnlyRadio">
+                                    <style/>
+                                    <label/>
+                                    <value>0</value>
+                                  </object>
+                                </object>
+                              </object>
+                            </object>
+                            <object class="sizeritem" name="boxSizer1678">
+                              <flag/>
+                              <object class="wxBoxSizer">
+                                <orient>wxVERTICAL</orient>
+                                <object class="sizeritem" name="boxSizer1679">
+                                  <flag>wxTOP|wxBOTTOM|wxEXPAND</flag>
+                                  <border>5</border>
+                                  <object class="wxBoxSizer">
+                                    <orient>wxHORIZONTAL</orient>
+                                    <object class="sizeritem">
+                                      <flag/>
+                                      <object class="wxStaticText" name="m_staticText1680">
+                                        <label>Replace all matches in a name</label>
+                                        <style/>
+                                      </object>
+                                    </object>
+                                  </object>
+                                </object>
+                                <object class="sizeritem" name="boxSizer1681">
+                                  <flag>wxEXPAND</flag>
+                                  <option>1</option>
+                                  <object class="wxBoxSizer">
+                                    <orient>wxHORIZONTAL</orient>
+                                    <object class="sizeritem">
+                                      <flag>wxTOP</flag>
+                                      <border>3</border>
+                                      <object class="wxStaticText" name="m_staticText1682">
+                                        <label>Replace the first</label>
+                                        <style/>
+                                      </object>
+                                    </object>
+                                    <object class="sizeritem">
+                                      <flag/>
+                                      <object class="wxSpinCtrl" name="MatchSpin">
+                                        <style>wxSP_ARROW_KEYS</style>
+                                        <size>37,20</size>
+                                        <tooltip>
+                                          <![CDATA[Given the name 'foo-foo-foo' and replacement text 'bar', setting the count to 2 would result in 'bar-bar-foo']]>
+                                        </tooltip>
+                                        <value>1</value>
+                                        <min>1</min>
+                                        <max>999</max>
+                                      </object>
+                                    </object>
+                                    <object class="sizeritem">
+                                      <flag/>
+                                      <object class="wxStaticText" name="m_staticText1684">
+                                        <label>  matches in name</label>
+                                        <style/>
+                                      </object>
+                                    </object>
+                                  </object>
+                                </object>
+                              </object>
+                            </object>
+                            <object class="spacer" name="Spacer1685">
+                              <flag/>
+                              <option>1</option>
+                            </object>
+                          </object>
+                        </object>
+                      </object>
+                    </object>
+                  </object>
+                  <object class="sizeritem">
+                    <flag>wxALL</flag>
+                    <border>5</border>
+                    <object class="wxCheckBox" name="IgnoreNonMatchesChk">
+                      <tooltip>
+                        <![CDATA[Suppose you select all the files in a directory and want to use a regex to change any .jpeg files to .jpg. If you don't tick this box, all other files in the selection will also be renamed by the non-regex section; which is probably not what you want.]]>
+                      </tooltip>
+                      <style/>
+                      <label>Completely ignore non-matching files</label>
+                      <checked>1</checked>
+                    </object>
+                  </object>
+                </object>
+              </object>
+              <object class="sizeritem">
+                <flag>wxLEFT|wxRIGHT|wxEXPAND</flag>
+                <border>50</border>
+                <object class="wxStaticLine" name="m_staticLine1686">
+                  <style>wxLI_HORIZONTAL</style>
+                </object>
+              </object>
+              <object class="sizeritem" name="boxSizer1687">
+                <flag>wxTOP|wxBOTTOM</flag>
+                <border>10</border>
+                <object class="wxBoxSizer">
+                  <orient>wxVERTICAL</orient>
+                  <object class="sizeritem">
+                    <flag>wxALIGN_CENTER</flag>
+                    <object class="wxStaticText" name="m_staticText1688">
+                      <label>How (else) to create new names:</label>
+                      <style/>
+                      <tooltip>
+                        <![CDATA[If you have successfully used a regex above, this may not be necessary. But if you didn't, or some clashes remain, this is how they will be overcome.]]>
+                      </tooltip>
+                    </object>
+                  </object>
+                </object>
+              </object>
+              <object class="sizeritem" name="boxSizer1689">
+                <flag>wxTOP|wxEXPAND</flag>
+                <border>5</border>
+                <object class="wxBoxSizer">
+                  <orient>wxVERTICAL</orient>
+                  <object class="sizeritem">
+                    <flag>wxALIGN_CENTER</flag>
+                    <object class="wxRadioBox" name="BodyExtRadio">
+                      <label>Change which part of the name?</label>
+                      <style>wxRA_SPECIFY_ROWS</style>
+                      <tooltip>
+                        <![CDATA[If the name is foo.something.bar, selecting 'Ext' will affect 'bar', not 'something.bar'.\nIf you choose 'Ext' when there isn't one, the body will be altered instead.]]>
+                      </tooltip>
+                      <dimension>1</dimension>
+                      <selection>0</selection>
+                      <content>
+                        <item>Body</item>
+                        <item>Ext</item>
+                      </content>
+                    </object>
+                  </object>
+                  <object class="sizeritem" name="boxSizer1691">
+                    <flag/>
+                    <object class="wxBoxSizer">
+                      <orient>wxVERTICAL</orient>
+                    </object>
+                  </object>
+                </object>
+              </object>
+              <object class="sizeritem" name="gridSizer25">
+                <flag>wxTOP|wxBOTTOM|wxALIGN_CENTER_HORIZONTAL</flag>
+                <border>10</border>
+                <object class="wxGridSizer">
+                  <cols>2</cols>
+                  <rows>0</rows>
+                  <vgap>0</vgap>
+                  <hgap>0</hgap>
+                  <object class="sizeritem">
+                    <flag>wxALIGN_CENTER</flag>
+                    <object class="wxStaticText" name="m_staticText1695">
+                      <label>Prepend text (optional)</label>
+                      <style/>
+                      <tooltip>
+                        <![CDATA[Type in the text or regular expression that you want to be substituted]]>
+                      </tooltip>
+                    </object>
+                  </object>
+                  <object class="sizeritem">
+                    <flag>wxALIGN_CENTER</flag>
+                    <object class="wxStaticText" name="m_staticText1699">
+                      <label>Append text (optional)</label>
+                      <style/>
+                    </object>
+                  </object>
+                  <object class="sizeritem">
+                    <flag>wxRIGHT|wxEXPAND</flag>
+                    <border>5</border>
+                    <minsize>200,-1</minsize>
+                    <object class="wxComboBox" name="PrependCombo">
+                      <style/>
+                      <tooltip>
+                        <![CDATA[Type in any text to Prepend]]>
+                      </tooltip>
+                      <selection>-1</selection>
+                      <content/>
+                    </object>
+                  </object>
+                  <object class="sizeritem">
+                    <flag>wxLEFT|wxEXPAND</flag>
+                    <border>5</border>
+                    <minsize>200,-1</minsize>
+                    <object class="wxComboBox" name="AppendCombo">
+                      <style/>
+                      <tooltip>
+                        <![CDATA[Type in any text to Append]]>
+                      </tooltip>
+                      <selection>-1</selection>
+                      <content/>
+                    </object>
+                  </object>
+                </object>
+              </object>
+              <object class="sizeritem" name="boxSizer1702">
+                <flag>wxBOTTOM|wxALIGN_CENTER</flag>
+                <border>5</border>
+                <object class="wxBoxSizer">
+                  <orient>wxHORIZONTAL</orient>
+                  <object class="sizeritem" name="boxSizer1703">
+                    <flag>wxALIGN_TOP</flag>
+                    <option>1</option>
+                    <object class="wxBoxSizer">
+                      <orient>wxVERTICAL</orient>
+                      <object class="sizeritem" name="boxSizer1704">
+                        <flag>wxLEFT</flag>
+                        <border>15</border>
+                        <object class="wxBoxSizer">
+                          <orient>wxVERTICAL</orient>
+                          <object class="sizeritem">
+                            <flag>wxBOTTOM</flag>
+                            <border>5</border>
+                            <object class="wxStaticText" name="m_staticText1705">
+                              <label>Increment starting with:</label>
+                              <style/>
+                            </object>
+                          </object>
+                        </object>
+                      </object>
+                      <object class="sizeritem" name="boxSizer1706">
+                        <flag>wxLEFT</flag>
+                        <border>40</border>
+                        <object class="wxBoxSizer">
+                          <orient>wxHORIZONTAL</orient>
+                          <object class="sizeritem">
+                            <flag>wxALIGN_CENTER</flag>
+                            <object class="wxTextCtrl" name="IncText">
+                              <style>wxTE_READONLY</style>
+                              <size>30,-1</size>
+                              <tooltip>
+                                <![CDATA[If there's still a name-clash despite anything you've done above, this adds a digit or a letter to create a new name. So joe.txt will become joe0.txt (or joe.txt0 if you've chosen to change the ext)]]>
+                              </tooltip>
+                              <value>0</value>
+                            </object>
+                          </object>
+                          <object class="sizeritem">
+                            <flag>wxALIGN_CENTER</flag>
+                            <object class="wxSpinButton" name="Spin">
+                              <style>wxSP_WRAP</style>
+                              <tooltip>
+                                <![CDATA[If there's still a name-clash despite anything you've done above, this adds a digit or a letter to create a new name. So joe.txt will become joe0.txt (or joe.txt0 if you've chosen to change the ext)]]>
+                              </tooltip>
+                              <value>0</value>
+                              <min>0</min>
+                              <max>10000</max>
+                            </object>
+                          </object>
+                          <object class="sizeritem">
+                            <flag>wxLEFT|wxALIGN_CENTER</flag>
+                            <border>10</border>
+                            <object class="wxCheckBox" name="OnlyIfNeededChk">
+                              <tooltip>
+                                <![CDATA[If this box is ticked, an Increment will only happen if it's needed to avoid a name-clash. If it's not, it will happen anyway.]]>
+                              </tooltip>
+                              <style/>
+                              <label> Only if needed</label>
+                              <checked>1</checked>
+                            </object>
+                          </object>
+                        </object>
+                      </object>
+                    </object>
+                  </object>
+                  <object class="sizeritem" name="boxSizer1710">
+                    <flag>wxALL|wxEXPAND</flag>
+                    <border>10</border>
+                    <object class="wxBoxSizer">
+                      <orient>wxVERTICAL</orient>
+                      <object class="sizeritem">
+                        <flag/>
+                        <object class="wxRadioBox" name="DigitLetterRadio">
+                          <label>Increment with a</label>
+                          <style/>
+                          <tooltip>
+                            <![CDATA[Determines whether 'joe' changes to 'joe0' or 'joeA']]>
+                          </tooltip>
+                          <dimension>1</dimension>
+                          <selection>0</selection>
+                          <content>
+                            <item>digit</item>
+                            <item>letter</item>
+                          </content>
+                        </object>
+                      </object>
+                    </object>
+                  </object>
+                  <object class="sizeritem" name="boxSizer1712">
+                    <flag>wxLEFT|wxALIGN_CENTER</flag>
+                    <border>10</border>
+                    <object class="wxBoxSizer">
+                      <orient>wxVERTICAL</orient>
+                      <object class="sizeritem">
+                        <flag/>
+                        <object class="wxRadioBox" name="CaseRadio">
+                          <label>Case</label>
+                          <style>wxRA_SPECIFY_COLS</style>
+                          <tooltip>
+                            <![CDATA[Do you want 'joe' become 'joeA' or joea']]>
+                          </tooltip>
+                          <dimension>1</dimension>
+                          <selection>0</selection>
+                          <content>
+                            <item>Upper</item>
+                            <item>Lower</item>
+                          </content>
+                        </object>
+                      </object>
+                    </object>
+                  </object>
+                </object>
+              </object>
+              <object class="sizeritem" name="boxSizer1714">
+                <flag>wxTOP|wxBOTTOM|wxALIGN_CENTER</flag>
+                <border>10</border>
+                <object class="wxBoxSizer">
+                  <orient>wxHORIZONTAL</orient>
+                  <object class="spacer" name="Spacer1715">
+                    <size>10,10</size>
+                    <flag>wxEXPAND</flag>
+                    <option>1</option>
+                  </object>
+                  <object class="sizeritem">
+                    <flag/>
+                    <object class="wxButton" name="wxID_OK">
+                      <label>OK</label>
+                      <style/>
+                      <tooltip>
+                        <![CDATA[Click when finished]]>
+                      </tooltip>
+                      <bitmapposition>wxLEFT</bitmapposition>
+                      <default>1</default>
+                    </object>
+                  </object>
+                  <object class="spacer" name="Spacer1717">
+                    <size>30,10</size>
+                    <flag>wxEXPAND</flag>
+                    <option>1</option>
+                  </object>
+                  <object class="sizeritem">
+                    <flag/>
+                    <object class="wxButton" name="wxID_CANCEL">
+                      <label>&amp;Cancel</label>
+                      <style/>
+                      <tooltip>
+                        <![CDATA[Click to abort]]>
+                      </tooltip>
+                      <bitmapposition>wxLEFT</bitmapposition>
+                      <default>0</default>
+                    </object>
+                  </object>
+                  <object class="spacer" name="Spacer1719">
+                    <size>10,10</size>
+                    <flag>wxEXPAND</flag>
+                    <option>1</option>
+                  </object>
+                </object>
+              </object>
+            </object>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+  <object class="wxDialog" name="ConfirmMultiRenameDlg">
+    <title>Confirm Rename</title>
+    <centered>1</centered>
+    <style>wxDEFAULT_DIALOG_STYLE|wxRESIZE_BORDER</style>
+    <object class="wxBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem" name="boxSizer1722">
+        <flag>wxTOP|wxBOTTOM|wxALIGN_CENTER</flag>
+        <border>10</border>
+        <object class="wxBoxSizer">
+          <orient>wxVERTICAL</orient>
+          <object class="sizeritem">
+            <flag/>
+            <object class="wxStaticText" name="m_staticText1723">
+              <label>Are you sure that you want to make these changes?</label>
+              <style/>
+            </object>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem" name="boxSizer1724">
+        <flag>wxLEFT|wxRIGHT|wxBOTTOM|wxEXPAND</flag>
+        <border>20</border>
+        <option>1</option>
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="sizeritem" name="boxSizer1725">
+            <flag>wxRIGHT|wxEXPAND</flag>
+            <border>15</border>
+            <option>1</option>
+            <object class="wxBoxSizer">
+              <orient>wxVERTICAL</orient>
+              <object class="sizeritem">
+                <flag>wxEXPAND</flag>
+                <option>1</option>
+                <object class="wxListBox" name="BeforeList">
+                  <style>wxLB_SINGLE</style>
+                  <size>150,100</size>
+                  <content/>
+                  <selection>-1</selection>
+                </object>
+              </object>
+            </object>
+          </object>
+          <object class="sizeritem" name="boxSizer1727">
+            <flag>wxLEFT|wxEXPAND</flag>
+            <border>15</border>
+            <option>1</option>
+            <object class="wxBoxSizer">
+              <orient>wxVERTICAL</orient>
+              <object class="sizeritem">
+                <flag>wxEXPAND</flag>
+                <option>1</option>
+                <object class="wxListBox" name="AfterList">
+                  <style>wxLB_SINGLE</style>
+                  <size>150,100</size>
+                  <content/>
+                  <selection>-1</selection>
+                </object>
+              </object>
+            </object>
+          </object>
+        </object>
+      </object>
+      <object class="sizeritem" name="boxSizer1729">
+        <flag>wxALL|wxEXPAND</flag>
+        <border>10</border>
+        <object class="wxBoxSizer">
+          <orient>wxHORIZONTAL</orient>
+          <object class="spacer" name="Spacer1730">
+            <size>10,10</size>
+            <flag>wxEXPAND</flag>
+            <option>1</option>
+          </object>
+          <object class="sizeritem">
+            <flag>wxLEFT</flag>
+            <border>10</border>
+            <object class="wxButton" name="wxID_OK">
+              <label>OK</label>
+              <style/>
+              <tooltip>
+                <![CDATA[Click when finished]]>
+              </tooltip>
+              <bitmapposition>wxLEFT</bitmapposition>
+              <default>1</default>
+            </object>
+          </object>
+          <object class="spacer" name="Spacer1732">
+            <size>30,10</size>
+            <flag>wxEXPAND</flag>
+            <option>1</option>
+          </object>
+          <object class="sizeritem">
+            <flag/>
+            <object class="wxButton" name="Retry">
+              <label>&amp;Try Again</label>
+              <style/>
+              <tooltip>
+                <![CDATA[Click when finished]]>
+              </tooltip>
+              <bitmapposition>wxLEFT</bitmapposition>
+              <default>0</default>
+            </object>
+          </object>
+          <object class="spacer" name="Spacer1734">
+            <size>30,10</size>
+            <flag>wxEXPAND</flag>
+            <option>1</option>
+          </object>
+          <object class="sizeritem">
+            <flag>wxRIGHT|wxBOTTOM</flag>
+            <border>10</border>
+            <object class="wxButton" name="wxID_CANCEL">
+              <label>&amp;CANCEL</label>
+              <style/>
+              <tooltip>
+                <![CDATA[Click to abort]]>
+              </tooltip>
+              <bitmapposition>wxLEFT</bitmapposition>
+              <default>0</default>
+            </object>
+          </object>
+          <object class="spacer" name="Spacer1736">
+            <size>10,10</size>
+            <flag>wxEXPAND</flag>
+            <option>1</option>
+          </object>
+        </object>
+      </object>
+    </object>
+  </object>
+</resource>
