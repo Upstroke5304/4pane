@@ -1,0 +1,21 @@
+ *** Installing from a package ***
+
+If there's a 4Pane package for your distro e.g. .deb or .rpm, just install this in the usual way. 4Pane depends on the wxWidgets toolkit, so this package must also be installed: it will probably be called libwxgtk2.0 or similar.
+
+ *** Installing from a tarball ***
+
+If there is no package available, or if you prefer to build your own software, you can use the 4Pane tarball. First you'll need to download and build wxWidgets. Get the latest stable version from http://www.wxwidgets.org/downloads/ and extract it. Make a new subdirectory in the wxWidgets source directory, and cd into it. Then in the console do:
+../configure --with-gtk --enable-unicode
+(You can optionally add --enable-debug)
+Look at the output; the commonest problem is missing the gtk development lib, which will be called something like libgtk2.0-dev. Once configure has worked, do 'make'; wait 10 minutes or so for this to finish, then su; make install; ldconfig
+
+You can now build 4Pane in the standard way: extract the tarball, then ./configure; make; su; make install. (For options strange and rare, do ./configure --help or read the file PACKAGERS.)
+There should now be a desktop shortcut to launch 4Pane; or you can type '4Pane' in a console.
+
+If 4Pane fails to run, giving a message like: "Error while loading shared libraries: libwxFOO-2.8.so.0: cannot open shared object file: No such file or directory", the chances are that the name of your distro ends in 'buntu' ;). If so you need the following line in your console (or, more permanently, in your ~/.bashrc file): export LD_LIBRARY_PATH=/usr/local/lib
+
+
+ *** Which version of wxWidgets to use? ***
+
+Any currently-available version starting from wxGTK-2.8.0. However I suggest you use the most recent stable release.
+A note about older versions of 4Pane. Prior to version 0.7.0, 4Pane would work with any version of wxWidgets from 2.4.0; but you should have used at least 2.6. Older versions than this will not build using the tarball's 'configure' (there's an alternative tarball/configure that should work: see http://www.4Pane.co.uk/0.6.0/Installing242.htm); and if 4Pane is built on older versions, it can't peek into archives.

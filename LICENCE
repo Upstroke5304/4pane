@@ -1,0 +1,5 @@
+I copied sections of code from the wxWidgets source, and some from other places, especially http://wxcode.sourceforge.net/index.php. These retain their original wxWindows licence (see http://www.wxwidgets.org/about/). rsvg.cpp is an altered version of rsvg-convert.c taken from https://gitlab.gnome.org/GNOME/librsvg.git and retains its original copyright and GPL-2+ license.
+
+Otherwise 4Pane is covered by the GNU General Public Licence v.3 (http://www.gnu.org/licenses/gpl.html).
+
+If there are 4Pane classes or other parts of the code that you wish to use in your code under a different licence, please contact me: david@4pane.co.uk

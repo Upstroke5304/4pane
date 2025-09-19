@@ -1,0 +1,13 @@
+As you know, some package systems like to do certain things themselves. I've therefore made your life a little easier (and mine too when I'm doing the packaging) by providing configure options to disable parts of 'make install'.
+
+For example, ./configure --disable-install_app (or --enable-install_app=no) will stop 'make install' installing the 4Pane binary.
+
+The options are:
+--enable-install_app                  Installs the 4Pane binary
+--enable-install_rc                   Installs the resource files
+--enable-install_docs                 Installs the help manual
+--enable-locale                       Installs any ./locale/*/LC_MESSAGES/*.mo files
+--enable-desktop                      Tries to create a 4Pane desktop shortcut
+--enable-symlink                      Tries to make a 4Pane to 4pane symlink in the install dir
+
+For all of them the default is 'yes'.

@@ -1,0 +1,5 @@
+Welcome to 4Pane, a multi-pane, detailed-list file manager for Linux. You will find installation instructions in INSTALL. Once that's done, you can run 4Pane by typing 4Pane in a console, or from the desktop shortcut that should have been created.
+
+Packagers should read the file cunningly called PACKAGERS.
+
+Full documentation is available online at http://www.4Pane.co.uk, or within 4Pane from the menu or by pressing F1.

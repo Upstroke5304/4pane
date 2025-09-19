@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2020 David Hart <david@4Pane.co.uk> -->
+<component type="desktop">
+ <id>uk.co._4Pane</id>
+ <metadata_license>CC0-1.0</metadata_license>
+ <project_license>GPL-3.0</project_license>
+ <name>4Pane</name>
+ <summary>File manager</summary>
+ <description>
+  <p>
+   4Pane is a highly configurable Linux filemanager. It has dual twin-panes,
+   each of which has a directory tree-view pane and a detailed-list pane for
+   files.
+  </p>
+  <p>
+   In addition to standard file manager things, it offers multiple undo and redo
+    of most operations (including deletions), archive management including 
+    'virtual browsing' inside archives, multiple renaming/duplication of files,
+    a terminal emulator and user-defined tools.
+  </p>
+ </description>
+ <screenshots>
+  <screenshot type="default">
+   <image>https://www.4Pane.co.uk/4Pane624x351.png</image>
+  </screenshot>
+ </screenshots>
+ <url type="homepage">https://www.4pane.co.uk</url>
+</component>
